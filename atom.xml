@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>KAERO</title>
+  <title>Waxa.Deisgn | 蛙夏设计</title>
   
   <subtitle>Stories should be told.</subtitle>
-  <link href="http://kaerozhi.com/atom.xml" rel="self"/>
+  <link href="https://waxa.design/atom.xml" rel="self"/>
   
-  <link href="http://kaerozhi.com/"/>
+  <link href="https://waxa.design/"/>
   <updated>2023-07-16T05:28:09.706Z</updated>
-  <id>http://kaerozhi.com/</id>
+  <id>https://waxa.design/</id>
   
   <author>
     <name>Kaero</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hexo 同步 Github Page</title>
-    <link href="http://kaerozhi.com/playground/web/hexo-deploy-to-gitpage/"/>
-    <id>http://kaerozhi.com/playground/web/hexo-deploy-to-gitpage/</id>
+    <link href="https://waxa.design/playground/web/hexo-deploy-to-gitpage/"/>
+    <id>https://waxa.design/playground/web/hexo-deploy-to-gitpage/</id>
     <published>2023-07-15T08:26:00.000Z</published>
     <updated>2023-07-16T05:28:09.706Z</updated>
     
@@ -30,21 +30,21 @@
     
     
     
-    <category term="玩艺" scheme="http://kaerozhi.com/categories/playground/"/>
+    <category term="玩艺" scheme="https://waxa.design/categories/playground/"/>
     
-    <category term="网站" scheme="http://kaerozhi.com/categories/playground/web/"/>
+    <category term="网站" scheme="https://waxa.design/categories/playground/web/"/>
     
     
-    <category term="Hexo" scheme="http://kaerozhi.com/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://waxa.design/tags/Hexo/"/>
     
-    <category term="Github" scheme="http://kaerozhi.com/tags/Github/"/>
+    <category term="Github" scheme="https://waxa.design/tags/Github/"/>
     
   </entry>
   
   <entry>
     <title>Hexo 新主题：基于 Acorn 定制</title>
-    <link href="http://kaerozhi.com/playground/web/hexo-new-theme-based-on-acorn/"/>
-    <id>http://kaerozhi.com/playground/web/hexo-new-theme-based-on-acorn/</id>
+    <link href="https://waxa.design/playground/web/hexo-new-theme-based-on-acorn/"/>
+    <id>https://waxa.design/playground/web/hexo-new-theme-based-on-acorn/</id>
     <published>2023-07-13T11:30:00.000Z</published>
     <updated>2023-07-14T14:03:01.374Z</updated>
     
@@ -55,25 +55,25 @@
     
     
     
-    <category term="玩艺" scheme="http://kaerozhi.com/categories/playground/"/>
+    <category term="玩艺" scheme="https://waxa.design/categories/playground/"/>
     
-    <category term="网站" scheme="http://kaerozhi.com/categories/playground/web/"/>
+    <category term="网站" scheme="https://waxa.design/categories/playground/web/"/>
     
     
-    <category term="Hexo" scheme="http://kaerozhi.com/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://waxa.design/tags/Hexo/"/>
     
-    <category term="Theme" scheme="http://kaerozhi.com/tags/Theme/"/>
+    <category term="Theme" scheme="https://waxa.design/tags/Theme/"/>
     
-    <category term="Acorn" scheme="http://kaerozhi.com/tags/Acorn/"/>
+    <category term="Acorn" scheme="https://waxa.design/tags/Acorn/"/>
     
-    <category term="Web Development" scheme="http://kaerozhi.com/tags/Web-Development/"/>
+    <category term="Web Development" scheme="https://waxa.design/tags/Web-Development/"/>
     
   </entry>
   
   <entry>
     <title>Stable Diffusion 施法权威指南</title>
-    <link href="http://kaerozhi.com/playground/stable-diffusion/stable-diffusion-prompt-a-definitive-guide/"/>
-    <id>http://kaerozhi.com/playground/stable-diffusion/stable-diffusion-prompt-a-definitive-guide/</id>
+    <link href="https://waxa.design/playground/stable-diffusion/stable-diffusion-prompt-a-definitive-guide/"/>
+    <id>https://waxa.design/playground/stable-diffusion/stable-diffusion-prompt-a-definitive-guide/</id>
     <published>2023-07-09T11:48:00.000Z</published>
     <updated>2023-07-13T02:56:15.717Z</updated>
     
@@ -84,23 +84,23 @@
     
     
     
-    <category term="玩艺" scheme="http://kaerozhi.com/categories/playground/"/>
+    <category term="玩艺" scheme="https://waxa.design/categories/playground/"/>
     
-    <category term="Stable Diffusion" scheme="http://kaerozhi.com/categories/playground/stable-diffusion/"/>
+    <category term="Stable Diffusion" scheme="https://waxa.design/categories/playground/stable-diffusion/"/>
     
     
-    <category term="stable diffusion" scheme="http://kaerozhi.com/tags/stable-diffusion/"/>
+    <category term="stable diffusion" scheme="https://waxa.design/tags/stable-diffusion/"/>
     
-    <category term="翻译" scheme="http://kaerozhi.com/tags/%E7%BF%BB%E8%AF%91/"/>
+    <category term="翻译" scheme="https://waxa.design/tags/%E7%BF%BB%E8%AF%91/"/>
     
-    <category term="指南" scheme="http://kaerozhi.com/tags/%E6%8C%87%E5%8D%97/"/>
+    <category term="指南" scheme="https://waxa.design/tags/%E6%8C%87%E5%8D%97/"/>
     
   </entry>
   
   <entry>
     <title>Auto Photoshop Stable Diffusion Plugin</title>
-    <link href="http://kaerozhi.com/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/"/>
-    <id>http://kaerozhi.com/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/</id>
+    <link href="https://waxa.design/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/"/>
+    <id>https://waxa.design/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/</id>
     <published>2023-07-09T02:55:00.000Z</published>
     <updated>2023-07-10T11:54:19.002Z</updated>
     
@@ -111,23 +111,23 @@
     
     
     
-    <category term="玩艺" scheme="http://kaerozhi.com/categories/playground/"/>
+    <category term="玩艺" scheme="https://waxa.design/categories/playground/"/>
     
-    <category term="Stable Diffusion" scheme="http://kaerozhi.com/categories/playground/stable-diffusion/"/>
+    <category term="Stable Diffusion" scheme="https://waxa.design/categories/playground/stable-diffusion/"/>
     
     
-    <category term="plugins" scheme="http://kaerozhi.com/tags/plugins/"/>
+    <category term="plugins" scheme="https://waxa.design/tags/plugins/"/>
     
-    <category term="stable diffusion" scheme="http://kaerozhi.com/tags/stable-diffusion/"/>
+    <category term="stable diffusion" scheme="https://waxa.design/tags/stable-diffusion/"/>
     
-    <category term="photoshop" scheme="http://kaerozhi.com/tags/photoshop/"/>
+    <category term="photoshop" scheme="https://waxa.design/tags/photoshop/"/>
     
   </entry>
   
   <entry>
     <title>用 Stable Diffusion 尝试传统水墨画</title>
-    <link href="http://kaerozhi.com/playground/stable-diffusion/traditional-chinese-ink-painting/"/>
-    <id>http://kaerozhi.com/playground/stable-diffusion/traditional-chinese-ink-painting/</id>
+    <link href="https://waxa.design/playground/stable-diffusion/traditional-chinese-ink-painting/"/>
+    <id>https://waxa.design/playground/stable-diffusion/traditional-chinese-ink-painting/</id>
     <published>2023-07-06T05:25:07.000Z</published>
     <updated>2023-07-14T10:01:54.302Z</updated>
     
@@ -143,23 +143,23 @@
     
     
     
-    <category term="玩艺" scheme="http://kaerozhi.com/categories/playground/"/>
+    <category term="玩艺" scheme="https://waxa.design/categories/playground/"/>
     
-    <category term="Stable Diffusion" scheme="http://kaerozhi.com/categories/playground/stable-diffusion/"/>
+    <category term="Stable Diffusion" scheme="https://waxa.design/categories/playground/stable-diffusion/"/>
     
     
-    <category term="竹子" scheme="http://kaerozhi.com/tags/%E7%AB%B9%E5%AD%90/"/>
+    <category term="竹子" scheme="https://waxa.design/tags/%E7%AB%B9%E5%AD%90/"/>
     
-    <category term="中国水墨画" scheme="http://kaerozhi.com/tags/%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB/"/>
+    <category term="中国水墨画" scheme="https://waxa.design/tags/%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB/"/>
     
-    <category term="AIGC" scheme="http://kaerozhi.com/tags/AIGC/"/>
+    <category term="AIGC" scheme="https://waxa.design/tags/AIGC/"/>
     
   </entry>
   
   <entry>
     <title>LORA 日推：梵高风格</title>
-    <link href="http://kaerozhi.com/playground/stable-diffusion/van-gogh-style-lora/"/>
-    <id>http://kaerozhi.com/playground/stable-diffusion/van-gogh-style-lora/</id>
+    <link href="https://waxa.design/playground/stable-diffusion/van-gogh-style-lora/"/>
+    <id>https://waxa.design/playground/stable-diffusion/van-gogh-style-lora/</id>
     <published>2023-07-04T13:52:31.000Z</published>
     <updated>2023-07-14T09:40:42.643Z</updated>
     
@@ -174,25 +174,25 @@
     
     
     
-    <category term="玩艺" scheme="http://kaerozhi.com/categories/playground/"/>
+    <category term="玩艺" scheme="https://waxa.design/categories/playground/"/>
     
-    <category term="Stable Diffusion" scheme="http://kaerozhi.com/categories/playground/stable-diffusion/"/>
+    <category term="Stable Diffusion" scheme="https://waxa.design/categories/playground/stable-diffusion/"/>
     
     
-    <category term="AIGC" scheme="http://kaerozhi.com/tags/AIGC/"/>
+    <category term="AIGC" scheme="https://waxa.design/tags/AIGC/"/>
     
-    <category term="stable-diffusion" scheme="http://kaerozhi.com/tags/stable-diffusion/"/>
+    <category term="stable-diffusion" scheme="https://waxa.design/tags/stable-diffusion/"/>
     
-    <category term="van-gogh" scheme="http://kaerozhi.com/tags/van-gogh/"/>
+    <category term="van-gogh" scheme="https://waxa.design/tags/van-gogh/"/>
     
-    <category term="LORA" scheme="http://kaerozhi.com/tags/LORA/"/>
+    <category term="LORA" scheme="https://waxa.design/tags/LORA/"/>
     
   </entry>
   
   <entry>
     <title>iPhone 1x 信号故障</title>
-    <link href="http://kaerozhi.com/blog/iphone-1x-signal-failure/"/>
-    <id>http://kaerozhi.com/blog/iphone-1x-signal-failure/</id>
+    <link href="https://waxa.design/blog/iphone-1x-signal-failure/"/>
+    <id>https://waxa.design/blog/iphone-1x-signal-failure/</id>
     <published>2023-06-08T10:31:25.000Z</published>
     <updated>2023-06-08T11:40:25.913Z</updated>
     
@@ -206,19 +206,19 @@
     
     
     
-    <category term="日常" scheme="http://kaerozhi.com/categories/blog/"/>
+    <category term="日常" scheme="https://waxa.design/categories/blog/"/>
     
     
-    <category term="iPhone" scheme="http://kaerozhi.com/tags/iPhone/"/>
+    <category term="iPhone" scheme="https://waxa.design/tags/iPhone/"/>
     
-    <category term="信号故障" scheme="http://kaerozhi.com/tags/%E4%BF%A1%E5%8F%B7%E6%95%85%E9%9A%9C/"/>
+    <category term="信号故障" scheme="https://waxa.design/tags/%E4%BF%A1%E5%8F%B7%E6%95%85%E9%9A%9C/"/>
     
   </entry>
   
   <entry>
     <title>SONY 相机文件名前缀的下划线</title>
-    <link href="http://kaerozhi.com/playground/gears/sony-camera-filename-underscore/"/>
-    <id>http://kaerozhi.com/playground/gears/sony-camera-filename-underscore/</id>
+    <link href="https://waxa.design/playground/gears/sony-camera-filename-underscore/"/>
+    <id>https://waxa.design/playground/gears/sony-camera-filename-underscore/</id>
     <published>2023-06-05T07:19:42.000Z</published>
     <updated>2023-06-05T10:42:54.378Z</updated>
     
@@ -232,23 +232,23 @@
     
     
     
-    <category term="玩艺" scheme="http://kaerozhi.com/categories/playground/"/>
+    <category term="玩艺" scheme="https://waxa.design/categories/playground/"/>
     
-    <category term="器用" scheme="http://kaerozhi.com/categories/playground/gears/"/>
+    <category term="器用" scheme="https://waxa.design/categories/playground/gears/"/>
     
     
-    <category term="SONY" scheme="http://kaerozhi.com/tags/SONY/"/>
+    <category term="SONY" scheme="https://waxa.design/tags/SONY/"/>
     
-    <category term="相机" scheme="http://kaerozhi.com/tags/%E7%9B%B8%E6%9C%BA/"/>
+    <category term="相机" scheme="https://waxa.design/tags/%E7%9B%B8%E6%9C%BA/"/>
     
-    <category term="文件名" scheme="http://kaerozhi.com/tags/%E6%96%87%E4%BB%B6%E5%90%8D/"/>
+    <category term="文件名" scheme="https://waxa.design/tags/%E6%96%87%E4%BB%B6%E5%90%8D/"/>
     
   </entry>
   
   <entry>
     <title>夜访山塘</title>
-    <link href="http://kaerozhi.com/tours/shantang-at-night/"/>
-    <id>http://kaerozhi.com/tours/shantang-at-night/</id>
+    <link href="https://waxa.design/tours/shantang-at-night/"/>
+    <id>https://waxa.design/tours/shantang-at-night/</id>
     <published>2023-06-05T02:13:25.000Z</published>
     <updated>2023-07-13T00:45:27.296Z</updated>
     
@@ -259,21 +259,21 @@
     
     
     
-    <category term="游历" scheme="http://kaerozhi.com/categories/tours/"/>
+    <category term="游历" scheme="https://waxa.design/categories/tours/"/>
     
     
-    <category term="苏州" scheme="http://kaerozhi.com/tags/%E8%8B%8F%E5%B7%9E/"/>
+    <category term="苏州" scheme="https://waxa.design/tags/%E8%8B%8F%E5%B7%9E/"/>
     
-    <category term="山塘街" scheme="http://kaerozhi.com/tags/%E5%B1%B1%E5%A1%98%E8%A1%97/"/>
+    <category term="山塘街" scheme="https://waxa.design/tags/%E5%B1%B1%E5%A1%98%E8%A1%97/"/>
     
-    <category term="夜游" scheme="http://kaerozhi.com/tags/%E5%A4%9C%E6%B8%B8/"/>
+    <category term="夜游" scheme="https://waxa.design/tags/%E5%A4%9C%E6%B8%B8/"/>
     
   </entry>
   
   <entry>
     <title>曲园的菖蒲</title>
-    <link href="http://kaerozhi.com/tours/quyuan-and-calamus/"/>
-    <id>http://kaerozhi.com/tours/quyuan-and-calamus/</id>
+    <link href="https://waxa.design/tours/quyuan-and-calamus/"/>
+    <id>https://waxa.design/tours/quyuan-and-calamus/</id>
     <published>2023-06-04T07:31:52.000Z</published>
     <updated>2023-07-13T00:46:07.112Z</updated>
     
@@ -287,23 +287,23 @@
     
     
     
-    <category term="游历" scheme="http://kaerozhi.com/categories/tours/"/>
+    <category term="游历" scheme="https://waxa.design/categories/tours/"/>
     
     
-    <category term="苏州" scheme="http://kaerozhi.com/tags/%E8%8B%8F%E5%B7%9E/"/>
+    <category term="苏州" scheme="https://waxa.design/tags/%E8%8B%8F%E5%B7%9E/"/>
     
-    <category term="园林" scheme="http://kaerozhi.com/tags/%E5%9B%AD%E6%9E%97/"/>
+    <category term="园林" scheme="https://waxa.design/tags/%E5%9B%AD%E6%9E%97/"/>
     
-    <category term="曲园" scheme="http://kaerozhi.com/tags/%E6%9B%B2%E5%9B%AD/"/>
+    <category term="曲园" scheme="https://waxa.design/tags/%E6%9B%B2%E5%9B%AD/"/>
     
-    <category term="菖蒲" scheme="http://kaerozhi.com/tags/%E8%8F%96%E8%92%B2/"/>
+    <category term="菖蒲" scheme="https://waxa.design/tags/%E8%8F%96%E8%92%B2/"/>
     
   </entry>
   
   <entry>
     <title>相城基督堂</title>
-    <link href="http://kaerozhi.com/blog/xiangcheng-christ-church/"/>
-    <id>http://kaerozhi.com/blog/xiangcheng-christ-church/</id>
+    <link href="https://waxa.design/blog/xiangcheng-christ-church/"/>
+    <id>https://waxa.design/blog/xiangcheng-christ-church/</id>
     <published>2023-06-02T00:00:00.000Z</published>
     <updated>2023-07-13T00:48:30.000Z</updated>
     
@@ -316,23 +316,23 @@
     
     
     
-    <category term="日常" scheme="http://kaerozhi.com/categories/blog/"/>
+    <category term="日常" scheme="https://waxa.design/categories/blog/"/>
     
     
-    <category term="苏州" scheme="http://kaerozhi.com/tags/%E8%8B%8F%E5%B7%9E/"/>
+    <category term="苏州" scheme="https://waxa.design/tags/%E8%8B%8F%E5%B7%9E/"/>
     
-    <category term="公园" scheme="http://kaerozhi.com/tags/%E5%85%AC%E5%9B%AD/"/>
+    <category term="公园" scheme="https://waxa.design/tags/%E5%85%AC%E5%9B%AD/"/>
     
-    <category term="教堂" scheme="http://kaerozhi.com/tags/%E6%95%99%E5%A0%82/"/>
+    <category term="教堂" scheme="https://waxa.design/tags/%E6%95%99%E5%A0%82/"/>
     
-    <category term="虎丘湿地公园" scheme="http://kaerozhi.com/tags/%E8%99%8E%E4%B8%98%E6%B9%BF%E5%9C%B0%E5%85%AC%E5%9B%AD/"/>
+    <category term="虎丘湿地公园" scheme="https://waxa.design/tags/%E8%99%8E%E4%B8%98%E6%B9%BF%E5%9C%B0%E5%85%AC%E5%9B%AD/"/>
     
   </entry>
   
   <entry>
     <title>用 Synology Drive 同步 Obsidian 仓库</title>
-    <link href="http://kaerozhi.com/playground/apps/obsidian-sync-with-synology-drive/"/>
-    <id>http://kaerozhi.com/playground/apps/obsidian-sync-with-synology-drive/</id>
+    <link href="https://waxa.design/playground/apps/obsidian-sync-with-synology-drive/"/>
+    <id>https://waxa.design/playground/apps/obsidian-sync-with-synology-drive/</id>
     <published>2023-05-31T11:36:27.000Z</published>
     <updated>2023-07-15T07:10:58.000Z</updated>
     
@@ -344,23 +344,23 @@
     
     
     
-    <category term="玩艺" scheme="http://kaerozhi.com/categories/playground/"/>
+    <category term="玩艺" scheme="https://waxa.design/categories/playground/"/>
     
-    <category term="软件" scheme="http://kaerozhi.com/categories/playground/apps/"/>
+    <category term="软件" scheme="https://waxa.design/categories/playground/apps/"/>
     
     
-    <category term="Obsidian" scheme="http://kaerozhi.com/tags/Obsidian/"/>
+    <category term="Obsidian" scheme="https://waxa.design/tags/Obsidian/"/>
     
-    <category term="Synology Drive" scheme="http://kaerozhi.com/tags/Synology-Drive/"/>
+    <category term="Synology Drive" scheme="https://waxa.design/tags/Synology-Drive/"/>
     
-    <category term="NAS" scheme="http://kaerozhi.com/tags/NAS/"/>
+    <category term="NAS" scheme="https://waxa.design/tags/NAS/"/>
     
   </entry>
   
   <entry>
     <title>耦园初夏</title>
-    <link href="http://kaerozhi.com/tours/ouyuan-in-summer/"/>
-    <id>http://kaerozhi.com/tours/ouyuan-in-summer/</id>
+    <link href="https://waxa.design/tours/ouyuan-in-summer/"/>
+    <id>https://waxa.design/tours/ouyuan-in-summer/</id>
     <published>2023-05-30T02:31:15.000Z</published>
     <updated>2023-07-15T14:10:45.341Z</updated>
     
@@ -371,21 +371,21 @@
     
     
     
-    <category term="游历" scheme="http://kaerozhi.com/categories/tours/"/>
+    <category term="游历" scheme="https://waxa.design/categories/tours/"/>
     
     
-    <category term="苏州" scheme="http://kaerozhi.com/tags/%E8%8B%8F%E5%B7%9E/"/>
+    <category term="苏州" scheme="https://waxa.design/tags/%E8%8B%8F%E5%B7%9E/"/>
     
-    <category term="耦园" scheme="http://kaerozhi.com/tags/%E8%80%A6%E5%9B%AD/"/>
+    <category term="耦园" scheme="https://waxa.design/tags/%E8%80%A6%E5%9B%AD/"/>
     
-    <category term="园林" scheme="http://kaerozhi.com/tags/%E5%9B%AD%E6%9E%97/"/>
+    <category term="园林" scheme="https://waxa.design/tags/%E5%9B%AD%E6%9E%97/"/>
     
   </entry>
   
   <entry>
     <title>Hexo 的主题定制</title>
-    <link href="http://kaerozhi.com/playground/web/hexo-theme-minos/"/>
-    <id>http://kaerozhi.com/playground/web/hexo-theme-minos/</id>
+    <link href="https://waxa.design/playground/web/hexo-theme-minos/"/>
+    <id>https://waxa.design/playground/web/hexo-theme-minos/</id>
     <published>2023-05-28T13:36:07.000Z</published>
     <updated>2023-07-13T10:44:40.328Z</updated>
     
@@ -397,29 +397,29 @@
     
     
     
-    <category term="玩艺" scheme="http://kaerozhi.com/categories/playground/"/>
+    <category term="玩艺" scheme="https://waxa.design/categories/playground/"/>
     
-    <category term="网站" scheme="http://kaerozhi.com/categories/playground/web/"/>
+    <category term="网站" scheme="https://waxa.design/categories/playground/web/"/>
     
     
-    <category term="Hexo" scheme="http://kaerozhi.com/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://waxa.design/tags/Hexo/"/>
     
-    <category term="Theme" scheme="http://kaerozhi.com/tags/Theme/"/>
+    <category term="Theme" scheme="https://waxa.design/tags/Theme/"/>
     
-    <category term="minos" scheme="http://kaerozhi.com/tags/minos/"/>
+    <category term="minos" scheme="https://waxa.design/tags/minos/"/>
     
-    <category term="SCSS" scheme="http://kaerozhi.com/tags/SCSS/"/>
+    <category term="SCSS" scheme="https://waxa.design/tags/SCSS/"/>
     
-    <category term="Justified Gallery" scheme="http://kaerozhi.com/tags/Justified-Gallery/"/>
+    <category term="Justified Gallery" scheme="https://waxa.design/tags/Justified-Gallery/"/>
     
-    <category term="中文字体" scheme="http://kaerozhi.com/tags/%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93/"/>
+    <category term="中文字体" scheme="https://waxa.design/tags/%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93/"/>
     
   </entry>
   
   <entry>
     <title>Hexo 后续补充</title>
-    <link href="http://kaerozhi.com/playground/web/hexo-updates/"/>
-    <id>http://kaerozhi.com/playground/web/hexo-updates/</id>
+    <link href="https://waxa.design/playground/web/hexo-updates/"/>
+    <id>https://waxa.design/playground/web/hexo-updates/</id>
     <published>2023-05-28T13:36:07.000Z</published>
     <updated>2023-07-13T10:29:41.160Z</updated>
     
@@ -432,23 +432,23 @@ Hexo 用了两天，基本功能差不多弄清楚了。不过也发现一些问
     
     
     
-    <category term="玩艺" scheme="http://kaerozhi.com/categories/playground/"/>
+    <category term="玩艺" scheme="https://waxa.design/categories/playground/"/>
     
-    <category term="网站" scheme="http://kaerozhi.com/categories/playground/web/"/>
+    <category term="网站" scheme="https://waxa.design/categories/playground/web/"/>
     
     
-    <category term="Hexo" scheme="http://kaerozhi.com/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://waxa.design/tags/Hexo/"/>
     
-    <category term="Hexo Plugins" scheme="http://kaerozhi.com/tags/Hexo-Plugins/"/>
+    <category term="Hexo Plugins" scheme="https://waxa.design/tags/Hexo-Plugins/"/>
     
-    <category term="Markdown" scheme="http://kaerozhi.com/tags/Markdown/"/>
+    <category term="Markdown" scheme="https://waxa.design/tags/Markdown/"/>
     
   </entry>
   
   <entry>
     <title>Hexo 的安装与配置</title>
-    <link href="http://kaerozhi.com/playground/web/hexo-and-new-blog/"/>
-    <id>http://kaerozhi.com/playground/web/hexo-and-new-blog/</id>
+    <link href="https://waxa.design/playground/web/hexo-and-new-blog/"/>
+    <id>https://waxa.design/playground/web/hexo-and-new-blog/</id>
     <published>2023-05-27T12:33:19.000Z</published>
     <updated>2023-07-13T10:01:22.550Z</updated>
     
@@ -459,27 +459,27 @@ Hexo 用了两天，基本功能差不多弄清楚了。不过也发现一些问
     
     
     
-    <category term="玩艺" scheme="http://kaerozhi.com/categories/playground/"/>
+    <category term="玩艺" scheme="https://waxa.design/categories/playground/"/>
     
-    <category term="网站" scheme="http://kaerozhi.com/categories/playground/web/"/>
+    <category term="网站" scheme="https://waxa.design/categories/playground/web/"/>
     
     
-    <category term="Blog" scheme="http://kaerozhi.com/tags/Blog/"/>
+    <category term="Blog" scheme="https://waxa.design/tags/Blog/"/>
     
-    <category term="Hexo" scheme="http://kaerozhi.com/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://waxa.design/tags/Hexo/"/>
     
-    <category term="Hexo Theme" scheme="http://kaerozhi.com/tags/Hexo-Theme/"/>
+    <category term="Hexo Theme" scheme="https://waxa.design/tags/Hexo-Theme/"/>
     
-    <category term="Synology" scheme="http://kaerozhi.com/tags/Synology/"/>
+    <category term="Synology" scheme="https://waxa.design/tags/Synology/"/>
     
-    <category term="Obsidian" scheme="http://kaerozhi.com/tags/Obsidian/"/>
+    <category term="Obsidian" scheme="https://waxa.design/tags/Obsidian/"/>
     
   </entry>
   
   <entry>
     <title>深圳之眼</title>
-    <link href="http://kaerozhi.com/tours/eye-of-shenzhen/"/>
-    <id>http://kaerozhi.com/tours/eye-of-shenzhen/</id>
+    <link href="https://waxa.design/tours/eye-of-shenzhen/"/>
+    <id>https://waxa.design/tours/eye-of-shenzhen/</id>
     <published>2023-04-30T16:00:00.000Z</published>
     <updated>2023-06-10T01:01:37.525Z</updated>
     
@@ -493,23 +493,23 @@ Hexo 用了两天，基本功能差不多弄清楚了。不过也发现一些问
     
     
     
-    <category term="游历" scheme="http://kaerozhi.com/categories/tours/"/>
+    <category term="游历" scheme="https://waxa.design/categories/tours/"/>
     
     
-    <category term="深圳" scheme="http://kaerozhi.com/tags/%E6%B7%B1%E5%9C%B3/"/>
+    <category term="深圳" scheme="https://waxa.design/tags/%E6%B7%B1%E5%9C%B3/"/>
     
-    <category term="摩天轮" scheme="http://kaerozhi.com/tags/%E6%91%A9%E5%A4%A9%E8%BD%AE/"/>
+    <category term="摩天轮" scheme="https://waxa.design/tags/%E6%91%A9%E5%A4%A9%E8%BD%AE/"/>
     
-    <category term="深圳之眼" scheme="http://kaerozhi.com/tags/%E6%B7%B1%E5%9C%B3%E4%B9%8B%E7%9C%BC/"/>
+    <category term="深圳之眼" scheme="https://waxa.design/tags/%E6%B7%B1%E5%9C%B3%E4%B9%8B%E7%9C%BC/"/>
     
-    <category term="支景曦" scheme="http://kaerozhi.com/tags/%E6%94%AF%E6%99%AF%E6%9B%A6/"/>
+    <category term="支景曦" scheme="https://waxa.design/tags/%E6%94%AF%E6%99%AF%E6%9B%A6/"/>
     
   </entry>
   
   <entry>
     <title>游戏排位系统的设计思路</title>
-    <link href="http://kaerozhi.com/thoughts/visual-design-of-ranking-system/"/>
-    <id>http://kaerozhi.com/thoughts/visual-design-of-ranking-system/</id>
+    <link href="https://waxa.design/thoughts/visual-design-of-ranking-system/"/>
+    <id>https://waxa.design/thoughts/visual-design-of-ranking-system/</id>
     <published>2022-06-09T00:00:00.000Z</published>
     <updated>2023-05-28T11:49:25.097Z</updated>
     
@@ -529,21 +529,21 @@ Hexo 用了两天，基本功能差不多弄清楚了。不过也发现一些问
     
     
     
-    <category term="观点" scheme="http://kaerozhi.com/categories/thoughts/"/>
+    <category term="观点" scheme="https://waxa.design/categories/thoughts/"/>
     
     
-    <category term="game" scheme="http://kaerozhi.com/tags/game/"/>
+    <category term="game" scheme="https://waxa.design/tags/game/"/>
     
-    <category term="排位赛系统" scheme="http://kaerozhi.com/tags/%E6%8E%92%E4%BD%8D%E8%B5%9B%E7%B3%BB%E7%BB%9F/"/>
+    <category term="排位赛系统" scheme="https://waxa.design/tags/%E6%8E%92%E4%BD%8D%E8%B5%9B%E7%B3%BB%E7%BB%9F/"/>
     
-    <category term="段位图标" scheme="http://kaerozhi.com/tags/%E6%AE%B5%E4%BD%8D%E5%9B%BE%E6%A0%87/"/>
+    <category term="段位图标" scheme="https://waxa.design/tags/%E6%AE%B5%E4%BD%8D%E5%9B%BE%E6%A0%87/"/>
     
   </entry>
   
   <entry>
     <title>游戏排位系统的设计考察</title>
-    <link href="http://kaerozhi.com/thoughts/design-comparison-of-ranking-system/"/>
-    <id>http://kaerozhi.com/thoughts/design-comparison-of-ranking-system/</id>
+    <link href="https://waxa.design/thoughts/design-comparison-of-ranking-system/"/>
+    <id>https://waxa.design/thoughts/design-comparison-of-ranking-system/</id>
     <published>2022-06-02T00:00:00.000Z</published>
     <updated>2023-05-28T17:52:07.416Z</updated>
     
@@ -556,23 +556,23 @@ Hexo 用了两天，基本功能差不多弄清楚了。不过也发现一些问
     
     
     
-    <category term="观点" scheme="http://kaerozhi.com/categories/thoughts/"/>
+    <category term="观点" scheme="https://waxa.design/categories/thoughts/"/>
     
     
-    <category term="排位赛" scheme="http://kaerozhi.com/tags/%E6%8E%92%E4%BD%8D%E8%B5%9B/"/>
+    <category term="排位赛" scheme="https://waxa.design/tags/%E6%8E%92%E4%BD%8D%E8%B5%9B/"/>
     
-    <category term="gaming" scheme="http://kaerozhi.com/tags/gaming/"/>
+    <category term="gaming" scheme="https://waxa.design/tags/gaming/"/>
     
-    <category term="研究" scheme="http://kaerozhi.com/tags/%E7%A0%94%E7%A9%B6/"/>
+    <category term="研究" scheme="https://waxa.design/tags/%E7%A0%94%E7%A9%B6/"/>
     
-    <category term="系统设计" scheme="http://kaerozhi.com/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/"/>
+    <category term="系统设计" scheme="https://waxa.design/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
   <entry>
     <title>肥猫与作诗机</title>
-    <link href="http://kaerozhi.com/writings/shici/feimao-and-the-poem-creator/"/>
-    <id>http://kaerozhi.com/writings/shici/feimao-and-the-poem-creator/</id>
+    <link href="https://waxa.design/writings/shici/feimao-and-the-poem-creator/"/>
+    <id>https://waxa.design/writings/shici/feimao-and-the-poem-creator/</id>
     <published>2022-05-24T00:00:00.000Z</published>
     <updated>2023-05-28T11:12:36.621Z</updated>
     
@@ -586,14 +586,14 @@ Hexo 用了两天，基本功能差不多弄清楚了。不过也发现一些问
     
     
     
-    <category term="文字" scheme="http://kaerozhi.com/categories/writings/"/>
+    <category term="文字" scheme="https://waxa.design/categories/writings/"/>
     
-    <category term="诗词" scheme="http://kaerozhi.com/categories/writings/shici/"/>
+    <category term="诗词" scheme="https://waxa.design/categories/writings/shici/"/>
     
     
-    <category term="七律" scheme="http://kaerozhi.com/tags/%E4%B8%83%E5%BE%8B/"/>
+    <category term="七律" scheme="https://waxa.design/tags/%E4%B8%83%E5%BE%8B/"/>
     
-    <category term="肥猫" scheme="http://kaerozhi.com/tags/%E8%82%A5%E7%8C%AB/"/>
+    <category term="肥猫" scheme="https://waxa.design/tags/%E8%82%A5%E7%8C%AB/"/>
     
   </entry>
   

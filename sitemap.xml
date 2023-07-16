@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://kaerozhi.com/playground/web/hexo-deploy-to-gitpage/</loc>
+    <loc>https://waxa.design/writings/shici/youth/</loc>
     
     <lastmod>2023-07-16</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/stories/</loc>
+    <loc>https://waxa.design/blog/a-bad-weekend/</loc>
     
     <lastmod>2023-07-16</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tours/2018-suzhou/</loc>
+    <loc>https://waxa.design/writings/shici/sitting-at-night/</loc>
     
     <lastmod>2023-07-16</lastmod>
     
@@ -29,7 +29,79 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tours/ouyuan-in-summer/</loc>
+    <loc>https://waxa.design/writings/shici/rain/</loc>
+    
+    <lastmod>2023-07-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/blog/essay/</loc>
+    
+    <lastmod>2023-07-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/blog/test-scribefire-again/</loc>
+    
+    <lastmod>2023-07-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/images/8200782234847.png.html</loc>
+    
+    <lastmod>2023-07-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/blog/recent-stupid-things/</loc>
+    
+    <lastmod>2023-07-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/playground/web/hexo-deploy-to-gitpage/</loc>
+    
+    <lastmod>2023-07-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/stories/</loc>
+    
+    <lastmod>2023-07-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tours/2018-suzhou/</loc>
+    
+    <lastmod>2023-07-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tours/ouyuan-in-summer/</loc>
     
     <lastmod>2023-07-15</lastmod>
     
@@ -38,7 +110,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tours/2019-japan/</loc>
+    <loc>https://waxa.design/tours/2019-japan/</loc>
     
     <lastmod>2023-07-15</lastmod>
     
@@ -47,7 +119,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/apps/obsidian-sync-with-synology-drive/</loc>
+    <loc>https://waxa.design/playground/apps/obsidian-sync-with-synology-drive/</loc>
     
     <lastmod>2023-07-15</lastmod>
     
@@ -56,7 +128,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/web/hexo-new-theme-based-on-acorn/</loc>
+    <loc>https://waxa.design/playground/web/hexo-new-theme-based-on-acorn/</loc>
     
     <lastmod>2023-07-14</lastmod>
     
@@ -65,7 +137,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/research/photos-of-luxun/</loc>
+    <loc>https://waxa.design/writings/research/photos-of-luxun/</loc>
     
     <lastmod>2023-07-14</lastmod>
     
@@ -74,7 +146,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tours/2020-suzhou/</loc>
+    <loc>https://waxa.design/tours/2020-suzhou/</loc>
     
     <lastmod>2023-07-14</lastmod>
     
@@ -83,7 +155,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tours/from-dongchong-to-xichong/</loc>
+    <loc>https://waxa.design/tours/from-dongchong-to-xichong/</loc>
     
     <lastmod>2023-07-14</lastmod>
     
@@ -92,7 +164,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/fontlab-studio-tips/</loc>
+    <loc>https://waxa.design/playground/fontlab-studio-tips/</loc>
     
     <lastmod>2023-07-14</lastmod>
     
@@ -101,7 +173,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/sins/</loc>
+    <loc>https://waxa.design/writings/sins/</loc>
     
     <lastmod>2023-07-14</lastmod>
     
@@ -110,7 +182,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/drive-training/</loc>
+    <loc>https://waxa.design/blog/drive-training/</loc>
     
     <lastmod>2023-07-14</lastmod>
     
@@ -119,7 +191,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tours/shanghai-museum/</loc>
+    <loc>https://waxa.design/tours/shanghai-museum/</loc>
     
     <lastmod>2023-07-14</lastmod>
     
@@ -128,7 +200,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/stable-diffusion/traditional-chinese-ink-painting/</loc>
+    <loc>https://waxa.design/playground/stable-diffusion/traditional-chinese-ink-painting/</loc>
     
     <lastmod>2023-07-14</lastmod>
     
@@ -137,7 +209,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/web/web-design-for-mobile-devices/</loc>
+    <loc>https://waxa.design/playground/web/web-design-for-mobile-devices/</loc>
     
     <lastmod>2023-07-14</lastmod>
     
@@ -146,7 +218,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/stable-diffusion/van-gogh-style-lora/</loc>
+    <loc>https://waxa.design/playground/stable-diffusion/van-gogh-style-lora/</loc>
     
     <lastmod>2023-07-14</lastmod>
     
@@ -155,7 +227,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/2016-new-year/</loc>
+    <loc>https://waxa.design/blog/2016-new-year/</loc>
     
     <lastmod>2023-07-14</lastmod>
     
@@ -164,7 +236,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/web/hexo-theme-minos/</loc>
+    <loc>https://waxa.design/playground/web/hexo-theme-minos/</loc>
     
     <lastmod>2023-07-13</lastmod>
     
@@ -173,7 +245,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/web/hexo-updates/</loc>
+    <loc>https://waxa.design/playground/web/hexo-updates/</loc>
     
     <lastmod>2023-07-13</lastmod>
     
@@ -182,7 +254,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/web/hexo-and-new-blog/</loc>
+    <loc>https://waxa.design/playground/web/hexo-and-new-blog/</loc>
     
     <lastmod>2023-07-13</lastmod>
     
@@ -191,7 +263,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/zaoma/</loc>
+    <loc>https://waxa.design/blog/zaoma/</loc>
     
     <lastmod>2023-07-13</lastmod>
     
@@ -200,7 +272,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tours/2021-sichuan/</loc>
+    <loc>https://waxa.design/tours/2021-sichuan/</loc>
     
     <lastmod>2023-07-13</lastmod>
     
@@ -209,7 +281,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/stable-diffusion/stable-diffusion-prompt-a-definitive-guide/</loc>
+    <loc>https://waxa.design/playground/stable-diffusion/stable-diffusion-prompt-a-definitive-guide/</loc>
     
     <lastmod>2023-07-13</lastmod>
     
@@ -218,7 +290,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/xiangcheng-christ-church/</loc>
+    <loc>https://waxa.design/blog/xiangcheng-christ-church/</loc>
     
     <lastmod>2023-07-13</lastmod>
     
@@ -227,7 +299,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tours/quyuan-and-calamus/</loc>
+    <loc>https://waxa.design/tours/quyuan-and-calamus/</loc>
     
     <lastmod>2023-07-13</lastmod>
     
@@ -236,7 +308,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tours/shantang-at-night/</loc>
+    <loc>https://waxa.design/tours/shantang-at-night/</loc>
     
     <lastmod>2023-07-13</lastmod>
     
@@ -245,7 +317,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/</loc>
+    <loc>https://waxa.design/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/</loc>
     
     <lastmod>2023-07-10</lastmod>
     
@@ -254,7 +326,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/library/%E9%92%B1%E7%89%A7%E6%96%8B/%E7%89%A7%E6%96%8B%E6%9C%89%E5%AD%A6%E9%9B%86.html</loc>
+    <loc>https://waxa.design/library/%E9%92%B1%E7%89%A7%E6%96%8B/%E7%89%A7%E6%96%8B%E6%9C%89%E5%AD%A6%E9%9B%86.html</loc>
     
     <lastmod>2023-06-30</lastmod>
     
@@ -263,7 +335,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/%E5%A3%BD%E9%A2%A8%E6%B3%A2%E6%83%A1/</loc>
+    <loc>https://waxa.design/writings/shici/birthday-poems-for-fengboe/</loc>
     
     <lastmod>2023-06-16</lastmod>
     
@@ -272,7 +344,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tours/eye-of-shenzhen/</loc>
+    <loc>https://waxa.design/tours/eye-of-shenzhen/</loc>
     
     <lastmod>2023-06-10</lastmod>
     
@@ -281,7 +353,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/iphone-1x-signal-failure/</loc>
+    <loc>https://waxa.design/blog/iphone-1x-signal-failure/</loc>
     
     <lastmod>2023-06-08</lastmod>
     
@@ -290,7 +362,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tours/suzhou-1day-trip/</loc>
+    <loc>https://waxa.design/tours/suzhou-1day-trip/</loc>
     
     <lastmod>2023-06-05</lastmod>
     
@@ -299,7 +371,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/gears/sony-camera-filename-underscore/</loc>
+    <loc>https://waxa.design/playground/gears/sony-camera-filename-underscore/</loc>
     
     <lastmod>2023-06-05</lastmod>
     
@@ -308,7 +380,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/drawing/wow-piece-franky/</loc>
+    <loc>https://waxa.design/playground/drawing/wow-piece-franky/</loc>
     
     <lastmod>2023-06-05</lastmod>
     
@@ -317,7 +389,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/drawing/girl-and-wolf/</loc>
+    <loc>https://waxa.design/playground/drawing/girl-and-wolf/</loc>
     
     <lastmod>2023-06-05</lastmod>
     
@@ -326,7 +398,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/thinkpad-t42p-fan-error/</loc>
+    <loc>https://waxa.design/blog/thinkpad-t42p-fan-error/</loc>
     
     <lastmod>2023-06-05</lastmod>
     
@@ -335,7 +407,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/drawing/new-illustration/</loc>
+    <loc>https://waxa.design/playground/drawing/new-illustration/</loc>
     
     <lastmod>2023-06-05</lastmod>
     
@@ -344,7 +416,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/apps/try-blackberry-themes-with-simulator/</loc>
+    <loc>https://waxa.design/playground/apps/try-blackberry-themes-with-simulator/</loc>
     
     <lastmod>2023-06-05</lastmod>
     
@@ -353,7 +425,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/thoughts/esports-branding-study/</loc>
+    <loc>https://waxa.design/thoughts/esports-branding-study/</loc>
     
     <lastmod>2023-06-04</lastmod>
     
@@ -362,7 +434,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/google-chrome/</loc>
+    <loc>https://waxa.design/blog/google-chrome/</loc>
     
     <lastmod>2023-06-04</lastmod>
     
@@ -371,7 +443,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/dota-launch-script/</loc>
+    <loc>https://waxa.design/blog/dota-launch-script/</loc>
     
     <lastmod>2023-06-03</lastmod>
     
@@ -380,7 +452,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/daning-park/</loc>
+    <loc>https://waxa.design/blog/daning-park/</loc>
     
     <lastmod>2023-06-03</lastmod>
     
@@ -389,7 +461,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/about/resume.html</loc>
+    <loc>https://waxa.design/about/resume.html</loc>
     
     <lastmod>2023-06-02</lastmod>
     
@@ -398,7 +470,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/about/resume-en.html</loc>
+    <loc>https://waxa.design/about/resume-en.html</loc>
     
     <lastmod>2023-06-02</lastmod>
     
@@ -407,7 +479,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/web/blog-new-design/</loc>
+    <loc>https://waxa.design/playground/web/blog-new-design/</loc>
     
     <lastmod>2023-06-02</lastmod>
     
@@ -416,7 +488,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/web/dreamhost-hosting/</loc>
+    <loc>https://waxa.design/playground/web/dreamhost-hosting/</loc>
     
     <lastmod>2023-06-02</lastmod>
     
@@ -425,7 +497,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/web/new-aeroom-is-lunched/</loc>
+    <loc>https://waxa.design/playground/web/new-aeroom-is-lunched/</loc>
     
     <lastmod>2023-06-02</lastmod>
     
@@ -434,7 +506,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/web/think-about-wordpress-theme/</loc>
+    <loc>https://waxa.design/playground/web/think-about-wordpress-theme/</loc>
     
     <lastmod>2023-06-02</lastmod>
     
@@ -443,7 +515,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/my-father/</loc>
+    <loc>https://waxa.design/blog/my-father/</loc>
     
     <lastmod>2023-06-02</lastmod>
     
@@ -452,7 +524,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/thoughts/website-based-on-community/</loc>
+    <loc>https://waxa.design/thoughts/website-based-on-community/</loc>
     
     <lastmod>2023-06-02</lastmod>
     
@@ -461,7 +533,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/psychotherapist/</loc>
+    <loc>https://waxa.design/writings/psychotherapist/</loc>
     
     <lastmod>2023-06-02</lastmod>
     
@@ -470,7 +542,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/character-and-conflict/</loc>
+    <loc>https://waxa.design/writings/character-and-conflict/</loc>
     
     <lastmod>2023-06-02</lastmod>
     
@@ -479,7 +551,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/new-function-of-flashgot/</loc>
+    <loc>https://waxa.design/blog/new-function-of-flashgot/</loc>
     
     <lastmod>2023-06-02</lastmod>
     
@@ -488,7 +560,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/jueju/</loc>
+    <loc>https://waxa.design/writings/shici/jueju/</loc>
     
     <lastmod>2023-06-02</lastmod>
     
@@ -497,7 +569,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/freetalk/learn-php-and-giving-up/</loc>
+    <loc>https://waxa.design/blog/freetalk/learn-php-and-giving-up/</loc>
     
     <lastmod>2023-06-02</lastmod>
     
@@ -506,7 +578,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/gears/logi-k380/</loc>
+    <loc>https://waxa.design/playground/gears/logi-k380/</loc>
     
     <lastmod>2023-06-02</lastmod>
     
@@ -515,7 +587,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/apps/snagit-small-regret/</loc>
+    <loc>https://waxa.design/playground/apps/snagit-small-regret/</loc>
     
     <lastmod>2023-06-02</lastmod>
     
@@ -524,7 +596,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/apps/windows-live-writer-review/</loc>
+    <loc>https://waxa.design/playground/apps/windows-live-writer-review/</loc>
     
     <lastmod>2023-06-02</lastmod>
     
@@ -533,7 +605,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/apps/scribefire-and-zoundry/</loc>
+    <loc>https://waxa.design/playground/apps/scribefire-and-zoundry/</loc>
     
     <lastmod>2023-06-02</lastmod>
     
@@ -542,7 +614,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/web/lifetype-or-wordpress/</loc>
+    <loc>https://waxa.design/playground/web/lifetype-or-wordpress/</loc>
     
     <lastmod>2023-06-02</lastmod>
     
@@ -551,7 +623,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/web/lifetype/</loc>
+    <loc>https://waxa.design/playground/web/lifetype/</loc>
     
     <lastmod>2023-06-02</lastmod>
     
@@ -560,7 +632,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/drawing/cat-guard/</loc>
+    <loc>https://waxa.design/playground/drawing/cat-guard/</loc>
     
     <lastmod>2023-06-02</lastmod>
     
@@ -569,7 +641,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/projects/inews-tags-manager-4.8-update/</loc>
+    <loc>https://waxa.design/projects/inews-tags-manager-4.8-update/</loc>
     
     <lastmod>2023-06-01</lastmod>
     
@@ -578,7 +650,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/hidden-killer/</loc>
+    <loc>https://waxa.design/writings/hidden-killer/</loc>
     
     <lastmod>2023-06-01</lastmod>
     
@@ -587,7 +659,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/projects/hornor-of-kings-new-hero-yunying/</loc>
+    <loc>https://waxa.design/projects/hornor-of-kings-new-hero-yunying/</loc>
     
     <lastmod>2023-06-01</lastmod>
     
@@ -596,7 +668,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/apps/windows-live-writer-update/</loc>
+    <loc>https://waxa.design/playground/apps/windows-live-writer-update/</loc>
     
     <lastmod>2023-06-01</lastmod>
     
@@ -605,7 +677,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/freetalk/most-difficult-task/</loc>
+    <loc>https://waxa.design/blog/freetalk/most-difficult-task/</loc>
     
     <lastmod>2023-05-31</lastmod>
     
@@ -614,7 +686,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/freetalk/before-get-off/</loc>
+    <loc>https://waxa.design/blog/freetalk/before-get-off/</loc>
     
     <lastmod>2023-05-31</lastmod>
     
@@ -623,7 +695,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/projects/inews-tags-manager-released/</loc>
+    <loc>https://waxa.design/projects/inews-tags-manager-released/</loc>
     
     <lastmod>2023-05-31</lastmod>
     
@@ -632,7 +704,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/projects/arena-of-valor-new-branding-2019/</loc>
+    <loc>https://waxa.design/projects/arena-of-valor-new-branding-2019/</loc>
     
     <lastmod>2023-05-30</lastmod>
     
@@ -641,7 +713,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/my-poems.html</loc>
+    <loc>https://waxa.design/writings/my-poems.html</loc>
     
     <lastmod>2023-05-30</lastmod>
     
@@ -650,7 +722,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/recent-review/</loc>
+    <loc>https://waxa.design/blog/recent-review/</loc>
     
     <lastmod>2023-05-30</lastmod>
     
@@ -659,7 +731,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/my-awful-computer/</loc>
+    <loc>https://waxa.design/blog/my-awful-computer/</loc>
     
     <lastmod>2023-05-30</lastmod>
     
@@ -668,7 +740,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/%E5%85%AB%E5%85%AB%E4%BB%A5%E8%99%8E%E6%8B%9F%E5%9B%B0%E8%80%8C%E5%90%BE%E4%BB%A5%E9%B8%AD/</loc>
+    <loc>https://waxa.design/writings/shici/be-a-duck/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -677,7 +749,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tours/2019-hulunbuir/</loc>
+    <loc>https://waxa.design/tours/2019-hulunbuir/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -686,7 +758,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/thoughts/10-websites-of-10-companies/</loc>
+    <loc>https://waxa.design/thoughts/10-websites-of-10-companies/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -695,7 +767,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/%E7%BB%86%E9%9B%AA/</loc>
+    <loc>https://waxa.design/blog/first-snow/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -704,7 +776,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/on-subway/</loc>
+    <loc>https://waxa.design/writings/shici/on-subway/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -713,7 +785,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/new-glasses/</loc>
+    <loc>https://waxa.design/blog/new-glasses/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -722,7 +794,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/weird-topic/</loc>
+    <loc>https://waxa.design/blog/weird-topic/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -731,7 +803,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/christmas-party/</loc>
+    <loc>https://waxa.design/blog/christmas-party/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -740,7 +812,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/eversunny/</loc>
+    <loc>https://waxa.design/blog/eversunny/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -749,7 +821,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/wordpress-theme-resources/</loc>
+    <loc>https://waxa.design/playground/wordpress-theme-resources/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -758,7 +830,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/theme-update/</loc>
+    <loc>https://waxa.design/playground/theme-update/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -767,7 +839,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/apps/windows-live-writer-error/</loc>
+    <loc>https://waxa.design/playground/apps/windows-live-writer-error/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -776,7 +848,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/apps/bbmetablog/</loc>
+    <loc>https://waxa.design/playground/apps/bbmetablog/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -785,7 +857,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/wordpress-on-location/</loc>
+    <loc>https://waxa.design/playground/wordpress-on-location/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -794,7 +866,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/zoundry-raven/</loc>
+    <loc>https://waxa.design/playground/zoundry-raven/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -803,7 +875,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/travel-scam/</loc>
+    <loc>https://waxa.design/blog/travel-scam/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -812,7 +884,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/drawing/little-red-hood/</loc>
+    <loc>https://waxa.design/playground/drawing/little-red-hood/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -821,7 +893,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/drawing/gintama-the-team/</loc>
+    <loc>https://waxa.design/playground/drawing/gintama-the-team/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -830,7 +902,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/projects/aic-2022/</loc>
+    <loc>https://waxa.design/projects/aic-2022/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -839,7 +911,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/shici-creator-collection/</loc>
+    <loc>https://waxa.design/writings/shici/shici-creator-collection/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -848,7 +920,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/meet-grace-again/</loc>
+    <loc>https://waxa.design/blog/meet-grace-again/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -857,7 +929,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/research/luxun-and-yudafu/</loc>
+    <loc>https://waxa.design/writings/research/luxun-and-yudafu/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -866,7 +938,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tours/2019-fiji/</loc>
+    <loc>https://waxa.design/tours/2019-fiji/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -875,7 +947,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tours/2017-xiamen/</loc>
+    <loc>https://waxa.design/tours/2017-xiamen/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -884,7 +956,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/research/reading-luxuns-daily/</loc>
+    <loc>https://waxa.design/writings/research/reading-luxuns-daily/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -893,7 +965,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/pig/</loc>
+    <loc>https://waxa.design/blog/pig/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -902,7 +974,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/rice-flour/</loc>
+    <loc>https://waxa.design/blog/rice-flour/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -911,7 +983,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/about/</loc>
+    <loc>https://waxa.design/about/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -920,7 +992,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/wenquxing/</loc>
+    <loc>https://waxa.design/blog/wenquxing/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -929,7 +1001,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/win7-has-a-problem/</loc>
+    <loc>https://waxa.design/blog/win7-has-a-problem/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -938,7 +1010,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/15-no-title-poems/</loc>
+    <loc>https://waxa.design/writings/shici/15-no-title-poems/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -947,7 +1019,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/thoughts/design-comparison-of-ranking-system/</loc>
+    <loc>https://waxa.design/thoughts/design-comparison-of-ranking-system/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -956,7 +1028,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/%E5%A4%AA%E7%99%BD%E6%95%AC%E4%BA%AD%E5%B1%B1%E8%AF%97/</loc>
+    <loc>https://waxa.design/writings/jingting-mountain-by-libai/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -965,7 +1037,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/%E9%A2%A8%E4%BA%8C%E8%A6%8B%E9%85%AC%E5%8D%B3%E7%94%A8%E5%8E%9F%E9%9F%BB%E7%AD%94%E4%B9%8B/</loc>
+    <loc>https://waxa.design/writings/shici/reply-to-fengboe/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -974,7 +1046,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/poems-of-last-spring/</loc>
+    <loc>https://waxa.design/writings/shici/poems-of-last-spring/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -983,7 +1055,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/8th-july/</loc>
+    <loc>https://waxa.design/writings/shici/8th-july/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -992,7 +1064,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/twitter/</loc>
+    <loc>https://waxa.design/blog/twitter/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1001,7 +1073,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/thoughts/evolution-of-web-design/</loc>
+    <loc>https://waxa.design/thoughts/evolution-of-web-design/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1010,7 +1082,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/kelibudan/</loc>
+    <loc>https://waxa.design/writings/kelibudan/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1019,7 +1091,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/tragedy-of-my-headsets/</loc>
+    <loc>https://waxa.design/blog/tragedy-of-my-headsets/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1028,7 +1100,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/today/</loc>
+    <loc>https://waxa.design/blog/today/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1037,7 +1109,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/stories/aov/ranking-system-redesign.html</loc>
+    <loc>https://waxa.design/stories/aov/ranking-system-redesign.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1046,7 +1118,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/stories/honor-of-kings/honor-of-kings-2021-spring-festival-project.html</loc>
+    <loc>https://waxa.design/stories/honor-of-kings/honor-of-kings-2021-spring-festival-project.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1055,7 +1127,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/stories/honor-of-kings/reference-of-hok-universe-site.html</loc>
+    <loc>https://waxa.design/stories/honor-of-kings/reference-of-hok-universe-site.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1064,7 +1136,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/stories/the-complete-guide-of-game-branding.html</loc>
+    <loc>https://waxa.design/stories/the-complete-guide-of-game-branding.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1073,7 +1145,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/stories/honor-of-kings/thoughts-of-esports.html</loc>
+    <loc>https://waxa.design/stories/honor-of-kings/thoughts-of-esports.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1082,7 +1154,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/stories/honor-of-kings/interview-by-japan-design-station.html</loc>
+    <loc>https://waxa.design/stories/honor-of-kings/interview-by-japan-design-station.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1091,7 +1163,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/stories/zhuoyao/the-difference-between-china-and-japan.html</loc>
+    <loc>https://waxa.design/stories/zhuoyao/the-difference-between-china-and-japan.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1100,7 +1172,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/stories/zhuoyao/visual-demo.html</loc>
+    <loc>https://waxa.design/stories/zhuoyao/visual-demo.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1109,7 +1181,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/stories/zhuoyao/thoughts.html</loc>
+    <loc>https://waxa.design/stories/zhuoyao/thoughts.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1118,7 +1190,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/stories/zhuoyao/style-guide.html</loc>
+    <loc>https://waxa.design/stories/zhuoyao/style-guide.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1127,7 +1199,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/stories/zhuoyao/world.html</loc>
+    <loc>https://waxa.design/stories/zhuoyao/world.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1136,7 +1208,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/stories/zhuoyao/</loc>
+    <loc>https://waxa.design/stories/zhuoyao/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1145,7 +1217,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/stories/aov/logo-intro-reference.html</loc>
+    <loc>https://waxa.design/stories/aov/logo-intro-reference.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1154,7 +1226,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/%E6%97%A5%E5%B8%B8/hand-made-cookies-by-jingxi/</loc>
+    <loc>https://waxa.design/%E6%97%A5%E5%B8%B8/hand-made-cookies-by-jingxi/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1163,7 +1235,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/poem-of-1920.html</loc>
+    <loc>https://waxa.design/writings/poem-of-1920.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1172,7 +1244,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/%E6%97%A5%E5%B8%B8/import-ai-file/</loc>
+    <loc>https://waxa.design/%E6%97%A5%E5%B8%B8/import-ai-file/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1181,7 +1253,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/gallery/muay-thai-at-phuket.html</loc>
+    <loc>https://waxa.design/gallery/muay-thai-at-phuket.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1190,7 +1262,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/stories/projects.html</loc>
+    <loc>https://waxa.design/stories/projects.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1199,7 +1271,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/gallery/the-sunset-of-fiji.html</loc>
+    <loc>https://waxa.design/gallery/the-sunset-of-fiji.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1208,7 +1280,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/stories/aov/web-design-guidelines.html</loc>
+    <loc>https://waxa.design/stories/aov/web-design-guidelines.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1217,7 +1289,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/%E6%97%A5%E5%B8%B8/thoughts-on-character-design/</loc>
+    <loc>https://waxa.design/%E6%97%A5%E5%B8%B8/thoughts-on-character-design/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1226,7 +1298,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/stories/aov/the-world.html</loc>
+    <loc>https://waxa.design/stories/aov/the-world.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1235,7 +1307,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/stories/aov/heroes-design-concept.html</loc>
+    <loc>https://waxa.design/stories/aov/heroes-design-concept.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1244,7 +1316,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/stories/aov/social-creatives-design-guide.html</loc>
+    <loc>https://waxa.design/stories/aov/social-creatives-design-guide.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1253,7 +1325,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/stories/aov/update0310.html</loc>
+    <loc>https://waxa.design/stories/aov/update0310.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1262,7 +1334,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/stories/aov/logo-redesign.html</loc>
+    <loc>https://waxa.design/stories/aov/logo-redesign.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1271,7 +1343,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/stories/aov/the-batman-movie-scripts.html</loc>
+    <loc>https://waxa.design/stories/aov/the-batman-movie-scripts.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1280,7 +1352,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/stories/aov/the-ashes-of-korunant.html</loc>
+    <loc>https://waxa.design/stories/aov/the-ashes-of-korunant.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1289,7 +1361,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/the-poems-of-0708.html</loc>
+    <loc>https://waxa.design/writings/the-poems-of-0708.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1298,7 +1370,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/%E6%97%A5%E5%B8%B8/build-a-great-game-brand/</loc>
+    <loc>https://waxa.design/%E6%97%A5%E5%B8%B8/build-a-great-game-brand/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1307,7 +1379,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/poems-before-2005.html</loc>
+    <loc>https://waxa.design/writings/poems-before-2005.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1316,7 +1388,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/%E7%9C%8B%E6%9C%B1%E6%88%90%E7%A2%A7%E7%A2%A7%E6%88%90%E7%81%B0/chapter2.html</loc>
+    <loc>https://waxa.design/writings/%E7%9C%8B%E6%9C%B1%E6%88%90%E7%A2%A7%E7%A2%A7%E6%88%90%E7%81%B0/chapter2.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1325,7 +1397,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/%E7%9C%8B%E6%9C%B1%E6%88%90%E7%A2%A7%E7%A2%A7%E6%88%90%E7%81%B0/chapter1.html</loc>
+    <loc>https://waxa.design/writings/%E7%9C%8B%E6%9C%B1%E6%88%90%E7%A2%A7%E7%A2%A7%E6%88%90%E7%81%B0/chapter1.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1334,7 +1406,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/%E7%9C%8B%E6%9C%B1%E6%88%90%E7%A2%A7%E7%A2%A7%E6%88%90%E7%81%B0/prologue.html</loc>
+    <loc>https://waxa.design/writings/%E7%9C%8B%E6%9C%B1%E6%88%90%E7%A2%A7%E7%A2%A7%E6%88%90%E7%81%B0/prologue.html</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1343,7 +1415,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/%E6%97%A5%E5%B8%B8/design-guide-for-mobile-game-icon/</loc>
+    <loc>https://waxa.design/%E6%97%A5%E5%B8%B8/design-guide-for-mobile-game-icon/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1352,7 +1424,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/%E6%97%A5%E5%B8%B8/the-future-of-game-site/</loc>
+    <loc>https://waxa.design/%E6%97%A5%E5%B8%B8/the-future-of-game-site/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1361,7 +1433,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/harddisk-broken/</loc>
+    <loc>https://waxa.design/blog/harddisk-broken/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1370,7 +1442,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/%E5%87%BA%E5%B8%88%E4%B8%8D%E5%88%A9/</loc>
+    <loc>https://waxa.design/blog/bad-luck-after-moving-to-pudong/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1379,7 +1451,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/3-years-with-kaoliu/</loc>
+    <loc>https://waxa.design/blog/3-years-with-kaoliu/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1388,7 +1460,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/tomorrow/</loc>
+    <loc>https://waxa.design/blog/tomorrow/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1397,7 +1469,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/thief/</loc>
+    <loc>https://waxa.design/blog/thief/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1406,7 +1478,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/rainy-season-in-shenzhen/</loc>
+    <loc>https://waxa.design/blog/rainy-season-in-shenzhen/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1415,7 +1487,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/a-video-of-amy/</loc>
+    <loc>https://waxa.design/blog/a-video-of-amy/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1424,7 +1496,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/test-my-profession/</loc>
+    <loc>https://waxa.design/blog/test-my-profession/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1433,7 +1505,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/special-affection-at-first-sight/</loc>
+    <loc>https://waxa.design/blog/special-affection-at-first-sight/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1442,7 +1514,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/sleepless-night/</loc>
+    <loc>https://waxa.design/blog/sleepless-night/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1451,7 +1523,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/skid-row-18-and-life/</loc>
+    <loc>https://waxa.design/blog/skid-row-18-and-life/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1460,7 +1532,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/share-your-greader-items/</loc>
+    <loc>https://waxa.design/blog/share-your-greader-items/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1469,7 +1541,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/see-kaoliu-off/</loc>
+    <loc>https://waxa.design/blog/see-kaoliu-off/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1478,7 +1550,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/report-of-adobe-contribute-cs3/</loc>
+    <loc>https://waxa.design/blog/report-of-adobe-contribute-cs3/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1487,7 +1559,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/nursery-rhymes/</loc>
+    <loc>https://waxa.design/blog/nursery-rhymes/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1496,7 +1568,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/nightmare-is-over/</loc>
+    <loc>https://waxa.design/blog/nightmare-is-over/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1505,7 +1577,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/night-street-foods/</loc>
+    <loc>https://waxa.design/blog/night-street-foods/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1514,7 +1586,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/nextgen-gallery/</loc>
+    <loc>https://waxa.design/blog/nextgen-gallery/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1523,7 +1595,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/new-rom-of-blackberry-8100/</loc>
+    <loc>https://waxa.design/blog/new-rom-of-blackberry-8100/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1532,7 +1604,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/my-new-blackberry-8300/</loc>
+    <loc>https://waxa.design/blog/my-new-blackberry-8300/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1541,7 +1613,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/my-love-stories/</loc>
+    <loc>https://waxa.design/blog/my-love-stories/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1550,7 +1622,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/my-new-blackberry-8100/</loc>
+    <loc>https://waxa.design/blog/my-new-blackberry-8100/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1559,7 +1631,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/moving/</loc>
+    <loc>https://waxa.design/blog/moving/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1568,7 +1640,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/meet-thief-first-time/</loc>
+    <loc>https://waxa.design/blog/meet-thief-first-time/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1577,7 +1649,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/lost-2-domain/</loc>
+    <loc>https://waxa.design/blog/lost-2-domain/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1586,7 +1658,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/lose-in-dota/</loc>
+    <loc>https://waxa.design/blog/lose-in-dota/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1595,7 +1667,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/leech/</loc>
+    <loc>https://waxa.design/blog/leech/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1604,7 +1676,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/just-can-not-keep-my-hands-off-you/</loc>
+    <loc>https://waxa.design/blog/just-can-not-keep-my-hands-off-you/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1613,7 +1685,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/insert-transparent-swf-file-with-swfobject-js/</loc>
+    <loc>https://waxa.design/blog/insert-transparent-swf-file-with-swfobject-js/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1622,7 +1694,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/happy-new-year-2009/</loc>
+    <loc>https://waxa.design/blog/happy-new-year-2009/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1631,7 +1703,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/haircut/</loc>
+    <loc>https://waxa.design/blog/haircut/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1640,7 +1712,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/funk/</loc>
+    <loc>https://waxa.design/blog/funk/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1649,7 +1721,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/full-text-feed/</loc>
+    <loc>https://waxa.design/blog/full-text-feed/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1658,7 +1730,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/freetalk/</loc>
+    <loc>https://waxa.design/blog/freetalk/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1667,7 +1739,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/free-2/</loc>
+    <loc>https://waxa.design/blog/free-2/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1676,7 +1748,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/firefox-to-google-chrome/</loc>
+    <loc>https://waxa.design/blog/firefox-to-google-chrome/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1685,7 +1757,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/free/</loc>
+    <loc>https://waxa.design/blog/free/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1694,7 +1766,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/fickleness/</loc>
+    <loc>https://waxa.design/blog/fickleness/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1703,7 +1775,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/experience-for-reduce-my-blackberry/</loc>
+    <loc>https://waxa.design/blog/experience-for-reduce-my-blackberry/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1712,7 +1784,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/drunk-again/</loc>
+    <loc>https://waxa.design/blog/drunk-again/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1721,7 +1793,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/daishiyan-is-married/</loc>
+    <loc>https://waxa.design/blog/daishiyan-is-married/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1730,7 +1802,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/correct-the-track/</loc>
+    <loc>https://waxa.design/blog/correct-the-track/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1739,7 +1811,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/cat/</loc>
+    <loc>https://waxa.design/blog/cat/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1748,7 +1820,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/catch-cold/</loc>
+    <loc>https://waxa.design/blog/catch-cold/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1757,7 +1829,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/blackberry-bold-9700/</loc>
+    <loc>https://waxa.design/blog/blackberry-bold-9700/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1766,7 +1838,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/back-to-nanchang-in-july/</loc>
+    <loc>https://waxa.design/blog/back-to-nanchang-in-july/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1775,7 +1847,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/aeroom-studio/</loc>
+    <loc>https://waxa.design/blog/aeroom-studio/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1784,7 +1856,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/a-stupid-thing/</loc>
+    <loc>https://waxa.design/blog/a-stupid-thing/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1793,7 +1865,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/a-painting-in-my-dream/</loc>
+    <loc>https://waxa.design/blog/a-painting-in-my-dream/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1802,7 +1874,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/a-cool-wordpress-theme/</loc>
+    <loc>https://waxa.design/blog/a-cool-wordpress-theme/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1811,7 +1883,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/%E5%91%A8%E6%9C%AB%E4%B8%A4%E5%A4%A9%E5%81%9A%E7%9A%84%E8%A0%A2%E4%BA%8B%E5%92%8C%E5%B0%8F%E4%BA%8B/</loc>
+    <loc>https://waxa.design/blog/valentines-day/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1820,7 +1892,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/%E5%86%8D%E6%B5%8B%E8%AF%95%E4%B8%80%E4%B8%8Bscribefire/</loc>
+    <loc>https://waxa.design/blog/kaoru-is-sick/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1829,7 +1901,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/%E6%9D%82%E8%A8%80/</loc>
+    <loc>https://waxa.design/blog/swearing-in-nb12/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1838,7 +1910,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/%E5%BF%83%E6%AD%BB%E5%AF%B9%E8%84%91%E6%AE%8B/</loc>
+    <loc>https://waxa.design/thoughts/visual-design-of-ranking-system/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1847,7 +1919,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/%E8%90%8E%E9%9D%A1%E5%B9%B6%E5%80%92%E9%9C%89%E7%9A%84%E5%91%A8%E6%9C%AB%EF%BC%8C%E7%9B%B4%E5%88%B0%E4%BB%8A%E5%A4%A9/</loc>
+    <loc>https://waxa.design/writings/research/luxun-and-tao/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1856,7 +1928,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/%E6%83%85%E4%BA%BA%E8%8A%82/</loc>
+    <loc>https://waxa.design/writings/shici/feimao-and-the-poem-creator/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1865,7 +1937,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/%E6%9F%90%E5%A5%B3%E4%BA%BA%E7%94%9F%E7%97%85%E4%BA%86/</loc>
+    <loc>https://waxa.design/writings/shici/street-corner/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1874,7 +1946,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/blog/%E9%9D%A9%E6%96%B0%E9%AA%82%E4%BA%BA%E4%B9%8B%E6%B3%95/</loc>
+    <loc>https://waxa.design/writings/%E8%BE%91%E5%BD%95/poems-by-zhengxiaoxu/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1883,7 +1955,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/thoughts/visual-design-of-ranking-system/</loc>
+    <loc>https://waxa.design/writings/the-monster-among-us/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1892,7 +1964,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/research/luxun-and-tao/</loc>
+    <loc>https://waxa.design/writings/yangdagen-the-loser/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1901,7 +1973,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/feimao-and-the-poem-creator/</loc>
+    <loc>https://waxa.design/writings/shici/birthday-of-grace/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1910,7 +1982,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/street-corner/</loc>
+    <loc>https://waxa.design/writings/something-hidden/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1919,7 +1991,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/%E8%BE%91%E5%BD%95/poems-by-zhengxiaoxu/</loc>
+    <loc>https://waxa.design/writings/shici/poems-before-2005/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1928,7 +2000,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/the-monster-among-us/</loc>
+    <loc>https://waxa.design/writings/shici/pass-by-lujiazui/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1937,7 +2009,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/yangdagen-the-loser/</loc>
+    <loc>https://waxa.design/writings/shici/my-poems-part-iii/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1946,7 +2018,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/birthday-of-grace/</loc>
+    <loc>https://waxa.design/writings/shici/my-poems-part-ii/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1955,7 +2027,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/something-hidden/</loc>
+    <loc>https://waxa.design/writings/shici/my-poems-part-i/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1964,7 +2036,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/poems-before-2005/</loc>
+    <loc>https://waxa.design/writings/research/localism-of-my-hometown/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1973,7 +2045,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/pass-by-lujiazui/</loc>
+    <loc>https://waxa.design/writings/shici/explain-my-sons-name/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1982,7 +2054,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/my-poems-part-iii/</loc>
+    <loc>https://waxa.design/writings/chibeioutan/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -1991,7 +2063,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/my-poems-part-ii/</loc>
+    <loc>https://waxa.design/writings/shici/birthday-of-qiao/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -2000,7 +2072,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/my-poems-part-i/</loc>
+    <loc>https://waxa.design/writings/biography-of-feimao/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -2009,7 +2081,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/research/localism-of-my-hometown/</loc>
+    <loc>https://waxa.design/writings/shici/after-a-sleepless-night/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -2018,7 +2090,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/explain-my-sons-name/</loc>
+    <loc>https://waxa.design/writings/shici/across-hongqiao-airport/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -2027,7 +2099,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/chibeioutan/</loc>
+    <loc>https://waxa.design/writings/shici/a-poem-for-fun/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -2036,7 +2108,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/birthday-of-qiao/</loc>
+    <loc>https://waxa.design/writings/shici/a-lost-tv-set/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -2045,7 +2117,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/biography-of-feimao/</loc>
+    <loc>https://waxa.design/writings/shici/a-dream-of-midday/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -2054,7 +2126,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/after-a-sleepless-night/</loc>
+    <loc>https://waxa.design/writings/shici/end-of-the-year/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -2063,7 +2135,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/across-hongqiao-airport/</loc>
+    <loc>https://waxa.design/writings/shici/linjiangxian/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -2072,7 +2144,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/a-poem-for-fun/</loc>
+    <loc>https://waxa.design/writings/shici/jianlan/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -2081,7 +2153,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/a-lost-tv-set/</loc>
+    <loc>https://waxa.design/writings/shici/a-dream/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -2090,7 +2162,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/a-dream-of-midday/</loc>
+    <loc>https://waxa.design/writings/a-heavy-rain-in-my-childhood/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -2099,7 +2171,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/%E9%9B%A8-2/</loc>
+    <loc>https://waxa.design/writings/shici/huanxisha/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -2108,7 +2180,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/%E4%BA%B1%E5%9D%90/</loc>
+    <loc>https://waxa.design/writings/shici/room-304-and-dead-sakura/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -2117,7 +2189,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/%E6%AD%B2%E6%9A%AE/</loc>
+    <loc>https://waxa.design/writings/shici/3-old-poems/</loc>
     
     <lastmod>2023-05-28</lastmod>
     
@@ -2126,79 +2198,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/writings/shici/%E5%B0%91%E5%B9%B4/</loc>
-    
-    <lastmod>2023-05-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://kaerozhi.com/writings/shici/%E4%B8%B4%E6%B1%9F%E4%BB%99/</loc>
-    
-    <lastmod>2023-05-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://kaerozhi.com/writings/shici/%E5%87%8F%E5%85%B0/</loc>
-    
-    <lastmod>2023-05-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://kaerozhi.com/writings/shici/%E8%AE%B0%E6%A2%A6/</loc>
-    
-    <lastmod>2023-05-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://kaerozhi.com/writings/%E8%AE%B0%E5%84%BF%E6%97%B6%E5%A4%A7%E9%9B%A8/</loc>
-    
-    <lastmod>2023-05-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://kaerozhi.com/writings/shici/%E6%B5%A3%E6%BA%AA%E6%B2%99/</loc>
-    
-    <lastmod>2023-05-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://kaerozhi.com/writings/shici/room-304-and-dead-sakura/</loc>
-    
-    <lastmod>2023-05-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://kaerozhi.com/writings/shici/3-old-poems/</loc>
-    
-    <lastmod>2023-05-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://kaerozhi.com/cases/summary-for-theme-building/</loc>
+    <loc>https://waxa.design/cases/summary-for-theme-building/</loc>
     
     <lastmod>2023-05-26</lastmod>
     
@@ -2207,7 +2207,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/cases/update-to-firefox-3-rc1/</loc>
+    <loc>https://waxa.design/cases/update-to-firefox-3-rc1/</loc>
     
     <lastmod>2023-05-26</lastmod>
     
@@ -2216,7 +2216,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/cases/regretful-for-deviantart-rss/</loc>
+    <loc>https://waxa.design/cases/regretful-for-deviantart-rss/</loc>
     
     <lastmod>2023-05-26</lastmod>
     
@@ -2225,7 +2225,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/cases/free-fonts/</loc>
+    <loc>https://waxa.design/cases/free-fonts/</loc>
     
     <lastmod>2023-05-26</lastmod>
     
@@ -2234,7 +2234,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/cases/account-link-of-windows-live/</loc>
+    <loc>https://waxa.design/cases/account-link-of-windows-live/</loc>
     
     <lastmod>2023-05-26</lastmod>
     
@@ -2243,7 +2243,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/cases/reject-work/</loc>
+    <loc>https://waxa.design/cases/reject-work/</loc>
     
     <lastmod>2023-05-26</lastmod>
     
@@ -2252,7 +2252,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/cases/strange-problem/</loc>
+    <loc>https://waxa.design/cases/strange-problem/</loc>
     
     <lastmod>2023-05-26</lastmod>
     
@@ -2261,7 +2261,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/gallery/</loc>
+    <loc>https://waxa.design/gallery/</loc>
     
     <lastmod>2022-07-31</lastmod>
     
@@ -2271,7 +2271,7 @@
   
 
   <url>
-    <loc>http://kaerozhi.com/</loc>
+    <loc>https://waxa.design/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -2279,2289 +2279,2317 @@
 
   
   <url>
-    <loc>http://kaerozhi.com/tags/photo/</loc>
+    <loc>https://waxa.design/tags/photo/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/hometown/</loc>
+    <loc>https://waxa.design/tags/hometown/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/localism/</loc>
+    <loc>https://waxa.design/tags/localism/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E8%8B%8F%E5%B7%9E/</loc>
+    <loc>https://waxa.design/tags/%E8%8B%8F%E5%B7%9E/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%BE%92%E6%AD%A5/</loc>
+    <loc>https://waxa.design/tags/%E5%BE%92%E6%AD%A5/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%B8%B8%E6%88%8F/</loc>
+    <loc>https://waxa.design/tags/%E6%B8%B8%E6%88%8F/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Web-Design/</loc>
+    <loc>https://waxa.design/tags/Web-Design/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Apple/</loc>
+    <loc>https://waxa.design/tags/Apple/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Microsoft/</loc>
+    <loc>https://waxa.design/tags/Microsoft/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Adobe/</loc>
+    <loc>https://waxa.design/tags/Adobe/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E4%B8%83%E5%BE%8B/</loc>
+    <loc>https://waxa.design/tags/%E4%B8%83%E5%BE%8B/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%BB%84%E8%AF%97/</loc>
+    <loc>https://waxa.design/tags/%E7%BB%84%E8%AF%97/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E9%99%B6%E5%B0%8F%E5%A9%A7/</loc>
+    <loc>https://waxa.design/tags/%E9%99%B6%E5%B0%8F%E5%A9%A7/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%96%B0%E5%B9%B4/</loc>
+    <loc>https://waxa.design/tags/%E6%96%B0%E5%B9%B4/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%B7%B1%E5%9C%B3/</loc>
+    <loc>https://waxa.design/tags/%E6%B7%B1%E5%9C%B3/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%8E%A6%E9%97%A8/</loc>
+    <loc>https://waxa.design/tags/%E5%8E%A6%E9%97%A8/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E9%BC%93%E6%B5%AA%E5%B1%BF/</loc>
+    <loc>https://waxa.design/tags/%E9%BC%93%E6%B5%AA%E5%B1%BF/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%B8%B8%E8%AE%B0/</loc>
+    <loc>https://waxa.design/tags/%E6%B8%B8%E8%AE%B0/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%90%B4%E9%97%A8%E4%BA%BA%E5%AE%B6/</loc>
+    <loc>https://waxa.design/tags/%E5%90%B4%E9%97%A8%E4%BA%BA%E5%AE%B6/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%8B%99%E6%94%BF%E5%9B%AD/</loc>
+    <loc>https://waxa.design/tags/%E6%8B%99%E6%94%BF%E5%9B%AD/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%AF%92%E5%B1%B1%E5%AF%BA/</loc>
+    <loc>https://waxa.design/tags/%E5%AF%92%E5%B1%B1%E5%AF%BA/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%B1%B1%E5%A1%98%E8%A1%97/</loc>
+    <loc>https://waxa.design/tags/%E5%B1%B1%E5%A1%98%E8%A1%97/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%8E%84%E5%A6%99%E8%A7%82/</loc>
+    <loc>https://waxa.design/tags/%E7%8E%84%E5%A6%99%E8%A7%82/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%9F%8E%E9%9A%8D%E5%BA%99/</loc>
+    <loc>https://waxa.design/tags/%E5%9F%8E%E9%9A%8D%E5%BA%99/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%8E%AF%E7%A7%80%E5%B1%B1%E5%BA%84/</loc>
+    <loc>https://waxa.design/tags/%E7%8E%AF%E7%A7%80%E5%B1%B1%E5%BA%84/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%9B%98%E9%97%A8/</loc>
+    <loc>https://waxa.design/tags/%E7%9B%98%E9%97%A8/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%B2%A7%E6%B5%AA%E4%BA%AD/</loc>
+    <loc>https://waxa.design/tags/%E6%B2%A7%E6%B5%AA%E4%BA%AD/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%8F%AF%E5%9B%AD/</loc>
+    <loc>https://waxa.design/tags/%E5%8F%AF%E5%9B%AD/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%BD%91%E5%B8%88%E5%9B%AD/</loc>
+    <loc>https://waxa.design/tags/%E7%BD%91%E5%B8%88%E5%9B%AD/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E8%80%A6%E5%9B%AD/</loc>
+    <loc>https://waxa.design/tags/%E8%80%A6%E5%9B%AD/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%8C%97%E5%AF%BA%E5%A1%94/</loc>
+    <loc>https://waxa.design/tags/%E5%8C%97%E5%AF%BA%E5%A1%94/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%91%BC%E4%BC%A6%E8%B4%9D%E5%B0%94/</loc>
+    <loc>https://waxa.design/tags/%E6%96%90%E6%B5%8E/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/travel-notes/</loc>
+    <loc>https://waxa.design/tags/%E6%BE%B3%E6%B4%B2/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/self-driving-tour/</loc>
+    <loc>https://waxa.design/tags/%E5%A2%83%E5%A4%96%E6%B8%B8/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%96%90%E6%B5%8E/</loc>
+    <loc>https://waxa.design/tags/%E5%91%BC%E4%BC%A6%E8%B4%9D%E5%B0%94/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%BE%B3%E6%B4%B2/</loc>
+    <loc>https://waxa.design/tags/travel-notes/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%A2%83%E5%A4%96%E6%B8%B8/</loc>
+    <loc>https://waxa.design/tags/self-driving-tour/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%97%A5%E6%9C%AC/</loc>
+    <loc>https://waxa.design/tags/%E6%97%A5%E6%9C%AC/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%A4%A7%E9%98%AA/</loc>
+    <loc>https://waxa.design/tags/%E5%A4%A7%E9%98%AA/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E4%BA%AC%E9%83%BD/</loc>
+    <loc>https://waxa.design/tags/%E4%BA%AC%E9%83%BD/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%9B%AD%E6%9E%97/</loc>
+    <loc>https://waxa.design/tags/%E5%9B%AD%E6%9E%97/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%8C%97%E5%8D%8A%E5%9B%AD/</loc>
+    <loc>https://waxa.design/tags/%E5%8C%97%E5%8D%8A%E5%9B%AD/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%9B%B2%E5%9B%AD/</loc>
+    <loc>https://waxa.design/tags/%E6%9B%B2%E5%9B%AD/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%80%A1%E5%9B%AD/</loc>
+    <loc>https://waxa.design/tags/%E6%80%A1%E5%9B%AD/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%A1%83%E8%8A%B1%E5%9D%9E/</loc>
+    <loc>https://waxa.design/tags/%E6%A1%83%E8%8A%B1%E5%9D%9E/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%95%99%E5%9B%AD/</loc>
+    <loc>https://waxa.design/tags/%E7%95%99%E5%9B%AD/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%90%8C%E9%87%8C/</loc>
+    <loc>https://waxa.design/tags/%E5%90%8C%E9%87%8C/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E9%80%80%E6%80%9D%E5%9B%AD/</loc>
+    <loc>https://waxa.design/tags/%E9%80%80%E6%80%9D%E5%9B%AD/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E8%80%95%E4%B9%90%E5%A0%82/</loc>
+    <loc>https://waxa.design/tags/%E8%80%95%E4%B9%90%E5%A0%82/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E8%A5%BF%E5%9B%AD%E5%AF%BA/</loc>
+    <loc>https://waxa.design/tags/%E8%A5%BF%E5%9B%AD%E5%AF%BA/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E8%99%8E%E4%B8%98/</loc>
+    <loc>https://waxa.design/tags/%E8%99%8E%E4%B8%98/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E4%B8%83%E7%BB%9D/</loc>
+    <loc>https://waxa.design/tags/%E5%9B%9B%E5%B7%9D/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%9B%9B%E5%B7%9D/</loc>
+    <loc>https://waxa.design/tags/%E4%B9%9D%E5%AF%A8%E6%B2%9F/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E4%B9%9D%E5%AF%A8%E6%B2%9F/</loc>
+    <loc>https://waxa.design/tags/%E9%BB%84%E9%BE%99/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E9%BB%84%E9%BE%99/</loc>
+    <loc>https://waxa.design/tags/%E9%9D%92%E5%9F%8E%E5%B1%B1/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E9%9D%92%E5%9F%8E%E5%B1%B1/</loc>
+    <loc>https://waxa.design/tags/%E6%88%90%E9%83%BD/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%88%90%E9%83%BD/</loc>
+    <loc>https://waxa.design/tags/%E4%B8%83%E7%BB%9D/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%84%9F%E6%83%85/</loc>
+    <loc>https://waxa.design/tags/%E6%84%9F%E6%83%85/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/wordpress/</loc>
+    <loc>https://waxa.design/tags/wordpress/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/wordpress-theme/</loc>
+    <loc>https://waxa.design/tags/wordpress-theme/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E4%BA%94%E5%8F%A4/</loc>
+    <loc>https://waxa.design/tags/%E4%BA%94%E5%8F%A4/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E8%AF%97/</loc>
+    <loc>https://waxa.design/tags/%E8%AF%97/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/my-father/</loc>
+    <loc>https://waxa.design/tags/my-father/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%88%8F%E4%BD%9C/</loc>
+    <loc>https://waxa.design/tags/%E6%88%8F%E4%BD%9C/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/for-fun/</loc>
+    <loc>https://waxa.design/tags/for-fun/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%9C%B0%E9%93%81/</loc>
+    <loc>https://waxa.design/tags/%E5%9C%B0%E9%93%81/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/video/</loc>
+    <loc>https://waxa.design/tags/windows-live/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%8C%AB/</loc>
+    <loc>https://waxa.design/tags/video/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E9%98%BF%E5%92%AA/</loc>
+    <loc>https://waxa.design/tags/%E7%8C%AB/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/windows-live/</loc>
+    <loc>https://waxa.design/tags/%E9%98%BF%E5%92%AA/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/branding/</loc>
+    <loc>https://waxa.design/tags/branding/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/esports/</loc>
+    <loc>https://waxa.design/tags/esports/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Arena-of-Valor/</loc>
+    <loc>https://waxa.design/tags/Arena-of-Valor/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Game-Branding/</loc>
+    <loc>https://waxa.design/tags/Game-Branding/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Visual-System/</loc>
+    <loc>https://waxa.design/tags/Visual-System/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E8%91%AC%E7%A4%BC/</loc>
+    <loc>https://waxa.design/tags/%E8%91%AC%E7%A4%BC/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%85%A7%E7%89%87/</loc>
+    <loc>https://waxa.design/tags/%E7%85%A7%E7%89%87/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%AE%B6%E4%BA%BA/</loc>
+    <loc>https://waxa.design/tags/%E5%AE%B6%E4%BA%BA/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/blackberry/</loc>
+    <loc>https://waxa.design/tags/%E6%90%AC%E5%AE%B6/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/blog-tools/</loc>
+    <loc>https://waxa.design/tags/blackberry/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/friends/</loc>
+    <loc>https://waxa.design/tags/blog-tools/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E8%82%A5%E7%8C%AB/</loc>
+    <loc>https://waxa.design/tags/friends/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%90%A6/</loc>
+    <loc>https://waxa.design/tags/%E8%82%A5%E7%8C%AB/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%94%9F%E6%97%A5/</loc>
+    <loc>https://waxa.design/tags/%E7%90%A6/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E8%AF%8D/</loc>
+    <loc>https://waxa.design/tags/%E7%94%9F%E6%97%A5/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/wordpress-plugins/</loc>
+    <loc>https://waxa.design/tags/%E8%AF%8D/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/wordpress-widgets/</loc>
+    <loc>https://waxa.design/tags/%E6%97%A7%E4%BD%93%E8%AF%97/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%BD%91%E7%AB%99%E6%9B%B4%E6%96%B0/</loc>
+    <loc>https://waxa.design/tags/%E5%8F%8B%E4%BA%BA/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E9%BC%A0%E4%BD%9B%E8%AE%B0/</loc>
+    <loc>https://waxa.design/tags/wordpress-plugins/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%90%8C%E4%BA%8B/</loc>
+    <loc>https://waxa.design/tags/wordpress-widgets/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%A9%A7/</loc>
+    <loc>https://waxa.design/tags/%E7%BD%91%E7%AB%99%E6%9B%B4%E6%96%B0/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%88%91/</loc>
+    <loc>https://waxa.design/tags/%E9%BC%A0%E4%BD%9B%E8%AE%B0/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E8%AF%BB%E4%B9%A6%E6%9D%82%E8%AE%B0/</loc>
+    <loc>https://waxa.design/tags/%E5%90%8C%E4%BA%8B/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%9F%AD%E7%89%87/</loc>
+    <loc>https://waxa.design/tags/%E5%A9%A7/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%94%B5%E5%BD%B1%E8%84%9A%E6%9C%AC/</loc>
+    <loc>https://waxa.design/tags/%E6%88%91/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/01media/</loc>
+    <loc>https://waxa.design/tags/%E7%9F%AD%E7%89%87/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/party/</loc>
+    <loc>https://waxa.design/tags/%E7%94%B5%E5%BD%B1%E8%84%9A%E6%9C%AC/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/dota/</loc>
+    <loc>https://waxa.design/tags/%E8%AF%BB%E4%B9%A6%E6%9D%82%E8%AE%B0/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/game/</loc>
+    <loc>https://waxa.design/tags/01media/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%AD%BB%E5%85%9A/</loc>
+    <loc>https://waxa.design/tags/party/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%8E%8B%E5%88%9A/</loc>
+    <loc>https://waxa.design/tags/%E6%AD%BB%E5%85%9A/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%A8%8B%E5%93%81%E5%93%81/</loc>
+    <loc>https://waxa.design/tags/%E7%8E%8B%E5%88%9A/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%BB%93%E5%A9%9A/</loc>
+    <loc>https://waxa.design/tags/%E7%A8%8B%E5%93%81%E5%93%81/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%85%AC%E5%9B%AD/</loc>
+    <loc>https://waxa.design/tags/%E7%BB%93%E5%A9%9A/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E4%B8%8A%E6%B5%B7/</loc>
+    <loc>https://waxa.design/tags/dota/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%8E%92%E4%BD%8D%E8%B5%9B/</loc>
+    <loc>https://waxa.design/tags/game/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/gaming/</loc>
+    <loc>https://waxa.design/tags/%E5%85%AC%E5%9B%AD/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%A0%94%E7%A9%B6/</loc>
+    <loc>https://waxa.design/tags/%E4%B8%8A%E6%B5%B7/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</loc>
+    <loc>https://waxa.design/tags/%E6%8E%92%E4%BD%8D%E8%B5%9B/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Dreamhost/</loc>
+    <loc>https://waxa.design/tags/gaming/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA/</loc>
+    <loc>https://waxa.design/tags/%E7%A0%94%E7%A9%B6/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Lifetype/</loc>
+    <loc>https://waxa.design/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Dota/</loc>
+    <loc>https://waxa.design/tags/Dreamhost/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E8%84%9A%E6%9C%AC/</loc>
+    <loc>https://waxa.design/tags/%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%8D%97%E5%8D%8E/</loc>
+    <loc>https://waxa.design/tags/Lifetype/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%B7%A7/</loc>
+    <loc>https://waxa.design/tags/Dota/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E9%85%92/</loc>
+    <loc>https://waxa.design/tags/%E8%84%9A%E6%9C%AC/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%AD%A6%E8%BD%A6/</loc>
+    <loc>https://waxa.design/tags/%E5%AD%A6%E8%BD%A6/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E9%A9%BE%E6%A0%A1/</loc>
+    <loc>https://waxa.design/tags/%E9%A9%BE%E6%A0%A1/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E8%8B%B1%E9%9B%84%E8%81%94%E7%9B%9F/</loc>
+    <loc>https://waxa.design/tags/%E5%8D%97%E5%8D%8E/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/design/</loc>
+    <loc>https://waxa.design/tags/%E5%B7%A7/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/one-piece/</loc>
+    <loc>https://waxa.design/tags/%E9%85%92/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/flat-design/</loc>
+    <loc>https://waxa.design/tags/%E4%BA%94%E8%A8%80%E5%8F%A4%E8%AF%97/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/trends/</loc>
+    <loc>https://waxa.design/tags/%E8%8B%B1%E9%9B%84%E8%81%94%E7%9B%9F/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/web-design/</loc>
+    <loc>https://waxa.design/tags/design/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%91%A9%E5%A4%A9%E8%BD%AE/</loc>
+    <loc>https://waxa.design/tags/%E6%9D%82%E8%A8%80/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%B7%B1%E5%9C%B3%E4%B9%8B%E7%9C%BC/</loc>
+    <loc>https://waxa.design/tags/one-piece/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%94%AF%E6%99%AF%E6%9B%A6/</loc>
+    <loc>https://waxa.design/tags/flat-design/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/browser/</loc>
+    <loc>https://waxa.design/tags/trends/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/chrome-extensions/</loc>
+    <loc>https://waxa.design/tags/web-design/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/firefox/</loc>
+    <loc>https://waxa.design/tags/%E6%91%A9%E5%A4%A9%E8%BD%AE/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/firefox-%E6%89%A9%E5%B1%95/</loc>
+    <loc>https://waxa.design/tags/%E6%B7%B1%E5%9C%B3%E4%B9%8B%E7%9C%BC/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/google-chrome/</loc>
+    <loc>https://waxa.design/tags/%E6%94%AF%E6%99%AF%E6%9B%A6/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/adobe-illustrator/</loc>
+    <loc>https://waxa.design/tags/browser/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/fontlab/</loc>
+    <loc>https://waxa.design/tags/chrome-extensions/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/typography/</loc>
+    <loc>https://waxa.design/tags/firefox/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://waxa.design/tags/firefox-%E6%89%A9%E5%B1%95/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/fonts/</loc>
+    <loc>https://waxa.design/tags/google-chrome/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/free/</loc>
+    <loc>https://waxa.design/tags/%E9%9B%AA/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/tgideas/</loc>
+    <loc>https://waxa.design/tags/adobe-illustrator/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/team/</loc>
+    <loc>https://waxa.design/tags/fontlab/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E4%B8%9C%E6%B6%8C/</loc>
+    <loc>https://waxa.design/tags/typography/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E8%A5%BF%E6%B6%8C/</loc>
+    <loc>https://waxa.design/tags/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%A4%A7%E9%B9%8F%E5%8D%8A%E5%B2%9B/</loc>
+    <loc>https://waxa.design/tags/fonts/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/feed/</loc>
+    <loc>https://waxa.design/tags/free/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/rss/</loc>
+    <loc>https://waxa.design/tags/tgideas/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/wordpress-plugin/</loc>
+    <loc>https://waxa.design/tags/team/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%8F%92%E7%94%BB/</loc>
+    <loc>https://waxa.design/tags/%E4%B8%9C%E6%B6%8C/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E9%93%B6%E9%AD%82/</loc>
+    <loc>https://waxa.design/tags/%E8%A5%BF%E6%B6%8C/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/google/</loc>
+    <loc>https://waxa.design/tags/%E5%A4%A7%E9%B9%8F%E5%8D%8A%E5%B2%9B/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%89%AA%E5%A4%B4%E5%8F%91/</loc>
+    <loc>https://waxa.design/tags/feed/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/new-year/</loc>
+    <loc>https://waxa.design/tags/rss/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Blog/</loc>
+    <loc>https://waxa.design/tags/wordpress-plugin/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Hexo/</loc>
+    <loc>https://waxa.design/tags/%E6%8F%92%E7%94%BB/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Hexo-Theme/</loc>
+    <loc>https://waxa.design/tags/%E9%93%B6%E9%AD%82/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Synology/</loc>
+    <loc>https://waxa.design/tags/google/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Obsidian/</loc>
+    <loc>https://waxa.design/tags/%E5%89%AA%E5%A4%B4%E5%8F%91/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Github/</loc>
+    <loc>https://waxa.design/tags/new-year/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Theme/</loc>
+    <loc>https://waxa.design/tags/Blog/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Acorn/</loc>
+    <loc>https://waxa.design/tags/Hexo/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Web-Development/</loc>
+    <loc>https://waxa.design/tags/Hexo-Theme/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/minos/</loc>
+    <loc>https://waxa.design/tags/Synology/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/SCSS/</loc>
+    <loc>https://waxa.design/tags/Obsidian/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Justified-Gallery/</loc>
+    <loc>https://waxa.design/tags/Github/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93/</loc>
+    <loc>https://waxa.design/tags/Theme/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Hexo-Plugins/</loc>
+    <loc>https://waxa.design/tags/Acorn/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Markdown/</loc>
+    <loc>https://waxa.design/tags/Web-Development/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%9B%A2%E9%98%9F/</loc>
+    <loc>https://waxa.design/tags/minos/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/poster/</loc>
+    <loc>https://waxa.design/tags/SCSS/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80/</loc>
+    <loc>https://waxa.design/tags/Justified-Gallery/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/dreamweaver%E6%89%A9%E5%B1%95/</loc>
+    <loc>https://waxa.design/tags/%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/inews/</loc>
+    <loc>https://waxa.design/tags/Hexo-Plugins/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/dreamweaver/</loc>
+    <loc>https://waxa.design/tags/Markdown/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/plugins/</loc>
+    <loc>https://waxa.design/tags/%E5%9B%A2%E9%98%9F/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/iNewS/</loc>
+    <loc>https://waxa.design/tags/poster/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/javascript/</loc>
+    <loc>https://waxa.design/tags/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%BD%91%E9%A1%B5%E5%BC%80%E5%8F%91/</loc>
+    <loc>https://waxa.design/tags/%E5%B0%8F%E4%BB%A4/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/iPhone/</loc>
+    <loc>https://waxa.design/tags/dreamweaver%E6%89%A9%E5%B1%95/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E4%BF%A1%E5%8F%B7%E6%95%85%E9%9A%9C/</loc>
+    <loc>https://waxa.design/tags/inews/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Grace/</loc>
+    <loc>https://waxa.design/tags/dreamweaver/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%90%BE%E5%A6%BB/</loc>
+    <loc>https://waxa.design/tags/plugins/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/php/</loc>
+    <loc>https://waxa.design/tags/iNewS/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/learning/</loc>
+    <loc>https://waxa.design/tags/javascript/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/my-childhood/</loc>
+    <loc>https://waxa.design/tags/%E7%BD%91%E9%A1%B5%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/lifetype/</loc>
+    <loc>https://waxa.design/tags/iPhone/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Blog-Tools/</loc>
+    <loc>https://waxa.design/tags/%E4%BF%A1%E5%8F%B7%E6%95%85%E9%9A%9C/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Zoundry/</loc>
+    <loc>https://waxa.design/tags/%E8%AF%97%E8%AF%9D/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%A4%A7%E7%81%B0%E7%8B%BC/</loc>
+    <loc>https://waxa.design/tags/%E6%9D%8E%E7%99%BD/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%B0%8F%E7%BA%A2%E5%B8%BD/</loc>
+    <loc>https://waxa.design/tags/Grace/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/keyboard/</loc>
+    <loc>https://waxa.design/tags/%E5%90%BE%E5%A6%BB/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/bluetooth/</loc>
+    <loc>https://waxa.design/tags/php/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/logitech/</loc>
+    <loc>https://waxa.design/tags/learning/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/gears/</loc>
+    <loc>https://waxa.design/tags/my-childhood/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%9F%9F%E5%90%8D/</loc>
+    <loc>https://waxa.design/tags/lifetype/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E9%B2%81%E8%BF%85/</loc>
+    <loc>https://waxa.design/tags/Blog-Tools/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E9%83%81%E8%BE%BE%E5%A4%AB/</loc>
+    <loc>https://waxa.design/tags/Zoundry/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%97%A7%E4%BD%93%E8%AF%97/</loc>
+    <loc>https://waxa.design/tags/%E5%A4%A7%E7%81%B0%E7%8B%BC/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%BD%BC%E5%A5%B3/</loc>
+    <loc>https://waxa.design/tags/%E5%B0%8F%E7%BA%A2%E5%B8%BD/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/geek/</loc>
+    <loc>https://waxa.design/tags/keyboard/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%B0%8F%E5%81%B7/</loc>
+    <loc>https://waxa.design/tags/bluetooth/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%90%AC%E5%AE%B6/</loc>
+    <loc>https://waxa.design/tags/logitech/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%94%9F%E6%B4%BB/</loc>
+    <loc>https://waxa.design/tags/gears/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%A1%AC%E7%9B%98/</loc>
+    <loc>https://waxa.design/tags/%E5%9F%9F%E5%90%8D/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%A1%AC%E4%BB%B6/</loc>
+    <loc>https://waxa.design/tags/%E9%B2%81%E8%BF%85/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%AE%B6%E5%BA%AD/</loc>
+    <loc>https://waxa.design/tags/%E9%83%81%E8%BE%BE%E5%A4%AB/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%88%B6%E4%BA%B2/</loc>
+    <loc>https://waxa.design/tags/%E5%BD%BC%E5%A5%B3/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/my-wife/</loc>
+    <loc>https://waxa.design/tags/geek/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%B0%91%E4%BD%9C/</loc>
+    <loc>https://waxa.design/tags/%E5%B0%8F%E5%81%B7/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%BB%93%E9%9B%86/</loc>
+    <loc>https://waxa.design/tags/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/aeroom/</loc>
+    <loc>https://waxa.design/tags/%E7%A1%AC%E7%9B%98/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/site-log/</loc>
+    <loc>https://waxa.design/tags/%E7%A1%AC%E4%BB%B6/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/flashgot/</loc>
+    <loc>https://waxa.design/tags/%E5%AE%B6%E5%BA%AD/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%9C%BC%E9%95%9C/</loc>
+    <loc>https://waxa.design/tags/%E7%88%B6%E4%BA%B2/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%90%9E%E7%AC%91/</loc>
+    <loc>https://waxa.design/tags/my-wife/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/illustrator/</loc>
+    <loc>https://waxa.design/tags/%E5%B0%91%E4%BD%9C/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/nextgen-gallery/</loc>
+    <loc>https://waxa.design/tags/%E7%BB%93%E9%9B%86/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/foods/</loc>
+    <loc>https://waxa.design/tags/aeroom/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%8A%A0%E7%8F%AD/</loc>
+    <loc>https://waxa.design/tags/site-log/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Synology-Drive/</loc>
+    <loc>https://waxa.design/tags/flashgot/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/NAS/</loc>
+    <loc>https://waxa.design/tags/%E7%9C%BC%E9%95%9C/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E9%99%86%E5%AE%B6%E5%98%B4/</loc>
+    <loc>https://waxa.design/tags/%E6%90%9E%E7%AC%91/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%85%A7%E7%89%87%E9%9B%86/</loc>
+    <loc>https://waxa.design/tags/illustrator/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E8%80%83%E8%AF%81/</loc>
+    <loc>https://waxa.design/tags/nextgen-gallery/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%AB%A5%E5%B9%B4/</loc>
+    <loc>https://waxa.design/tags/foods/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%89%8B%E5%B7%A5%E5%BD%95%E5%85%A5/</loc>
+    <loc>https://waxa.design/tags/%E5%8A%A0%E7%8F%AD/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%99%9A%E6%B8%85/</loc>
+    <loc>https://waxa.design/tags/Synology-Drive/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E9%83%91%E5%AD%9D%E8%83%A5/</loc>
+    <loc>https://waxa.design/tags/NAS/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E8%8F%96%E8%92%B2/</loc>
+    <loc>https://waxa.design/tags/%E9%99%86%E5%AE%B6%E5%98%B4/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/shenzhen/</loc>
+    <loc>https://waxa.design/tags/%E7%85%A7%E7%89%87%E9%9B%86/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/life/</loc>
+    <loc>https://waxa.design/tags/%E8%80%83%E8%AF%81/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/devaintart/</loc>
+    <loc>https://waxa.design/tags/%E7%AB%A5%E5%B9%B4/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E4%BD%9C%E5%93%81/</loc>
+    <loc>https://waxa.design/tags/%E6%89%8B%E5%B7%A5%E5%BD%95%E5%85%A5/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/adobe-contribute/</loc>
+    <loc>https://waxa.design/tags/%E6%99%9A%E6%B8%85/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%88%8F%E8%B0%91/</loc>
+    <loc>https://waxa.design/tags/%E9%83%91%E5%AD%9D%E8%83%A5/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Dir-en-Grey/</loc>
+    <loc>https://waxa.design/tags/%E8%8F%96%E8%92%B2/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E8%AF%91%E4%BD%9C/</loc>
+    <loc>https://waxa.design/tags/%E9%9B%A8/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/ScribeFire/</loc>
+    <loc>https://waxa.design/tags/%E4%BA%94%E7%BB%9D/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E4%B8%8A%E6%B5%B7%E5%8D%9A%E7%89%A9%E9%A6%86/</loc>
+    <loc>https://waxa.design/tags/shenzhen/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%8D%9A%E7%89%A9%E9%A6%86/</loc>
+    <loc>https://waxa.design/tags/life/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E9%99%B6%E7%93%B7/</loc>
+    <loc>https://waxa.design/tags/devaintart/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%8E%89%E5%99%A8/</loc>
+    <loc>https://waxa.design/tags/%E4%BD%9C%E5%93%81/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%A4%9C%E6%B8%B8/</loc>
+    <loc>https://waxa.design/tags/%E9%85%AC%E5%94%B1/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/rss-reader/</loc>
+    <loc>https://waxa.design/tags/adobe-contribute/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E4%BD%9C%E8%AF%97%E6%9C%BA/</loc>
+    <loc>https://waxa.design/tags/%E6%88%8F%E8%B0%91/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%B0%8F%E9%9B%86/</loc>
+    <loc>https://waxa.design/tags/Dir-en-Grey/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%8E%B0%E4%BB%A3%E8%AF%97/</loc>
+    <loc>https://waxa.design/tags/%E8%AF%91%E4%BD%9C/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/music/</loc>
+    <loc>https://waxa.design/tags/ScribeFire/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/rock/</loc>
+    <loc>https://waxa.design/tags/%E4%B8%8A%E6%B5%B7%E5%8D%9A%E7%89%A9%E9%A6%86/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/sleepless/</loc>
+    <loc>https://waxa.design/tags/%E5%8D%9A%E7%89%A9%E9%A6%86/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/SnagIt/</loc>
+    <loc>https://waxa.design/tags/%E9%99%B6%E7%93%B7/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%88%AA%E5%B1%8F%E8%BD%AF%E4%BB%B6/</loc>
+    <loc>https://waxa.design/tags/%E7%8E%89%E5%99%A8/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/QQ%E6%88%AA%E5%9B%BE/</loc>
+    <loc>https://waxa.design/tags/%E5%A4%9C%E6%B8%B8/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/SONY/</loc>
+    <loc>https://waxa.design/tags/rss-reader/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%9B%B8%E6%9C%BA/</loc>
+    <loc>https://waxa.design/tags/%E4%BD%9C%E8%AF%97%E6%9C%BA/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%96%87%E4%BB%B6%E5%90%8D/</loc>
+    <loc>https://waxa.design/tags/%E5%B0%8F%E9%9B%86/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%9D%82%E8%A8%80/</loc>
+    <loc>https://waxa.design/tags/%E7%8E%B0%E4%BB%A3%E8%AF%97/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/stable-diffusion/</loc>
+    <loc>https://waxa.design/tags/music/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/photoshop/</loc>
+    <loc>https://waxa.design/tags/rock/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%BB%9D%E5%8F%A5/</loc>
+    <loc>https://waxa.design/tags/sleepless/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%BF%BB%E8%AF%91/</loc>
+    <loc>https://waxa.design/tags/SnagIt/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%8C%87%E5%8D%97/</loc>
+    <loc>https://waxa.design/tags/%E6%88%AA%E5%B1%8F%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/plugin/</loc>
+    <loc>https://waxa.design/tags/QQ%E6%88%AA%E5%9B%BE/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%8B%AE%E5%AD%90%E6%9E%97/</loc>
+    <loc>https://waxa.design/tags/SONY/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%BF%A0%E7%8E%8B%E5%BA%9C/</loc>
+    <loc>https://waxa.design/tags/%E7%9B%B8%E6%9C%BA/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%B5%8B%E8%AF%95/</loc>
+    <loc>https://waxa.design/tags/%E6%96%87%E4%BB%B6%E5%90%8D/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/ie6/</loc>
+    <loc>https://waxa.design/tags/stable-diffusion/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/sandbox/</loc>
+    <loc>https://waxa.design/tags/photoshop/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/twitter-log/</loc>
+    <loc>https://waxa.design/tags/%E7%BF%BB%E8%AF%91/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/thinkpad/</loc>
+    <loc>https://waxa.design/tags/%E6%8C%87%E5%8D%97/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%AC%94%E8%AE%B0%E6%9C%AC/</loc>
+    <loc>https://waxa.design/tags/%E7%BB%9D%E5%8F%A5/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%94%B5%E8%84%91%E6%95%85%E9%9A%9C/</loc>
+    <loc>https://waxa.design/tags/plugin/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/t42p/</loc>
+    <loc>https://waxa.design/tags/%E7%8B%AE%E5%AD%90%E6%9E%97/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%AB%B9%E5%AD%90/</loc>
+    <loc>https://waxa.design/tags/%E5%BF%A0%E7%8E%8B%E5%BA%9C/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB/</loc>
+    <loc>https://waxa.design/tags/%E5%85%89%E8%8D%A3%E6%B8%B8%E6%88%8F/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/AIGC/</loc>
+    <loc>https://waxa.design/tags/%E4%BF%A1%E9%95%BF%E4%B9%8B%E9%87%8E%E6%9C%9B/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/headset/</loc>
+    <loc>https://waxa.design/tags/%E6%97%A5%E6%9C%AC%E6%96%87%E5%8C%96/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%A5%97%E8%B7%AF/</loc>
+    <loc>https://waxa.design/tags/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%97%85%E6%B8%B8/</loc>
+    <loc>https://waxa.design/tags/Firefox/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E9%98%B2%E9%AA%97/</loc>
+    <loc>https://waxa.design/tags/Plugins/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E9%BB%91%E8%8E%93/</loc>
+    <loc>https://waxa.design/tags/Scriberfire/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%A8%A1%E6%8B%9F%E5%99%A8/</loc>
+    <loc>https://waxa.design/tags/ie6/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%89%8B%E6%9C%BA%E7%B3%BB%E7%BB%9F/</loc>
+    <loc>https://waxa.design/tags/sandbox/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/twitter/</loc>
+    <loc>https://waxa.design/tags/twitter-log/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E9%A5%AD%E5%90%A6/</loc>
+    <loc>https://waxa.design/tags/thinkpad/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/SNS/</loc>
+    <loc>https://waxa.design/tags/%E7%AC%94%E8%AE%B0%E6%9C%AC/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Firefox/</loc>
+    <loc>https://waxa.design/tags/%E7%94%B5%E8%84%91%E6%95%85%E9%9A%9C/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/delicious-bookmark/</loc>
+    <loc>https://waxa.design/tags/t42p/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/extension/</loc>
+    <loc>https://waxa.design/tags/%E7%AB%B9%E5%AD%90/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/stable-diffusion/</loc>
+    <loc>https://waxa.design/tags/%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/van-gogh/</loc>
+    <loc>https://waxa.design/tags/AIGC/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/LORA/</loc>
+    <loc>https://waxa.design/tags/headset/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/iphone/</loc>
+    <loc>https://waxa.design/tags/%E5%A5%97%E8%B7%AF/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/mobilepress/</loc>
+    <loc>https://waxa.design/tags/%E6%97%85%E6%B8%B8/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/theme/</loc>
+    <loc>https://waxa.design/tags/%E9%98%B2%E9%AA%97/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/wp-t-wap/</loc>
+    <loc>https://waxa.design/tags/%E9%BB%91%E8%8E%93/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%8E%92%E4%BD%8D%E8%B5%9B%E7%B3%BB%E7%BB%9F/</loc>
+    <loc>https://waxa.design/tags/%E6%A8%A1%E6%8B%9F%E5%99%A8/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%AE%B5%E4%BD%8D%E5%9B%BE%E6%A0%87/</loc>
+    <loc>https://waxa.design/tags/%E6%89%8B%E6%9C%BA%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/game-site/</loc>
+    <loc>https://waxa.design/tags/twitter/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/big-data/</loc>
+    <loc>https://waxa.design/tags/%E9%A5%AD%E5%90%A6/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/community/</loc>
+    <loc>https://waxa.design/tags/SNS/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/problem/</loc>
+    <loc>https://waxa.design/tags/delicious-bookmark/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/windows-live-writer/</loc>
+    <loc>https://waxa.design/tags/extension/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/nod32/</loc>
+    <loc>https://waxa.design/tags/%E6%83%85%E4%BA%BA%E8%8A%82/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/windows-7/</loc>
+    <loc>https://waxa.design/tags/%E6%96%AD%E5%8F%A5/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Windows-Live-Writer/</loc>
+    <loc>https://waxa.design/tags/stable-diffusion/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Software/</loc>
+    <loc>https://waxa.design/tags/van-gogh/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/wow/</loc>
+    <loc>https://waxa.design/tags/LORA/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%BC%97%E5%85%B0%E5%A5%87/</loc>
+    <loc>https://waxa.design/tags/%E6%8E%92%E4%BD%8D%E8%B5%9B%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%95%99%E5%A0%82/</loc>
+    <loc>https://waxa.design/tags/%E6%AE%B5%E4%BD%8D%E5%9B%BE%E6%A0%87/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E8%99%8E%E4%B8%98%E6%B9%BF%E5%9C%B0%E5%85%AC%E5%9B%AD/</loc>
+    <loc>https://waxa.design/tags/iphone/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/novel/</loc>
+    <loc>https://waxa.design/tags/mobilepress/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%98%86%E8%99%AB/</loc>
+    <loc>https://waxa.design/tags/theme/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E7%AB%A5%E5%B9%B4%E8%AE%B0%E5%BF%86/</loc>
+    <loc>https://waxa.design/tags/wp-t-wap/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Blog-tools/</loc>
+    <loc>https://waxa.design/tags/game-site/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/zoundry/</loc>
+    <loc>https://waxa.design/tags/big-data/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%B0%8F%E4%BB%A4/</loc>
+    <loc>https://waxa.design/tags/community/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%8F%8B%E4%BA%BA/</loc>
+    <loc>https://waxa.design/tags/nod32/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E8%AF%97%E8%AF%9D/</loc>
+    <loc>https://waxa.design/tags/problem/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%9D%8E%E7%99%BD/</loc>
+    <loc>https://waxa.design/tags/windows-7/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%83%85%E4%BA%BA%E8%8A%82/</loc>
+    <loc>https://waxa.design/tags/windows-live-writer/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%96%AD%E5%8F%A5/</loc>
+    <loc>https://waxa.design/tags/Windows-Live-Writer/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E4%BA%94%E8%A8%80%E5%8F%A4%E8%AF%97/</loc>
+    <loc>https://waxa.design/tags/Software/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E9%9B%AA/</loc>
+    <loc>https://waxa.design/tags/wow/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E5%85%89%E8%8D%A3%E6%B8%B8%E6%88%8F/</loc>
+    <loc>https://waxa.design/tags/%E5%BC%97%E5%85%B0%E5%A5%87/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E4%BF%A1%E9%95%BF%E4%B9%8B%E9%87%8E%E6%9C%9B/</loc>
+    <loc>https://waxa.design/tags/%E6%95%99%E5%A0%82/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%97%A5%E6%9C%AC%E6%96%87%E5%8C%96/</loc>
+    <loc>https://waxa.design/tags/%E8%99%8E%E4%B8%98%E6%B9%BF%E5%9C%B0%E5%85%AC%E5%9B%AD/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E9%85%AC%E5%94%B1/</loc>
+    <loc>https://waxa.design/tags/novel/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/%E6%98%86%E8%99%AB/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/%E7%AB%A5%E5%B9%B4%E8%AE%B0%E5%BF%86/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/Blog-tools/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/zoundry/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4570,112 +4598,112 @@
 
   
   <url>
-    <loc>http://kaerozhi.com/categories/blog/</loc>
+    <loc>https://waxa.design/categories/blog/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/categories/writings/</loc>
+    <loc>https://waxa.design/categories/writings/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/categories/tours/</loc>
+    <loc>https://waxa.design/categories/tours/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/categories/thoughts/</loc>
+    <loc>https://waxa.design/categories/thoughts/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/categories/writings/research/</loc>
+    <loc>https://waxa.design/categories/writings/research/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/categories/writings/shici/</loc>
+    <loc>https://waxa.design/categories/writings/shici/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/categories/cases/</loc>
+    <loc>https://waxa.design/categories/cases/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/categories/projects/</loc>
+    <loc>https://waxa.design/categories/projects/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/categories/playground/</loc>
+    <loc>https://waxa.design/categories/playground/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/categories/blog/freetalk/</loc>
+    <loc>https://waxa.design/categories/blog/freetalk/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/categories/playground/apps/</loc>
+    <loc>https://waxa.design/categories/playground/apps/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/categories/playground/web/</loc>
+    <loc>https://waxa.design/categories/playground/web/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/categories/playground/drawing/</loc>
+    <loc>https://waxa.design/categories/playground/drawing/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/categories/playground/gears/</loc>
+    <loc>https://waxa.design/categories/playground/gears/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/categories/writings/%E8%BE%91%E5%BD%95/</loc>
+    <loc>https://waxa.design/categories/writings/%E8%BE%91%E5%BD%95/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/categories/playground/stable-diffusion/</loc>
+    <loc>https://waxa.design/categories/playground/stable-diffusion/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
