@@ -2496,27 +2496,6 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%96%90%E6%B5%8E/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://kaerozhi.com/tags/%E6%BE%B3%E6%B4%B2/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://kaerozhi.com/tags/%E5%A2%83%E5%A4%96%E6%B8%B8/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://kaerozhi.com/tags/%E5%91%BC%E4%BC%A6%E8%B4%9D%E5%B0%94/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -2532,6 +2511,27 @@
   
   <url>
     <loc>http://kaerozhi.com/tags/self-driving-tour/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://kaerozhi.com/tags/%E6%96%90%E6%B5%8E/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://kaerozhi.com/tags/%E6%BE%B3%E6%B4%B2/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://kaerozhi.com/tags/%E5%A2%83%E5%A4%96%E6%B8%B8/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2636,6 +2636,13 @@
   </url>
   
   <url>
+    <loc>http://kaerozhi.com/tags/%E4%B8%83%E7%BB%9D/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://kaerozhi.com/tags/%E5%9B%9B%E5%B7%9D/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -2665,13 +2672,6 @@
   
   <url>
     <loc>http://kaerozhi.com/tags/%E6%88%90%E9%83%BD/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://kaerozhi.com/tags/%E4%B8%83%E7%BB%9D/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2923,6 +2923,13 @@
   </url>
   
   <url>
+    <loc>http://kaerozhi.com/tags/%E8%AF%BB%E4%B9%A6%E6%9D%82%E8%AE%B0/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://kaerozhi.com/tags/%E7%9F%AD%E7%89%87/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -2931,13 +2938,6 @@
   
   <url>
     <loc>http://kaerozhi.com/tags/%E7%94%B5%E5%BD%B1%E8%84%9A%E6%9C%AC/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://kaerozhi.com/tags/%E8%AF%BB%E4%B9%A6%E6%9D%82%E8%AE%B0/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -3042,20 +3042,6 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/Dota/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://kaerozhi.com/tags/%E8%84%9A%E6%9C%AC/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://kaerozhi.com/tags/Dreamhost/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -3071,6 +3057,20 @@
   
   <url>
     <loc>http://kaerozhi.com/tags/Lifetype/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://kaerozhi.com/tags/Dota/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://kaerozhi.com/tags/%E8%84%9A%E6%9C%AC/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4085,6 +4085,13 @@
   </url>
   
   <url>
+    <loc>http://kaerozhi.com/tags/%E7%BB%9D%E5%8F%A5/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://kaerozhi.com/tags/%E7%BF%BB%E8%AF%91/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -4093,13 +4100,6 @@
   
   <url>
     <loc>http://kaerozhi.com/tags/%E6%8C%87%E5%8D%97/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://kaerozhi.com/tags/%E7%BB%9D%E5%8F%A5/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4183,13 +4183,6 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/headset/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://kaerozhi.com/tags/%E7%AB%B9%E5%AD%90/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -4211,21 +4204,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E9%BB%91%E8%8E%93/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://kaerozhi.com/tags/%E6%A8%A1%E6%8B%9F%E5%99%A8/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://kaerozhi.com/tags/%E6%89%8B%E6%9C%BA%E7%B3%BB%E7%BB%9F/</loc>
+    <loc>http://kaerozhi.com/tags/headset/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4247,6 +4226,27 @@
   
   <url>
     <loc>http://kaerozhi.com/tags/%E9%98%B2%E9%AA%97/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://kaerozhi.com/tags/%E9%BB%91%E8%8E%93/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://kaerozhi.com/tags/%E6%A8%A1%E6%8B%9F%E5%99%A8/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://kaerozhi.com/tags/%E6%89%8B%E6%9C%BA%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4316,20 +4316,6 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/%E6%8E%92%E4%BD%8D%E8%B5%9B%E7%B3%BB%E7%BB%9F/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://kaerozhi.com/tags/%E6%AE%B5%E4%BD%8D%E5%9B%BE%E6%A0%87/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://kaerozhi.com/tags/iphone/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -4358,6 +4344,20 @@
   </url>
   
   <url>
+    <loc>http://kaerozhi.com/tags/%E6%8E%92%E4%BD%8D%E8%B5%9B%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://kaerozhi.com/tags/%E6%AE%B5%E4%BD%8D%E5%9B%BE%E6%A0%87/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://kaerozhi.com/tags/game-site/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -4379,13 +4379,6 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/nod32/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://kaerozhi.com/tags/problem/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -4393,14 +4386,21 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/windows-7/</loc>
+    <loc>http://kaerozhi.com/tags/windows-live-writer/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/tags/windows-live-writer/</loc>
+    <loc>http://kaerozhi.com/tags/nod32/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://kaerozhi.com/tags/windows-7/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
