@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://kaerozhi.com/stories/</loc>
+    <loc>http://kaerozhi.com/playground/web/hexo-deploy-to-gitpage/</loc>
     
     <lastmod>2023-07-16</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://kaerozhi.com/playground/web/hexo-deploy-to-gitpage/</loc>
+    <loc>http://kaerozhi.com/stories/</loc>
     
     <lastmod>2023-07-16</lastmod>
     

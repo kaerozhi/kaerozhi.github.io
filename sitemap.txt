@@ -1,5 +1,5 @@
-http://kaerozhi.com/stories/
 http://kaerozhi.com/playground/web/hexo-deploy-to-gitpage/
+http://kaerozhi.com/stories/
 http://kaerozhi.com/tours/2018-suzhou/
 http://kaerozhi.com/tours/ouyuan-in-summer/
 http://kaerozhi.com/tours/2019-japan/
