@@ -73,7 +73,7 @@
   
     
   <li class="nav-item ">
-    <a class="nav-item-link" href="/javascript(void);">搜索</a>
+    <a class="nav-item-link" href="/javascript();">搜索</a>
   </li>
   
 </ul>
@@ -135,6 +135,32 @@
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%90%8C%E4%BA%8B/" rel="tag">同事</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%8C%AB/" rel="tag">猫</a></li></ul>
 
+      
+        <section class="artile-comments gitalk">
+          <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '08c3d073d058ef04a656',
+        clientSecret: '020374f48336a5e66aa53517997994ee6ea40665',
+        repo: 'kaerozhi.github.io',
+        owner: 'kaerozhi',
+        admin: ['kaerozhi'],
+        id:'gitalk_20070801080000',
+        labels: 'gitalk'.split(',').filter(l => l),
+        perPage: 10,
+        pagerDirection: 'last',
+        createIssueManually: true,
+        distractionFreeMode: false
+    })
+
+    gitalk.render('gitalk-container')           
+</script>
+        </section>
+      
     </footer>
   </div>
   
@@ -261,7 +287,7 @@
   
     
   <li class="nav-item ">
-    <a class="nav-item-link" href="/javascript(void);">搜索</a>
+    <a class="nav-item-link" href="/javascript();">搜索</a>
   </li>
   
 </ul>
