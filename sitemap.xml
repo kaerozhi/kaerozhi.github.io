@@ -2741,13 +2741,6 @@
   </url>
   
   <url>
-    <loc>https://waxa.design/tags/windows-live/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://waxa.design/tags/video/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -2769,6 +2762,13 @@
   </url>
   
   <url>
+    <loc>https://waxa.design/tags/windows-live/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://waxa.design/tags/branding/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -2777,27 +2777,6 @@
   
   <url>
     <loc>https://waxa.design/tags/esports/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/Arena-of-Valor/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/Game-Branding/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/Visual-System/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2825,6 +2804,27 @@
   </url>
   
   <url>
+    <loc>https://waxa.design/tags/Arena-of-Valor/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/Game-Branding/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/Visual-System/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://waxa.design/tags/%E6%90%AC%E5%AE%B6/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -2846,20 +2846,6 @@
   </url>
   
   <url>
-    <loc>https://waxa.design/tags/friends/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/%E8%82%A5%E7%8C%AB/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://waxa.design/tags/%E7%90%A6/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -2875,6 +2861,20 @@
   
   <url>
     <loc>https://waxa.design/tags/%E8%AF%8D/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/friends/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/%E8%82%A5%E7%8C%AB/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2979,6 +2979,20 @@
   </url>
   
   <url>
+    <loc>https://waxa.design/tags/dota/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/game/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://waxa.design/tags/%E6%AD%BB%E5%85%9A/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -3001,20 +3015,6 @@
   
   <url>
     <loc>https://waxa.design/tags/%E7%BB%93%E5%A9%9A/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/dota/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/game/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -3063,6 +3063,20 @@
   </url>
   
   <url>
+    <loc>https://waxa.design/tags/Dota/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/%E8%84%9A%E6%9C%AC/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://waxa.design/tags/Dreamhost/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -3078,20 +3092,6 @@
   
   <url>
     <loc>https://waxa.design/tags/Lifetype/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/Dota/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/%E8%84%9A%E6%9C%AC/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -3490,13 +3490,6 @@
   </url>
   
   <url>
-    <loc>https://waxa.design/tags/%E5%9B%A2%E9%98%9F/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://waxa.design/tags/poster/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -3505,6 +3498,13 @@
   
   <url>
     <loc>https://waxa.design/tags/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/%E5%9B%A2%E9%98%9F/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -3707,14 +3707,14 @@
   </url>
   
   <url>
-    <loc>https://waxa.design/tags/%E9%83%81%E8%BE%BE%E5%A4%AB/</loc>
+    <loc>https://waxa.design/tags/%E5%BD%BC%E5%A5%B3/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://waxa.design/tags/%E5%BD%BC%E5%A5%B3/</loc>
+    <loc>https://waxa.design/tags/%E9%83%81%E8%BE%BE%E5%A4%AB/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -3875,6 +3875,13 @@
   </url>
   
   <url>
+    <loc>https://waxa.design/tags/%E7%AB%A5%E5%B9%B4/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://waxa.design/tags/%E7%85%A7%E7%89%87%E9%9B%86/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -3883,13 +3890,6 @@
   
   <url>
     <loc>https://waxa.design/tags/%E8%80%83%E8%AF%81/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/%E7%AB%A5%E5%B9%B4/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4050,6 +4050,13 @@
   </url>
   
   <url>
+    <loc>https://waxa.design/tags/%E7%8E%B0%E4%BB%A3%E8%AF%97/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://waxa.design/tags/%E4%BD%9C%E8%AF%97%E6%9C%BA/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -4058,13 +4065,6 @@
   
   <url>
     <loc>https://waxa.design/tags/%E5%B0%8F%E9%9B%86/</loc>
-    <lastmod>2023-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/%E7%8E%B0%E4%BB%A3%E8%AF%97/</loc>
     <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

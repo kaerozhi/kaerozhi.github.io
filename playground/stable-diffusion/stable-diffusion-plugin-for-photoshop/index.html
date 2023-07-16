@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  
+    <meta name="keywords" content="Waxa Design, 蛙夏, kaero, kaero zhi, designer, 自由设计师, blog, design, photography, photographer, chinese, suzhou, 旧体诗, 诗词">
+  
+  
+    <meta name="description" content="给 Photoshop 准备的 Stable Diffusion 操作界面，虽然还称不上尽善尽美，但至少值得一试。">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <title>Auto Photoshop Stable Diffusion Plugin |  Waxa.Deisgn | 蛙夏设计</title>
+  
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/webclip/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/webclip/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/webclip/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/webclip/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/webclip/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/webclip/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/webclip/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/webclip/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
+  
+  
+    <link rel="shortcut icon" href="/images/favicon.png">
+  
+  
+    <link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css"/>
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Waxa.Deisgn | 蛙夏设计" type="application/atom+xml">
+</head>
+
+<body>
+  <main class="main">
+    
+	<header class="header">
+
+	<div class="container">
+		<nav class="navbar d-flex align-items-center">
+			<a class="brand" href="/">
+				<img class="logo lazyload" data-src="/images/brand-waxacn.svg" alt="Waxa.Deisgn | 蛙夏设计" role="img">
+			</a>
+			<ul class="main-nav">
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/">首页</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/gallery">影像</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/stories">案例</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/archives">更新</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/about">关于</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/javascript(void);">搜索</a>
+  </li>
+  
+</ul>
+		</nav>
+		<a id="mobile-nav-toggle">
+			<span class="mobile-nav-toggle-bar"></span>
+			<span class="mobile-nav-toggle-bar"></span>
+			<span class="mobile-nav-toggle-bar"></span>
+		</a>
+	</div>
+</header>
+
+    <section>
+      <div class="container">
+  <article id="post-stable-diffusion-plugin-for-photoshop" class="article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  
+  <div class="artcle-cover">
+    
+  
+    
+      <img class="artcle-cover-img lazyload" data-src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop//girl-with-greek-wreath-success6.png" itemprop="image" alt="">
+       
+  
+
+  </div>
+  
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+        <div class="article-meta">
+          <time class="text-gray" datetime="2023-07-09T02:55:00.000Z" itemprop="datePublished">
+  2023-07-09
+</time>
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/playground/">玩艺</a> / <a class="article-category-link" href="/categories/playground/stable-diffusion/">Stable Diffusion</a>
+  </div>
+
+        </div>
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Auto Photoshop Stable Diffusion Plugin
+    </h1>
+  
+
+        
+  <div class="article-description">
+    <p>给 Photoshop 准备的 Stable Diffusion 操作界面，虽然还称不上尽善尽美，但至少值得一试。</p>
+
+  </div>
+
+      
+    </header>
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+    
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>因为名字太长，为行文方便，后文一律简称为 SD4PS。<a target="_blank" rel="noopener" href="https://github.com/AbdullahAlfaraj/Auto-Photoshop-StableDiffusion-Plugin"><strong>Github 传送门</strong></a></p>
+<p>这款插件其实已经推出有一段时间了，但国内好像没有太具深度的介绍，介绍完如何安装，随便生成几张图片，就点到为止了。还有普遍反应的安装报错，但我按照说明文档中的标准流程走下来，基本上通行无阻，可能是人品比较好？</p>
+<p>至于现阶段的体验，个人觉得远不如想象的那么趁手。基本的 txt2img &#x2F; img2img 虽然简单，但因为不能像 Web UI 那样存储预设，浏览和切换模型 &#x2F; Lora &#x2F; Embeddings 也不方便，所以得先在 Web UI 里面把包括 LORA 在内的 Prompts 写好，然后再粘贴到 SD4PS——多试几遍就反应过来了，这不是多此一举吗？还不如 Web UI 出图，然后 Photoshop 打开来得便捷。</p>
+<p>当然，安装这个插件肯定是为了 Inpaint &#x2F; Outpaint，毕竟绘制草图和处理蒙版，Photoshop 可不知比 Web UI 强到哪里去了。</p>
+<span id="more"></span>
+
+<h2 id="Inpaint-体验"><a href="#Inpaint-体验" class="headerlink" title="Inpaint 体验"></a>Inpaint 体验</h2><p>我们先在 Photoshop 里面生成一张图，模型还是 DreamShaper 7，<code>a beautiful young girl</code>常规起手。注意这个插件不兼容画板，新建文档的时候记得取消画板选项，分辨率依旧是 512x768。走起：</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/output_image.png" title="A beautiful young girl" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/output_image.png" alt="A beautiful young girl"><span class="image-caption">A beautiful young girl</span></a></p>
+<p>我们从生成的结果中选了一张比较满意的，但希望把眼睛换成绿色。试着用白色画笔涂抹眼睛，作为 Inpaint 蒙版：</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/eyes-white-mask.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/eyes-white-mask.png"></a></p>
+<p>此时维持原 Prompts 不变，选中整张图片，在原来的 Prompts 基础上增加眼睛的描述：<code>green eyes, light green pupils, high detailed eyes</code>，绘图模式切换至 Inpaint，点击 Generate Inpaint，五选一之后得到：</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/girl-with-green-eyes.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/girl-with-green-eyes.png"></a></p>
+<p>效果不错。注意 SD4PS 选项卡，原图和蒙版都识别得很准确——不要以为这很正常，其实这就是该插件最容易翻车的地方。</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709122410457.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709122410457.png"></a></p>
+<h3 id="局部重绘"><a href="#局部重绘" class="headerlink" title="局部重绘"></a>局部重绘</h3><p>当然也有第二种方法，就是框选局部再重绘，这也是绘画和修图时最常用的场景。</p>
+<p>此时建议将 Prompts 内关于人物整体的部分去掉，只需要眼睛的描述即可，因为我们重绘的部分只包括眼睛，保留人物的描述反而会造成干扰。而且该方法重绘的面积更小，理论上消耗的资源更低。</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/eyes-selected.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/eyes-selected.png"></a></p>
+<p>出图之前记得检查一下重绘部分的分辨率，因为插件的比例控制非常任性。本来是为了节省资源才选择局部重绘，结果一不小心，插件给出 33.83 倍的放大比率，电脑差点当场崩溃……</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709123540396.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709123540396.png"></a></p>
+<p>风扇狂转了十几分钟之后，出来的结果令我……大失所望，眼睛套眼睛，右边还套歪了：</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/eyes-regenerate-result.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/eyes-regenerate-result.png"></a></p>
+<p>怀疑是局部重绘的计算量太小，导致重绘的部分无法完美融合。既然如此，那就尝试调整参数，将 SD4PS 底部的 Mask Content 选项从 Fill 更改为 Original，此时 AI 会更多地参考原图，理论上会降低翻车的机率。</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709125451268.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709125451268.png"></a></p>
+<p>在重绘的过程中注意到原图和蒙版缩略图是这样的：</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709125612522.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709125612522.png"></a></p>
+<p>不用想，这次肯定翻车。出图之后果不其然，比上一次还离谱：</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/eyes-regenerate-failed-result.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/eyes-regenerate-failed-result.png"></a></p>
+<p>这也是这款插件最不稳定最令人揪心的地方，操作没变，但插件并不是每次都能准确识别原图和蒙版。</p>
+<p>再次尝试，可惜还是很魔性：</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/eyes-regenerate-failed-result2.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/eyes-regenerate-failed-result2.png"></a></p>
+<p>既然如此，那我们就扩大框选面积，选中整个面部，增加 <code>beautiful face</code> 关键词。为了与之前的结果有所差异，改成蓝色眼睛。</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709131016550.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709131016550.png"></a></p>
+<p>这样参考的要素更多，理论上会画得更好一点。再次重绘：</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/girl-with-blue-eyes.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/girl-with-blue-eyes.png"></a></p>
+<p>成功。</p>
+<p>由此可见，参考的像素越少，翻车的机率越大，即便我们希望节省系统资源，但还是要拿捏好尺度，过于局部的细节 AI 很难控制。</p>
+<h3 id="精确控制蒙版"><a href="#精确控制蒙版" class="headerlink" title="精确控制蒙版"></a>精确控制蒙版</h3><p>使用几天之后，我发现其实精确控制蒙版并不难。</p>
+<p>起初在网上看视频，想当然地认为涂白之后，插件自动将其识别为蒙版，但这样的结果就是看人品，有时候 ok，有时候叫人抓狂。但稍加注意就能发现，如果你从 txt2img &#x2F; img2img 切换到 inpaint &#x2F; outpaint，插件会自动生成一个名为 <em>Mask – Paint White to Mask – temporary</em> 的图层：</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709152907829.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709152907829.png"></a></p>
+<p>在这个图层里，无论你是用选择工具框选，还是用画笔涂抹，又或是用钢笔精确勾选，总之只要涂白，插件就再也不会傻傻搞错你的蒙版了。</p>
+<h2 id="涂鸦重绘"><a href="#涂鸦重绘" class="headerlink" title="涂鸦重绘"></a>涂鸦重绘</h2><p>涂鸦重绘也是非常普遍的使用场景。比如我想给这位已经换上蓝色美瞳的女同学戴上一顶希腊式的花冠，通过我高妙的画技，得到这样的结果：</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709133820611.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709133820611.png"></a></p>
+<p>在 Prompts 增加花冠的描述词：<code>greek flower crown, greek wreath</code>，选中头部，看看图生图能得到怎样的结果：</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/girl-with-greek-wreath.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/girl-with-greek-wreath.png"></a></p>
+<p>插件读懂了我的想法，但完全没有考虑如何与原图融合。调整参数，将 Inpainting conditioning mask strenght 从 1 降到 0.3：</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709134621361.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709134621361.png"></a></p>
+<p>重新出图：</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/girl-with-greek-wreath2.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/girl-with-greek-wreath2.png"></a></p>
+<p>脸倒是更像原来的脸了，但是这个融合还是很捉急啊，难道我都用上 AI 了，还要手动抠图合成吗？再说这光线也跟原来不一样，重塑光线可太麻烦了。</p>
+<p>没奈何，那还是重绘一下全图试试。<kbd>Ctr</kbd> + <kbd>A</kbd> 选择全图，为了保持女同学的姿势不变，SD4PS 切换到 ControlNet 标签页，激活 slot1，选择 openpose-face 模型：</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709135356150.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709135356150.png"></a></p>
+<p>回到默认标签，跑图！</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/girl-with-greek-wreath-success.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/girl-with-greek-wreath-success.png"></a><br><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/girl-with-greek-wreath-success2.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/girl-with-greek-wreath-success2.png"></a></p>
+<p>挺好，就是背景和光线还是有变化，并且受 <code>greek</code> 影响，背景里出现了希腊的古典建筑。我们尝试将 Inpainting conditioning mask strenght 从 0.3 降到 0.15 试试：</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/girl-with-greek-wreath-success3.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/girl-with-greek-wreath-success3.png"></a></p>
+<p>只能说有一点变化，但不明显。感觉方向不太对，<strong>img2img 适合确定构图之后改变画风或者提升品质和完成度，如果只想调整局部，加一个花冠，添一条项链，或者换一身衣裳，那还是 Inpaint 更合适</strong>。</p>
+<h3 id="Inpaint-局部重绘"><a href="#Inpaint-局部重绘" class="headerlink" title="Inpaint 局部重绘"></a>Inpaint 局部重绘</h3><p>我们将花冠部分涂成白色蒙版：</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709141737351.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709141737351.png"></a></p>
+<p>为了减轻系统负担，只选中头部：</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709141826088.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709141826088.png"></a></p>
+<p>跑图：</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/girl-with-greek-wreath-success4.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/girl-with-greek-wreath-success4.png"></a><br><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/girl-with-greek-wreath-success5.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/girl-with-greek-wreath-success5.png"></a><br><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/girl-with-greek-wreath-success6.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/girl-with-greek-wreath-success6.png"></a></p>
+<p>几乎每一张都得到了可用的结果，Inpaint 永远的神！</p>
+<h2 id="Outpaint"><a href="#Outpaint" class="headerlink" title="Outpaint"></a>Outpaint</h2><p>Outpaint 与 Inpaint 原理基本一致，差别仅在于蒙版是正选还是反选而已，这里暂且不作探讨，以后若有意外发现再增补进来。</p>
+<h2 id="图片保存路径"><a href="#图片保存路径" class="headerlink" title="图片保存路径"></a>图片保存路径</h2><p>Web UI 生成的任何图片都可以在 Outputs 文件夹里面找到，而 SD4PS 调用的虽然也是 Stable Diffusion，但它生成的图片却不在 Outputs 文件夹里。如果跑了图却没有另外保存，事后再去找，难免会一时摸不着头绪。</p>
+<p>当然，办法肯定会有的。打开插件的 Settings 标签页，点击最下面的 <strong>Get Path</strong> 按钮，就可以找到文件的保存路径。</p>
+<p><a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709160106478.png" class="gallery-item"><img src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/image-20230709160106478.png"></a></p>
+<p>但里面的文件夹名称都是随机生成的字符串，要找指定的文件提供不了任何线索，只能海底捞针逐个翻阅。假如你已经跑过很多图生成了海量文件夹……那场面想想就很酸爽，所以有可能的话，还是养成随手存图的好习惯吧。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>
+    </div>
+    <footer class="article-footer">
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/photoshop/" rel="tag">photoshop</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/plugins/" rel="tag">plugins</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/stable-diffusion/" rel="tag">stable diffusion</a></li></ul>
+
+    </footer>
+  </div>
+  
+  
+    
+<nav class="article-nav pt-4 mt-3" id="article-nav">
+  
+    <a href="/playground/stable-diffusion/stable-diffusion-prompt-a-definitive-guide/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Stable Diffusion 施法权威指南
+        
+      </div>
+    </a>
+  
+  
+    <a href="/playground/stable-diffusion/traditional-chinese-ink-painting/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">用 Stable Diffusion 尝试传统水墨画</div>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+</div>
+    </section>
+    <footer class="footer pt-4 mt-5">
+  <div class="container">
+    <div class="py-3">
+      <div class="row justify-content-between">
+        <div class="col-6">
+          <img class="filter-invert mb-3 lazyload" height="60" data-src="/images/brand-waxacn.svg" alt="Waxa.Deisgn | 蛙夏设计" role="img">
+          <p class="mb-4">Kaero，自由设计师。喜好摄影、游历及文学，素来不务正业，以研究各种杂七杂八为能事。江西人，曾居上海、深圳，现定居苏州，承接各种与设计相关的事务与需求。</p>
+          <ul class="list-inline">
+            
+              <li class="list-inline-item">
+                <a target="_blank" rel="noopener" href="https://twitter.com/kaero">
+                  <img 0="Twitter" src="/images/icons/contact-twitter.svg">
+                </a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="javascript:;">
+                  <img 0="微信" src="/images/icons/contact-wechat.svg">
+                </a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="mailto:kaero.zhi@gmail.com">
+                  <img 0="邮箱" src="/images/icons/contact-mail.svg">
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+        <div class="col-4">
+          <h5>友情链接</h5>
+          <ul class="list-inline">
+            
+              <li class="list-inline-item">
+                <a href="https://zesen.net/" title="泽森" target="_blank" rel="noopener">泽森</a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="https://acorn.imaging.xin/" title="Acorn" target="_blank" rel="noopener">Acorn</a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="https://duoyu.wang/" title="To Base64" target="_blank" rel="noopener">To Base64</a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="hr" style="opacity: .25;">
+    <div class="pt-3 pb-5">
+      <ul class="list-inline mb-0 text-center">
+        <li class="list-inline-item">&copy; 2023 Waxa.Deisgn | 蛙夏设计</li>
+        
+        <li class="list-inline-item">Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+        <li class="list-inline-item">Designer <a href="https://waxa.design" target="_blank">Kaero</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+  </main>
+  <div id="mobile-nav-dimmer"></div>
+<div id="mobile-nav">
+	<div id="mobile-nav-inner">
+		<ul class="mobile-nav">
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/">首页</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/gallery">影像</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/stories">案例</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/archives">更新</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/about">关于</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/javascript(void);">搜索</a>
+  </li>
+  
+</ul>
+		
+	</div>
+</div>
+
+  <script src="/libs/feather/feather.min.js"></script>
+<script src="/libs/lazysizes/lazysizes.min.js"></script>
+
+	<script src="/libs/tocbot/tocbot.min.js"></script>
+	<script>
+    tocbot.init({
+      // Where to render the table of contents.
+      tocSelector: '.js-toc',
+      // Where to grab the headings to build the table of contents.
+      contentSelector: '.js-toc-content',
+      // Which headings to grab inside of the contentSelector element.
+      headingSelector: 'h2, h3',
+      // For headings inside relative or absolute positioned containers within content.
+      hasInnerContainers: true,
+    });
+	</script>
+
+
+
+	<!-- Swiper JS -->
+	<script src="/libs/swiper/swiper-bundle.min.js"></script>
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper(".oneSwiper", {
+			slidesPerView: "auto",
+			centeredSlides: true,
+			spaceBetween: 30,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+    });
+	</script>
+
+
+
+<script src="/js/mobile-nav.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+</body>
+</html>

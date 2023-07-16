@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  
+    <meta name="keywords" content="Waxa Design, 蛙夏, kaero, kaero zhi, designer, 自由设计师, blog, design, photography, photographer, chinese, suzhou, 旧体诗, 诗词">
+  
+  
+    <meta name="description" content="翻译自 [Stable Diffusion prompt: a definitive guide](https://stable-diffusion-art.com/prompt-guide/)，未取得授权，水平有限，自娱而已。若有讹误，望读者不吝指正。">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <title>Stable Diffusion 施法权威指南 |  Waxa.Deisgn | 蛙夏设计</title>
+  
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/webclip/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/webclip/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/webclip/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/webclip/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/webclip/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/webclip/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/webclip/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/webclip/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
+  
+  
+    <link rel="shortcut icon" href="/images/favicon.png">
+  
+  
+    <link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css"/>
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Waxa.Deisgn | 蛙夏设计" type="application/atom+xml">
+</head>
+
+<body>
+  <main class="main">
+    
+	<header class="header">
+
+	<div class="container">
+		<nav class="navbar d-flex align-items-center">
+			<a class="brand" href="/">
+				<img class="logo lazyload" data-src="/images/brand-waxacn.svg" alt="Waxa.Deisgn | 蛙夏设计" role="img">
+			</a>
+			<ul class="main-nav">
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/">首页</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/gallery">影像</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/stories">案例</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/archives">更新</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/about">关于</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/javascript(void);">搜索</a>
+  </li>
+  
+</ul>
+		</nav>
+		<a id="mobile-nav-toggle">
+			<span class="mobile-nav-toggle-bar"></span>
+			<span class="mobile-nav-toggle-bar"></span>
+			<span class="mobile-nav-toggle-bar"></span>
+		</a>
+	</div>
+</header>
+
+    <section>
+      <div class="container">
+  <article id="post-stable-diffusion-prompt-a-definitive-guide" class="article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  
+  <div class="artcle-cover">
+    
+  
+    
+      <img class="artcle-cover-img lazyload" data-src="/playground/stable-diffusion/stable-diffusion-prompt-a-definitive-guide//sd-prompts-defeinitive-guide.png" itemprop="image" alt="">
+       
+  
+
+  </div>
+  
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+        <div class="article-meta">
+          <time class="text-gray" datetime="2023-07-09T11:48:00.000Z" itemprop="datePublished">
+  2023-07-09
+</time>
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/playground/">玩艺</a> / <a class="article-category-link" href="/categories/playground/stable-diffusion/">Stable Diffusion</a>
+  </div>
+
+        </div>
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Stable Diffusion 施法权威指南
+    </h1>
+  
+
+        
+  <div class="article-description">
+    <p>翻译自 <a target="_blank" rel="noopener" href="https://stable-diffusion-art.com/prompt-guide/">Stable Diffusion prompt: a definitive guide</a>，未取得授权，水平有限，自娱而已。若有讹误，望读者不吝指正。</p>
+
+  </div>
+
+      
+    </header>
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+    
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>作为一个初学者，既然投身于炼丹事业，首先要做的事情就是熟悉写咒语的方法。<br>Developing a process to build good prompts is the first step every Stable Diffusion user tackles. This article summarizes the process and techniques developed through experimentations and other users’ inputs. The goal is to write down all I know about prompts, so you can know them all in one place.</p>
+<h2 id="Anatomy-of-a-good-prompt"><a href="#Anatomy-of-a-good-prompt" class="headerlink" title="Anatomy of a good prompt"></a>Anatomy of a good prompt</h2><p>A good prompt needs to be detailed and specific. A good process is to look through a list of keyword categories and decide whether you want to use any of them.</p>
+<p>The keyword categories are</p>
+<ol>
+<li>Subject</li>
+<li>Medium</li>
+<li>Style</li>
+<li>Artist</li>
+<li>Website</li>
+<li>Resolution</li>
+<li>Additional details</li>
+<li>Color</li>
+<li>Lighting</li>
+</ol>
+<p>An extensive list of keywords from each category is available in the <a target="_blank" rel="noopener" href="https://andrewongai.gumroad.com/l/stable_diffusion_prompt_generator">prompt generator</a>. You can also find a short list <a target="_blank" rel="noopener" href="https://stable-diffusion-art.com/how-to-come-up-with-good-prompts-for-ai-image-generation/#Some_good_keywords_for_you">here</a>.</p>
+<p>You don’t <em>have to</em> include keywords from all categories. Treat them as a checklist to remind you what <em>could</em> be used.</p>
+<p>Let’s review each category and generate some images by adding keywords from each. I will use the v1.5 base model. To see the effect of the prompt alone, I won’t be using negative prompts for now. Don’t worry, we will study negative prompts in the later part of this article. All images are generated with 30 steps of DPM++ 2M Karas sampler and an image size 512×704.</p>
+<h3 id="Subject"><a href="#Subject" class="headerlink" title="Subject"></a>Subject</h3><p><strong><strong>The</strong> subject</strong> is what you want to <strong>see</strong> in the image. A common mistake is not writing enough about the subjects.</p>
+<p>Let’s say we want to generate a sorceress casting magic. A newbie may just write</p>
+<blockquote>
+<p>A sorceress</p>
+</blockquote>
+<p>That leaves too much room for imagination. How do you want the sorceress to look? Any words describing her that would narrow down her image? What does she wear? What kind of magic is she casting? Is she standing, running, or floating in the air? What’s the background scene?</p>
+<p>Stable Diffusion cannot read our minds. We have to say exactly what we want.</p>
+<p>A common trick for human subjects is to use celebrity names. They have a strong effect and are an excellent way to control the subject’s appearance. However, be aware that these names may change not only the face but also the pose and something else. I will defer this topic to a later part of this article.</p>
+<p>As a demo, let’s cast the sorceress to look like <strong>Emma Watson</strong>, the most used keyword in Stable Diffusion. Let’s say she is powerful and mysterious and uses lightning magic. We want her outfit to be very detailed so she would look interesting.</p>
+<blockquote>
+<p>Emma Watson as a powerful mysterious sorceress, casting lightning magic, detailed clothing</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04803-3491393131-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04803-3491393131-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing.png?resize=512,704&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04808-1220894852-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04808-1220894852-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing.png?resize=512,704&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04805-3491393133-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04805-3491393133-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing.png?resize=512,704&ssl=1"></a></p>
+<p>We get Emma Watson 11 out of 10 times. Her name is such a strong effect on the model. I think she’s popular among Stable Diffusion users because she looks decent, young, and consistent across a wide range of scenes. Trust me, we cannot say the same for all actresses, especially the ones who have been active in the 90s or earlier…</p>
+<h3 id="Medium"><a href="#Medium" class="headerlink" title="Medium"></a>Medium</h3><p>Medium is the material used to make artwork. Some examples are illustration, oil painting, 3D rendering, and photography. Medium has a strong effect because one keyword alone can dramatically change the style.</p>
+<p>Let’s add the keyword <strong>digital painting</strong>.</p>
+<blockquote>
+<p>Emma Watson as a powerful mysterious sorceress, casting lightning magic, detailed clothing, <strong>digital painting</strong></p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04810-340969114-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04810-340969114-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting.png?resize=512,704&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04812-340969116-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04812-340969116-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting.png?resize=512,704&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04817-1396537237-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04817-1396537237-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting.png?resize=512,704&ssl=1"></a></p>
+<p>We see what we expected! The images changed from photographs to digital paintings. So far so good. I think we can stop here. Just kidding.</p>
+<h3 id="Style"><a href="#Style" class="headerlink" title="Style"></a>Style</h3><p>The <strong>style</strong> refers to the artistic style of the image. Examples include impressionist, surrealist, pop art, etc.</p>
+<p>Let’s add <strong>hyperrealistic</strong>, <strong>fantasy</strong>, <strong>surrealist</strong>, <strong>full body</strong> to the prompt.</p>
+<blockquote>
+<p>Emma Watson as a powerful mysterious sorceress, casting lightning magic, detailed clothing, digital painting, <strong>hyperrealistic, fantasy, Surrealist, full body</strong></p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04818-3088755247-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04818-3088755247-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04821-3088755250-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04821-3088755250-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04825-719406636-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04825-719406636-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<p>Mmm… not sure if they have added much. Perhaps these keywords were already implied by the previous ones. But I guess it doesn’t hurt to keep it.</p>
+<h3 id="Artist"><a href="#Artist" class="headerlink" title="Artist"></a>Artist</h3><p>Artist names are strong modifiers. They allow you to dial in the exact style using a particular artist as a reference. It is also common to use multiple artist names to blend their styles. Now let’s add <strong>Stanley Artgerm Lau</strong>, a superhero comic artist, and <strong>Alphonse Mucha</strong>, a portrait painter in the 19th century.</p>
+<blockquote>
+<p>Emma Watson as a powerful mysterious sorceress, casting lightning magic, detailed clothing, digital painting, hyperrealistic, fantasy, Surrealist, full body, <strong>by Stanley Artgerm Lau and Alphonse Mucha</strong></p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04827-1484067991-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04827-1484067991-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04830-2757126635-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04830-2757126635-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04832-2757126637-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04832-2757126637-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<p>We can see the styles of both artists blending in and taking effect nicely.</p>
+<h3 id="Website"><a href="#Website" class="headerlink" title="Website"></a>Website</h3><p>Niche graphic websites such as <a target="_blank" rel="noopener" href="https://www.artstation.com/">Artstation</a> and <a target="_blank" rel="noopener" href="https://www.deviantart.com/">Deviant Art</a> aggregate many images of distinct genres. Using them in a prompt is a sure way to steer the image toward these styles.</p>
+<p>Let’s add <strong>artstation</strong> to the prompt.</p>
+<blockquote>
+<p>Emma Watson as a powerful mysterious sorceress, casting lightning magic, detailed clothing, digital painting, hyperrealistic, fantasy, Surrealist, full body, by Stanley Artgerm Lau and Alphonse Mucha, <strong>artstation</strong></p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04837-2123193945-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04837-2123193945-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04841-1804899486-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04841-1804899486-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04843-344447326-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04843-344447326-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<p>It’s not a huge change but the images do look like what you would find on Artstation.</p>
+<h3 id="Resolution"><a href="#Resolution" class="headerlink" title="Resolution"></a>Resolution</h3><p>Resolution represents how sharp and detailed the image is. Let’s add keywords <strong>highly detailed</strong> and <strong>sharp focus</strong>.</p>
+<blockquote>
+<p>Emma Watson as a powerful mysterious sorceress, casting lightning magic, detailed clothing, digital painting, hyperrealistic, fantasy, Surrealist, full body, by Stanley Artgerm Lau and Alphonse Mucha, artstation, <strong>highly detailed, sharp focus</strong></p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04847-1108153948-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04847-1108153948-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04851-1851210878-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04851-1851210878-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04860-254908403-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04860-254908403-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<p>Well, not a huge effect perhaps because the previous images are already pretty sharp and detailed. But it doesn’t hurt to add.</p>
+<h3 id="Additional-details"><a href="#Additional-details" class="headerlink" title="Additional details"></a>Additional details</h3><p>Additional details are <em>sweeteners</em> added to modify an image. We will add <strong>sci-fi, stunningly beautiful</strong> and <strong>dystopian</strong> to add some vibe to the image.</p>
+<blockquote>
+<p>Emma Watson as a powerful mysterious sorceress, casting lightning magic, detailed clothing, digital painting, hyperrealistic, fantasy, Surrealist, full body, by Stanley Artgerm Lau and Alphonse Mucha, artstation, highly detailed, sharp focus, <strong>sci-fi, stunningly beautiful, dystopian</strong></p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04864-2405740094-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04864-2405740094-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04872-1134998445-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04872-1134998445-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04876-1634672953-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04876-1634672953-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<h3 id="Color"><a href="#Color" class="headerlink" title="Color"></a>Color</h3><p>You can control the overall color of the image by adding <strong>color</strong> <strong>keywords</strong>. The colors you specified may appear as a tone or in objects.</p>
+<p>Let’s add some golden color to the image with the keyword <strong>iridescent gold</strong>.</p>
+<blockquote>
+<p>Emma Watson as a powerful mysterious sorceress, casting lightning magic, detailed clothing, digital painting, hyperrealistic, fantasy, Surrealist, full body, by Stanley Artgerm Lau and Alphonse Mucha, artstation, highly detailed, sharp focus, sci-fi, stunningly beautiful, dystopian, <strong>iridescent gold</strong></p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/01658-1103039641-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/01658-1103039641-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04884-285855119-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04884-285855119-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04889-2937046758-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04889-2937046758-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<p>The gold comes out great!</p>
+<h3 id="Lighting"><a href="#Lighting" class="headerlink" title="Lighting"></a>Lighting</h3><p>Any photographer would tell you lighting is a key factor in creating successful images. Lighting keywords can have a huge effect on how the image looks. Let’s add <strong>cinematic lighting</strong> and <strong>dark</strong> to the prompt.</p>
+<blockquote>
+<p>Emma Watson as a powerful mysterious sorceress, casting lightning magic, detailed clothing, digital painting, hyperrealistic, fantasy, Surrealist, full body, by Stanley Artgerm Lau and Alphonse Mucha, artstation, highly detailed, sharp focus, sci-fi, stunningly beautiful, dystopian, iridescent gold, <strong>cinematic lighting, dark</strong></p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04912-3838184885-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04912-3838184885-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04925-552912716-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04925-552912716-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04928-512218395-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04928-512218395-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<p>This complete our example prompt.</p>
+<p>As you may have notice, the images are already pretty good with a few keywords added to the subject. When it comes to building a prompt for Stable Diffusion, often you don’t need to have many keywords to get good images.</p>
+<h2 id="Negative-prompt"><a href="#Negative-prompt" class="headerlink" title="Negative prompt"></a>Negative prompt</h2><p>Using <a target="_blank" rel="noopener" href="https://stable-diffusion-art.com/how-to-use-negative-prompts/">negative prompts</a> is another great way to steer the image, but instead of putting in what you want, you put in what you don’t want. They don’t need to be objects. They can also be styles and unwanted attributes. (e.g. ugly, deformed)</p>
+<p>Using negative prompts is a must for <a target="_blank" rel="noopener" href="https://stable-diffusion-art.com/models/#v2_models">v2 models</a>. Without it, the images would look far inferior to v1’s. They are optional for v1 models, but I routinely use them because they either help or don’t hurt.</p>
+<p>I will use a universal negative prompt. You can <a target="_blank" rel="noopener" href="https://stable-diffusion-art.com/how-to-use-negative-prompts/">read more</a> about it if you want to understand how it works.</p>
+<blockquote>
+<p>ugly, tiling, poorly drawn hands, poorly drawn feet, poorly drawn face, out of frame, extra limbs, disfigured, deformed, body out of frame, bad anatomy, watermark, signature, cut off, low contrast, underexposed, overexposed, bad art, beginner, amateur, distorted face, blurry, draft, grainy</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/01701-214807721-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/01701-214807721-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04932-512218397-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04932-512218397-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04965-4275528308-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/04965-4275528308-Emma-Watson-as-a-powerful-mysterious-sorceress-casting-lightning-magic-detailed-clothing-digital-painting-hyperrealistic-fa.png?resize=512,704&ssl=1"></a></p>
+<p>With universal negative prompt.</p>
+<p>The negative prompt helped the images to pop out more, making them less flat.</p>
+<h2 id="Process-of-building-a-good-prompt"><a href="#Process-of-building-a-good-prompt" class="headerlink" title="Process of building a good prompt"></a>Process of building a good prompt</h2><h3 id="Iterative-prompt-building"><a href="#Iterative-prompt-building" class="headerlink" title="Iterative prompt building"></a>Iterative prompt building</h3><p>You should approach prompt building as an iterative process. As you see from the previous section, the images could be pretty good with just a few keywords added to the subject.</p>
+<p>I always start with a simple prompt with subject, medium, and style only. Generate at least 4 images at a time to see what you get. Most prompts do not work 100% of the time. You want to get some idea of what they can do statistically.</p>
+<p>Add at most two keywords at a time. Likewise, generate at least 4 images to assess its effect.</p>
+<h3 id="Using-negative-prompt"><a href="#Using-negative-prompt" class="headerlink" title="Using negative prompt"></a>Using negative prompt</h3><p>You can use an <a target="_blank" rel="noopener" href="https://stable-diffusion-art.com/how-to-use-negative-prompts/#Universal_negative_prompt">universal negative prompt</a> if you are starting out.</p>
+<p>Adding keywords to the negative prompt can be part of the iterative process. The keywords can be objects or body parts you want to avoid (Since v1 models are not very good at rendering hands, it’s not a bad idea to use “hand” in the negative prompt to hide them.)</p>
+<h2 id="Prompting-techniques"><a href="#Prompting-techniques" class="headerlink" title="Prompting techniques"></a>Prompting techniques</h2><p>You can modify a keyword’s importance by switching to a different one at a certain sampling step.</p>
+<p>The following syntaxes apply to AUTOMATIC1111 GUI. You can run this GUI with one-click using the Colab notebook in the <a target="_blank" rel="noopener" href="https://andrewongai.gumroad.com/l/stable_diffusion_quick_start">Quick Start Guide</a>. You can also install it on <a target="_blank" rel="noopener" href="https://stable-diffusion-art.com/install-windows/">Windows</a> and <a target="_blank" rel="noopener" href="https://stable-diffusion-art.com/install-mac/">Mac</a>.</p>
+<h3 id="Keyword-weight"><a href="#Keyword-weight" class="headerlink" title="Keyword weight"></a>Keyword weight</h3><p>(<em>This syntax applies to AUTOMATIC1111 GUI.</em>)</p>
+<p>You can adjust the <strong>weight</strong> of a keyword by the syntax <code>(keyword: factor)</code>. <code>factor</code> is a value such that less than 1 means less important and larger than 1 means more important.</p>
+<p>For example, we can adjust the weight of the keyword <code>dog</code> in the following prompt</p>
+<blockquote>
+<p><strong>dog</strong>, autumn in paris, ornate, beautiful, atmosphere, vibe, mist, smoke, fire, chimney, rain, wet, pristine, puddles, melting, dripping, snow, creek, lush, ice, bridge, forest, roses, flowers, by stanley artgerm lau, greg rutkowski, thomas kindkade, alphonse mucha, loish, norman rockwell.</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/0.5-05038-1215212448-dog_0.5-autumn-in-paris-ornate-beautiful-atmosphere-vibe-mist-smoke-fire-chimney-rain-wet-pristine-puddles-mel.png?resize=704,512&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/0.5-05038-1215212448-dog_0.5-autumn-in-paris-ornate-beautiful-atmosphere-vibe-mist-smoke-fire-chimney-rain-wet-pristine-puddles-mel.png?resize=704,512&ssl=1"></a></p>
+<p>(dog: 0.5)</p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/1-05037-1215212448-dog-autumn-in-paris-ornate-beautiful-atmosphere-vibe-mist-smoke-fire-chimney-rain-wet-pristine-puddles-melting-d.png?resize=704,512&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/1-05037-1215212448-dog-autumn-in-paris-ornate-beautiful-atmosphere-vibe-mist-smoke-fire-chimney-rain-wet-pristine-puddles-melting-d.png?resize=704,512&ssl=1"></a></p>
+<p>dog</p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/1.5-05036-1215212448-dog_1.5-autumn-in-paris-ornate-beautiful-atmosphere-vibe-mist-smoke-fire-chimney-rain-wet-pristine-puddles-melt.png?resize=704,512&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/1.5-05036-1215212448-dog_1.5-autumn-in-paris-ornate-beautiful-atmosphere-vibe-mist-smoke-fire-chimney-rain-wet-pristine-puddles-melt.png?resize=704,512&ssl=1"></a></p>
+<p>(dog: 1.5)</p>
+<p>Increasing the weight of <code>dog</code> tends to generate more dogs. Decreasing it tends to generate fewer. It is not always true for every single image. But it is true in a statistical sense.</p>
+<p>This technique can be applied to subject keywords and all categories, such as style and lighting.</p>
+<h3 id="and-syntax"><a href="#and-syntax" class="headerlink" title="() and [] syntax"></a>() and [] syntax</h3><p>(<em>This syntax applies to AUTOMATIC1111 GUI.</em>)</p>
+<p>An equivalent way to adjust keyword strength is to use <code>()</code> and <code>[]</code>. <code>(keyword)</code> increases the strength of the keyword by a factor of 1.1 and is the same as <code>(keyword:1.1)</code>. <code>[keyword]</code> decrease the strength by a factor of 0.9 and is the same as <code>(keyword:0.9)</code>.</p>
+<p>You can use multiple of them, just like in Algebra… The effect is multiplicative.</p>
+<blockquote>
+<p>(keyword): 1.1<br>((keyword)): 1.21<br>(((keyword))): 1.33</p>
+</blockquote>
+<p>Similarly, the effects of using multiple <code>[]</code> are</p>
+<blockquote>
+<p>[keyword]: 0.9<br>[[keyword]]: 0.81<br>[[[keyword]]]: 0.73</p>
+</blockquote>
+<h3 id="Keyword-blending"><a href="#Keyword-blending" class="headerlink" title="Keyword blending"></a>Keyword blending</h3><p>(<em>This syntax applies to AUTOMATIC1111 GUI.</em>)</p>
+<p>You can mix two keywords. The proper term is <strong>prompt scheduling</strong>. The syntax is</p>
+<blockquote>
+<p>[keyword1 : keyword2: factor]</p>
+</blockquote>
+<p><code>factor</code> controls at which step keyword1 is switched to keyword2. It is a number between 0 and 1.</p>
+<p>For example, if I use the prompt</p>
+<blockquote>
+<p>Oil painting portrait of [Joe Biden: Donald Trump: 0.5]</p>
+</blockquote>
+<p>for 30 sampling steps.</p>
+<p>That means the prompt in steps 1 to 15 is</p>
+<blockquote>
+<p>Oil painting portrait of Joe Biden</p>
+</blockquote>
+<p>And the prompt in steps 16 to 30 becomes</p>
+<blockquote>
+<p>Oil painting portrait of Donald Trump</p>
+</blockquote>
+<p>The factor determines when the keyword is changed. it is after 30 steps x 0.5 &#x3D; 15 steps.</p>
+<p>The effect of changing the factor is blending the two presidents to different degrees.</p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/image-19.png?resize=480,196&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/image-19.png?resize=480,196&ssl=1"></a></p>
+<p>You may have noticed Trump is in a white suit which is more of a Joe outfit. This is a perfect example of a very important rule for keyword blending: <strong>The first keyword dictates the global composition.</strong> The early diffusion steps set the overall composition. The later steps refine details.</p>
+<p>Quiz: What would you get if you swapped Donald Trump and Joe Biden?</p>
+<h4 id="Blending-faces"><a href="#Blending-faces" class="headerlink" title="Blending faces"></a>Blending faces</h4><p>A common use case is to create a new face with a particular look, borrowing from actors and actresses. For example, [Emma Watson: Amber heard: 0.85], 40 steps is a look between the two:</p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/image-20.png?resize=512,512&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/image-20.png?resize=512,512&ssl=1"></a></p>
+<p>When carefully choosing the two names and adjusting the factor, we can get the look we want precisely.</p>
+<h4 id="Poor-man’s-prompt-to-prompt"><a href="#Poor-man’s-prompt-to-prompt" class="headerlink" title="Poor man’s prompt-to-prompt"></a>Poor man’s prompt-to-prompt</h4><p>Using keyword blending, you can achieve effects similar to <a target="_blank" rel="noopener" href="https://prompt-to-prompt.github.io/">prompt-to-prompt</a>, generating pairs of highly similar images with edits. The following two images are generated with the same prompt except for a prompt schedule to substitute <code>apple</code> with <code>fire</code>. The seed and number of steps were kept the same.</p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05070-1215212449-Amber-Heard_-emma-watson-_0.5-holding-an-apple_-fire_-0.9Victorian-FemininePerfect-Face-arms-outstretched-ab.png?resize=704,512&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05070-1215212449-Amber-Heard_-emma-watson-_0.5-holding-an-apple_-fire_-0.9Victorian-FemininePerfect-Face-arms-outstretched-ab.png?resize=704,512&ssl=1"></a></p>
+<p><strong>holding an [apple: fire: 0.9]</strong></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05078-1215212449-Amber-Heard_-emma-watson-_0.5-holding-an-apple_-fire_-0.2Victorian-FemininePerfect-Face-arms-outstretched-ab.png?resize=704,512&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05078-1215212449-Amber-Heard_-emma-watson-_0.5-holding-an-apple_-fire_-0.2Victorian-FemininePerfect-Face-arms-outstretched-ab.png?resize=704,512&ssl=1"></a></p>
+<p><strong>holding an [apple: fire: 0.2]</strong></p>
+<p>The factor needs to be carefully adjusted. How does it work? The theory behind this is the overall composition of the image was set by the early <a target="_blank" rel="noopener" href="https://stable-diffusion-art.com/how-stable-diffusion-work/#Diffusion_model">diffusion process</a>. Once the diffusion is trapped in a small space, swapping any keywords won’t have a large effect on the overall image. It would only change a small part.</p>
+<h2 id="How-long-can-a-prompt-be"><a href="#How-long-can-a-prompt-be" class="headerlink" title="How long can a prompt be?"></a>How long can a prompt be?</h2><p>Depending on what Stable Diffusion service you are using, there could be a maximum number of keywords you can use in the prompt. In the basic Stable Diffusion v1 model, that limit is 75 <strong>tokens</strong>.</p>
+<p>Note that tokens are not the same as words. The <a target="_blank" rel="noopener" href="https://stable-diffusion-art.com/how-stable-diffusion-work/#Tokenizer">CLIP model</a> Stable Diffusion uses automatically converts the prompt into tokens, a numerical representation of words it knows. If you put in a word it has not seen before, it will be broken up into 2 or more sub-words until it knows what it is. The words it knows are called tokens, which are represented as numbers. For example, <em>dream</em> is one token, <em>beach</em> is one token. But <em>dreambeach</em> are two tokens because the model doesn’t know this word, and so the model breaks the word up to <code>dream</code> and <code>beach</code> which it knows.</p>
+<h3 id="Prompt-limit-in-AUTOMATIC1111"><a href="#Prompt-limit-in-AUTOMATIC1111" class="headerlink" title="Prompt limit in AUTOMATIC1111"></a>Prompt limit in AUTOMATIC1111</h3><p>AUTOMATIC1111 has <a target="_blank" rel="noopener" href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#infinite-prompt-length">no token limits</a>. If a prompt contains more than 75 tokens, the limit of the CLIP tokenizer, it will start a new chunk of another 75 tokens, so the new “limit” becomes 150. The process can continue forever or until your computer runs out of memory…</p>
+<p>Each chunk of 75 tokens is processed independently, and the resulting representations are concatenated before feeding into Stable Diffusion’s <a target="_blank" rel="noopener" href="https://stable-diffusion-art.com/how-stable-diffusion-work/#Feeding_embeddings_to_noise_predictor">U-Net</a>.</p>
+<p>In AUTOMATIC1111, You can check the number of tokens by looking at the small box at the top right corner of the prompt input box.</p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/image-23.png?resize=404,225&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/image-23.png?resize=404,225&ssl=1"></a></p>
+<p>Token counter in AUTOMATIC1111</p>
+<h2 id="Checking-keywords"><a href="#Checking-keywords" class="headerlink" title="Checking keywords"></a>Checking keywords</h2><p>The fact that you see people using a keyword doesn’t mean that it is effective. Like homework, we all copy each other’s prompts, sometimes without much thought.</p>
+<p>You can check the effectiveness of a keyword by just using it as a prompt. For example, does the v1.5 model know the American painter <a target="_blank" rel="noopener" href="https://www.artbrokerage.com/Henry-Asencio">Henry Asencio</a>? Let’s check with the prompt</p>
+<blockquote>
+<p>henry asencio</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/image-13.png?resize=750,750&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/image-13.png?resize=750,750&ssl=1"></a></p>
+<p>Positive!</p>
+<p>How about the Artstation sensation <a target="_blank" rel="noopener" href="https://www.artstation.com/wlop">wlop</a>?</p>
+<blockquote>
+<p>wlop</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/image-12.png?resize=750,750&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/image-12.png?resize=750,750&ssl=1"></a></p>
+<p>Well, doesn’t look like it. That’s why you shouldn’t use “by wlop”. That’s just adding noise.</p>
+<p><strong>Josephine Wall</strong> is a resounding yes:</p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/image-14.png?resize=750,750&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/image-14.png?resize=750,750&ssl=1"></a></p>
+<p>You can use this technique to examine the effect of mixing two or more artists.</p>
+<blockquote>
+<p>Henry asencio, Josephine Wall</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/image-15.png?resize=750,750&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/image-15.png?resize=750,750&ssl=1"></a></p>
+<h2 id="Limiting-the-variation"><a href="#Limiting-the-variation" class="headerlink" title="Limiting the variation"></a>Limiting the variation</h2><p>To be good at building prompts, you need to think like Stable Diffusion. At its core, it is an <strong>image sampler</strong>, generating pixel values that we humans likely say it’s legit and good. You can even use it without prompts, and it would generate many unrelated images. In technical terms, this is called unconditioned or unguided diffusion.</p>
+<p>The prompt is a way to <strong>guide</strong> the diffusion process to the sampling space where it matches. I said earlier that a prompt needs to be detailed and specific. It’s because a detailed prompt narrows down the sampling space. Let’s look at an example.</p>
+<blockquote>
+<p>castle</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05589-1260129908-castle.png?resize=512,512&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05589-1260129908-castle.png?resize=512,512&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05590-1260129909-castle.png?resize=512,512&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05590-1260129909-castle.png?resize=512,512&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05593-977577124-castle.png?resize=512,512&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05593-977577124-castle.png?resize=512,512&ssl=1"></a></p>
+<blockquote>
+<p>castle, <strong>blue sky background</strong></p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05580-4186220353-castle-blue-sky-background.png?resize=512,512&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05580-4186220353-castle-blue-sky-background.png?resize=512,512&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05581-4186220354-castle-blue-sky-background.png?resize=512,512&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05581-4186220354-castle-blue-sky-background.png?resize=512,512&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05587-613358571-castle-blue-sky-background.png?resize=512,512&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05587-613358571-castle-blue-sky-background.png?resize=512,512&ssl=1"></a></p>
+<blockquote>
+<p><strong>wide angle view</strong> of castle, blue sky background</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05573-3352466387-wide-angle-view-of-castle-blue-sky-background.png?resize=512,512&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05573-3352466387-wide-angle-view-of-castle-blue-sky-background.png?resize=512,512&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05575-3352466389-wide-angle-view-of-castle-blue-sky-background.png?resize=512,512&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05575-3352466389-wide-angle-view-of-castle-blue-sky-background.png?resize=512,512&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05578-3659602232-wide-angle-view-of-castle-blue-sky-background.png?resize=512,512&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05578-3659602232-wide-angle-view-of-castle-blue-sky-background.png?resize=512,512&ssl=1"></a></p>
+<p>By adding more describing keywords in the prompt, we narrow down the sampling of castles. In We asked for <strong>any image of a castle</strong> in the first example. Then we asked to get only those with a blue sky background. Finally, we demanded it is <strong>taken as a wide-angle photo</strong>.</p>
+<p>The more you specify in the prompt, the less variation in the images.</p>
+<h2 id="Association-effect"><a href="#Association-effect" class="headerlink" title="Association effect"></a>Association effect</h2><h3 id="Attribute-association"><a href="#Attribute-association" class="headerlink" title="Attribute association"></a>Attribute association</h3><p>Some attributes are strongly correlated. When you specify one, you will get the other. Stable Diffusion generates the most likely images that could have an unintended association effect.</p>
+<p>Let’s say we want to generate photos of women with <strong>blue eyes</strong>.</p>
+<blockquote>
+<p>a young female with <strong>blue eyes</strong>, highlights in hair, sitting outside restaurant, wearing a white outfit, side light</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05642-962108224-a-young-female-with-blue-eyes-highlights-in-hair-sitting-outside-restaurant-wearing-dress-side-light.png?resize=512,512&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05642-962108224-a-young-female-with-blue-eyes-highlights-in-hair-sitting-outside-restaurant-wearing-dress-side-light.png?resize=512,512&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05644-962108226-a-young-female-with-blue-eyes-highlights-in-hair-sitting-outside-restaurant-wearing-dress-side-light.png?resize=512,512&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05644-962108226-a-young-female-with-blue-eyes-highlights-in-hair-sitting-outside-restaurant-wearing-dress-side-light.png?resize=512,512&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05648-1605130365-a-young-female-with-blue-eyes-highlights-in-hair-sitting-outside-restaurant-wearing-dress-side-light.png?resize=512,512&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05648-1605130365-a-young-female-with-blue-eyes-highlights-in-hair-sitting-outside-restaurant-wearing-dress-side-light.png?resize=512,512&ssl=1"></a></p>
+<p>Blue eyes</p>
+<p>What if we change to brown eyes?</p>
+<blockquote>
+<p>a young female with <strong>brown eyes</strong>, highlights in hair, sitting outside restaurant, wearing a white outfit, side light</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05636-2710473180-a-young-female-with-brown-eyes-highlights-in-hair-sitting-outside-restaurant-wearing-dress-side-light.png?resize=512,512&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05636-2710473180-a-young-female-with-brown-eyes-highlights-in-hair-sitting-outside-restaurant-wearing-dress-side-light.png?resize=512,512&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05637-3695321613-a-young-female-with-brown-eyes-highlights-in-hair-sitting-outside-restaurant-wearing-dress-side-light.png?resize=512,512&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05637-3695321613-a-young-female-with-brown-eyes-highlights-in-hair-sitting-outside-restaurant-wearing-dress-side-light.png?resize=512,512&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05639-3695321615-a-young-female-with-brown-eyes-highlights-in-hair-sitting-outside-restaurant-wearing-dress-side-light.png?resize=512,512&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05639-3695321615-a-young-female-with-brown-eyes-highlights-in-hair-sitting-outside-restaurant-wearing-dress-side-light.png?resize=512,512&ssl=1"></a></p>
+<p>Brown eyes</p>
+<p>Nowhere in the prompts, I specified ethnicity. But because people with blue eyes are predominantly Europeans, Caucasians were generated. Brown eyes are more common across different ethnicities, so you will see a more diverse sample of races.</p>
+<p>Stereotyping and bias is a big topic in AI models. I will confine to the technical aspect in this article.</p>
+<h3 id="Association-of-celebrity-names"><a href="#Association-of-celebrity-names" class="headerlink" title="Association of celebrity names"></a>Association of celebrity names</h3><p>Every keyword has some unintended associations. That’s especially true for celebrity names. Some actors and actresses like to be in certain poses or wear certain outfits when taking pictures, and hence in the training data. If you think about it, model training is nothing but learning by association. If Taylor Swift (in the training data) always crosses her legs, the model would think leg crossing is Taylor Swift too.</p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05190-3766034489-full-body-taylor-swift-in-future-high-tech-dystopian-city-digital-painting.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05190-3766034489-full-body-taylor-swift-in-future-high-tech-dystopian-city-digital-painting.png?resize=512,704&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05197-2765129714-full-body-taylor-swift-in-future-high-tech-dystopian-city-digital-painting.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05197-2765129714-full-body-taylor-swift-in-future-high-tech-dystopian-city-digital-painting.png?resize=512,704&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05210-151929197-full-body-taylor-swift-in-future-high-tech-dystopian-city-digital-painting.png?resize=512,704&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05210-151929197-full-body-taylor-swift-in-future-high-tech-dystopian-city-digital-painting.png?resize=512,704&ssl=1"></a></p>
+<p>Prompt: full body taylor swift in future high tech dystopian city, digital painting</p>
+<p>When you use Taylor Swift in the prompt, you may mean to use her face. But there’s an effect of the subject’s pose and outfit too. The effect can be studied by using her name alone as the prompt.</p>
+<p>Poses and outfits are global compositions. If you want her face but not her poses, you can use <a target="_blank" rel="noopener" href="https://stable-diffusion-art.com/prompt-guide/#Keyword_blending">keyword blending</a> to swap her in at a later sampling step.</p>
+<h3 id="Association-of-artist-names"><a href="#Association-of-artist-names" class="headerlink" title="Association of artist names"></a>Association of artist names</h3><p>Perhaps the most prominent example of association is seen when using artist names.</p>
+<p>The 19th-century Czech painter Alphonse Mucha is a popular occurrence in portrait prompts because the name helps generate interesting embellishments, and his style blends very well with digital illustrations. But it also often leaves a signature circular or dome-shaped pattern in the background. They could look unnatural in outdoor settings.</p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05276-3433818815-digital-painting-of-Emma-Watson_Taylor-Swift_-0.5-by-Alphonse-Mucha.png?resize=512,768&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05276-3433818815-digital-painting-of-Emma-Watson_Taylor-Swift_-0.5-by-Alphonse-Mucha.png?resize=512,768&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05279-1972745901-digital-painting-of-Emma-Watson_Taylor-Swift_-0.6-by-Alphonse-Mucha.png?resize=512,768&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05279-1972745901-digital-painting-of-Emma-Watson_Taylor-Swift_-0.6-by-Alphonse-Mucha.png?resize=512,768&ssl=1"></a></p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05281-1972745903-digital-painting-of-Emma-Watson_Taylor-Swift_-0.6-by-Alphonse-Mucha.png?resize=512,768&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/05281-1972745903-digital-painting-of-Emma-Watson_Taylor-Swift_-0.6-by-Alphonse-Mucha.png?resize=512,768&ssl=1"></a></p>
+<p>Prompt: digital painting of [Emma Watson:Taylor Swift: 0.6] by Alphonse Mucha. (30 steps)</p>
+<h2 id="Embeddings-are-keywords"><a href="#Embeddings-are-keywords" class="headerlink" title="Embeddings are keywords"></a>Embeddings are keywords</h2><p><a target="_blank" rel="noopener" href="https://stable-diffusion-art.com/embedding/">Embeddings</a>, the result of textual inversion, are nothing but combinations of keywords. You can expect them to do a bit more than what they claim.</p>
+<p>Let’s see the following base images of Ironman making a meal without using embeddings.</p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/grid-1060.png?resize=750,546&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/grid-1060.png?resize=750,546&ssl=1"></a></p>
+<p>Prompt: iron man cooking in kitchen.</p>
+<p><a target="_blank" rel="noopener" href="https://civitai.com/models/2032/empire-style">Style-Empire</a> is an embedding I like to use because it adds a dark tone to portrait images and creates an interesting lighting effect. Since it was trained on an image with a street scene at night, you can expect it adds some blacks AND perhaps buildings and streets. See the images below with the embedding added.</p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/grid-1059.png?resize=750,546&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/grid-1059.png?resize=750,546&ssl=1"></a></p>
+<p>Prompt: iron man cooking in kitchen <strong>Style-Empire</strong>.</p>
+<p>Note some interesting effects</p>
+<ul>
+<li>The background of the first image changed to city buildings at night.</li>
+<li>Iron man tends to show his face. Perhaps the training image is a portrait?</li>
+</ul>
+<p>So even if an embedding is intended to modify the style, it is just a bunch of keywords and can have unintended effects.</p>
+<h2 id="Effect-of-custom-models"><a href="#Effect-of-custom-models" class="headerlink" title="Effect of custom models"></a>Effect of custom models</h2><p>Using a <a target="_blank" rel="noopener" href="https://stable-diffusion-art.com/models/">custom model</a> is the easiest way to achieve a style, guaranteed. This is also a unique charm of Stable Diffusion. Because of the large open-source community, hundreds of custom models are freely available.</p>
+<p>When using a model, we need to be aware that the meaning of a keyword can change. This is especially true for styles.</p>
+<p>Let’s use Henry Asencio again as an example. In v1.5, his name alone generates:</p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/image-13.png?resize=750,750&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/image-13.png?resize=750,750&ssl=1"></a></p>
+<p>Using <a target="_blank" rel="noopener" href="https://stable-diffusion-art.com/models/#DreamShaper">DreamShaper</a>, a model fine-tuned for portrait illustrations, with the same prompt gives</p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/image-21.png?resize=750,750&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/02/image-21.png?resize=750,750&ssl=1"></a></p>
+<p>It is a very decent but distinctly different style. The model has a strong basis for generating clear and pretty faces, which has been revealed here.</p>
+<p>So make sure to check when you use a style in custom models. van Gogh may not be van Gogh anymore!</p>
+<h2 id="Region-specific-prompts"><a href="#Region-specific-prompts" class="headerlink" title="Region-specific prompts"></a>Region-specific prompts</h2><p>Do you know you can specify different prompts for different regions of the image?</p>
+<p>For example, you can put the moon at the top left:</p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/05/image-34.png?resize=750,500&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/05/image-34.png?resize=750,500&ssl=1"></a></p>
+<p>Or at the top right:</p>
+<p><a target="_blank" rel="noopener" href="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/05/image-39.png?resize=750,500&ssl=1" class="gallery-item"><img src="https://i0.wp.com/stable-diffusion-art.com/wp-content/uploads/2023/05/image-39.png?resize=750,500&ssl=1"></a></p>
+<p>You can do that by using the <a target="_blank" rel="noopener" href="https://stable-diffusion-art.com/regional-prompter/">Regional Prompter</a> extension. It’s a great way to control image composition!</p>
+<p><a target="_blank" rel="noopener" href="https://www.buymeacoffee.com/sdart"><a target="_blank" rel="noopener" href="https://i0.wp.com/cdn.buymeacoffee.com/buttons/v2/default-yellow.png?w=750&ssl=1" title="Buy Me A Coffee" class="gallery-item"><img src="https://i0.wp.com/cdn.buymeacoffee.com/buttons/v2/default-yellow.png?w=750&ssl=1" alt="Buy Me A Coffee"><span class="image-caption">Buy Me A Coffee</span></a></a></p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>
+    </div>
+    <footer class="article-footer">
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/stable-diffusion/" rel="tag">stable diffusion</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8C%87%E5%8D%97/" rel="tag">指南</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BF%BB%E8%AF%91/" rel="tag">翻译</a></li></ul>
+
+    </footer>
+  </div>
+  
+  
+    
+<nav class="article-nav pt-4 mt-3" id="article-nav">
+  
+    <a href="/playground/web/hexo-new-theme-based-on-acorn/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hexo 新主题：基于 Acorn 定制
+        
+      </div>
+    </a>
+  
+  
+    <a href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Auto Photoshop Stable Diffusion Plugin</div>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+</div>
+    </section>
+    <footer class="footer pt-4 mt-5">
+  <div class="container">
+    <div class="py-3">
+      <div class="row justify-content-between">
+        <div class="col-6">
+          <img class="filter-invert mb-3 lazyload" height="60" data-src="/images/brand-waxacn.svg" alt="Waxa.Deisgn | 蛙夏设计" role="img">
+          <p class="mb-4">Kaero，自由设计师。喜好摄影、游历及文学，素来不务正业，以研究各种杂七杂八为能事。江西人，曾居上海、深圳，现定居苏州，承接各种与设计相关的事务与需求。</p>
+          <ul class="list-inline">
+            
+              <li class="list-inline-item">
+                <a target="_blank" rel="noopener" href="https://twitter.com/kaero">
+                  <img 0="Twitter" src="/images/icons/contact-twitter.svg">
+                </a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="javascript:;">
+                  <img 0="微信" src="/images/icons/contact-wechat.svg">
+                </a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="mailto:kaero.zhi@gmail.com">
+                  <img 0="邮箱" src="/images/icons/contact-mail.svg">
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+        <div class="col-4">
+          <h5>友情链接</h5>
+          <ul class="list-inline">
+            
+              <li class="list-inline-item">
+                <a href="https://zesen.net/" title="泽森" target="_blank" rel="noopener">泽森</a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="https://acorn.imaging.xin/" title="Acorn" target="_blank" rel="noopener">Acorn</a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="https://duoyu.wang/" title="To Base64" target="_blank" rel="noopener">To Base64</a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="hr" style="opacity: .25;">
+    <div class="pt-3 pb-5">
+      <ul class="list-inline mb-0 text-center">
+        <li class="list-inline-item">&copy; 2023 Waxa.Deisgn | 蛙夏设计</li>
+        
+        <li class="list-inline-item">Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+        <li class="list-inline-item">Designer <a href="https://waxa.design" target="_blank">Kaero</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+  </main>
+  <div id="mobile-nav-dimmer"></div>
+<div id="mobile-nav">
+	<div id="mobile-nav-inner">
+		<ul class="mobile-nav">
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/">首页</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/gallery">影像</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/stories">案例</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/archives">更新</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/about">关于</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/javascript(void);">搜索</a>
+  </li>
+  
+</ul>
+		
+	</div>
+</div>
+
+  <script src="/libs/feather/feather.min.js"></script>
+<script src="/libs/lazysizes/lazysizes.min.js"></script>
+
+	<script src="/libs/tocbot/tocbot.min.js"></script>
+	<script>
+    tocbot.init({
+      // Where to render the table of contents.
+      tocSelector: '.js-toc',
+      // Where to grab the headings to build the table of contents.
+      contentSelector: '.js-toc-content',
+      // Which headings to grab inside of the contentSelector element.
+      headingSelector: 'h2, h3',
+      // For headings inside relative or absolute positioned containers within content.
+      hasInnerContainers: true,
+    });
+	</script>
+
+
+
+	<!-- Swiper JS -->
+	<script src="/libs/swiper/swiper-bundle.min.js"></script>
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper(".oneSwiper", {
+			slidesPerView: "auto",
+			centeredSlides: true,
+			spaceBetween: 30,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+    });
+	</script>
+
+
+
+<script src="/js/mobile-nav.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+</body>
+</html>
