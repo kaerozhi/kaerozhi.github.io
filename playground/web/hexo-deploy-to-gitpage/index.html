@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  
+    <meta name="keywords" content="kaero, kaero zhi, designer, blog, design, photography, photographer, chinese, suzhou, 旧体诗, 诗词">
+  
+  
+    <meta name="description" content="只求一键三连能成功！">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <title>Hexo 同步 Github Page |  KAERO</title>
+  
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/webclip/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/webclip/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/webclip/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/webclip/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/webclip/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/webclip/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/webclip/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/webclip/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
+  
+  
+    <link rel="shortcut icon" href="/images/favicon.png">
+  
+  
+    <link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css"/>
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="KAERO" type="application/atom+xml">
+</head>
+
+<body>
+  <main class="main">
+    
+	<header class="header">
+
+	<div class="container">
+		<nav class="navbar d-flex align-items-center">
+			<a class="brand" href="/">
+				<img class="logo lazyload" data-src="/images/brand-waxacn.svg" alt="KAERO" role="img">
+			</a>
+			<ul class="main-nav">
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/">首页</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/gallery">影像</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/stories">案例</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/archives">更新</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/about">关于</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/javascript();">搜索</a>
+  </li>
+  
+</ul>
+		</nav>
+		<a id="mobile-nav-toggle">
+			<span class="mobile-nav-toggle-bar"></span>
+			<span class="mobile-nav-toggle-bar"></span>
+			<span class="mobile-nav-toggle-bar"></span>
+		</a>
+	</div>
+</header>
+
+    <section>
+      <div class="container">
+  <article id="post-hexo-deploy-to-gitpage" class="article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  
+  <div class="artcle-cover">
+    
+  
+    
+      <img class="artcle-cover-img lazyload" data-src="/playground/web/hexo-deploy-to-gitpage//hexo-deploy-to-gitpage.png" itemprop="image" alt="">
+       
+  
+
+  </div>
+  
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+        <div class="article-meta">
+          <time class="text-gray" datetime="2023-07-15T08:26:00.000Z" itemprop="datePublished">
+  2023-07-15
+</time>
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/playground/">玩艺</a> / <a class="article-category-link" href="/categories/playground/web/">网站</a>
+  </div>
+
+        </div>
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hexo 同步 Github Page
+    </h1>
+  
+
+        
+  <div class="article-description">
+    <p>只求一键三连能成功！</p>
+
+  </div>
+
+      
+    </header>
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+    
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>说起 Hexo，用户最熟悉的操作自然是 <code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code>，但很不幸的是，不知是哪里出了错，我的 <code>hexo d</code> 还从未操作成功过。</p>
+<div class="foreword"></div>
+<span id="more"></span>
+
+<p>可能我的部署环境比较特殊，是一台黑群晖。按照<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/one-command-deployment.html">官方文档</a>配置 <code>_config.yml</code>：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/kaerozhi/kaerozhi.bitbucket.io</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br><span class="line">  <span class="attr">token:</span> [<span class="string">token</span>]</span><br></pre></td></tr></table></figure>
+
+<p>运行 <code>hexo d</code> 之后会提示输入用户名和密码，然后报错：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">remote: Support <span class="keyword">for</span> password authentication was removed on August 13, 2021.</span><br><span class="line">remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories<span class="comment">#cloning-with-https-urls for information on currently recommended modes of authentication.</span></span><br><span class="line">fatal: Authentication failed <span class="keyword">for</span> <span class="string">&#x27;https://github.com/kaerozhi/kaerozhi.github.io.git/&#x27;</span></span><br><span class="line">FATAL Something<span class="string">&#x27;s wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</span></span><br><span class="line"><span class="string">Error: Spawn failed</span></span><br><span class="line"><span class="string">    at ChildProcess.&lt;anonymous&gt; (/volume1/web/Hexo/node_modules/hexo-util/lib/spawn.js:51:21)</span></span><br><span class="line"><span class="string">    at ChildProcess.emit (node:events:513:28)</span></span><br><span class="line"><span class="string">    at ChildProcess._handle.onexit (node:internal/child_process:291:12)</span></span><br></pre></td></tr></table></figure>
+
+<p>搜索了很多解决办法。首先，按照 <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43659183/article/details/126041835">使用 personal token 将 Hexo 本地文件推到 GitHub</a> 的办法，将 Token 加入 repo：     </p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://[token]@github.com/kaerozhi/kaerozhi.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
+
+<p>可惜仍然报错：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fatal: unable to stat &#x27;tags/Blog-Tools/index.html&#x27;: No such file or directory</span><br></pre></td></tr></table></figure>
+
+<p>只不过这个错误跟之前不太一样，看起来是个权限问题。</p>
+<p>既然此路不通，那就跳船。按照这篇文章；<a target="_blank" rel="noopener" href="https://ayase.moe/2023/02/12/deploy-hexo-in-2023/">2023 年了，怎么用 Github Action 与 hexo 发布在 Github Pages 上发布文章</a> ，配置需要更新写法：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/aaaa/bbb.git</span></span><br><span class="line">  <span class="attr">token:</span> <span class="string">&#x27;&#x27;</span> <span class="comment"># ❌</span></span><br><span class="line"></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span></span><br><span class="line">    <span class="attr">github:</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">https://github.com/aaaa/bbb.git</span></span><br><span class="line">      <span class="attr">token:</span> <span class="string">&#x27;&#x27;</span> <span class="comment"># ✅</span></span><br></pre></td></tr></table></figure>
+
+<p>这次运行了一段时间才报错：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fatal: unable to access <span class="string">&#x27;https://github.com/kaerozhi/kaerozhi.github.io.git/&#x27;</span>: HTTP/2 stream 1 was not closed cleanly before end of the underlying stream</span><br></pre></td></tr></table></figure>
+
+<p>还是有权限问题？实在没辙，只能再看看 SSH 能否奏效。但该文所说的「在部署前增加一个配置 SSH 的 action」，我不明白应该在什么地方操作，不知是 Github 还是本地？总之拿不太准，只能再换参考。</p>
+<p>然后找到这一篇：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/v1coder/p/16358864.html">使用 Hexo 在 Github 上建博客</a>，因为 SSH Keys 已经生成过了，所以直接输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<p>将内容复制到 GitHub –&gt; Settings –&gt; SSH and GPG keys –&gt; NEW SSH key。然后将 <code>_config.yml</code> 里的 deploy 部分改成以下格式：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">git@github.com:yourname/yourname.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<p>运行 <code>hexo d</code>，居然跑通了！泪流满面~  之前也上传过 SSH Key，但可能配置文件并不是这个格式写的，真是太折腾人了。</p>
+<p>不过又遇到了新的问题，文件夹太大了，囧：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">remote: fatal: pack exceeds maximum allowed size (2.00 GiB)</span><br></pre></td></tr></table></figure>
+
+<p>检查了一下文件夹，发现游记里的图片过于巨大，动辄五六百M。赶紧用 Photoshop 批处理至 1920x1080px，把整个包压缩到了 1G 以内。<del>然后来一发爽快的 Hexo 三连，顺利收工。</del> 第二天起床发现还是超过上限了，不知道是什么原因，只能继续给文件夹瘦身。</p>
+<p>此时访问 <a target="_blank" rel="noopener" href="https://kaerozhi.github.io/">https://kaerozhi.github.io</a> ，应该能正常浏览了，明天再给它设置一个自定义域名。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>
+    </div>
+    <footer class="article-footer">
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/" rel="tag">Github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li></ul>
+
+      
+        <section class="article-comment gitalk">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" />
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: "08c3d073d058ef04a656",
+    clientSecret: "020374f48336a5e66aa53517997994ee6ea40665",
+    repo: "kaerozhi.github.io", // 博客仓库地址
+    owner: "kaerozhi", // github 用户名
+    admin: ["kaerozhi"], // github 用户名
+    perPage: 20,
+    id: location.pathname.slice(0, 50), // 查找 issus 的条件，后面将对 id 有针对逻辑
+    title: "Hexo 同步 Github Page",
+    body: "🚀 " + location.href + "\n\n欢迎通过 issues 留言 ，互相交流学习😊", // 初始化后，issues 的内容
+  });
+  gitalk.render("gitalk-container");
+</script>
+        </section>
+        
+    </footer>
+  </div>
+  
+  
+    
+<nav class="article-nav pt-4 mt-3" id="article-nav">
+  
+  
+    <a href="/playground/web/hexo-new-theme-based-on-acorn/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hexo 新主题：基于 Acorn 定制</div>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+</div>
+    </section>
+    <footer class="footer pt-4 mt-5">
+  <div class="container">
+    <div class="py-3">
+      <div class="row justify-content-between">
+        <div class="col-6">
+          <img class="filter-invert mb-3 lazyload" height="60" data-src="/images/brand-waxacn.svg" alt="KAERO" role="img">
+          <p class="mb-4">Kaero，自由设计师。喜好摄影、游历及文学，素来不务正业，以研究各种杂七杂八为能事。江西人，曾居上海、深圳，现定居苏州，承接各种与设计相关的事务与需求。</p>
+          <ul class="list-inline">
+            
+              <li class="list-inline-item">
+                <a target="_blank" rel="noopener" href="https://twitter.com/kaero">
+                  <img 0="Twitter" src="/images/icons/contact-twitter.svg">
+                </a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="javascript:;">
+                  <img 0="微信" src="/images/icons/contact-wechat.svg">
+                </a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="mailto:kaero.zhi@gmail.com">
+                  <img 0="邮箱" src="/images/icons/contact-mail.svg">
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+        <div class="col-4">
+          <h5>友情链接</h5>
+          <ul class="list-inline">
+            
+              <li class="list-inline-item">
+                <a href="https://zesen.net/" title="泽森" target="_blank" rel="noopener">泽森</a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="https://acorn.imaging.xin/" title="Acorn" target="_blank" rel="noopener">Acorn</a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="https://duoyu.wang/" title="To Base64" target="_blank" rel="noopener">To Base64</a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="hr" style="opacity: .25;">
+    <div class="pt-3 pb-5">
+      <ul class="list-inline mb-0 text-center">
+        <li class="list-inline-item">&copy; 2023 KAERO</li>
+        
+        <li class="list-inline-item">Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+        <li class="list-inline-item">Designer <a href="http://kaerozhi.com" target="_blank">Kaero</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+  </main>
+  <div id="mobile-nav-dimmer"></div>
+<div id="mobile-nav">
+	<div id="mobile-nav-inner">
+		<ul class="mobile-nav">
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/">首页</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/gallery">影像</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/stories">案例</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/archives">更新</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/about">关于</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/javascript();">搜索</a>
+  </li>
+  
+</ul>
+		
+	</div>
+</div>
+
+  <script src="/libs/feather/feather.min.js"></script>
+<script src="/libs/lazysizes/lazysizes.min.js"></script>
+
+	<script src="/libs/tocbot/tocbot.min.js"></script>
+	<script>
+    tocbot.init({
+      // Where to render the table of contents.
+      tocSelector: '.js-toc',
+      // Where to grab the headings to build the table of contents.
+      contentSelector: '.js-toc-content',
+      // Which headings to grab inside of the contentSelector element.
+      headingSelector: 'h2, h3',
+      // For headings inside relative or absolute positioned containers within content.
+      hasInnerContainers: true,
+    });
+	</script>
+
+
+
+	<!-- Swiper JS -->
+	<script src="/libs/swiper/swiper-bundle.min.js"></script>
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper(".oneSwiper", {
+			slidesPerView: "auto",
+			centeredSlides: true,
+			spaceBetween: 30,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+    });
+	</script>
+
+
+
+<script src="/js/mobile-nav.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+</body>
+</html>
