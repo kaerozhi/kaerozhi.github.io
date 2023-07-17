@@ -23,6 +23,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
   
   
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+    
+    
     <link rel="shortcut icon" href="/images/favicon.png">
   
   
@@ -128,7 +132,7 @@
         
   
     
-        <a class="card-img-link" href="/tours/shantang-at-night/" rel="gallery_clk6h18nf00ffrqtud0qna0ea">
+        <a class="card-img-link" href="/tours/shantang-at-night/" rel="gallery_clk6oufv400fgvutuc2erhs40">
           <img class="card-img lazyload" data-src="/tours/shantang-at-night//DSC3429.jpg" itemprop="image" alt="gallery">
         </a>
        
@@ -181,7 +185,7 @@
         
   
     
-        <a class="card-img-link" href="/tours/2020-suzhou/" rel="gallery_clk6h18k2002prqtu8xx671kk">
+        <a class="card-img-link" href="/tours/2020-suzhou/" rel="gallery_clk6oufqn002qvutuaowe4n9u">
           <img class="card-img lazyload" data-src="/tours/2020-suzhou//ZJG1629.jpg" itemprop="image" alt="gallery">
         </a>
        
@@ -234,7 +238,7 @@
         
   
     
-        <a class="card-img-link" href="/tours/2018-suzhou/" rel="gallery_clk6h18jy0028rqtu9vxwgdeo">
+        <a class="card-img-link" href="/tours/2018-suzhou/" rel="gallery_clk6oufqh0028vutuery6h7v3">
           <img class="card-img lazyload" data-src="/tours/2018-suzhou//ZJG2095.jpg" itemprop="image" alt="gallery">
         </a>
        
@@ -398,6 +402,27 @@
     });
 	</script>
 
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+  <script>
+      (function ($) {
+          $(document).ready(function () {
+              if (typeof($.fn.lightGallery) === 'function') {
+                  $('.article').lightGallery({ selector: '.gallery-item' });
+              }
+              if (typeof($.fn.justifiedGallery) === 'function') {
+                  $('.justified-gallery > p > .gallery-item').unwrap();
+                  $('.justified-gallery').justifiedGallery({
+                      rowHeight : 320,
+                      lastRow : 'nojustify',
+                      margins : 5
+                  });
+              }
+          });
+      })(jQuery);
+  </script>
 
 
 <script>

@@ -23,6 +23,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
   
   
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+    
+    
     <link rel="shortcut icon" href="/images/favicon.png">
   
   
@@ -125,7 +129,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/writings/shici/feimao-and-the-poem-creator/" rel="gallery_clk6h18le007hrqtuf0gia6d9">
+        <a class="card-img-link" href="/writings/shici/feimao-and-the-poem-creator/" rel="gallery_clk6oufsa007gvutu7t4g1eig">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -172,7 +176,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/writings/shici/reply-to-fengboe/" rel="gallery_clk6h18na00errqtug1r4buqa">
+        <a class="card-img-link" href="/writings/shici/reply-to-fengboe/" rel="gallery_clk6oufuw00esvutu90kaf6os">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -207,7 +211,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/writings/shici/a-poem-for-fun/" rel="gallery_clk6h18kd003srqtu8leobkoq">
+        <a class="card-img-link" href="/writings/shici/a-poem-for-fun/" rel="gallery_clk6oufr1003svutu57f709n4">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -242,7 +246,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/writings/shici/birthday-poems-for-fengboe/" rel="gallery_clk6h18kr005crqtucogy8u4j">
+        <a class="card-img-link" href="/writings/shici/birthday-poems-for-fengboe/" rel="gallery_clk6oufrj005bvutugyi1h51c">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -277,7 +281,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/writings/shici/sitting-at-night/" rel="gallery_clk6h18ni00ftrqtucy4k1dxe">
+        <a class="card-img-link" href="/writings/shici/sitting-at-night/" rel="gallery_clk6oufv800fuvutue40ng0qq">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -324,7 +328,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/writings/shici/15-no-title-poems/" rel="gallery_clk6h18jw0021rqtugf5pasel">
+        <a class="card-img-link" href="/writings/shici/15-no-title-poems/" rel="gallery_clk6oufqd001zvutu0p18hmkv">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -485,6 +489,27 @@
     });
 	</script>
 
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+  <script>
+      (function ($) {
+          $(document).ready(function () {
+              if (typeof($.fn.lightGallery) === 'function') {
+                  $('.article').lightGallery({ selector: '.gallery-item' });
+              }
+              if (typeof($.fn.justifiedGallery) === 'function') {
+                  $('.justified-gallery > p > .gallery-item').unwrap();
+                  $('.justified-gallery').justifiedGallery({
+                      rowHeight : 320,
+                      lastRow : 'nojustify',
+                      margins : 5
+                  });
+              }
+          });
+      })(jQuery);
+  </script>
 
 
 <script>

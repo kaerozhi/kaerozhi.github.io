@@ -23,6 +23,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
   
   
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+    
+    
     <link rel="shortcut icon" href="/images/favicon.png">
   
   
@@ -125,7 +129,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/writings/shici/be-a-duck/" rel="gallery_clk6h18kn004urqtu84hybbk8">
+        <a class="card-img-link" href="/writings/shici/be-a-duck/" rel="gallery_clk6oufre004tvutu5qen4rxt">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -172,7 +176,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/writings/shici/explain-my-sons-name/" rel="gallery_clk6h18lc007crqtu5xvn0oai">
+        <a class="card-img-link" href="/writings/shici/explain-my-sons-name/" rel="gallery_clk6oufs8007bvutu3pw04jeq">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -207,7 +211,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/writings/shici/street-corner/" rel="gallery_clk6h18nr00gsrqtubsil5zzi">
+        <a class="card-img-link" href="/writings/shici/street-corner/" rel="gallery_clk6oufvn00gtvutuae8y7hum">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -254,7 +258,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/writings/shici/pass-by-lujiazui/" rel="gallery_clk6h18my00dgrqtubtxn78qe">
+        <a class="card-img-link" href="/writings/shici/pass-by-lujiazui/" rel="gallery_clk6oufue00dfvutu5st54o0j">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -289,7 +293,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/writings/shici/jueju/" rel="gallery_clk6h18m300aerqtubjl07r8x">
+        <a class="card-img-link" href="/writings/shici/jueju/" rel="gallery_clk6ouft900advutufpgn8ze3">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -336,7 +340,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/writings/shici/8th-july/" rel="gallery_clk6h18k70033rqtu7fru45te">
+        <a class="card-img-link" href="/writings/shici/8th-july/" rel="gallery_clk6oufqt0034vutugoovaorl">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -383,7 +387,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/writings/shici/3-old-poems/" rel="gallery_clk6h18k5002xrqtu7hz27qf5">
+        <a class="card-img-link" href="/writings/shici/3-old-poems/" rel="gallery_clk6oufqr002yvutuermmcjnx">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -430,7 +434,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/blog/meet-grace-again/" rel="gallery_clk6h18mg00burqtuhaefdice">
+        <a class="card-img-link" href="/blog/meet-grace-again/" rel="gallery_clk6ouftq00btvutudlbzdmb3">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -591,6 +595,27 @@
     });
 	</script>
 
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+  <script>
+      (function ($) {
+          $(document).ready(function () {
+              if (typeof($.fn.lightGallery) === 'function') {
+                  $('.article').lightGallery({ selector: '.gallery-item' });
+              }
+              if (typeof($.fn.justifiedGallery) === 'function') {
+                  $('.justified-gallery > p > .gallery-item').unwrap();
+                  $('.justified-gallery').justifiedGallery({
+                      rowHeight : 320,
+                      lastRow : 'nojustify',
+                      margins : 5
+                  });
+              }
+          });
+      })(jQuery);
+  </script>
 
 
 <script>

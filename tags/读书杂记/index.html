@@ -23,6 +23,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
   
   
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+    
+    
     <link rel="shortcut icon" href="/images/favicon.png">
   
   
@@ -125,7 +129,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/writings/research/reading-luxuns-daily/" rel="gallery_clk6h18n600e9rqtu26h39ma8">
+        <a class="card-img-link" href="/writings/research/reading-luxuns-daily/" rel="gallery_clk6oufur00eavutu7irg76c3">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -172,7 +176,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/writings/kelibudan/" rel="gallery_clk6h18m500aorqtu9g1h1b49">
+        <a class="card-img-link" href="/writings/kelibudan/" rel="gallery_clk6ouftc00anvutu4vszblat">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -207,7 +211,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/writings/chibeioutan/" rel="gallery_clk6h18kw0063rqtu5trkdupn">
+        <a class="card-img-link" href="/writings/chibeioutan/" rel="gallery_clk6oufrs0061vutuhl437yax">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -368,6 +372,27 @@
     });
 	</script>
 
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+  <script>
+      (function ($) {
+          $(document).ready(function () {
+              if (typeof($.fn.lightGallery) === 'function') {
+                  $('.article').lightGallery({ selector: '.gallery-item' });
+              }
+              if (typeof($.fn.justifiedGallery) === 'function') {
+                  $('.justified-gallery > p > .gallery-item').unwrap();
+                  $('.justified-gallery').justifiedGallery({
+                      rowHeight : 320,
+                      lastRow : 'nojustify',
+                      margins : 5
+                  });
+              }
+          });
+      })(jQuery);
+  </script>
 
 
 <script>

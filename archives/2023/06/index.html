@@ -23,6 +23,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
   
   
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+    
+    
     <link rel="shortcut icon" href="/images/favicon.png">
   
   
@@ -125,7 +129,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/blog/iphone-1x-signal-failure/" rel="gallery_clk6h18m100a4rqtu4xic33b5">
+        <a class="card-img-link" href="/blog/iphone-1x-signal-failure/" rel="gallery_clk6ouft600a3vutu9zpvgpdk">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -160,7 +164,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/gears/sony-camera-filename-underscore/" rel="gallery_clk6h18nm00garqtu4my63fh4">
+        <a class="card-img-link" href="/playground/gears/sony-camera-filename-underscore/" rel="gallery_clk6oufvi00gbvutueq876tas">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -198,7 +202,7 @@
         
   
     
-        <a class="card-img-link" href="/tours/shantang-at-night/" rel="gallery_clk6h18nf00ffrqtud0qna0ea">
+        <a class="card-img-link" href="/tours/shantang-at-night/" rel="gallery_clk6oufv400fgvutuc2erhs40">
           <img class="card-img lazyload" data-src="/tours/shantang-at-night//DSC3429.jpg" itemprop="image" alt="gallery">
         </a>
        
@@ -239,7 +243,7 @@
         
   
     
-        <a class="card-img-link" href="/tours/quyuan-and-calamus/" rel="gallery_clk6h18n200dyrqtu1uch5o1r">
+        <a class="card-img-link" href="/tours/quyuan-and-calamus/" rel="gallery_clk6oufun00e1vutub0d8cv6o">
           <img class="card-img lazyload" data-src="/tours/quyuan-and-calamus//DSC3311.jpg" itemprop="image" alt="gallery">
         </a>
        
@@ -280,7 +284,7 @@
         
   
     
-        <a class="card-img-link" href="/blog/xiangcheng-christ-church/" rel="gallery_clk6h18om00jurqtugg8jabgz">
+        <a class="card-img-link" href="/blog/xiangcheng-christ-church/" rel="gallery_clk6oufwp00jtvutu08qqfckx">
           <img class="card-img lazyload" data-src="/blog/xiangcheng-christ-church//DSC3223.jpg" itemprop="image" alt="gallery">
         </a>
        
@@ -444,6 +448,27 @@
     });
 	</script>
 
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+  <script>
+      (function ($) {
+          $(document).ready(function () {
+              if (typeof($.fn.lightGallery) === 'function') {
+                  $('.article').lightGallery({ selector: '.gallery-item' });
+              }
+              if (typeof($.fn.justifiedGallery) === 'function') {
+                  $('.justified-gallery > p > .gallery-item').unwrap();
+                  $('.justified-gallery').justifiedGallery({
+                      rowHeight : 320,
+                      lastRow : 'nojustify',
+                      margins : 5
+                  });
+              }
+          });
+      })(jQuery);
+  </script>
 
 
 <script>

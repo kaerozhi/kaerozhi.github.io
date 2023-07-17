@@ -23,6 +23,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
   
   
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+    
+    
     <link rel="shortcut icon" href="/images/favicon.png">
   
   
@@ -138,9 +142,8 @@
     
       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>咳咳，作为受益无穷的免费用户，我不是在抱怨，但除了一个合适的框架以外，Acorn 的功能确实过于简略。这几天先后搞定了 Github 同步以及评论系统，但仔细想来，网站亟需完善的功能和模块还有以下几个：</p>
 <ul>
-<li><input checked="" disabled="" type="checkbox"> 添加评论系统，已达成；</li>
+<li><input checked="" disabled="" type="checkbox"> <del>添加评论系统，已达成</del>；</li>
 <li><input disabled="" type="checkbox"> 添加搜索模块；</li>
-<li><input disabled="" type="checkbox"> 在文章末尾显示关联文章；</li>
 <li><input disabled="" type="checkbox"> 目前的组图功能不太完善，考虑移植 Justfied Gallery；</li>
 <li><input disabled="" type="checkbox"> 增加更多可选 Layout，比如黑色背景与全屏宽度；</li>
 <li><input disabled="" type="checkbox"> 能否将视频作为头图的可选项？</li>
@@ -174,6 +177,7 @@
 
 <p>Acorn 主题用户请注意，一定要把文件名从 <code>search.stylus</code> 改为 <code>search.styl</code>。稳妥起见，最好把语法重新整理一遍，否则可能会出现渲染错误。</p>
 <p>最后 <code>hexo clean &amp;&amp; hexo g</code>，搜索模块应该就出现了，调整一下外观样式，收工。</p>
+<hr>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
 <li><a target="_blank" rel="noopener" href="https://qiuyiwu.github.io/2019/01/25/Hexo-LocalSearch/">Create Local Search for Your Hexo Blog</a></li>
 <li><a target="_blank" rel="noopener" href="https://github.com/barretlee/hexo-search-plugin-snippets">hexo-search-plugin-snippets</a></li>
@@ -186,7 +190,6 @@
         }</script>
     </div>
     <footer class="article-footer">
-      
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/plugins/" rel="tag">plugins</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/search/" rel="tag">search</a></li></ul>
 
@@ -362,6 +365,27 @@
     });
 	</script>
 
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+  <script>
+      (function ($) {
+          $(document).ready(function () {
+              if (typeof($.fn.lightGallery) === 'function') {
+                  $('.article').lightGallery({ selector: '.gallery-item' });
+              }
+              if (typeof($.fn.justifiedGallery) === 'function') {
+                  $('.justified-gallery > p > .gallery-item').unwrap();
+                  $('.justified-gallery').justifiedGallery({
+                      rowHeight : 320,
+                      lastRow : 'nojustify',
+                      margins : 5
+                  });
+              }
+          });
+      })(jQuery);
+  </script>
 
 
 <script>

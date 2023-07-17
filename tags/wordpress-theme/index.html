@@ -23,6 +23,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
   
   
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+    
+    
     <link rel="shortcut icon" href="/images/favicon.png">
   
   
@@ -128,7 +132,7 @@
         
   
     
-        <a class="card-img-link" href="/playground/web/new-aeroom-is-lunched/" rel="gallery_clk6h18mo00cnrqtub1zveqs4">
+        <a class="card-img-link" href="/playground/web/new-aeroom-is-lunched/" rel="gallery_clk6oufu200cmvutu2du5dd01">
           <img class="card-img lazyload" data-src="/playground/web/new-aeroom-is-lunched//aeroom-new-design-banner.png" itemprop="image" alt="gallery">
         </a>
        
@@ -178,7 +182,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/cases/summary-for-theme-building/" rel="gallery_clk6h18nr00gwrqtu5pe6h1uw">
+        <a class="card-img-link" href="/cases/summary-for-theme-building/" rel="gallery_clk6oufvo00gxvutuar8g2les">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -213,7 +217,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/blog/a-cool-wordpress-theme/" rel="gallery_clk6h18k9003brqtubx4leote">
+        <a class="card-img-link" href="/blog/a-cool-wordpress-theme/" rel="gallery_clk6oufqw003avutu7ddc10cc">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -248,7 +252,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/wordpress-theme-resources/" rel="gallery_clk6h18ol00jnrqtuc08f1qwh">
+        <a class="card-img-link" href="/playground/wordpress-theme-resources/" rel="gallery_clk6oufwm00jnvutufe83dprh">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -295,7 +299,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/wordpress-on-location/" rel="gallery_clk6h18oj00jhrqtu3kjnfyrt">
+        <a class="card-img-link" href="/playground/wordpress-on-location/" rel="gallery_clk6oufwk00jhvutuc9dtf932">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -456,6 +460,27 @@
     });
 	</script>
 
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+  <script>
+      (function ($) {
+          $(document).ready(function () {
+              if (typeof($.fn.lightGallery) === 'function') {
+                  $('.article').lightGallery({ selector: '.gallery-item' });
+              }
+              if (typeof($.fn.justifiedGallery) === 'function') {
+                  $('.justified-gallery > p > .gallery-item').unwrap();
+                  $('.justified-gallery').justifiedGallery({
+                      rowHeight : 320,
+                      lastRow : 'nojustify',
+                      margins : 5
+                  });
+              }
+          });
+      })(jQuery);
+  </script>
 
 
 <script>

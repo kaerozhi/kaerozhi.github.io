@@ -23,6 +23,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
   
   
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+    
+    
     <link rel="shortcut icon" href="/images/favicon.png">
   
   
@@ -125,7 +129,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/cases/summary-for-theme-building/" rel="gallery_clk6h18nr00gwrqtu5pe6h1uw">
+        <a class="card-img-link" href="/cases/summary-for-theme-building/" rel="gallery_clk6oufvo00gxvutuar8g2les">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -160,7 +164,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/cases/update-to-firefox-3-rc1/" rel="gallery_clk6h18o700ijrqtublyn2uav">
+        <a class="card-img-link" href="/cases/update-to-firefox-3-rc1/" rel="gallery_clk6oufw800iivutucrrsg8mu">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -195,7 +199,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/cases/regretful-for-deviantart-rss/" rel="gallery_clk6h18n900ekrqtugk67bpks">
+        <a class="card-img-link" href="/cases/regretful-for-deviantart-rss/" rel="gallery_clk6oufuu00elvutu9e09ajre">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -230,7 +234,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/cases/free-fonts/" rel="gallery_clk6h18lh007wrqtufe3b48ld">
+        <a class="card-img-link" href="/cases/free-fonts/" rel="gallery_clk6oufsg007vvutud2ev2w3z">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -265,7 +269,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/cases/account-link-of-windows-live/" rel="gallery_clk6h18kf0040rqtu4suadgrx">
+        <a class="card-img-link" href="/cases/account-link-of-windows-live/" rel="gallery_clk6oufr40041vutudowe4rfq">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -312,7 +316,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/cases/reject-work/" rel="gallery_clk6h18n900enrqtu70v21suz">
+        <a class="card-img-link" href="/cases/reject-work/" rel="gallery_clk6oufuv00eovutu8lnh7qcj">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -347,7 +351,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/cases/strange-problem/" rel="gallery_clk6h18nq00gorqtub7yt6srj">
+        <a class="card-img-link" href="/cases/strange-problem/" rel="gallery_clk6oufvm00gpvutuhvhyfnqk">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -508,6 +512,27 @@
     });
 	</script>
 
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+  <script>
+      (function ($) {
+          $(document).ready(function () {
+              if (typeof($.fn.lightGallery) === 'function') {
+                  $('.article').lightGallery({ selector: '.gallery-item' });
+              }
+              if (typeof($.fn.justifiedGallery) === 'function') {
+                  $('.justified-gallery > p > .gallery-item').unwrap();
+                  $('.justified-gallery').justifiedGallery({
+                      rowHeight : 320,
+                      lastRow : 'nojustify',
+                      margins : 5
+                  });
+              }
+          });
+      })(jQuery);
+  </script>
 
 
 <script>

@@ -23,6 +23,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
   
   
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+    
+    
     <link rel="shortcut icon" href="/images/favicon.png">
   
   
@@ -128,7 +132,7 @@
         
   
     
-        <a class="card-img-link" href="/playground/web/hexo-local-search/" rel="gallery_clk6h18lu0092rqtu9zol9hh6">
+        <a class="card-img-link" href="/playground/web/hexo-local-search/" rel="gallery_clk6oufsv0091vutucvw66ghy">
           <img class="card-img lazyload" data-src="/playground/web/hexo-local-search//hexo-add-local-search.png" itemprop="image" alt="gallery">
         </a>
        
@@ -169,7 +173,7 @@
         
   
     
-        <a class="card-img-link" href="/playground/web/hexo-add-gitalk-comment/" rel="gallery_clk6h18lq008rrqtu1x36hbb4">
+        <a class="card-img-link" href="/playground/web/hexo-add-gitalk-comment/" rel="gallery_clk6oufsr008qvutu8vb3azsw">
           <img class="card-img lazyload" data-src="/playground/web/hexo-add-gitalk-comment//hexo-with-gitalk.png" itemprop="image" alt="gallery">
         </a>
        
@@ -210,7 +214,7 @@
         
   
     
-        <a class="card-img-link" href="/playground/web/hexo-deploy-to-gitpage/" rel="gallery_clk6h18lt008yrqtu5o8bb94y">
+        <a class="card-img-link" href="/playground/web/hexo-deploy-to-gitpage/" rel="gallery_clk6oufst008xvutu7ezy2qid">
           <img class="card-img lazyload" data-src="/playground/web/hexo-deploy-to-gitpage//hexo-deploy-to-gitpage.png" itemprop="image" alt="gallery">
         </a>
        
@@ -251,7 +255,7 @@
         
   
     
-        <a class="card-img-link" href="/playground/web/hexo-new-theme-based-on-acorn/" rel="gallery_clk6h18lu0095rqtug4oc8n65">
+        <a class="card-img-link" href="/playground/web/hexo-new-theme-based-on-acorn/" rel="gallery_clk6oufsw0094vutu5tsb9vyf">
           <img class="card-img lazyload" data-src="/playground/web/hexo-new-theme-based-on-acorn//hexo-and-acorn.png" itemprop="image" alt="gallery">
         </a>
        
@@ -292,7 +296,7 @@
         
   
     
-        <a class="card-img-link" href="/playground/stable-diffusion/stable-diffusion-prompt-a-definitive-guide/" rel="gallery_clk6h18np00gkrqtu2nbqhybe">
+        <a class="card-img-link" href="/playground/stable-diffusion/stable-diffusion-prompt-a-definitive-guide/" rel="gallery_clk6oufvl00glvutubvc7c1s7">
           <img class="card-img lazyload" data-src="/playground/stable-diffusion/stable-diffusion-prompt-a-definitive-guide//sd-prompts-defeinitive-guide.png" itemprop="image" alt="gallery">
         </a>
        
@@ -333,7 +337,7 @@
         
   
     
-        <a class="card-img-link" href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/" rel="gallery_clk6h18no00ghrqtuho3dda1d">
+        <a class="card-img-link" href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/" rel="gallery_clk6oufvk00givutuas5a51rb">
           <img class="card-img lazyload" data-src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop//girl-with-greek-wreath-success6.png" itemprop="image" alt="gallery">
         </a>
        
@@ -374,7 +378,7 @@
         
   
     
-        <a class="card-img-link" href="/playground/stable-diffusion/traditional-chinese-ink-painting/" rel="gallery_clk6h18o300i4rqtuavhedz1p">
+        <a class="card-img-link" href="/playground/stable-diffusion/traditional-chinese-ink-painting/" rel="gallery_clk6oufw300i3vutufyx29e4w">
           <img class="card-img lazyload" data-src="/playground/stable-diffusion/traditional-chinese-ink-painting//00081-1987821862.png" itemprop="image" alt="gallery">
         </a>
        
@@ -415,7 +419,7 @@
         
   
     
-        <a class="card-img-link" href="/playground/stable-diffusion/van-gogh-style-lora/" rel="gallery_clk6h18o800iorqtuhlsv6fuu">
+        <a class="card-img-link" href="/playground/stable-diffusion/van-gogh-style-lora/" rel="gallery_clk6oufwa00invutu4rye3zht">
           <img class="card-img lazyload" data-src="/playground/stable-diffusion/van-gogh-style-lora//00002-2440416915.png" itemprop="image" alt="gallery">
         </a>
        
@@ -579,6 +583,27 @@
     });
 	</script>
 
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+  <script>
+      (function ($) {
+          $(document).ready(function () {
+              if (typeof($.fn.lightGallery) === 'function') {
+                  $('.article').lightGallery({ selector: '.gallery-item' });
+              }
+              if (typeof($.fn.justifiedGallery) === 'function') {
+                  $('.justified-gallery > p > .gallery-item').unwrap();
+                  $('.justified-gallery').justifiedGallery({
+                      rowHeight : 320,
+                      lastRow : 'nojustify',
+                      margins : 5
+                  });
+              }
+          });
+      })(jQuery);
+  </script>
 
 
 <script>

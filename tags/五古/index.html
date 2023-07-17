@@ -23,6 +23,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
   
   
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+    
+    
     <link rel="shortcut icon" href="/images/favicon.png">
   
   
@@ -125,7 +129,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/writings/shici/a-dream-of-midday/" rel="gallery_clk6h18k9003erqtu9h2oc3xu">
+        <a class="card-img-link" href="/writings/shici/a-dream-of-midday/" rel="gallery_clk6oufqx003cvutu0jic3oeu">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -160,7 +164,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/writings/shici/a-lost-tv-set/" rel="gallery_clk6h18kc003nrqtuf0ed2r3h">
+        <a class="card-img-link" href="/writings/shici/a-lost-tv-set/" rel="gallery_clk6oufqz003lvutu3aug9stg">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -207,7 +211,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/writings/shici/room-304-and-dead-sakura/" rel="gallery_clk6h18nb00eyrqtud8wyh9f7">
+        <a class="card-img-link" href="/writings/shici/room-304-and-dead-sakura/" rel="gallery_clk6oufuz00f2vutuglw5bs2s">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -254,7 +258,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/blog/happy-new-year-2009/" rel="gallery_clk6h18lp008nrqtu48g7evdx">
+        <a class="card-img-link" href="/blog/happy-new-year-2009/" rel="gallery_clk6oufsq008mvutug51nfwin">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -289,7 +293,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/writings/shici/after-a-sleepless-night/" rel="gallery_clk6h18ki004brqtuf31dcsaq">
+        <a class="card-img-link" href="/writings/shici/after-a-sleepless-night/" rel="gallery_clk6oufr7004cvutu35433tas">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -324,7 +328,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/writings/shici/youth/" rel="gallery_clk6h18oo00k0rqtuekpu2h5l">
+        <a class="card-img-link" href="/writings/shici/youth/" rel="gallery_clk6oufwr00k0vutu2iqoaed2">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -485,6 +489,27 @@
     });
 	</script>
 
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+  <script>
+      (function ($) {
+          $(document).ready(function () {
+              if (typeof($.fn.lightGallery) === 'function') {
+                  $('.article').lightGallery({ selector: '.gallery-item' });
+              }
+              if (typeof($.fn.justifiedGallery) === 'function') {
+                  $('.justified-gallery > p > .gallery-item').unwrap();
+                  $('.justified-gallery').justifiedGallery({
+                      rowHeight : 320,
+                      lastRow : 'nojustify',
+                      margins : 5
+                  });
+              }
+          });
+      })(jQuery);
+  </script>
 
 
 <script>

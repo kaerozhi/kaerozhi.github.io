@@ -23,6 +23,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
   
   
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+    
+    
     <link rel="shortcut icon" href="/images/favicon.png">
   
   
@@ -128,7 +132,7 @@
         
   
     
-        <a class="card-img-link" href="/playground/apps/obsidian-sync-with-synology-drive/" rel="gallery_clk6h18mw00d9rqtudendehos">
+        <a class="card-img-link" href="/playground/apps/obsidian-sync-with-synology-drive/" rel="gallery_clk6oufub00d8vutu6ila01nj">
           <img class="card-img lazyload" data-src="/playground/apps/obsidian-sync-with-synology-drive//synodrive-and-obsidian.png" itemprop="image" alt="gallery">
         </a>
        
@@ -178,7 +182,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/apps/windows-live-writer-error/" rel="gallery_clk6h18oh00jarqtudrm82551">
+        <a class="card-img-link" href="/playground/apps/windows-live-writer-error/" rel="gallery_clk6oufwh00j9vutu4u6x7epn">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -213,7 +217,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/apps/bbmetablog/" rel="gallery_clk6h18kl004qrqtu81h51sr0">
+        <a class="card-img-link" href="/playground/apps/bbmetablog/" rel="gallery_clk6oufrc004pvutuep8zcuxu">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -260,7 +264,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/apps/snagit-small-regret/" rel="gallery_clk6h18nl00g3rqtucmxl86cs">
+        <a class="card-img-link" href="/playground/apps/snagit-small-regret/" rel="gallery_clk6oufvf00g4vutu7wle6ism">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -295,7 +299,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/apps/try-blackberry-themes-with-simulator/" rel="gallery_clk6h18o400iarqtu4yae5gha">
+        <a class="card-img-link" href="/playground/apps/try-blackberry-themes-with-simulator/" rel="gallery_clk6oufw600idvutudqhog1bd">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -342,7 +346,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/apps/windows-live-writer-review/" rel="gallery_clk6h18oi00jcrqtuchg33m2l">
+        <a class="card-img-link" href="/playground/apps/windows-live-writer-review/" rel="gallery_clk6oufwi00jbvutu7d4x73os">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -377,7 +381,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/apps/windows-live-writer-update/" rel="gallery_clk6h18oj00jfrqtu8n4h4pzb">
+        <a class="card-img-link" href="/playground/apps/windows-live-writer-update/" rel="gallery_clk6oufwj00jevutuemlkaerb">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -412,7 +416,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/apps/scribefire-and-zoundry/" rel="gallery_clk6h18nd00f8rqtu6q2c8pzu">
+        <a class="card-img-link" href="/playground/apps/scribefire-and-zoundry/" rel="gallery_clk6oufv000f5vutuh9mwh4eu">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -573,6 +577,27 @@
     });
 	</script>
 
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+  <script>
+      (function ($) {
+          $(document).ready(function () {
+              if (typeof($.fn.lightGallery) === 'function') {
+                  $('.article').lightGallery({ selector: '.gallery-item' });
+              }
+              if (typeof($.fn.justifiedGallery) === 'function') {
+                  $('.justified-gallery > p > .gallery-item').unwrap();
+                  $('.justified-gallery').justifiedGallery({
+                      rowHeight : 320,
+                      lastRow : 'nojustify',
+                      margins : 5
+                  });
+              }
+          });
+      })(jQuery);
+  </script>
 
 
 <script>

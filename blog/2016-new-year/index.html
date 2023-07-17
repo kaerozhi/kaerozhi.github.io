@@ -23,6 +23,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
   
   
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+    
+    
     <link rel="shortcut icon" href="/images/favicon.png">
   
   
@@ -132,7 +136,7 @@
 <p>“海岸城咯。”</p>
 <p>她一说海岸城，我自然心领神会，那边一家叫做「Gaga 鲜语」的咖啡店是她的心头好。但已经去过无数次了，新年自当要尝新，正好她前些日子跟我提起德国香肠，不晓得是什么风味，我像海上世界正好有这么一家德式酒吧，特色就是德国香肠和自酿啤酒，于是就去了。</p>
 <p>吃完了她说跟想象的不太一样。</p>
-<div class="lightgallery">
+<div class="justified-gallery">
 
 <p><a href="/blog/2016-new-year/DSC8749.jpg" class="gallery-item"><img src="/blog/2016-new-year/DSC8749.jpg"></a><br><a href="/blog/2016-new-year/DSC8751.jpg" class="gallery-item"><img src="/blog/2016-new-year/DSC8751.jpg"></a><br><a href="/blog/2016-new-year/DSC8759.jpg" class="gallery-item"><img src="/blog/2016-new-year/DSC8759.jpg"></a><br><a href="/blog/2016-new-year/DSC8765.jpg" class="gallery-item"><img src="/blog/2016-new-year/DSC8765.jpg"></a><br><a href="/blog/2016-new-year/DSC8782.jpg" class="gallery-item"><img src="/blog/2016-new-year/DSC8782.jpg"></a><br><a href="/blog/2016-new-year/DSC8787.jpg" class="gallery-item"><img src="/blog/2016-new-year/DSC8787.jpg"></a></p>
 </div>
@@ -147,7 +151,6 @@
         }</script>
     </div>
     <footer class="article-footer">
-      
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%96%B0%E5%B9%B4/" rel="tag">新年</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%B7%B1%E5%9C%B3/" rel="tag">深圳</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%99%B6%E5%B0%8F%E5%A9%A7/" rel="tag">陶小婧</a></li></ul>
 
@@ -332,6 +335,27 @@
     });
 	</script>
 
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+  <script>
+      (function ($) {
+          $(document).ready(function () {
+              if (typeof($.fn.lightGallery) === 'function') {
+                  $('.article').lightGallery({ selector: '.gallery-item' });
+              }
+              if (typeof($.fn.justifiedGallery) === 'function') {
+                  $('.justified-gallery > p > .gallery-item').unwrap();
+                  $('.justified-gallery').justifiedGallery({
+                      rowHeight : 320,
+                      lastRow : 'nojustify',
+                      margins : 5
+                  });
+              }
+          });
+      })(jQuery);
+  </script>
 
 
 <script>

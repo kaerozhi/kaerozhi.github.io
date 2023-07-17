@@ -23,6 +23,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
   
   
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+    
+    
     <link rel="shortcut icon" href="/images/favicon.png">
   
   
@@ -143,13 +147,13 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">masterpiece, best quality, highres, 8k, </span><br><span class="line">bamboo, falling bamboo leaves, blowing wind, (no humans:1.2), </span><br><span class="line">traditianal chinese ink painting, sumi-e style, (expressive brush strokes):1.2,</span><br><span class="line">ink wash, gradation, monochromatic,</span><br><span class="line">poetic atmosphere, delicate balance,</span><br><span class="line">fluid motion</span><br></pre></td></tr></table></figure>
 
 <p>依旧是 DreamShaper 作为底模，分辨率 768 x 512px，输出如下：</p>
-<div class="lightgallery album-grid-2">
+<div class="justified-gallery">
 
 <p><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00049-1493546664.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00049-1493546664.png"></a><br><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00052-1493546667.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00052-1493546667.png"></a><br><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00053-1493546668.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00053-1493546668.png"></a><br><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00059-1493546674.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00059-1493546674.png"></a></p>
 </div>
 
 <p>确实有点意思了。不过 <em>fluid motion</em> 还是导致了一些意外的结果。如以下图：</p>
-<div class="lightgallery album-grid-2">
+<div class="justified-gallery">
 
 <p><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00048-1493546663.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00048-1493546663.png"></a><br><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00060-1493546675.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00060-1493546675.png"></a><br><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00057-1493546672.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00057-1493546672.png"></a></p>
 </div>
@@ -158,13 +162,13 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">masterpiece, best quality, highres, 8k, </span><br><span class="line">bamboo, falling bamboo leaves, chinese style rock garden, blowing wind, (no humans:1.2), </span><br><span class="line">traditianal chinese ink painting, sumi-e style, (expressive brush strokes):1.2,</span><br><span class="line">ink wash, gradation, (turquoise theme),</span><br><span class="line">poetic atmosphere, delicate balance,</span><br></pre></td></tr></table></figure>
 
 <p>其他参数不变，输出如下：</p>
-<div class="lightgallery album-grid-2">
+<div class="justified-gallery">
 
 <p><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00066-3843042960.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00066-3843042960.png"></a><br><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00071-3843042965.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00071-3843042965.png"></a><br><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00074-3843042968.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00074-3843042968.png"></a><br><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00078-3843042972.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00078-3843042972.png"></a></p>
 </div>
 
 <p>意境不错，但假山园林的比重太高了。不如化繁为简，专注于竹子，假山可以后期合成。去掉假山的关键词，重新输出：</p>
-<div class="lightgallery album-grid-2">
+<div class="justified-gallery">
 
 <p><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00081-1987821862.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00081-1987821862.png"></a><br><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00083-1987821864.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00083-1987821864.png"></a><br><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00084-1987821865.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00084-1987821865.png"></a><br><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00087-1987821868.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00087-1987821868.png"></a><br><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00095-1987821876.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00095-1987821876.png"></a></p>
 </div>
@@ -173,13 +177,13 @@
 <p>突然想起东坡的朱竹，又尝试了一下，结果怎么说呢？有点怪怪的，因为红色的竹子不符合常识，所以AI 很容易偏离到枫叶主题：</p>
 <p><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00111-671757114.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00111-671757114.png"></a><br><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00102-671757105.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00102-671757105.png"></a></p>
 <p>除了竹子之外，画面中还需要一些辅助元素。将竹子替换成流云和烟雾，得到：</p>
-<div class="lightgallery album-grid-2">
+<div class="justified-gallery">
 
 <p><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00181-2660401093.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00181-2660401093.png"></a><br><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00182-2660401094.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00182-2660401094.png"></a><br><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00189-2660401101.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00189-2660401101.png"></a></p>
 </div>
 
 <p>再将主体换成假山和石头，得到：</p>
-<div class="lightgallery album-grid-2">
+<div class="justified-gallery">
 
 <p><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00194-2660401090.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00194-2660401090.png"></a><br><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00205-2660401101.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00205-2660401101.png"></a><br><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00219-2660401099.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00219-2660401099.png"></a><br><a href="/playground/stable-diffusion/traditional-chinese-ink-painting/00221-2660401101.png" class="gallery-item"><img src="/playground/stable-diffusion/traditional-chinese-ink-painting/00221-2660401101.png"></a></p>
 </div>
@@ -193,7 +197,6 @@
         }</script>
     </div>
     <footer class="article-footer">
-      
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AIGC/" rel="tag">AIGC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB/" rel="tag">中国水墨画</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AB%B9%E5%AD%90/" rel="tag">竹子</a></li></ul>
 
@@ -378,6 +381,27 @@
     });
 	</script>
 
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+  <script>
+      (function ($) {
+          $(document).ready(function () {
+              if (typeof($.fn.lightGallery) === 'function') {
+                  $('.article').lightGallery({ selector: '.gallery-item' });
+              }
+              if (typeof($.fn.justifiedGallery) === 'function') {
+                  $('.justified-gallery > p > .gallery-item').unwrap();
+                  $('.justified-gallery').justifiedGallery({
+                      rowHeight : 320,
+                      lastRow : 'nojustify',
+                      margins : 5
+                  });
+              }
+          });
+      })(jQuery);
+  </script>
 
 
 <script>

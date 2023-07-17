@@ -23,6 +23,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
   
   
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+    
+    
     <link rel="shortcut icon" href="/images/favicon.png">
   
   
@@ -323,7 +327,7 @@
 <p>前排左为廖立峨<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup>，后排右为何春才。</p>
 <p><a href="/writings/research/photos-of-luxun/d4afc2d3accd43b29cc664a0d442f7f9.jpeg" class="gallery-item"><img src="/writings/research/photos-of-luxun/d4afc2d3accd43b29cc664a0d442f7f9.jpeg"></a></p>
 <p>在广州时所摄，1927年8月19日摄于广州。</p>
-<div class="lightgallery">
+<div class="justified-gallery">
 
 <p><a href="/writings/research/photos-of-luxun/1611080943232741396.jpg" class="gallery-item"><img src="/writings/research/photos-of-luxun/1611080943232741396.jpg"></a><br><a href="/writings/research/photos-of-luxun/1611081023599888227.jpg" class="gallery-item"><img src="/writings/research/photos-of-luxun/1611081023599888227.jpg"></a><br><a href="/writings/research/photos-of-luxun/1611080943234767301.jpg" class="gallery-item"><img src="/writings/research/photos-of-luxun/1611080943234767301.jpg"></a></p>
 </div>
@@ -537,7 +541,6 @@
     </div>
     <footer class="article-footer">
       
-      
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%85%A7%E7%89%87%E9%9B%86/" rel="tag">照片集</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%80%83%E8%AF%81/" rel="tag">考证</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%B2%81%E8%BF%85/" rel="tag">鲁迅</a></li></ul>
 
       
@@ -721,6 +724,27 @@
     });
 	</script>
 
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+  <script>
+      (function ($) {
+          $(document).ready(function () {
+              if (typeof($.fn.lightGallery) === 'function') {
+                  $('.article').lightGallery({ selector: '.gallery-item' });
+              }
+              if (typeof($.fn.justifiedGallery) === 'function') {
+                  $('.justified-gallery > p > .gallery-item').unwrap();
+                  $('.justified-gallery').justifiedGallery({
+                      rowHeight : 320,
+                      lastRow : 'nojustify',
+                      margins : 5
+                  });
+              }
+          });
+      })(jQuery);
+  </script>
 
 
 <script>

@@ -23,6 +23,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
   
   
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+    
+    
     <link rel="shortcut icon" href="/images/favicon.png">
   
   
@@ -125,7 +129,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/web/lifetype-or-wordpress/" rel="gallery_clk6h18m700axrqtuc1xc60uh">
+        <a class="card-img-link" href="/playground/web/lifetype-or-wordpress/" rel="gallery_clk6ouftf00awvutu5cql4vyn">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -160,7 +164,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/zoundry-raven/" rel="gallery_clk6h18op00k6rqtufvm4gwpe">
+        <a class="card-img-link" href="/playground/zoundry-raven/" rel="gallery_clk6oufwt00k7vutu1yfub6o7">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -207,7 +211,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/apps/windows-live-writer-review/" rel="gallery_clk6h18oi00jcrqtuchg33m2l">
+        <a class="card-img-link" href="/playground/apps/windows-live-writer-review/" rel="gallery_clk6oufwi00jbvutu7d4x73os">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -242,7 +246,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/apps/windows-live-writer-update/" rel="gallery_clk6h18oj00jfrqtu8n4h4pzb">
+        <a class="card-img-link" href="/playground/apps/windows-live-writer-update/" rel="gallery_clk6oufwj00jevutuemlkaerb">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -277,7 +281,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/apps/scribefire-and-zoundry/" rel="gallery_clk6h18nd00f8rqtu6q2c8pzu">
+        <a class="card-img-link" href="/playground/apps/scribefire-and-zoundry/" rel="gallery_clk6oufv000f5vutuh9mwh4eu">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -315,7 +319,7 @@
         
   
     
-        <a class="card-img-link" href="/playground/web/dreamhost-hosting/" rel="gallery_clk6h18l2006qrqtubqidghiz">
+        <a class="card-img-link" href="/playground/web/dreamhost-hosting/" rel="gallery_clk6oufs0006pvutu8u0ofx29">
           <img class="card-img lazyload" data-src="/playground/web/dreamhost-hosting//dreamhost-banner.png" itemprop="image" alt="gallery">
         </a>
        
@@ -365,7 +369,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/web/lifetype/" rel="gallery_clk6h18m900azrqtubjhc26gg">
+        <a class="card-img-link" href="/playground/web/lifetype/" rel="gallery_clk6ouftg00ayvutuffmxfiqs">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -400,7 +404,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/wordpress-on-location/" rel="gallery_clk6h18oj00jhrqtu3kjnfyrt">
+        <a class="card-img-link" href="/playground/wordpress-on-location/" rel="gallery_clk6oufwk00jhvutuc9dtf932">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -435,7 +439,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/drawing/new-illustration/" rel="gallery_clk6h18mr00curqtu76pv9hft">
+        <a class="card-img-link" href="/playground/drawing/new-illustration/" rel="gallery_clk6oufu500ctvutudvk93y7d">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -603,6 +607,27 @@
     });
 	</script>
 
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+  <script>
+      (function ($) {
+          $(document).ready(function () {
+              if (typeof($.fn.lightGallery) === 'function') {
+                  $('.article').lightGallery({ selector: '.gallery-item' });
+              }
+              if (typeof($.fn.justifiedGallery) === 'function') {
+                  $('.justified-gallery > p > .gallery-item').unwrap();
+                  $('.justified-gallery').justifiedGallery({
+                      rowHeight : 320,
+                      lastRow : 'nojustify',
+                      margins : 5
+                  });
+              }
+          });
+      })(jQuery);
+  </script>
 
 
 <script>

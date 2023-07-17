@@ -23,6 +23,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
   
   
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+    
+    
     <link rel="shortcut icon" href="/images/favicon.png">
   
   
@@ -128,7 +132,7 @@
         
   
     
-        <a class="card-img-link" href="/playground/web/hexo-local-search/" rel="gallery_clk6h18lu0092rqtu9zol9hh6">
+        <a class="card-img-link" href="/playground/web/hexo-local-search/" rel="gallery_clk6oufsv0091vutucvw66ghy">
           <img class="card-img lazyload" data-src="/playground/web/hexo-local-search//hexo-add-local-search.png" itemprop="image" alt="gallery">
         </a>
        
@@ -169,7 +173,7 @@
         
   
     
-        <a class="card-img-link" href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/" rel="gallery_clk6h18no00ghrqtuho3dda1d">
+        <a class="card-img-link" href="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop/" rel="gallery_clk6oufvk00givutuas5a51rb">
           <img class="card-img lazyload" data-src="/playground/stable-diffusion/stable-diffusion-plugin-for-photoshop//girl-with-greek-wreath-success6.png" itemprop="image" alt="gallery">
         </a>
        
@@ -219,7 +223,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/web/blog-new-design/" rel="gallery_clk6h18ks005irqtu4vl67uij">
+        <a class="card-img-link" href="/playground/web/blog-new-design/" rel="gallery_clk6oufrl005jvutu9bni3bov">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -266,7 +270,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/projects/inews-tags-manager-released/" rel="gallery_clk6h18m0009xrqtu5ei6b0co">
+        <a class="card-img-link" href="/projects/inews-tags-manager-released/" rel="gallery_clk6ouft4009wvutu74bd5c63">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -427,6 +431,27 @@
     });
 	</script>
 
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+  <script>
+      (function ($) {
+          $(document).ready(function () {
+              if (typeof($.fn.lightGallery) === 'function') {
+                  $('.article').lightGallery({ selector: '.gallery-item' });
+              }
+              if (typeof($.fn.justifiedGallery) === 'function') {
+                  $('.justified-gallery > p > .gallery-item').unwrap();
+                  $('.justified-gallery').justifiedGallery({
+                      rowHeight : 320,
+                      lastRow : 'nojustify',
+                      margins : 5
+                  });
+              }
+          });
+      })(jQuery);
+  </script>
 
 
 <script>

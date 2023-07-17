@@ -23,6 +23,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
   
   
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+    
+    
     <link rel="shortcut icon" href="/images/favicon.png">
   
   
@@ -125,7 +129,7 @@
 <span id="more"></span>
 
 <p>以下是我挑选的一组网站截图：</p>
-<div class="lightgallery">
+<div class="justified-gallery">
 
 <p><a href="/playground/web/web-design-for-mobile-devices/image41.png" class="gallery-item"><img src="/playground/web/web-design-for-mobile-devices/image41.png"></a><br><a href="/playground/web/web-design-for-mobile-devices/image3.png" class="gallery-item"><img src="/playground/web/web-design-for-mobile-devices/image3.png"></a><br><a href="/playground/web/web-design-for-mobile-devices/image21.png" class="gallery-item"><img src="/playground/web/web-design-for-mobile-devices/image21.png"></a><br><a href="/playground/web/web-design-for-mobile-devices/image.png" class="gallery-item"><img src="/playground/web/web-design-for-mobile-devices/image.png"></a><br><a href="/playground/web/web-design-for-mobile-devices/image2.png" class="gallery-item"><img src="/playground/web/web-design-for-mobile-devices/image2.png"></a><br><a href="/playground/web/web-design-for-mobile-devices/image11.png" class="gallery-item"><img src="/playground/web/web-design-for-mobile-devices/image11.png"></a></p>
 </div>
@@ -143,7 +147,6 @@
         }</script>
     </div>
     <footer class="article-footer">
-      
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iphone/" rel="tag">iphone</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mobilepress/" rel="tag">mobilepress</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/plugin/" rel="tag">plugin</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/theme/" rel="tag">theme</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wordpress/" rel="tag">wordpress</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wp-t-wap/" rel="tag">wp-t-wap</a></li></ul>
 
@@ -328,6 +331,27 @@
     });
 	</script>
 
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+  <script>
+      (function ($) {
+          $(document).ready(function () {
+              if (typeof($.fn.lightGallery) === 'function') {
+                  $('.article').lightGallery({ selector: '.gallery-item' });
+              }
+              if (typeof($.fn.justifiedGallery) === 'function') {
+                  $('.justified-gallery > p > .gallery-item').unwrap();
+                  $('.justified-gallery').justifiedGallery({
+                      rowHeight : 320,
+                      lastRow : 'nojustify',
+                      margins : 5
+                  });
+              }
+          });
+      })(jQuery);
+  </script>
 
 
 <script>

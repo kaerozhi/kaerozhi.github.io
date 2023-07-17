@@ -23,6 +23,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
   
   
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+    
+    
     <link rel="shortcut icon" href="/images/favicon.png">
   
   
@@ -128,7 +132,7 @@
         
   
     
-        <a class="card-img-link" href="/tours/quyuan-and-calamus/" rel="gallery_clk6h18n200dyrqtu1uch5o1r">
+        <a class="card-img-link" href="/tours/quyuan-and-calamus/" rel="gallery_clk6oufun00e1vutub0d8cv6o">
           <img class="card-img lazyload" data-src="/tours/quyuan-and-calamus//DSC3311.jpg" itemprop="image" alt="gallery">
         </a>
        
@@ -169,7 +173,7 @@
         
   
     
-        <a class="card-img-link" href="/tours/ouyuan-in-summer/" rel="gallery_clk6h18mx00derqtuc2kb9s9a">
+        <a class="card-img-link" href="/tours/ouyuan-in-summer/" rel="gallery_clk6oufud00ddvutu4cyw6vah">
           <img class="card-img lazyload" data-src="/tours/ouyuan-in-summer//DSC2193.jpg" itemprop="image" alt="gallery">
         </a>
        
@@ -222,7 +226,7 @@
         
   
     
-        <a class="card-img-link" href="/tours/2020-suzhou/" rel="gallery_clk6h18k2002prqtu8xx671kk">
+        <a class="card-img-link" href="/tours/2020-suzhou/" rel="gallery_clk6oufqn002qvutuaowe4n9u">
           <img class="card-img lazyload" data-src="/tours/2020-suzhou//ZJG1629.jpg" itemprop="image" alt="gallery">
         </a>
        
@@ -386,6 +390,27 @@
     });
 	</script>
 
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+  <script>
+      (function ($) {
+          $(document).ready(function () {
+              if (typeof($.fn.lightGallery) === 'function') {
+                  $('.article').lightGallery({ selector: '.gallery-item' });
+              }
+              if (typeof($.fn.justifiedGallery) === 'function') {
+                  $('.justified-gallery > p > .gallery-item').unwrap();
+                  $('.justified-gallery').justifiedGallery({
+                      rowHeight : 320,
+                      lastRow : 'nojustify',
+                      margins : 5
+                  });
+              }
+          });
+      })(jQuery);
+  </script>
 
 
 <script>

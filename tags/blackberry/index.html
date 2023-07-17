@@ -23,6 +23,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
   
   
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+    
+    
     <link rel="shortcut icon" href="/images/favicon.png">
   
   
@@ -125,7 +129,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/blog/blackberry-bold-9700/" rel="gallery_clk6h18kr005frqtu38b9hzhl">
+        <a class="card-img-link" href="/blog/blackberry-bold-9700/" rel="gallery_clk6oufrk005fvutu2kya0xs0">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -172,7 +176,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/apps/bbmetablog/" rel="gallery_clk6h18kl004qrqtu81h51sr0">
+        <a class="card-img-link" href="/playground/apps/bbmetablog/" rel="gallery_clk6oufrc004pvutuep8zcuxu">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -219,7 +223,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/blog/experience-for-reduce-my-blackberry/" rel="gallery_clk6h18lc007arqtu6dgde2tb">
+        <a class="card-img-link" href="/blog/experience-for-reduce-my-blackberry/" rel="gallery_clk6oufs70079vutu9duyc8yz">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -254,7 +258,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/blog/my-new-blackberry-8300/" rel="gallery_clk6h18ml00cdrqtu8tc00z80">
+        <a class="card-img-link" href="/blog/my-new-blackberry-8300/" rel="gallery_clk6ouftx00ccvutufoc6ehcd">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -289,7 +293,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/blog/new-rom-of-blackberry-8100/" rel="gallery_clk6h18ms00cxrqtu51c00eyi">
+        <a class="card-img-link" href="/blog/new-rom-of-blackberry-8100/" rel="gallery_clk6oufu600cwvutu451x1z1h">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -336,7 +340,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/blog/my-new-blackberry-8100/" rel="gallery_clk6h18ml00cbrqtuc4g78vrp">
+        <a class="card-img-link" href="/blog/my-new-blackberry-8100/" rel="gallery_clk6ouftw00cavutu7ohugjui">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -497,6 +501,27 @@
     });
 	</script>
 
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+  <script>
+      (function ($) {
+          $(document).ready(function () {
+              if (typeof($.fn.lightGallery) === 'function') {
+                  $('.article').lightGallery({ selector: '.gallery-item' });
+              }
+              if (typeof($.fn.justifiedGallery) === 'function') {
+                  $('.justified-gallery > p > .gallery-item').unwrap();
+                  $('.justified-gallery').justifiedGallery({
+                      rowHeight : 320,
+                      lastRow : 'nojustify',
+                      margins : 5
+                  });
+              }
+          });
+      })(jQuery);
+  </script>
 
 
 <script>

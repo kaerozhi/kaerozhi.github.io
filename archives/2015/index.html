@@ -23,6 +23,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
   
   
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+    
+    
     <link rel="shortcut icon" href="/images/favicon.png">
   
   
@@ -128,7 +132,7 @@
         
   
     
-        <a class="card-img-link" href="/writings/sins/" rel="gallery_clk6h18nh00fprqtuduhrhe5b">
+        <a class="card-img-link" href="/writings/sins/" rel="gallery_clk6oufv700fqvutuao2dhyt6">
           <img class="card-img lazyload" data-src="/writings/sins//DSC7424.jpg" itemprop="image" alt="gallery">
         </a>
        
@@ -166,7 +170,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/blog/a-painting-in-my-dream/" rel="gallery_clk6h18kd003qrqtubw1ob46p">
+        <a class="card-img-link" href="/blog/a-painting-in-my-dream/" rel="gallery_clk6oufr0003pvutufemg9ame">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -204,7 +208,7 @@
         
   
     
-        <a class="card-img-link" href="/blog/drive-training/" rel="gallery_clk6h18l3006trqtu50fkhyyo">
+        <a class="card-img-link" href="/blog/drive-training/" rel="gallery_clk6oufs1006svutuchp8f8vn">
           <img class="card-img lazyload" data-src="/blog/drive-training//DSC7212-1.jpg" itemprop="image" alt="gallery">
         </a>
        
@@ -245,7 +249,7 @@
         
   
     
-        <a class="card-img-link" href="/tours/from-dongchong-to-xichong/" rel="gallery_clk6h18lj0083rqtu1z8n5awz">
+        <a class="card-img-link" href="/tours/from-dongchong-to-xichong/" rel="gallery_clk6oufsi0082vutu55x658qw">
           <img class="card-img lazyload" data-src="/tours/from-dongchong-to-xichong//DSC6045-1024x684.jpg" itemprop="image" alt="gallery">
         </a>
        
@@ -283,7 +287,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/blog/my-love-stories/" rel="gallery_clk6h18mk00c8rqtu6eu2di44">
+        <a class="card-img-link" href="/blog/my-love-stories/" rel="gallery_clk6ouftv00c7vutu13rh7p8g">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -318,7 +322,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/blog/design-guide-for-mobile-game-icon/" rel="gallery_clk6h18l0006grqtuh3yf1msv">
+        <a class="card-img-link" href="/blog/design-guide-for-mobile-game-icon/" rel="gallery_clk6oufrx006ivutuf2tc2rub">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -475,6 +479,27 @@
     });
 	</script>
 
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+  <script>
+      (function ($) {
+          $(document).ready(function () {
+              if (typeof($.fn.lightGallery) === 'function') {
+                  $('.article').lightGallery({ selector: '.gallery-item' });
+              }
+              if (typeof($.fn.justifiedGallery) === 'function') {
+                  $('.justified-gallery > p > .gallery-item').unwrap();
+                  $('.justified-gallery').justifiedGallery({
+                      rowHeight : 320,
+                      lastRow : 'nojustify',
+                      margins : 5
+                  });
+              }
+          });
+      })(jQuery);
+  </script>
 
 
 <script>
