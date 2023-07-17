@@ -2349,20 +2349,6 @@
   </url>
   
   <url>
-    <loc>https://waxa.design/tags/%E4%B8%83%E5%BE%8B/</loc>
-    <lastmod>2023-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/%E7%BB%84%E8%AF%97/</loc>
-    <lastmod>2023-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://waxa.design/tags/%E9%99%B6%E5%B0%8F%E5%A9%A7/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -2378,6 +2364,20 @@
   
   <url>
     <loc>https://waxa.design/tags/%E6%B7%B1%E5%9C%B3/</loc>
+    <lastmod>2023-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/%E4%B8%83%E5%BE%8B/</loc>
+    <lastmod>2023-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/%E7%BB%84%E8%AF%97/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -3042,20 +3042,6 @@
   </url>
   
   <url>
-    <loc>https://waxa.design/tags/Dota/</loc>
-    <lastmod>2023-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/%E8%84%9A%E6%9C%AC/</loc>
-    <lastmod>2023-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://waxa.design/tags/%E6%8E%92%E4%BD%8D%E8%B5%9B/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -3078,6 +3064,20 @@
   
   <url>
     <loc>https://waxa.design/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</loc>
+    <lastmod>2023-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/Dota/</loc>
+    <lastmod>2023-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/%E8%84%9A%E6%9C%AC/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -3154,13 +3154,6 @@
   </url>
   
   <url>
-    <loc>https://waxa.design/tags/one-piece/</loc>
-    <lastmod>2023-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://waxa.design/tags/%E8%8B%B1%E9%9B%84%E8%81%94%E7%9B%9F/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -3169,6 +3162,13 @@
   
   <url>
     <loc>https://waxa.design/tags/design/</loc>
+    <lastmod>2023-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/one-piece/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -3190,41 +3190,6 @@
   
   <url>
     <loc>https://waxa.design/tags/web-design/</loc>
-    <lastmod>2023-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/%E9%9B%AA/</loc>
-    <lastmod>2023-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/adobe-illustrator/</loc>
-    <lastmod>2023-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/fontlab/</loc>
-    <lastmod>2023-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/typography/</loc>
-    <lastmod>2023-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -3260,6 +3225,41 @@
   
   <url>
     <loc>https://waxa.design/tags/google-chrome/</loc>
+    <lastmod>2023-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/%E9%9B%AA/</loc>
+    <lastmod>2023-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/adobe-illustrator/</loc>
+    <lastmod>2023-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/fontlab/</loc>
+    <lastmod>2023-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/typography/</loc>
+    <lastmod>2023-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -3434,6 +3434,20 @@
   </url>
   
   <url>
+    <loc>https://waxa.design/tags/Acorn/</loc>
+    <lastmod>2023-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/Web-Development/</loc>
+    <lastmod>2023-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://waxa.design/tags/minos/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -3476,27 +3490,6 @@
   </url>
   
   <url>
-    <loc>https://waxa.design/tags/Acorn/</loc>
-    <lastmod>2023-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/Web-Development/</loc>
-    <lastmod>2023-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/%E5%9B%A2%E9%98%9F/</loc>
-    <lastmod>2023-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://waxa.design/tags/poster/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -3511,21 +3504,14 @@
   </url>
   
   <url>
+    <loc>https://waxa.design/tags/%E5%9B%A2%E9%98%9F/</loc>
+    <lastmod>2023-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://waxa.design/tags/%E5%B0%8F%E4%BB%A4/</loc>
-    <lastmod>2023-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/dreamweaver/</loc>
-    <lastmod>2023-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/iNewS/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -3540,6 +3526,20 @@
   
   <url>
     <loc>https://waxa.design/tags/inews/</loc>
+    <lastmod>2023-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/dreamweaver/</loc>
+    <lastmod>2023-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/iNewS/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -3721,6 +3721,13 @@
   </url>
   
   <url>
+    <loc>https://waxa.design/tags/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2023-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://waxa.design/tags/%E7%A1%AC%E7%9B%98/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -3729,13 +3736,6 @@
   
   <url>
     <loc>https://waxa.design/tags/%E7%A1%AC%E4%BB%B6/</loc>
-    <lastmod>2023-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4176,13 +4176,6 @@
   </url>
   
   <url>
-    <loc>https://waxa.design/tags/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2023-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://waxa.design/tags/%E5%85%89%E8%8D%A3%E6%B8%B8%E6%88%8F/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -4198,6 +4191,13 @@
   
   <url>
     <loc>https://waxa.design/tags/%E6%97%A5%E6%9C%AC%E6%96%87%E5%8C%96/</loc>
+    <lastmod>2023-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4267,13 +4267,6 @@
   </url>
   
   <url>
-    <loc>https://waxa.design/tags/headset/</loc>
-    <lastmod>2023-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://waxa.design/tags/%E7%AB%B9%E5%AD%90/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -4289,6 +4282,13 @@
   
   <url>
     <loc>https://waxa.design/tags/AIGC/</loc>
+    <lastmod>2023-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/headset/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
