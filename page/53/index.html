@@ -28,6 +28,7 @@
   
     <link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css"/>
   
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
   
 <link rel="stylesheet" href="/css/style.css">
 
@@ -71,11 +72,12 @@
     <a class="nav-item-link" href="/about">关于</a>
   </li>
   
-    
   <li class="nav-item ">
-    <a class="nav-item-link" href="/javascript();">搜索</a>
+    <span class="local-search local-search-google local-search-plugin" style="">
+    <input type="search" placeholder="站内搜索" id="local-search-input" class="local-search-input-cls" style="">
+    <div id="local-search-result" class="local-search-result-cls"></div>
+</span>
   </li>
-  
 </ul>
 		</nav>
 		<a id="mobile-nav-toggle">
@@ -317,6 +319,34 @@
   <div class="row flex-wrap">
     
       <div class="col-3">
+        <article id="post-10-websites-of-10-companies" class="article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="card rounded">
+      
+    <div class="card-body bg-light">
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/thoughts/">观点</a>
+  </div>
+
+			
+  
+    <h5 class="article-title mb-1 line-clamp line-clamp-3" itemprop="name">
+      <a href="/thoughts/10-websites-of-10-companies/">十个公司，十个网站</a>
+    </h5>
+  
+
+			<time class="text-gray" datetime="2006-03-02T00:00:00.000Z" itemprop="datePublished">
+  2006-03-02
+</time>
+    </div>
+  </div>
+  
+  
+</article>
+      </div>
+      
+      <div class="col-3">
         <article id="post-inews-tags-manager-released" class="article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   
   <div class="card rounded">
@@ -392,34 +422,6 @@
 
 			<time class="text-gray" datetime="2006-01-26T00:00:00.000Z" itemprop="datePublished">
   2006-01-26
-</time>
-    </div>
-  </div>
-  
-  
-</article>
-      </div>
-      
-      <div class="col-3">
-        <article id="post-swearing-in-nb12" class="article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  
-  <div class="card rounded">
-      
-    <div class="card-body bg-light">
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/blog/">日常</a>
-  </div>
-
-			
-  
-    <h5 class="article-title mb-1 line-clamp line-clamp-3" itemprop="name">
-      <a href="/blog/swearing-in-nb12/">革新骂人之法</a>
-    </h5>
-  
-
-			<time class="text-gray" datetime="2006-01-25T12:04:37.000Z" itemprop="datePublished">
-  2006-01-25
 </time>
     </div>
   </div>
@@ -541,11 +543,12 @@
     <a class="nav-item-link" href="/about">关于</a>
   </li>
   
-    
   <li class="nav-item ">
-    <a class="nav-item-link" href="/javascript();">搜索</a>
+    <span class="local-search local-search-google local-search-plugin" style="">
+    <input type="search" placeholder="站内搜索" id="local-search-input" class="local-search-input-cls" style="">
+    <div id="local-search-result" class="local-search-result-cls"></div>
+</span>
   </li>
-  
 </ul>
 		
 	</div>
@@ -573,11 +576,41 @@
 
 
 
+<script>
+// 移动设备侦测
+var isMobile = {
+  Android: function () {
+    return navigator.userAgent.match(/Android/i);
+  },
+  BlackBerry: function () {
+    return navigator.userAgent.match(/BlackBerry/i);
+  },
+  iOS: function () {
+    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+  },
+  Opera: function () {
+    return navigator.userAgent.match(/Opera Mini/i);
+  },
+  Windows: function () {
+    return navigator.userAgent.match(/IEMobile/i);
+  },
+  any: function () {
+    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+  }
+};
+
+if ($('.local-search').size() && !isMobile.any()) {
+	$.getScript('/js/search.js', function() {
+	  searchFunc("/search.xml", 'local-search-input', 'local-search-result');
+	});
+}
+</script>
+
+
 <script src="/js/mobile-nav.js"></script>
 
 
 <script src="/js/script.js"></script>
-
 
 </body>
 </html>

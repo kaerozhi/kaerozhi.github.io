@@ -10,7 +10,7 @@
     <meta name="description" content="Kaero，自由设计师。喜好摄影、游历及文学，素来不务正业，以研究各种杂七杂八为能事。江西人，曾居上海、深圳，现定居苏州，承接各种与设计相关的事务与需求。">
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-  <title>Tag: novel |  Waxa.Deisgn | 蛙夏设计</title>
+  <title>标签: novel |  Waxa.Deisgn | 蛙夏设计</title>
   
     <link rel="apple-touch-icon" sizes="57x57" href="/images/webclip/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/images/webclip/apple-touch-icon-72x72.png">
@@ -28,6 +28,7 @@
   
     <link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css"/>
   
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
   
 <link rel="stylesheet" href="/css/style.css">
 
@@ -71,11 +72,12 @@
     <a class="nav-item-link" href="/about">关于</a>
   </li>
   
-    
   <li class="nav-item ">
-    <a class="nav-item-link" href="/javascript();">搜索</a>
+    <span class="local-search local-search-google local-search-plugin" style="">
+    <input type="search" placeholder="站内搜索" id="local-search-input" class="local-search-input-cls" style="">
+    <div id="local-search-result" class="local-search-result-cls"></div>
+</span>
   </li>
-  
 </ul>
 		</nav>
 		<a id="mobile-nav-toggle">
@@ -123,7 +125,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/writings/yangdagen-the-loser/" rel="gallery_clk659xwr00jwwgtudawk1l66">
+        <a class="card-img-link" href="/writings/yangdagen-the-loser/" rel="gallery_clk6h18on00jyrqtuhbe33z0z">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -253,11 +255,12 @@
     <a class="nav-item-link" href="/about">关于</a>
   </li>
   
-    
   <li class="nav-item ">
-    <a class="nav-item-link" href="/javascript();">搜索</a>
+    <span class="local-search local-search-google local-search-plugin" style="">
+    <input type="search" placeholder="站内搜索" id="local-search-input" class="local-search-input-cls" style="">
+    <div id="local-search-result" class="local-search-result-cls"></div>
+</span>
   </li>
-  
 </ul>
 		
 	</div>
@@ -285,11 +288,41 @@
 
 
 
+<script>
+// 移动设备侦测
+var isMobile = {
+  Android: function () {
+    return navigator.userAgent.match(/Android/i);
+  },
+  BlackBerry: function () {
+    return navigator.userAgent.match(/BlackBerry/i);
+  },
+  iOS: function () {
+    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+  },
+  Opera: function () {
+    return navigator.userAgent.match(/Opera Mini/i);
+  },
+  Windows: function () {
+    return navigator.userAgent.match(/IEMobile/i);
+  },
+  any: function () {
+    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+  }
+};
+
+if ($('.local-search').size() && !isMobile.any()) {
+	$.getScript('/js/search.js', function() {
+	  searchFunc("/search.xml", 'local-search-input', 'local-search-result');
+	});
+}
+</script>
+
+
 <script src="/js/mobile-nav.js"></script>
 
 
 <script src="/js/script.js"></script>
-
 
 </body>
 </html>

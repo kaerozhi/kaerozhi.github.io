@@ -28,6 +28,7 @@
   
     <link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css"/>
   
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
   
 <link rel="stylesheet" href="/css/style.css">
 
@@ -71,11 +72,12 @@
     <a class="nav-item-link" href="/about">关于</a>
   </li>
   
-    
   <li class="nav-item ">
-    <a class="nav-item-link" href="/javascript();">搜索</a>
+    <span class="local-search local-search-google local-search-plugin" style="">
+    <input type="search" placeholder="站内搜索" id="local-search-input" class="local-search-input-cls" style="">
+    <div id="local-search-result" class="local-search-result-cls"></div>
+</span>
   </li>
-  
 </ul>
 		</nav>
 		<a id="mobile-nav-toggle">
@@ -126,7 +128,48 @@
         
   
     
-        <a class="card-img-link" href="/playground/web/hexo-add-gitalk-comment/" rel="gallery_clk659xtu008qwgtu1thz242p">
+        <a class="card-img-link" href="/playground/web/hexo-local-search/" rel="gallery_clk6h18lu0092rqtu9zol9hh6">
+          <img class="card-img lazyload" data-src="/playground/web/hexo-local-search//hexo-add-local-search.png" itemprop="image" alt="gallery">
+        </a>
+       
+  
+
+      
+      <div class="card-body bg-light">
+        
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/playground/">玩艺</a> / <a class="article-category-link" href="/categories/playground/web/">网站</a>
+  </div>
+
+        
+  
+    <h5 class="article-title mb-1 line-clamp line-clamp-3" itemprop="name">
+      <a href="/playground/web/hexo-local-search/">给 Hexo 添加搜索模块</a>
+    </h5>
+  
+
+        <time class="text-gray" datetime="2023-07-17T02:04:00.000Z" itemprop="datePublished">
+  2023-07-17
+</time>
+      </div>
+    </div>
+  </article>
+</div>
+      
+  
+  
+      
+  
+<div class="col-6">
+  
+
+  <article class="archive-article archive-type-post">
+    <div class="card rounded">
+      
+        
+  
+    
+        <a class="card-img-link" href="/playground/web/hexo-add-gitalk-comment/" rel="gallery_clk6h18lq008rrqtu1x36hbb4">
           <img class="card-img lazyload" data-src="/playground/web/hexo-add-gitalk-comment//hexo-with-gitalk.png" itemprop="image" alt="gallery">
         </a>
        
@@ -167,7 +210,7 @@
         
   
     
-        <a class="card-img-link" href="/playground/web/hexo-deploy-to-gitpage/" rel="gallery_clk659xtv008uwgtu7rlk1wkl">
+        <a class="card-img-link" href="/playground/web/hexo-deploy-to-gitpage/" rel="gallery_clk6h18lt008yrqtu5o8bb94y">
           <img class="card-img lazyload" data-src="/playground/web/hexo-deploy-to-gitpage//hexo-deploy-to-gitpage.png" itemprop="image" alt="gallery">
         </a>
        
@@ -208,7 +251,7 @@
         
   
     
-        <a class="card-img-link" href="/playground/web/hexo-new-theme-based-on-acorn/" rel="gallery_clk659xtw008xwgtu357gae4f">
+        <a class="card-img-link" href="/playground/web/hexo-new-theme-based-on-acorn/" rel="gallery_clk6h18lu0095rqtug4oc8n65">
           <img class="card-img lazyload" data-src="/playground/web/hexo-new-theme-based-on-acorn//hexo-and-acorn.png" itemprop="image" alt="gallery">
         </a>
        
@@ -249,7 +292,7 @@
         
   
     
-        <a class="card-img-link" href="/playground/web/hexo-theme-minos/" rel="gallery_clk659xtx0094wgtu2enk62ln">
+        <a class="card-img-link" href="/playground/web/hexo-theme-minos/" rel="gallery_clk6h18lv0099rqtuaivy1xqn">
           <img class="card-img lazyload" data-src="/playground/web/hexo-theme-minos//hexo-theme.png" itemprop="image" alt="gallery">
         </a>
        
@@ -281,7 +324,7 @@
   
       
   
-<div class="col-6">
+<div class="col-3">
   
 
   <article class="archive-article archive-type-post">
@@ -290,7 +333,7 @@
         
   
     
-        <a class="card-img-link" href="/playground/web/hexo-updates/" rel="gallery_clk659xty0098wgtueggtasz6">
+        <a class="card-img-link" href="/playground/web/hexo-updates/" rel="gallery_clk6h18lw009crqtuhztyay0c">
           <img class="card-img lazyload" data-src="/playground/web/hexo-updates//hexo-afterstory.png" itemprop="image" alt="gallery">
         </a>
        
@@ -331,7 +374,7 @@
         
   
     
-        <a class="card-img-link" href="/playground/web/hexo-and-new-blog/" rel="gallery_clk659xtw0091wgtuc8k5g9w1">
+        <a class="card-img-link" href="/playground/web/hexo-and-new-blog/" rel="gallery_clk6h18ls008vrqtugogghcs4">
           <img class="card-img lazyload" data-src="/playground/web/hexo-and-new-blog//hexo-installed.png" itemprop="image" alt="gallery">
         </a>
        
@@ -384,7 +427,7 @@
         
   
     
-        <a class="card-img-link" href="/playground/web/wordpress-premium-themes/" rel="gallery_clk666sdd00003stu4cl01fzc">
+        <a class="card-img-link" href="/playground/web/wordpress-premium-themes/" rel="gallery_clk6h18ok00jkrqtu1ec1ddg7">
           <img class="card-img lazyload" data-src="/playground/web/wordpress-premium-themes//wordpress-premium-themes.png" itemprop="image" alt="gallery">
         </a>
        
@@ -425,7 +468,7 @@
         
   
     
-        <a class="card-img-link" href="/playground/web/new-aeroom-is-lunched/" rel="gallery_clk659xuq00cewgtu922u7bca">
+        <a class="card-img-link" href="/playground/web/new-aeroom-is-lunched/" rel="gallery_clk6h18mo00cnrqtub1zveqs4">
           <img class="card-img lazyload" data-src="/playground/web/new-aeroom-is-lunched//aeroom-new-design-banner.png" itemprop="image" alt="gallery">
         </a>
        
@@ -475,7 +518,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/web/blog-new-design/" rel="gallery_clk659xsy005hwgtufh6c4mz5">
+        <a class="card-img-link" href="/playground/web/blog-new-design/" rel="gallery_clk6h18ks005irqtu4vl67uij">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -510,7 +553,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/web/web-design-for-mobile-devices/" rel="gallery_clk659xwi00itwgtu2ju4ca8a">
+        <a class="card-img-link" href="/playground/web/web-design-for-mobile-devices/" rel="gallery_clk6h18od00itrqtuhr9v4w2a">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -557,7 +600,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/web/lifetype-or-wordpress/" rel="gallery_clk659xua00aswgtuaw9a76ze">
+        <a class="card-img-link" href="/playground/web/lifetype-or-wordpress/" rel="gallery_clk6h18m700axrqtuc1xc60uh">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -607,7 +650,7 @@
         
   
     
-        <a class="card-img-link" href="/playground/web/dreamhost-hosting/" rel="gallery_clk659xt7006hwgtuf30lf79s">
+        <a class="card-img-link" href="/playground/web/dreamhost-hosting/" rel="gallery_clk6h18l2006qrqtubqidghiz">
           <img class="card-img lazyload" data-src="/playground/web/dreamhost-hosting//dreamhost-banner.png" itemprop="image" alt="gallery">
         </a>
        
@@ -657,7 +700,7 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
             
-        <a class="card-img-link" href="/playground/web/lifetype/" rel="gallery_clk659xua00avwgtu89zm6lbd">
+        <a class="card-img-link" href="/playground/web/lifetype/" rel="gallery_clk6h18m900azrqtubjhc26gg">
           <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
         </a>
       
@@ -787,11 +830,12 @@
     <a class="nav-item-link" href="/about">关于</a>
   </li>
   
-    
   <li class="nav-item ">
-    <a class="nav-item-link" href="/javascript();">搜索</a>
+    <span class="local-search local-search-google local-search-plugin" style="">
+    <input type="search" placeholder="站内搜索" id="local-search-input" class="local-search-input-cls" style="">
+    <div id="local-search-result" class="local-search-result-cls"></div>
+</span>
   </li>
-  
 </ul>
 		
 	</div>
@@ -819,11 +863,41 @@
 
 
 
+<script>
+// 移动设备侦测
+var isMobile = {
+  Android: function () {
+    return navigator.userAgent.match(/Android/i);
+  },
+  BlackBerry: function () {
+    return navigator.userAgent.match(/BlackBerry/i);
+  },
+  iOS: function () {
+    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+  },
+  Opera: function () {
+    return navigator.userAgent.match(/Opera Mini/i);
+  },
+  Windows: function () {
+    return navigator.userAgent.match(/IEMobile/i);
+  },
+  any: function () {
+    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+  }
+};
+
+if ($('.local-search').size() && !isMobile.any()) {
+	$.getScript('/js/search.js', function() {
+	  searchFunc("/search.xml", 'local-search-input', 'local-search-result');
+	});
+}
+</script>
+
+
 <script src="/js/mobile-nav.js"></script>
 
 
 <script src="/js/script.js"></script>
-
 
 </body>
 </html>
