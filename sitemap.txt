@@ -1,3 +1,4 @@
+https://waxa.design/about/
 https://waxa.design/playground/apps/cinema4d-import-ai-file/
 https://waxa.design/blog/handmade-cookies-by-jingxi/
 https://waxa.design/playground/web/hexo-local-search/
@@ -110,7 +111,6 @@ https://waxa.design/tours/2017-xiamen/
 https://waxa.design/writings/research/reading-luxuns-daily/
 https://waxa.design/blog/pig/
 https://waxa.design/blog/rice-flour/
-https://waxa.design/about/
 https://waxa.design/blog/wenquxing/
 https://waxa.design/blog/win7-has-a-problem/
 https://waxa.design/writings/shici/15-no-title-poems/
@@ -282,12 +282,12 @@ https://waxa.design/tags/%E5%8F%AF%E5%9B%AD/
 https://waxa.design/tags/%E7%BD%91%E5%B8%88%E5%9B%AD/
 https://waxa.design/tags/%E8%80%A6%E5%9B%AD/
 https://waxa.design/tags/%E5%8C%97%E5%AF%BA%E5%A1%94/
-https://waxa.design/tags/%E6%96%90%E6%B5%8E/
-https://waxa.design/tags/%E6%BE%B3%E6%B4%B2/
-https://waxa.design/tags/%E5%A2%83%E5%A4%96%E6%B8%B8/
 https://waxa.design/tags/%E5%91%BC%E4%BC%A6%E8%B4%9D%E5%B0%94/
 https://waxa.design/tags/travel-notes/
 https://waxa.design/tags/self-driving-tour/
+https://waxa.design/tags/%E6%96%90%E6%B5%8E/
+https://waxa.design/tags/%E6%BE%B3%E6%B4%B2/
+https://waxa.design/tags/%E5%A2%83%E5%A4%96%E6%B8%B8/
 https://waxa.design/tags/%E6%97%A5%E6%9C%AC/
 https://waxa.design/tags/%E5%A4%A7%E9%98%AA/
 https://waxa.design/tags/%E4%BA%AC%E9%83%BD/
@@ -352,6 +352,7 @@ https://waxa.design/tags/%E7%94%B5%E5%BD%B1%E8%84%9A%E6%9C%AC/
 https://waxa.design/tags/%E8%AF%BB%E4%B9%A6%E6%9D%82%E8%AE%B0/
 https://waxa.design/tags/01media/
 https://waxa.design/tags/party/
+https://waxa.design/tags/cinema-4D/
 https://waxa.design/tags/dota/
 https://waxa.design/tags/game/
 https://waxa.design/tags/%E6%AD%BB%E5%85%9A/
@@ -487,13 +488,13 @@ https://waxa.design/tags/%E7%AB%A5%E5%B9%B4/
 https://waxa.design/tags/%E6%89%8B%E5%B7%A5%E5%BD%95%E5%85%A5/
 https://waxa.design/tags/%E6%99%9A%E6%B8%85/
 https://waxa.design/tags/%E9%83%91%E5%AD%9D%E8%83%A5/
+https://waxa.design/tags/%E8%8F%96%E8%92%B2/
 https://waxa.design/tags/%E9%9B%A8/
 https://waxa.design/tags/%E4%BA%94%E7%BB%9D/
-https://waxa.design/tags/%E8%8F%96%E8%92%B2/
 https://waxa.design/tags/shenzhen/
 https://waxa.design/tags/life/
-https://waxa.design/tags/devaintart/
 https://waxa.design/tags/%E4%BD%9C%E5%93%81/
+https://waxa.design/tags/devaintart/
 https://waxa.design/tags/%E9%85%AC%E5%94%B1/
 https://waxa.design/tags/adobe-contribute/
 https://waxa.design/tags/%E6%88%8F%E8%B0%91/
@@ -507,9 +508,9 @@ https://waxa.design/tags/%E7%8E%89%E5%99%A8/
 https://waxa.design/tags/%E5%A4%9C%E6%B8%B8/
 https://waxa.design/tags/rss-reader/
 https://waxa.design/tags/wordpress-widgets/
+https://waxa.design/tags/%E7%8E%B0%E4%BB%A3%E8%AF%97/
 https://waxa.design/tags/%E4%BD%9C%E8%AF%97%E6%9C%BA/
 https://waxa.design/tags/%E5%B0%8F%E9%9B%86/
-https://waxa.design/tags/%E7%8E%B0%E4%BB%A3%E8%AF%97/
 https://waxa.design/tags/music/
 https://waxa.design/tags/rock/
 https://waxa.design/tags/sleepless/
@@ -582,7 +583,6 @@ https://waxa.design/tags/%E6%98%86%E8%99%AB/
 https://waxa.design/tags/%E7%AB%A5%E5%B9%B4%E8%AE%B0%E5%BF%86/
 https://waxa.design/tags/Blog-tools/
 https://waxa.design/tags/zoundry/
-https://waxa.design/tags/cinema-4D/
 https://waxa.design/categories/blog/
 https://waxa.design/categories/writings/
 https://waxa.design/categories/tours/
