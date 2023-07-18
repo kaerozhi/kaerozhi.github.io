@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://waxa.design/projects/aic-2022/</loc>
+    
+    <lastmod>2023-07-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/stories/</loc>
+    
+    <lastmod>2023-07-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/writings/shici/poems-before-2005/</loc>
+    
+    <lastmod>2023-07-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/playground/fontlab-studio-tips/</loc>
+    
+    <lastmod>2023-07-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://waxa.design/about/</loc>
     
     <lastmod>2023-07-18</lastmod>
@@ -236,15 +272,6 @@
   </url>
   
   <url>
-    <loc>https://waxa.design/stories/</loc>
-    
-    <lastmod>2023-07-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://waxa.design/tours/2018-suzhou/</loc>
     
     <lastmod>2023-07-16</lastmod>
@@ -300,15 +327,6 @@
   
   <url>
     <loc>https://waxa.design/tours/from-dongchong-to-xichong/</loc>
-    
-    <lastmod>2023-07-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/playground/fontlab-studio-tips/</loc>
     
     <lastmod>2023-07-14</lastmod>
     
@@ -930,15 +948,6 @@
   
   <url>
     <loc>https://waxa.design/playground/drawing/gintama-the-team/</loc>
-    
-    <lastmod>2023-05-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/projects/aic-2022/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -2000,15 +2009,6 @@
   </url>
   
   <url>
-    <loc>https://waxa.design/writings/shici/poems-before-2005/</loc>
-    
-    <lastmod>2023-05-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://waxa.design/writings/shici/pass-by-lujiazui/</loc>
     
     <lastmod>2023-05-28</lastmod>
@@ -2496,27 +2496,6 @@
   </url>
   
   <url>
-    <loc>https://waxa.design/tags/%E5%91%BC%E4%BC%A6%E8%B4%9D%E5%B0%94/</loc>
-    <lastmod>2023-07-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/travel-notes/</loc>
-    <lastmod>2023-07-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/self-driving-tour/</loc>
-    <lastmod>2023-07-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://waxa.design/tags/%E6%96%90%E6%B5%8E/</loc>
     <lastmod>2023-07-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -2532,6 +2511,27 @@
   
   <url>
     <loc>https://waxa.design/tags/%E5%A2%83%E5%A4%96%E6%B8%B8/</loc>
+    <lastmod>2023-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/%E5%91%BC%E4%BC%A6%E8%B4%9D%E5%B0%94/</loc>
+    <lastmod>2023-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/travel-notes/</loc>
+    <lastmod>2023-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/self-driving-tour/</loc>
     <lastmod>2023-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2636,6 +2636,13 @@
   </url>
   
   <url>
+    <loc>https://waxa.design/tags/%E4%B8%83%E7%BB%9D/</loc>
+    <lastmod>2023-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://waxa.design/tags/%E5%9B%9B%E5%B7%9D/</loc>
     <lastmod>2023-07-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -2665,13 +2672,6 @@
   
   <url>
     <loc>https://waxa.design/tags/%E6%88%90%E9%83%BD/</loc>
-    <lastmod>2023-07-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/%E4%B8%83%E7%BB%9D/</loc>
     <lastmod>2023-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2777,6 +2777,13 @@
   
   <url>
     <loc>https://waxa.design/tags/esports/</loc>
+    <lastmod>2023-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/featured/</loc>
     <lastmod>2023-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -3245,14 +3252,21 @@
   </url>
   
   <url>
-    <loc>https://waxa.design/tags/adobe-illustrator/</loc>
+    <loc>https://waxa.design/tags/adobe/</loc>
     <lastmod>2023-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://waxa.design/tags/fontlab/</loc>
+    <loc>https://waxa.design/tags/illustrator/</loc>
+    <lastmod>2023-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/fontlab-studio/</loc>
     <lastmod>2023-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -3518,13 +3532,6 @@
   </url>
   
   <url>
-    <loc>https://waxa.design/tags/%E5%9B%A2%E9%98%9F/</loc>
-    <lastmod>2023-07-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://waxa.design/tags/poster/</loc>
     <lastmod>2023-07-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -3540,6 +3547,13 @@
   
   <url>
     <loc>https://waxa.design/tags/%E5%B0%8F%E4%BB%A4/</loc>
+    <lastmod>2023-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/%E5%9B%A2%E9%98%9F/</loc>
     <lastmod>2023-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -3840,13 +3854,6 @@
   </url>
   
   <url>
-    <loc>https://waxa.design/tags/illustrator/</loc>
-    <lastmod>2023-07-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://waxa.design/tags/nextgen-gallery/</loc>
     <lastmod>2023-07-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -3896,6 +3903,13 @@
   </url>
   
   <url>
+    <loc>https://waxa.design/tags/%E7%AB%A5%E5%B9%B4/</loc>
+    <lastmod>2023-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://waxa.design/tags/%E7%85%A7%E7%89%87%E9%9B%86/</loc>
     <lastmod>2023-07-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -3904,13 +3918,6 @@
   
   <url>
     <loc>https://waxa.design/tags/%E8%80%83%E8%AF%81/</loc>
-    <lastmod>2023-07-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://waxa.design/tags/%E7%AB%A5%E5%B9%B4/</loc>
     <lastmod>2023-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -3973,14 +3980,14 @@
   </url>
   
   <url>
-    <loc>https://waxa.design/tags/%E4%BD%9C%E5%93%81/</loc>
+    <loc>https://waxa.design/tags/devaintart/</loc>
     <lastmod>2023-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://waxa.design/tags/devaintart/</loc>
+    <loc>https://waxa.design/tags/%E4%BD%9C%E5%93%81/</loc>
     <lastmod>2023-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4029,6 +4036,13 @@
   </url>
   
   <url>
+    <loc>https://waxa.design/tags/%E5%A4%9C%E6%B8%B8/</loc>
+    <lastmod>2023-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://waxa.design/tags/%E4%B8%8A%E6%B5%B7%E5%8D%9A%E7%89%A9%E9%A6%86/</loc>
     <lastmod>2023-07-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -4057,13 +4071,6 @@
   </url>
   
   <url>
-    <loc>https://waxa.design/tags/%E5%A4%9C%E6%B8%B8/</loc>
-    <lastmod>2023-07-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://waxa.design/tags/rss-reader/</loc>
     <lastmod>2023-07-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -4078,13 +4085,6 @@
   </url>
   
   <url>
-    <loc>https://waxa.design/tags/%E7%8E%B0%E4%BB%A3%E8%AF%97/</loc>
-    <lastmod>2023-07-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://waxa.design/tags/%E4%BD%9C%E8%AF%97%E6%9C%BA/</loc>
     <lastmod>2023-07-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -4093,6 +4093,13 @@
   
   <url>
     <loc>https://waxa.design/tags/%E5%B0%8F%E9%9B%86/</loc>
+    <lastmod>2023-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/%E7%8E%B0%E4%BB%A3%E8%AF%97/</loc>
     <lastmod>2023-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4225,13 +4232,6 @@
   </url>
   
   <url>
-    <loc>https://waxa.design/tags/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2023-07-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://waxa.design/tags/Firefox/</loc>
     <lastmod>2023-07-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -4247,6 +4247,13 @@
   
   <url>
     <loc>https://waxa.design/tags/Scriberfire/</loc>
+    <lastmod>2023-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://waxa.design/tags/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2023-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
