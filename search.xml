@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>虎丘湿地公园</title>
+      <link href="/photography/huqiu-wetland-park/"/>
+      <url>/photography/huqiu-wetland-park/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><span id="more"></span></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 摄影 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 苏州 </tag>
+            
+            <tag> 公园 </tag>
+            
+            <tag> 虎丘湿地公园 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>给 Hexo 添加搜索模块</title>
       <link href="/playground/web/hexo-local-search/"/>
       <url>/playground/web/hexo-local-search/</url>
@@ -24,7 +53,7 @@
             
             <tag> plugins </tag>
             
-            <tag> hexo </tag>
+            <tag> Hexo </tag>
             
             <tag> search </tag>
             
@@ -363,9 +392,9 @@
             
             <tag> 公园 </tag>
             
-            <tag> 教堂 </tag>
-            
             <tag> 虎丘湿地公园 </tag>
+            
+            <tag> 教堂 </tag>
             
         </tags>
       
@@ -732,12 +761,12 @@
       <link href="/projects/aic-2022/"/>
       <url>/projects/aic-2022/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>&#x2F; BRANDING<br>&#x2F; ESPORTS</p><span id="more"></span><hr><p>AIC 已经成功举办了五届，作为电竞品牌被玩家和观众所熟悉，我们的当务之急是为本届赛事设计出一套令人印象深刻的视觉包装，覆盖从宣发到界面的整个流程。</p><p><a href="/projects/aic-2022/colors.png" class="gallery-item"><img src="/projects/aic-2022/colors.png"></a></p><p>本届赛事的核心物料是一款赛事专属皮肤：Zata‘s Vanquisher’s Gift，我们提取皮肤的翅膀作为主题，昂扬高举，展现电竞的力量。</p><p><a href="/projects/aic-2022/banner-opening.png" class="gallery-item"><img src="/projects/aic-2022/banner-opening.png"></a></p><p><a href="/projects/aic-2022/Match-day-blue-0406-1.png" class="gallery-item"><img src="/projects/aic-2022/Match-day-blue-0406-1.png"></a></p><p><a href="/projects/aic-2022/schedule-golden.png" class="gallery-item"><img src="/projects/aic-2022/schedule-golden.png"></a></p><p><a href="/projects/aic-2022/banpick.png" class="gallery-item"><img src="/projects/aic-2022/banpick.png"></a></p><p><a href="/projects/aic-2022/result-blue-0406.png" class="gallery-item"><img src="/projects/aic-2022/result-blue-0406.png"></a></p><p><a href="/projects/aic-2022/MVP-blue.png" class="gallery-item"><img src="/projects/aic-2022/MVP-blue.png"></a></p><p><a href="/projects/aic-2022/champion.png" class="gallery-item"><img src="/projects/aic-2022/champion.png"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>AIC 已经成功举办了五届，作为电竞品牌被玩家和观众所熟悉，我们的当务之急是为本届赛事设计出一套令人印象深刻的视觉包装，覆盖从宣发到界面的整个流程。</p><span id="more"></span><p><a href="/projects/aic-2022/colors.png" class="gallery-item"><img src="/projects/aic-2022/colors.png"></a></p><p>本届赛事的核心物料是一款赛事专属皮肤：Zata‘s Vanquisher’s Gift，我们提取皮肤的翅膀作为主题，昂扬高举，展现电竞的力量。</p><p><a href="/projects/aic-2022/banner-opening.png" class="gallery-item"><img src="/projects/aic-2022/banner-opening.png"></a></p><p><a href="/projects/aic-2022/Match-day-blue-0406-1.png" class="gallery-item"><img src="/projects/aic-2022/Match-day-blue-0406-1.png"></a></p><p><a href="/projects/aic-2022/schedule-golden.png" class="gallery-item"><img src="/projects/aic-2022/schedule-golden.png"></a></p><p><a href="/projects/aic-2022/banpick.png" class="gallery-item"><img src="/projects/aic-2022/banpick.png"></a></p><p><a href="/projects/aic-2022/result-blue-0406.png" class="gallery-item"><img src="/projects/aic-2022/result-blue-0406.png"></a></p><p><a href="/projects/aic-2022/MVP-blue.png" class="gallery-item"><img src="/projects/aic-2022/MVP-blue.png"></a></p><p><a href="/projects/aic-2022/champion.png" class="gallery-item"><img src="/projects/aic-2022/champion.png"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
       
       
       <categories>
           
-          <category> 项目 </category>
+          <category> 案例 </category>
           
       </categories>
       
@@ -757,16 +786,16 @@
     
     
     <entry>
-      <title>王者荣耀云缨系列平面</title>
+      <title>王者荣耀云缨系列海报</title>
       <link href="/projects/hornor-of-kings-new-hero-yunying/"/>
       <url>/projects/hornor-of-kings-new-hero-yunying/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p><a href="/projects/hornor-of-kings-new-hero-yunying/yunying-poster-main-2560-1920x850.png" title="云缨 X 峨眉枪合作概念海报" class="gallery-item"><img src="/projects/hornor-of-kings-new-hero-yunying/yunying-poster-main-2560-1920x850.png" alt="云缨 X 峨眉枪合作概念海报"><span class="image-caption">云缨 X 峨眉枪合作概念海报</span></a></p><span id="more"></span><p><a href="/projects/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-B%E7%89%886.17%E8%B0%83%E8%89%B2-1080x1920.jpg" title="云缨 X 峨眉枪技能 KV" class="gallery-item"><img src="/projects/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-B%E7%89%886.17%E8%B0%83%E8%89%B2-1080x1920.jpg" alt="云缨 X 峨眉枪技能 KV"><span class="image-caption">云缨 X 峨眉枪技能 KV</span></a></p><p><a href="/projects/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-A%E7%89%886.17%E8%B0%83%E8%89%B2-1080x1920.jpg" title="云缨 X 峨眉枪技能 KV" class="gallery-item"><img src="/projects/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-A%E7%89%886.17%E8%B0%83%E8%89%B2-1080x1920.jpg" alt="云缨 X 峨眉枪技能 KV"><span class="image-caption">云缨 X 峨眉枪技能 KV</span></a></p><p><a href="/projects/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-C%E7%89%88-6.17%E8%B0%83%E8%89%B2-1080x1920.jpg" title="云缨 X 峨眉枪技能 KV" class="gallery-item"><img src="/projects/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-C%E7%89%88-6.17%E8%B0%83%E8%89%B2-1080x1920.jpg" alt="云缨 X 峨眉枪技能 KV"><span class="image-caption">云缨 X 峨眉枪技能 KV</span></a></p><p><a href="/projects/hornor-of-kings-new-hero-yunying/%E4%BA%91%E6%A8%B1X%E8%B5%B5%E8%81%AA%E7%AB%96%E7%89%88-1280x1920.jpg" title="云缨 X 赵聪合作 KV" class="gallery-item"><img src="/projects/hornor-of-kings-new-hero-yunying/%E4%BA%91%E6%A8%B1X%E8%B5%B5%E8%81%AA%E7%AB%96%E7%89%88-1280x1920.jpg" alt="云缨 X 赵聪合作 KV"><span class="image-caption">云缨 X 赵聪合作 KV</span></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p><a href="/projects/hornor-of-kings-new-hero-yunying/yunying-poster-main-2560-1920x850.png" title="云缨 X 峨眉枪合作概念海报" class="gallery-item"><img src="/projects/hornor-of-kings-new-hero-yunying/yunying-poster-main-2560-1920x850.png" alt="云缨 X 峨眉枪合作概念海报"></a></p><span id="more"></span><p><a href="/projects/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-B%E7%89%886.17%E8%B0%83%E8%89%B2-1080x1920.jpg" title="云缨 X 峨眉枪技能 KV" class="gallery-item"><img src="/projects/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-B%E7%89%886.17%E8%B0%83%E8%89%B2-1080x1920.jpg" alt="云缨 X 峨眉枪技能 KV"></a></p><p><a href="/projects/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-A%E7%89%886.17%E8%B0%83%E8%89%B2-1080x1920.jpg" title="云缨 X 峨眉枪技能 KV" class="gallery-item"><img src="/projects/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-A%E7%89%886.17%E8%B0%83%E8%89%B2-1080x1920.jpg" alt="云缨 X 峨眉枪技能 KV"></a></p><p><a href="/projects/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-C%E7%89%88-6.17%E8%B0%83%E8%89%B2-1080x1920.jpg" title="云缨 X 峨眉枪技能 KV" class="gallery-item"><img src="/projects/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-C%E7%89%88-6.17%E8%B0%83%E8%89%B2-1080x1920.jpg" alt="云缨 X 峨眉枪技能 KV"></a></p><p><a href="/projects/hornor-of-kings-new-hero-yunying/%E4%BA%91%E6%A8%B1X%E8%B5%B5%E8%81%AA%E7%AB%96%E7%89%88-1280x1920.jpg" title="云缨 X 赵聪合作 KV" class="gallery-item"><img src="/projects/hornor-of-kings-new-hero-yunying/%E4%BA%91%E6%A8%B1X%E8%B5%B5%E8%81%AA%E7%AB%96%E7%89%88-1280x1920.jpg" alt="云缨 X 赵聪合作 KV"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
       
       
       <categories>
           
-          <category> 项目 </category>
+          <category> 案例 </category>
           
       </categories>
       
@@ -1581,7 +1610,7 @@
       
       <categories>
           
-          <category> 项目 </category>
+          <category> 案例 </category>
           
       </categories>
       
@@ -2496,13 +2525,13 @@
             
             <tag> wordpress </tag>
             
+            <tag> 网站更新 </tag>
+            
             <tag> Theme </tag>
             
             <tag> plugins </tag>
             
             <tag> widget </tag>
-            
-            <tag> 网站更新 </tag>
             
         </tags>
       
@@ -5235,10 +5264,10 @@
     
     <entry>
       <title>New aeroom, based on LifeType.</title>
-      <link href="/playground/web/lifetype/"/>
-      <url>/playground/web/lifetype/</url>
+      <link href="/playground/web/aeroom-based-on-lifetype/"/>
+      <url>/playground/web/aeroom-based-on-lifetype/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>我大概是一个典型的双子座，在善变的方面。刚刚尝试了一下 Wordpress，然后就决定转向 LifeType 了。当然，这些尝试都是在本地做的，如果我的空间支持 MySQL，PJBlog 应该也早就被撤换了。不过它早就被冷落了，以至于皮肤始终处于半成品的状态。</p><p><a href="/playground/web/lifetype/lifetype1.jpg" class="gallery-item"><img src="/playground/web/lifetype/lifetype1.jpg"></a></p><p>关于自己的网站，我有个非常宏大的规划，但一直找不到合适的程序来实现它，所以一度不自量力，打算自行来开发那么一个系统。不过这个系统限于我拙劣的水准，三分钟热情的性格，搭配三脚猫的编程能力，要实现它似乎是遥遥无期了，所以知道现在也只有一个宏大的愿景。</p><span id="more"></span><p>在我的想法里面，理想的 Blog 程序应该支持二级或更多级别的分类，而且要有非常强大的模板系统（关于这个理想状态的模板系统，请参考 iNewS），也就是说，绝对不能是一个 Blog 只有一个模板，而是每个分类，甚至每个页面都可以选择其相应的模板。虽然 WordPress 的模板设计起来非常灵活，但是没办法做到每个分类都有相应的模板，而 LifeType 中的一个用户可以拥有多个 Blog，每个 Blog 可以单独定义模板，这样就可以在某种程度上达到我的要求。</p><p>参照页面最上端的导航条，我的网站分为以下几个栏目：</p><ul><li><strong>aeroomStudio：</strong> 发布与展示我的设计作品</li><li><strong>aeroomPress：</strong> 分享我制作的电子书——虽然现在还没有一部制作完全的。</li><li><strong>诗：</strong> 收集旧体诗词，包括前人作品、网络诗词与我自己的作品。</li><li><strong>WebPicker：</strong> 分享与评论 Cool site。</li><li><strong>插画：</strong> 用来发布插画作品与动漫同人。</li><li><strong>雪庵：</strong> 记录我的潦倒生活与堕落历程，另外还有一些未经大脑思考过的所谓人生感悟。</li><li><strong>行事历：</strong> 装模作样地为自己定制工作计划的地方。</li></ul><p>我在 LifeType 里面建了7个 Blog，分别对应这些栏目，然后每个栏目就可以有着不同的模板了。当然，可能还会遇到一些问题，但是在现阶段也只能将就将就了……愿我能更加努力吧。</p><p>PS：其实阿桂的 iNewS 如果精简一下，并且在 RSS 和 TrackBack 方面增强一些的话，绝对是非常强大并且符合我要求的 Blog 程序。咳，因为答应他的一些东西搁置了很久，所以现在都不好意思向他说这个了，汗一个先～</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>我大概是一个典型的双子座，在善变的方面。刚刚尝试了一下 Wordpress，然后就决定转向 LifeType 了。当然，这些尝试都是在本地做的，如果我的空间支持 MySQL，PJBlog 应该也早就被撤换了。不过它早就被冷落了，以至于皮肤始终处于半成品的状态。</p><p>关于自己的网站，我有个非常宏大的规划，但一直找不到合适的程序来实现它，所以一度不自量力，打算自行来开发那么一个系统。不过这个系统限于我拙劣的水准，三分钟热情的性格，搭配三脚猫的编程能力，要实现它似乎是遥遥无期了，所以知道现在也只有一个宏大的愿景。</p><span id="more"></span><p>在我的想法里面，理想的 Blog 程序应该支持二级或更多级别的分类，而且要有非常强大的模板系统（关于这个理想状态的模板系统，请参考 iNewS），也就是说，绝对不能是一个 Blog 只有一个模板，而是每个分类，甚至每个页面都可以选择其相应的模板。虽然 WordPress 的模板设计起来非常灵活，但是没办法做到每个分类都有相应的模板，而 LifeType 中的一个用户可以拥有多个 Blog，每个 Blog 可以单独定义模板，这样就可以在某种程度上达到我的要求。</p><p>参照页面最上端的导航条，我的网站分为以下几个栏目：</p><ul><li><strong>aeroomStudio：</strong> 发布与展示我的设计作品</li><li><strong>aeroomPress：</strong> 分享我制作的电子书——虽然现在还没有一部制作完全的。</li><li><strong>诗：</strong> 收集旧体诗词，包括前人作品、网络诗词与我自己的作品。</li><li><strong>WebPicker：</strong> 分享与评论 Cool site。</li><li><strong>插画：</strong> 用来发布插画作品与动漫同人。</li><li><strong>雪庵：</strong> 记录我的潦倒生活与堕落历程，另外还有一些未经大脑思考过的所谓人生感悟。</li><li><strong>行事历：</strong> 装模作样地为自己定制工作计划的地方。</li></ul><p>我在 LifeType 里面建了7个 Blog，分别对应这些栏目，然后每个栏目就可以有着不同的模板了。当然，可能还会遇到一些问题，但是在现阶段也只能将就将就了……愿我能更加努力吧。</p><p>PS：其实阿桂的 iNewS 如果精简一下，并且在 RSS 和 TrackBack 方面增强一些的话，绝对是非常强大并且符合我要求的 Blog 程序。咳，因为答应他的一些东西搁置了很久，所以现在都不好意思向他说这个了，汗一个先～</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
       
       
       <categories>
@@ -5400,9 +5429,9 @@
             
             <tag> wordpress-theme </tag>
             
-            <tag> blog-tools </tag>
-            
             <tag> 网站更新 </tag>
+            
+            <tag> blog-tools </tag>
             
         </tags>
       
@@ -5518,7 +5547,7 @@
       
       <categories>
           
-          <category> 项目 </category>
+          <category> 案例 </category>
           
       </categories>
       
@@ -5760,7 +5789,7 @@
       
       <categories>
           
-          <category> 项目 </category>
+          <category> 案例 </category>
           
       </categories>
       
