@@ -37,7 +37,7 @@
       <link href="/playground/web/hexo-local-search/"/>
       <url>/playground/web/hexo-local-search/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>咳咳，作为受益无穷的免费用户，我不是在抱怨，但除了一个合适的框架以外，Acorn 的功能确实过于简略。这几天先后搞定了 Github 同步以及评论系统，但仔细想来，网站亟需完善的功能和模块还有以下几个：</p><ul><li><input checked="" disabled="" type="checkbox"> <del>添加评论系统，已达成</del>；</li><li><input checked="" disabled="" type="checkbox"> <del>添加搜索模块</del>；</li><li><input checked="" disabled="" type="checkbox"> <del>目前的组图功能不太完善，考虑移植 Justfied Gallery</del>；</li><li><input disabled="" type="checkbox"> 增加更多可选 Layout，比如黑色背景与全屏宽度；</li><li><input disabled="" type="checkbox"> 能否将视频作为头图的可选项？</li><li><input disabled="" type="checkbox"> 首页与影像、案例页面的内容梳理；</li></ul><p>确实是任重道远，扶额。</p><span id="more"></span><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p>首先，我们需要安装 <a href="https://github.com/wzpan/hexo-generator-search">hexo-generator-search plugin</a>，输入命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-search --save</span><br></pre></td></tr></table></figure><p>编辑 Hexo 根目录下的配置文件 <code>_config.yml</code>，添加以下代码：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span>  </span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span>  </span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span>  </span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><p><code>field</code> 指定搜索的覆盖范围，可选项有 <code>post / page / all</code>，分别覆盖文章、页面，<code>all</code> 则两者兼顾，个人偏向 all 选项，各位可以自行选择。</p><p>但插件装好之后，就会发现它除了在根目录生成 <code>search.xml</code>，并不提供搜索的交互界面，需要我们自行添加。</p><h2 id="新增搜索界面"><a href="#新增搜索界面" class="headerlink" title="新增搜索界面"></a>新增搜索界面</h2><p>打开 <a href="https://github.com/barretlee/hexo-search-plugin-snippets">hexo-search-plugin-snippets</a>，下载 <code>snippets</code> 文件夹内的三个文件，分别放到对应的文件夹：</p><ul><li><code>search.ejs</code> &gt;  <code>/themes/acorn/layout/search.ejs</code>;</li><li><code>search.js</code> &gt; <code>/themes/acorn/source/js/search.js</code>;</li><li><code>search.stylus</code> &gt; <code>/themes/acorn/source/css/_partial/search.styl</code>。</li></ul><p>接着打开 <code>/themes/acorn/layout/_partial/menu.ejs</code>，因为我们打算把搜索框放到顶部的导航栏，在 <code>&lt;/ul&gt;</code> 的闭合标签之前插入：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;li&gt;</span><br><span class="line">  &lt;%- <span class="title function_">partial</span>(<span class="string">&#x27;_partial/search&#x27;</span>, &#123;<span class="attr">wrapStyle</span>: <span class="string">&#x27;&#x27;</span>, <span class="attr">inputStyle</span>: <span class="string">&#x27;&#x27;</span>&#125;) %&gt;</span><br><span class="line">&lt;/li&gt;</span><br></pre></td></tr></table></figure><p>然后打开 <code>/themes/acorn/layout/_partial/after-footer.ejs</code>，找个合适的地方插入：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 引用 JQuery</span></span><br><span class="line">&lt;script src=<span class="string">&quot;https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="comment">// 移动设备侦测</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">var</span> isMobile = &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="title class_">Android</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">return</span> navigator.<span class="property">userAgent</span>.<span class="title function_">match</span>(<span class="regexp">/Android/i</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="title class_">BlackBerry</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">return</span> navigator.<span class="property">userAgent</span>.<span class="title function_">match</span>(<span class="regexp">/BlackBerry/i</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="attr">iOS</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">return</span> navigator.<span class="property">userAgent</span>.<span class="title function_">match</span>(<span class="regexp">/iPhone|iPad|iPod/i</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="title class_">Opera</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">return</span> navigator.<span class="property">userAgent</span>.<span class="title function_">match</span>(<span class="regexp">/Opera Mini/i</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="title class_">Windows</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">return</span> navigator.<span class="property">userAgent</span>.<span class="title function_">match</span>(<span class="regexp">/IEMobile/i</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="attr">any</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">return</span> (isMobile.<span class="title class_">Android</span>() || isMobile.<span class="title class_">BlackBerry</span>() || isMobile.<span class="title function_">iOS</span>() || isMobile.<span class="title class_">Opera</span>() || isMobile.<span class="title class_">Windows</span>());</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">&#125;;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">if</span> ($(<span class="string">&#x27;.local-search&#x27;</span>).<span class="title function_">size</span>() &amp;&amp; !isMobile.<span class="title function_">any</span>()) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">$.<span class="title function_">getScript</span>(<span class="string">&#x27;/js/search.js&#x27;</span>, <span class="keyword">function</span>(<span class="params"></span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="title function_">searchFunc</span>(<span class="string">&quot;/search.xml&quot;</span>, <span class="string">&#x27;local-search-input&#x27;</span>, <span class="string">&#x27;local-search-result&#x27;</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">&#125;);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">&#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure><p>再打开 <code>/themes/acorn/source/css/style.styl</code>，插入：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@import &quot;_partial/search&quot;</span><br></pre></td></tr></table></figure><p>Acorn 主题用户请注意，一定要把文件名从 <code>search.stylus</code> 改为 <code>search.styl</code>。稳妥起见，最好把语法重新整理一遍，否则可能会出现渲染错误。</p><p>最后 <code>hexo clean &amp;&amp; hexo g</code>，搜索模块应该就出现了，调整一下外观样式，收工。</p><hr><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul><li><a href="https://qiuyiwu.github.io/2019/01/25/Hexo-LocalSearch/">Create Local Search for Your Hexo Blog</a></li><li><a href="https://github.com/barretlee/hexo-search-plugin-snippets">hexo-search-plugin-snippets</a></li></ul></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>咳咳，作为受益无穷的免费用户，我不是在抱怨，但除了一个合适的框架以外，Acorn 的功能确实过于简略。这几天先后搞定了 Github 同步以及评论系统，但仔细想来，网站亟需完善的功能和模块还有以下几个：</p><ul><li><input checked="" disabled="" type="checkbox"> <del>添加评论系统，已达成</del>；</li><li><input checked="" disabled="" type="checkbox"> <del>添加搜索模块</del>；</li><li><input checked="" disabled="" type="checkbox"> <del>目前的组图功能不太完善，考虑移植 Justfied Gallery</del>；</li><li><input disabled="" type="checkbox"> 增加更多可选 Layout，比如黑色背景与全屏宽度；</li><li><input disabled="" type="checkbox"> 能否将视频作为头图的可选项？</li><li><input disabled="" type="checkbox"> 首页与影像、案例页面的内容梳理；</li></ul><p>确实是任重道远，扶额。</p><span id="more"></span><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p>首先，我们需要安装 <a href="https://github.com/wzpan/hexo-generator-search">hexo-generator-search plugin</a>，输入命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-search --save</span><br></pre></td></tr></table></figure><p>编辑 Hexo 根目录下的配置文件 <code>_config.yml</code>，添加以下代码：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span>  </span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span>  </span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span>  </span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><p><code>field</code> 指定搜索的覆盖范围，可选项有 <code>post / page / all</code>，分别覆盖文章、页面，<code>all</code> 则两者兼顾，个人偏向 all 选项，各位可以自行选择。</p><p>但插件装好之后，就会发现它除了在根目录生成 <code>search.xml</code>，并不提供搜索的交互界面，需要我们自行添加。</p><h2 id="新增搜索界面"><a href="#新增搜索界面" class="headerlink" title="新增搜索界面"></a>新增搜索界面</h2><p>打开 <a href="https://github.com/barretlee/hexo-search-plugin-snippets">hexo-search-plugin-snippets</a>，下载 <code>snippets</code> 文件夹内的三个文件，分别放到对应的文件夹：</p><ul><li><code>search.ejs</code> &gt;  <code>/themes/acorn/layout/search.ejs</code>;</li><li><code>search.js</code> &gt; <code>/themes/acorn/source/js/search.js</code>;</li><li><code>search.stylus</code> &gt; <code>/themes/acorn/source/css/_partial/search.styl</code>。</li></ul><p>接着打开 <code>/themes/acorn/layout/_partial/menu.ejs</code>，因为我们打算把搜索框放到顶部的导航栏，在 <code>&lt;/ul&gt;</code> 的闭合标签之前插入：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;li&gt;</span><br><span class="line">  &lt;%- <span class="title function_">partial</span>(<span class="string">&#x27;_partial/search&#x27;</span>, &#123;<span class="attr">wrapStyle</span>: <span class="string">&#x27;&#x27;</span>, <span class="attr">inputStyle</span>: <span class="string">&#x27;&#x27;</span>&#125;) %&gt;</span><br><span class="line">&lt;/li&gt;</span><br></pre></td></tr></table></figure><p>然后打开 <code>/themes/acorn/layout/_partial/after-footer.ejs</code>，找个合适的地方插入：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 引用 JQuery</span></span><br><span class="line">&lt;script src=<span class="string">&quot;https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="comment">// 移动设备侦测</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">var</span> isMobile = &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="title class_">Android</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">return</span> navigator.<span class="property">userAgent</span>.<span class="title function_">match</span>(<span class="regexp">/Android/i</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="title class_">BlackBerry</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">return</span> navigator.<span class="property">userAgent</span>.<span class="title function_">match</span>(<span class="regexp">/BlackBerry/i</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="attr">iOS</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">return</span> navigator.<span class="property">userAgent</span>.<span class="title function_">match</span>(<span class="regexp">/iPhone|iPad|iPod/i</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="title class_">Opera</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">return</span> navigator.<span class="property">userAgent</span>.<span class="title function_">match</span>(<span class="regexp">/Opera Mini/i</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="title class_">Windows</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">return</span> navigator.<span class="property">userAgent</span>.<span class="title function_">match</span>(<span class="regexp">/IEMobile/i</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="attr">any</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">return</span> (isMobile.<span class="title class_">Android</span>() || isMobile.<span class="title class_">BlackBerry</span>() || isMobile.<span class="title function_">iOS</span>() || isMobile.<span class="title class_">Opera</span>() || isMobile.<span class="title class_">Windows</span>());</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">&#125;;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">if</span> ($(<span class="string">&#x27;.local-search&#x27;</span>).<span class="title function_">resize</span>() &amp;&amp; !isMobile.<span class="title function_">any</span>()) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">$.<span class="title function_">getScript</span>(<span class="string">&#x27;/js/search.js&#x27;</span>, <span class="keyword">function</span>(<span class="params"></span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="title function_">searchFunc</span>(<span class="string">&quot;/search.xml&quot;</span>, <span class="string">&#x27;local-search-input&#x27;</span>, <span class="string">&#x27;local-search-result&#x27;</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">&#125;);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">&#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure><p>再打开 <code>/themes/acorn/source/css/style.styl</code>，插入：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@import &quot;_partial/search&quot;</span><br></pre></td></tr></table></figure><p>Acorn 主题用户请注意，一定要把文件名从 <code>search.stylus</code> 改为 <code>search.styl</code>。稳妥起见，最好把语法重新整理一遍，否则可能会出现渲染错误。</p><p>最后 <code>hexo clean &amp;&amp; hexo g</code>，搜索模块应该就出现了，调整一下外观样式，收工。</p><hr><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul><li><a href="https://qiuyiwu.github.io/2019/01/25/Hexo-LocalSearch/">Create Local Search for Your Hexo Blog</a></li><li><a href="https://github.com/barretlee/hexo-search-plugin-snippets">hexo-search-plugin-snippets</a></li></ul></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
       
       
       <categories>
@@ -463,37 +463,6 @@
     
     
     <entry>
-      <title>Hexo 后续补充</title>
-      <link href="/playground/web/hexo-updates/"/>
-      <url>/playground/web/hexo-updates/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><div class="foreword">Hexo 用了两天，基本功能差不多弄清楚了。不过也发现一些问题，逐个记录，分享出来，没准能对 Hexo 的其他用户提供一些帮助。</div><span id="more"></span><h2 id="Markdown-支持"><a href="#Markdown-支持" class="headerlink" title="Markdown 支持"></a>Markdown 支持</h2><p>Hexo 对 Markdown 语法的支持尚不完备，比如将内容标记为高亮： <code>==highlight==</code>， Obsidian 已经支持，但 Hexo 尚未跟进。类似的还有 footnote，目前只能通过插件搞定。</p><h3 id="footnote-脚注"><a href="#footnote-脚注" class="headerlink" title="footnote 脚注"></a>footnote 脚注</h3><p>对一个业余文字爱好者来说，注释是免不了要加的。<a href="https://github.com/LouisBarranqueiro/hexo-footnotes">hexo-footnotes</a>  可以为 Hexo 用户提供额外的 footnote 语法支持，直接命令行安装：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-footnotes --save</span><br></pre></td></tr></table></figure><p>安装之后 Hexo 一般可以自动识别，此时在 Markdown 文件中添加注释即可。如果不能识别，则需要在 <code>_config.yml</code> 内手动配置：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">plugins:</span><br><span class="line">  - hexo-footnotes</span><br></pre></td></tr></table></figure><p>footnote 的语法请自行搜索。个人体验下来，目前还有两个问题尚待解决：</p><ol><li><del>如果一条注释包含多个段落，则只有第一个段落会被识别，不知如何指定脚注的起讫范围？</del> 后续段落可以通过缩进来声明脚注的起讫，但仍然有个问题。第一段是纯文本，而后续段落都是 <code>&lt;p&gt;...&lt;/p&gt;</code> 标签，导致第一段与第二段之间缺少段间距。</li><li><del>不知是否与主题 css 存在冲突，脚注序号、内容与返回按钮分成了三行。</del>此问题已经解决，办法是修改 <code>/Hexo/node_modules/hexo-footnotes/src/footnotes.js</code>，搜索 <code>display: inline-block;</code>，删除第二个结果。</li><li>脚注的标记不支持中文，<code>&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;</code> 正常，<code>[^注一]</code> 则不正常。</li></ol><p>最终效果可以参考这篇文章：<a href="/writings/research/photos-of-luxun">鲁迅照片集</a></p><h3 id="Markdown-与-HTML-标签混用"><a href="#Markdown-与-HTML-标签混用" class="headerlink" title="Markdown 与 HTML 标签混用"></a>Markdown 与 HTML 标签混用</h3><h2 id="内容嵌入"><a href="#内容嵌入" class="headerlink" title="内容嵌入"></a>内容嵌入</h2><h3 id="Youtube-视频"><a href="#Youtube-视频" class="headerlink" title="Youtube 视频"></a>Youtube 视频</h3><p>Wordpress 里面插入 Youtube 视频很简单，网址粘贴进去，自动转换成视频播放界面。与之相比，Obsidian 还能找到 <a href="https://github.com/samwarnick/obsidian-simple-embeds">Simple Embeds</a> 这样的插件，Hexo 简直太不方便了，反正我不怎么想在 Markdown 里面写这样的标签：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% youtube video_id [type] [cookie] %&#125;</span><br></pre></td></tr></table></figure><p>作为互联网的老用户，平台或者软件搞私有标准的危害，我们可是太有体会了。还是希望 Hexo 能在 Markdown 通行标准的基础上发展，不要强推这种换个软件就无法识别的标签。</p><h2 id="子页面"><a href="#子页面" class="headerlink" title="子页面"></a>子页面</h2><p>发现一个奇怪现象：<a href="/about/">关于</a> 页面本来正常，但我想在这个页面下面再挂一份简历，计划的路径是 <code>/about/resume</code>。Hexo 官方没有子页面的信息，所以我就直接在 source 文件夹建了一个 <code>about</code> 子文件夹，然后在里面新增了一个 <code>resume.md</code>。没想到生成之后，这个简历倒是没有问题，主菜单点击关于页面报 403 错误了，令人一头雾水。</p><p>当然解决办法还是有的，将 <code>about.md</code> 移到 <code>about</code> 文件夹，并重命名为 <code>index.md</code>，虽然生成网页之后实际路径其实从 <code>/about.html</code> 变成了 <code>/about/index.html</code>，但这样一来，按照之前的路径访问就没有问题了。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-      
-      
-      <categories>
-          
-          <category> 玩艺 </category>
-          
-          <category> 网站 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-            <tag> Hexo Plugins </tag>
-            
-            <tag> Markdown </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hexo 的主题定制</title>
       <link href="/playground/web/hexo-theme-minos/"/>
       <url>/playground/web/hexo-theme-minos/</url>
@@ -523,6 +492,37 @@
             <tag> Justified Gallery </tag>
             
             <tag> 中文字体 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo 后续补充</title>
+      <link href="/playground/web/hexo-updates/"/>
+      <url>/playground/web/hexo-updates/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><div class="foreword">Hexo 用了两天，基本功能差不多弄清楚了。不过也发现一些问题，逐个记录，分享出来，没准能对 Hexo 的其他用户提供一些帮助。</div><span id="more"></span><h2 id="Markdown-支持"><a href="#Markdown-支持" class="headerlink" title="Markdown 支持"></a>Markdown 支持</h2><p>Hexo 对 Markdown 语法的支持尚不完备，比如将内容标记为高亮： <code>==highlight==</code>， Obsidian 已经支持，但 Hexo 尚未跟进。类似的还有 footnote，目前只能通过插件搞定。</p><h3 id="footnote-脚注"><a href="#footnote-脚注" class="headerlink" title="footnote 脚注"></a>footnote 脚注</h3><p>对一个业余文字爱好者来说，注释是免不了要加的。<a href="https://github.com/LouisBarranqueiro/hexo-footnotes">hexo-footnotes</a>  可以为 Hexo 用户提供额外的 footnote 语法支持，直接命令行安装：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-footnotes --save</span><br></pre></td></tr></table></figure><p>安装之后 Hexo 一般可以自动识别，此时在 Markdown 文件中添加注释即可。如果不能识别，则需要在 <code>_config.yml</code> 内手动配置：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">plugins:</span><br><span class="line">  - hexo-footnotes</span><br></pre></td></tr></table></figure><p>footnote 的语法请自行搜索。个人体验下来，目前还有两个问题尚待解决：</p><ol><li><del>如果一条注释包含多个段落，则只有第一个段落会被识别，不知如何指定脚注的起讫范围？</del> 后续段落可以通过缩进来声明脚注的起讫，但仍然有个问题。第一段是纯文本，而后续段落都是 <code>&lt;p&gt;...&lt;/p&gt;</code> 标签，导致第一段与第二段之间缺少段间距。</li><li><del>不知是否与主题 css 存在冲突，脚注序号、内容与返回按钮分成了三行。</del>此问题已经解决，办法是修改 <code>/Hexo/node_modules/hexo-footnotes/src/footnotes.js</code>，搜索 <code>display: inline-block;</code>，删除第二个结果。</li><li>脚注的标记不支持中文，<code>&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;</code> 正常，<code>[^注一]</code> 则不正常。</li></ol><p>最终效果可以参考这篇文章：<a href="/writings/research/photos-of-luxun">鲁迅照片集</a></p><h3 id="Markdown-与-HTML-标签混用"><a href="#Markdown-与-HTML-标签混用" class="headerlink" title="Markdown 与 HTML 标签混用"></a>Markdown 与 HTML 标签混用</h3><h2 id="内容嵌入"><a href="#内容嵌入" class="headerlink" title="内容嵌入"></a>内容嵌入</h2><h3 id="Youtube-视频"><a href="#Youtube-视频" class="headerlink" title="Youtube 视频"></a>Youtube 视频</h3><p>Wordpress 里面插入 Youtube 视频很简单，网址粘贴进去，自动转换成视频播放界面。与之相比，Obsidian 还能找到 <a href="https://github.com/samwarnick/obsidian-simple-embeds">Simple Embeds</a> 这样的插件，Hexo 简直太不方便了，反正我不怎么想在 Markdown 里面写这样的标签：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% youtube video_id [type] [cookie] %&#125;</span><br></pre></td></tr></table></figure><p>作为互联网的老用户，平台或者软件搞私有标准的危害，我们可是太有体会了。还是希望 Hexo 能在 Markdown 通行标准的基础上发展，不要强推这种换个软件就无法识别的标签。</p><h2 id="子页面"><a href="#子页面" class="headerlink" title="子页面"></a>子页面</h2><p>发现一个奇怪现象：<a href="/about/">关于</a> 页面本来正常，但我想在这个页面下面再挂一份简历，计划的路径是 <code>/about/resume</code>。Hexo 官方没有子页面的信息，所以我就直接在 source 文件夹建了一个 <code>about</code> 子文件夹，然后在里面新增了一个 <code>resume.md</code>。没想到生成之后，这个简历倒是没有问题，主菜单点击关于页面报 403 错误了，令人一头雾水。</p><p>当然解决办法还是有的，将 <code>about.md</code> 移到 <code>about</code> 文件夹，并重命名为 <code>index.md</code>，虽然生成网页之后实际路径其实从 <code>/about.html</code> 变成了 <code>/about/index.html</code>，但这样一来，按照之前的路径访问就没有问题了。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 玩艺 </category>
+          
+          <category> 网站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Hexo Plugins </tag>
+            
+            <tag> Markdown </tag>
             
         </tags>
       
@@ -2434,11 +2434,11 @@
       
         <tags>
             
+            <tag> firefox </tag>
+            
             <tag> browser </tag>
             
             <tag> chrome-extensions </tag>
-            
-            <tag> firefox </tag>
             
             <tag> firefox-扩展 </tag>
             
@@ -2492,9 +2492,9 @@
       
         <tags>
             
-            <tag> problem </tag>
-            
             <tag> nod32 </tag>
+            
+            <tag> problem </tag>
             
             <tag> windows-7 </tag>
             
@@ -2740,9 +2740,9 @@
       
         <tags>
             
-            <tag> feed </tag>
-            
             <tag> rss </tag>
+            
+            <tag> feed </tag>
             
             <tag> wordpress-plugin </tag>
             
@@ -2998,6 +2998,37 @@
     
     
     <entry>
+      <title>果然是落后了啊</title>
+      <link href="/blog/daishiyan-is-married/"/>
+      <url>/blog/daishiyan-is-married/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>前两天还在排练年会节目的时候，忽然接到个电话，一瞅名字好熟悉：付廷威。其实也没什么要紧事，随便扯了扯——扣，想不到戴世宴居然在本月5日结婚了啊，之前还真是一点风声也没听说，我还真是个消息闭塞反应迟钝的家伙。说起来品品家的小艺都快满周岁了，王刚老婆肚子里的娃娃也有八个月大，过年回家就办酒席做爸爸了。晚自习逃课泡网吧吃小饭馆喝酒到处流窜似乎还就是前不久的事情呢，一转眼，扣，这些家伙就都一个个结婚生孩子了。</p><p>不过这两年以来，那种18岁的感觉倒真的越来越不可追踪回溯了。在我工作以后的很长一段时期里，尤其是住在师大日常品王刚隔三差五就一起出来鬼混的时候，没心没肺地，什么都不想，那还真的没有一个在社会上讨生活的成年人该有的觉悟呢。前两天翻了张19岁刚工作时的照片出来给同事们看，大家惊叹不已，纷纷赞美俺以前的清纯美好，嘲笑俺现在的沧桑大叔造型。其实听他们那么说的时候，我还是挺开心的，虽然老了，不过长大了也是一件高兴的事情嘛。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 死党 </tag>
+            
+            <tag> 王刚 </tag>
+            
+            <tag> 程品品 </tag>
+            
+            <tag> 结婚 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>年会</title>
       <link href="/blog/christmas-party/"/>
       <url>/blog/christmas-party/</url>
@@ -3023,37 +3054,6 @@
             <tag> 01media </tag>
             
             <tag> party </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>果然是落后了啊</title>
-      <link href="/blog/daishiyan-is-married/"/>
-      <url>/blog/daishiyan-is-married/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>前两天还在排练年会节目的时候，忽然接到个电话，一瞅名字好熟悉：付廷威。其实也没什么要紧事，随便扯了扯——扣，想不到戴世宴居然在本月5日结婚了啊，之前还真是一点风声也没听说，我还真是个消息闭塞反应迟钝的家伙。说起来品品家的小艺都快满周岁了，王刚老婆肚子里的娃娃也有八个月大，过年回家就办酒席做爸爸了。晚自习逃课泡网吧吃小饭馆喝酒到处流窜似乎还就是前不久的事情呢，一转眼，扣，这些家伙就都一个个结婚生孩子了。</p><p>不过这两年以来，那种18岁的感觉倒真的越来越不可追踪回溯了。在我工作以后的很长一段时期里，尤其是住在师大日常品王刚隔三差五就一起出来鬼混的时候，没心没肺地，什么都不想，那还真的没有一个在社会上讨生活的成年人该有的觉悟呢。前两天翻了张19岁刚工作时的照片出来给同事们看，大家惊叹不已，纷纷赞美俺以前的清纯美好，嘲笑俺现在的沧桑大叔造型。其实听他们那么说的时候，我还是挺开心的，虽然老了，不过长大了也是一件高兴的事情嘛。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 死党 </tag>
-            
-            <tag> 王刚 </tag>
-            
-            <tag> 程品品 </tag>
-            
-            <tag> 结婚 </tag>
             
         </tags>
       
@@ -3173,15 +3173,17 @@
     
     <entry>
       <title>在白宫落成仪式上的总结致辞</title>
-      <link href="/cases/summary-for-theme-building/"/>
-      <url>/cases/summary-for-theme-building/</url>
+      <link href="/playground/web/summary-for-theme-building/"/>
+      <url>/playground/web/summary-for-theme-building/</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>经过上周六至本周一的努力施工，俺的博客终于改造完成了。这个新主题的设计稿其实很陈旧了，还是大半年前的工作，代码则是基于 <a href="http://www.plaintxt.org/themes/sandbox/">Sandbox</a> 改写的。咳咳，最终效果得到了品味高雅的 <a href="http://www.xwingx.com/blog">Winging</a> 同学的认可与赞赏，感激～同时也受到了某些无耻之徒如<a href="http://hi.baidu.com/%B7%EF%CE%E5%CF%C8%C9%FA">困妞</a>和<a href="http://tiantai.blog.tianya.cn/">天台</a>等人的强烈嫉妒和刻意贬低，愤慨～他们表示看上去完全不咋的，或者干脆说是简陋，尤其是百度空间资深用户困哉，在得知这博客使用的是传说全宇宙最强的 WordPress 程序之后，他更是痛心疾首地控诉：配上你这套烂皮，真可谓暴殄天物啊！然后就皱着眉头摇着脑袋非常不满地把自己的百度Mac模板拿出来对比了。</p><p>首先得把新主题一个不太明显的功能拎出来示众一下，如下图左端红色部分所示：<br><a href="http://i1.wp.com/kaero.files.wordpress.com/2008/12/200812110103071.pngwp-content/uploads/2008/12/image.png?resize=440,44" title="image" class="gallery-item"><img src="http://i1.wp.com/kaero.files.wordpress.com/2008/12/200812110103071.pngwp-content/uploads/2008/12/image.png?resize=440,44" alt="image"><span class="image-caption">image</span></a><br>这里其实是一个 Previous Post 的跳转链接，相应的右端也有一道浅灰的区域，则是 Next Post 的跳转链接。因为设计时没有并考虑到这两个很必要的链接，在 Coding 的时候临时添加了这么个效果，但为了不至于影响文章标题喧宾夺主，做得比较低调可能容易被忽略，而 Sandbox 代码又不太好改动，所以连个提示都没办法加，只能希望鼠标翻转事件能够引导用户去点击了。</p><p>为了加快载入速度便于阅读，我把那些 Web 2.0 网站的应用都集中到首页了，内容页面中的 Sidebar 只保留了很简单的基本功能，另外放上了一个有趣的 Widget <a href="http://www.wowzio.com/">WOWZIO</a> ，可以让你看到网站上的其他用户都在干嘛——虽然在罕有人迹的本站它可能一天也就动那么一两下，不过要是有一天俺成名了它就会像锯木厂工作台上的木屑一样飞迸啊。然而首页其实还有问题的，因为很多东西都转移过来这边，所以在拥挤的布局里我仅显示了最新的一篇文章。这样用户想继续阅读的时候就比较麻烦了，因为在附近范围内没有链接引导他们打开其他文章或者存档页列表。他们只能通过最顶部的导航来选择，这无疑是非常糟糕的体验啊。所以我还在考虑要不要在 Twitter 列表上面插入一个 Recent Posts 列表。</p><p>在改造的过程中也尝试了很多新的 WordPress 插件，下面就推荐几个我觉得不错并且最后保留下来的吧：</p><p>1） <a href="http://www.studiograsshopper.ch/wordpress-plugins/dynamic-content-gallery-plugin-v2/">Dynamic Content Gallery</a>：就是首页上边那个 Slideshow 效果，看起来还不错吧？其实最早找到的是 <a href="http://www.revolutiontwo.com/plugins/featured-content-gallery.htm">Featured Content Gallery</a>，这两个插件都是基于同一个JS框架开发的，效果非常类似，不过 FCG 弄了很久，始终停留在加载那一步就不能播放了，最后无奈放弃另选了 DCG。不过 FCG 有一个优点是可以任意指定一个2至10之间的图片数，而 DCG 则固定加载5张。另外 FCG 只能加载一个指定分类，DCG 在这方面则自由很多。</p><p>2） <a href="http://www.damagedgoods.it/wp-plugins/quoter/">Quoter</a>：咳，对于俺的博客来讲这还是一个稍显奢侈的插件吧？效果如图所示：<br><a href="http://i0.wp.com/kaero.files.wordpress.com/2008/12/200812110103071.pngwp-content/uploads/2008/12/image1.png"><a href="http://i0.wp.com/kaero.files.wordpress.com/2008/12/200812110103071.pngwp-content/uploads/2008/12/image-thumb.png?resize=446,119" title="image" class="gallery-item"><img src="http://i0.wp.com/kaero.files.wordpress.com/2008/12/200812110103071.pngwp-content/uploads/2008/12/image-thumb.png?resize=446,119" alt="image"><span class="image-caption">image</span></a></a><br>你只要点击 Quote 就可以引用谁谁谁的发言了，这在那些引起热烈讨论的大人气话题里面还是相当管用的，否则在一大串的回复列表中你就可能陷于无的放矢无人理会的尴尬境地了。不过在评论数通常为零的本站，咳，不说也罢，人生真是很悲哀啊。</p><p>3） <a href="http://www.mobilepress.co.za/">MobilePress</a>：这是一个针对移动设备的插件，对于普通用户完全没有影响。不过在俺这个经常在地铁上上网的黑莓用户看来，它还是相当相当棒的。<br><a href="http://i1.wp.com/kaero.files.wordpress.com/2008/12/200812110103071.pngwp-content/uploads/2008/12/20081211010307.png?resize=440,168" title="20081211010307" class="gallery-item"><img src="http://i1.wp.com/kaero.files.wordpress.com/2008/12/200812110103071.pngwp-content/uploads/2008/12/20081211010307.png?resize=440,168" alt="20081211010307"><span class="image-caption">20081211010307</span></a><br>追加了黑莓上面 Opera Mini 的两张截图。和原貌呈现的 Winging 同学博客对比一下，还是各有千秋的吧？然则对于某些布局复杂的网站来说，用 MobilePress 优化一下输出可读性还是会强很多的。</p><p>以上总结完毕，最后感谢大家的支持，希望自己今后也能努力一点：）</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
       
       
       <categories>
           
-          <category> cases </category>
+          <category> 玩艺 </category>
+          
+          <category> 网站 </category>
           
       </categories>
       
@@ -3876,26 +3878,28 @@
     
     <entry>
       <title>升级到了Firefox 3 RC1</title>
-      <link href="/cases/update-to-firefox-3-rc1/"/>
-      <url>/cases/update-to-firefox-3-rc1/</url>
+      <link href="/playground/web/firefox-3-rc1/"/>
+      <url>/playground/web/firefox-3-rc1/</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>周末把 Firefox 升级到了 3RC1，这个版本和之前的 beta 版本不一样，是不能和Firefox 2 共存的。犹豫了片刻，升就升吧。主要原因是 IETab 升级以后只支持Firefox 3，Firefox 2里面就不能使用了，这样子我必须经常打开 IE 来浏览一些网站，真是非常麻烦而且痛苦啊。不过这么一来有更多的扩展不能使用了，传说中的 Night Tester Tools 并非那么灵，强制打开某些扩展后经常令浏览器无故崩溃，尤其是在使用 Gmail 的时候，基本上进不去，无奈之下只好放弃了。</p><p>不过今天有找到一个重要的扩展，哈哈，就是 Delicious Bookmarks 的扩展。俺觉得这对俺是一个非常重要的扩展，没它就丧失了很多乐趣，譬如上班的时候朋友推荐的情色小漫画，不敢在公司看，收藏下来就能在家里慢慢欣赏了，多幸福啊～</p><p>Firefox 3 RC1 下载：<br><a href="http://www.mozilla.com/en-US/firefox/all-rc.html" title="http://www.mozilla.com/en-US/firefox/all-rc.html">http://www.mozilla.com/en-US/firefox/all-rc.html</a></p><p>Delicious Bookmark extension for Firefox 3：<br><a href="http://blog.delicious.com/blog/2008/04/firefox-3-delicious-and-you.html" title="http://blog.delicious.com/blog/2008/04/firefox-3-delicious-and-you.html">http://blog.delicious.com/blog/2008/04/firefox-3-delicious-and-you.html</a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
       
       
       <categories>
           
-          <category> cases </category>
+          <category> 玩艺 </category>
+          
+          <category> 网站 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> firefox </tag>
-            
             <tag> delicious-bookmark </tag>
             
             <tag> extension </tag>
+            
+            <tag> firefox </tag>
             
         </tags>
       
@@ -4063,15 +4067,17 @@
     
     <entry>
       <title>deviantART 的订阅真是令人遗憾……</title>
-      <link href="/cases/regretful-for-deviantart-rss/"/>
-      <url>/cases/regretful-for-deviantart-rss/</url>
+      <link href="/blog/freetalk/deviantart-rss-is-shit/"/>
+      <url>/blog/freetalk/deviantart-rss-is-shit/</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>真变态，居然只有一个标题，预览图片都没有-_-</p><p>对于并不习惯每天花大把时间泡在一个网站上的我来讲，RSS是必需的——不过这样子说貌似有点错误，其实我每天都有花大把时间泡在一个网站上，Google Reader……</p><p>所以犹豫再三，退订了。光标题没有任何意义，只有每天乖乖跑上去喵几眼了。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
       
       
       <categories>
           
-          <category> cases </category>
+          <category> 日常 </category>
+          
+          <category> 碎碎念 </category>
           
       </categories>
       
@@ -4079,6 +4085,8 @@
         <tags>
             
             <tag> devaintart </tag>
+            
+            <tag> rss </tag>
             
         </tags>
       
@@ -4263,33 +4271,6 @@
     
     
     <entry>
-      <title>几个免费字体</title>
-      <link href="/cases/free-fonts/"/>
-      <url>/cases/free-fonts/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p><a href="http://kaero.files.wordpress.com/2008/04/image-thumb21.pngwp-content/uploads/2008/04/image.png"><a href="/images/image-thumb.png" title="image" class="gallery-item"><img src="/images/image-thumb.png" alt="image"><span class="image-caption">image</span></a></a></p><p><a href="http://kaero.files.wordpress.com/2008/04/image-thumb21.pngwp-content/uploads/2008/04/image1.png"><a href="/images/image-thumb1.png" title="image" class="gallery-item"><img src="/images/image-thumb1.png" alt="image"><span class="image-caption">image</span></a></a></p><p>下载页面：<a href="http://www.ingofonts.de/ingofonts/fonts/freefonts.html" title="http://www.ingofonts.de/ingofonts/fonts/freefonts.html">http://www.ingofonts.de/ingofonts/fonts/freefonts.html</a>，来自 <a href="http://www.ingofonts.de/">ingoFonts</a></p><p><a href="http://kaero.files.wordpress.com/2008/04/image-thumb21.pngwp-content/uploads/2008/04/image2.png"><a href="/images/image-thumb2.png" title="image" class="gallery-item"><img src="/images/image-thumb2.png" alt="image"><span class="image-caption">image</span></a></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-      
-      
-      <categories>
-          
-          <category> cases </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> fonts </tag>
-            
-            <tag> free </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Wordpress 主题资源</title>
       <link href="/playground/wordpress-theme-resources/"/>
       <url>/playground/wordpress-theme-resources/</url>
@@ -4318,15 +4299,15 @@
     
     <entry>
       <title>Windows Live 的链接账户</title>
-      <link href="/cases/account-link-of-windows-live/"/>
-      <url>/cases/account-link-of-windows-live/</url>
+      <link href="/playground/windows-live-account-link/"/>
+      <url>/playground/windows-live-account-link/</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>在 @live.com 和 @live.cn 后缀的邮箱地址还没有开放注册的时候，俺利用流传出来的漏洞一口气注册了 5 个 Windows Live ID，后来就那么闲置不管了。今天没事想改改现在的 MSN 密码，结果进去发现了一个看起来比较有趣的链接：<strong>管理您的链接 ID</strong>，就尝试了一下。</p><p>链接的时候只需要输入一下密码，就OK了。账号之间相互链接的话，譬如你用账户 A 链接了账户 B，然后又用账户 C 链接到了账户 A，那么 B 和 C 也就自动链接了。不过最多只能链接5个，而俺现在正好有6个，真是不巧……</p><p>链接好了之后，你就可以在 Hotmail 或者 Space 右上角的下拉菜单进行账户切换了：</p><p><a href="/images/022.png" title="02" class="gallery-item"><img src="/images/022.png" alt="02"><span class="image-caption">02</span></a></p><p>看来挺方便的吧？不过很不幸的是只有在英文版才这么直接，在中文版里面是这样子：</p><p><a href="/images/012.png" title="01" class="gallery-item"><img src="/images/012.png" alt="01"><span class="image-caption">01</span></a></p><p>你必须通过“链接其他账户”才能转到其他账户。这个……</p><p>想象一下，如果有一天所有链接的账户能共享联系人，我就不用担心换了新的帅气的账户但是又不得不重加所有好友了……</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
       
       
       <categories>
           
-          <category> cases </category>
+          <category> 玩艺 </category>
           
       </categories>
       
@@ -5317,31 +5298,6 @@
     
     
     <entry>
-      <title>废弃品</title>
-      <link href="/cases/reject-work/"/>
-      <url>/cases/reject-work/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p><a href="/images/qgzq.jpg" title="奇迹世界·情感专区" class="gallery-item"><img src="/images/qgzq.jpg" alt="奇迹世界·情感专区"><span class="image-caption">奇迹世界·情感专区</span></a></p><p>嘿嘿，可不是女性品牌……是个游戏的专题，咳，要保持主题统一就得牺牲个性啊。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-      
-      
-      <categories>
-          
-          <category> cases </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 作品 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>惶惶不可终日</title>
       <link href="/blog/funk/"/>
       <url>/blog/funk/</url>
@@ -5606,15 +5562,17 @@
     
     <entry>
       <title>一个奇怪的问题</title>
-      <link href="/cases/strange-problem/"/>
-      <url>/cases/strange-problem/</url>
+      <link href="/playground/web/strange-problem/"/>
+      <url>/playground/web/strange-problem/</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>大家可以用 <a href="http://www.mozilla.net.cn/">Firefox</a> 或者 <a href="http://www.opera.com/">Opera</a> 打开 <a href="http://www.aeroom.org/">aeroom 的首页</a>，是不是发现中间的大图片下面有一条多余出来的空白？虽然很早就发现这个 BUG，不过因为是自己的网站，也就不愿意去深究，毕竟碍不碍眼也只是自己的东西，没人去管，嘿嘿。</p><p>今天做 <a href="http://www.justdn.org/_114/_115/">iNewS 网站</a>的时候，发现这条可恨的空白又出现了，实在令我的心情非常之不爽。在 Google 上面查找一下，也很难找到确切的相关信息，只好自己慢慢解决罢。</p><p>更新：居然发现去掉样式的时候也会有这样的问题，我靠！！！</p><p>又更新：已经搞定了，原来是 DTD 的问题，我这段时间一直用 XHTML 1.1 的 DTD，改成 XHTML 1.0 Transitional 就没问题。等有时间来查一下 XHTML 1.1 的参考文档。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
       
       
       <categories>
           
-          <category> cases </category>
+          <category> 玩艺 </category>
+          
+          <category> 网站 </category>
           
       </categories>
       
