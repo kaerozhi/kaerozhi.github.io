@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>Hexo Stylus 渲染的奇怪问题</title>
+      <link href="/playground/web/hexo-renderer-stylus-issue/"/>
+      <url>/playground/web/hexo-renderer-stylus-issue/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>给网站首页加了一个满屏图文，不料遇上一个奇怪的问题。原本想根据屏幕宽度自动调整标题大小，<code>hero.styl</code> 是这样写的：</p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> <span class="selector-tag">h2</span></span><br><span class="line"><span class="attribute">font-size</span>: <span class="built_in">clamp</span>(<span class="number">5em</span>, <span class="number">5em</span> + <span class="number">2.5vw</span>, <span class="number">10em</span>)</span><br><span class="line"><span class="attribute">line-height</span>: <span class="number">1em</span></span><br><span class="line"><span class="attribute">letter-spacing</span>: -<span class="number">0.05rem</span></span><br></pre></td></tr></table></figure><p>但渲染出来的 styles.css 却是这样：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h2</span> &#123;</span><br><span class="line"><span class="attribute">font-size</span>: <span class="built_in">clamp</span>(<span class="number">5em</span>, <span class="number">7.5em</span>, <span class="number">10em</span>);</span><br><span class="line"><span class="attribute">line-height</span>: <span class="number">1em</span>;</span><br><span class="line"><span class="attribute">letter-spacing</span>: -.<span class="number">05rem</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>不知为何，两个不同的单位直接相加了，原本的变量变成了固定的 <code>7.5em</code>，这转换得也太过耿直了吧。去看了一下 <a href="https://github.com/hexojs/hexo-renderer-stylus">hexo-renderer-stylus</a> 的源代码，但搜了一下 <code>em</code>、<code>vw</code>，没有结果，所以也摸不着头绪，总之此时的效果是这样的：</p><p><a href="/playground/web/hexo-renderer-stylus-issue/image-20230721185609916.png" title="错误的呈现结果" class="gallery-item"><img src="/playground/web/hexo-renderer-stylus-issue/image-20230721185609916.png" alt="错误的呈现结果"><span class="image-caption">错误的呈现结果</span></a></p><p>而预想的结果，它应该是这样的：</p><p><a href="/playground/web/hexo-renderer-stylus-issue/image-20230721185825969.png" title="预想的呈现结果" class="gallery-item"><img src="/playground/web/hexo-renderer-stylus-issue/image-20230721185825969.png" alt="预想的呈现结果"><span class="image-caption">预想的呈现结果</span></a></p><span id="more"></span><p>换到另一个以 <a href="https://getbootstrap.com/">Bootstrap</a> 为框架的主题，CSS 正常渲染。为了确认原因，将主题换成同样采用 Stylus 的 <a href="https://theme-next.js.org/">Next</a>，果然出现了同样的问题，那应该没有疑问了，大概率就是 hexo-renderer-stylus 的锅。</p><p>不过试了一下，<code>font-size: clamp(5em, 5vw, 10em)</code> 倒是 OK，姑且先这么用着，从长计议，看看能不能解决这个奇怪的计算问题。</p><p>另一种办法是把变量存储在 <code>.yml</code> 或者 <code>.json</code> 里面，再通过 CSS 读取，Wordpress 主题已经很流行这么做了，也可以尝试。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 玩艺 </category>
+          
+          <category> 网站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Stylus </tag>
+            
+            <tag> CSS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>虎丘湿地公园</title>
       <link href="/photography/huqiu-wetland-park/"/>
       <url>/photography/huqiu-wetland-park/</url>
@@ -630,7 +661,7 @@
       <link href="/writings/shici/feimao-and-the-poem-creator/"/>
       <url>/writings/shici/feimao-and-the-poem-creator/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p class="foreword">肥猫少年时，才气横溢，不可一世，好歌行乐府，众目之为当世李白。中年后改弦易辙，尝作七律，牛教授见而疑之曰：无乃作诗机乎？适逢作诗机重新上线，因赠肥猫。</p><p>手捉柴刀尺许长，童年锈蚀杂阳光。斩平野外青蒿地，误入中年黑墓场。嘎嘎智能人复活，徐徐记忆体消亡。残余片段重输入，代码生成第几行？</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>手捉柴刀尺许长，童年锈蚀杂阳光。斩平野外青蒿地，误入中年黑墓场。嘎嘎智能人复活，徐徐记忆体消亡。残余片段重输入，代码生成第几行？</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
       
       
       <categories>
@@ -758,10 +789,10 @@
     
     <entry>
       <title>AIC 2022</title>
-      <link href="/projects/aic-2022/"/>
-      <url>/projects/aic-2022/</url>
+      <link href="/cases/aic-2022/"/>
+      <url>/cases/aic-2022/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>AIC 已经成功举办了五届，作为电竞品牌被玩家和观众所熟悉，我们的当务之急是为本届赛事设计出一套令人印象深刻的视觉包装，覆盖从宣发到界面的整个流程。</p><span id="more"></span><p><a href="/projects/aic-2022/colors.png" class="gallery-item"><img src="/projects/aic-2022/colors.png"></a></p><p>本届赛事的核心物料是一款赛事专属皮肤：Zata‘s Vanquisher’s Gift，我们提取皮肤的翅膀作为主题，昂扬高举，展现电竞的力量。</p><p><a href="/projects/aic-2022/banner-opening.png" class="gallery-item"><img src="/projects/aic-2022/banner-opening.png"></a></p><p><a href="/projects/aic-2022/Match-day-blue-0406-1.png" class="gallery-item"><img src="/projects/aic-2022/Match-day-blue-0406-1.png"></a></p><p><a href="/projects/aic-2022/schedule-golden.png" class="gallery-item"><img src="/projects/aic-2022/schedule-golden.png"></a></p><p><a href="/projects/aic-2022/banpick.png" class="gallery-item"><img src="/projects/aic-2022/banpick.png"></a></p><p><a href="/projects/aic-2022/result-blue-0406.png" class="gallery-item"><img src="/projects/aic-2022/result-blue-0406.png"></a></p><p><a href="/projects/aic-2022/MVP-blue.png" class="gallery-item"><img src="/projects/aic-2022/MVP-blue.png"></a></p><p><a href="/projects/aic-2022/champion.png" class="gallery-item"><img src="/projects/aic-2022/champion.png"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>AIC 已经成功举办了五届，作为电竞品牌被玩家和观众所熟悉，我们的当务之急是为本届赛事设计出一套令人印象深刻的视觉包装，覆盖从宣发到界面的整个流程。</p><span id="more"></span><p><a href="/cases/aic-2022/colors.png" class="gallery-item"><img src="/cases/aic-2022/colors.png"></a></p><p>本届赛事的核心物料是一款赛事专属皮肤：Zata‘s Vanquisher’s Gift，我们提取皮肤的翅膀作为主题，昂扬高举，展现电竞的力量。</p><p><a href="/cases/aic-2022/banner-opening.png" class="gallery-item"><img src="/cases/aic-2022/banner-opening.png"></a></p><p><a href="/cases/aic-2022/Match-day-blue-0406-1.png" class="gallery-item"><img src="/cases/aic-2022/Match-day-blue-0406-1.png"></a></p><p><a href="/cases/aic-2022/schedule-golden.png" class="gallery-item"><img src="/cases/aic-2022/schedule-golden.png"></a></p><p><a href="/cases/aic-2022/banpick.png" class="gallery-item"><img src="/cases/aic-2022/banpick.png"></a></p><p><a href="/cases/aic-2022/result-blue-0406.png" class="gallery-item"><img src="/cases/aic-2022/result-blue-0406.png"></a></p><p><a href="/cases/aic-2022/MVP-blue.png" class="gallery-item"><img src="/cases/aic-2022/MVP-blue.png"></a></p><p><a href="/cases/aic-2022/champion.png" class="gallery-item"><img src="/cases/aic-2022/champion.png"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
       
       
       <categories>
@@ -787,10 +818,10 @@
     
     <entry>
       <title>王者荣耀云缨系列海报</title>
-      <link href="/projects/hornor-of-kings-new-hero-yunying/"/>
-      <url>/projects/hornor-of-kings-new-hero-yunying/</url>
+      <link href="/cases/hornor-of-kings-new-hero-yunying/"/>
+      <url>/cases/hornor-of-kings-new-hero-yunying/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p><a href="/projects/hornor-of-kings-new-hero-yunying/yunying-poster-main-2560-1920x850.png" title="云缨 X 峨眉枪合作概念海报" class="gallery-item"><img src="/projects/hornor-of-kings-new-hero-yunying/yunying-poster-main-2560-1920x850.png" alt="云缨 X 峨眉枪合作概念海报"></a></p><span id="more"></span><p><a href="/projects/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-B%E7%89%886.17%E8%B0%83%E8%89%B2-1080x1920.jpg" title="云缨 X 峨眉枪技能 KV" class="gallery-item"><img src="/projects/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-B%E7%89%886.17%E8%B0%83%E8%89%B2-1080x1920.jpg" alt="云缨 X 峨眉枪技能 KV"></a></p><p><a href="/projects/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-A%E7%89%886.17%E8%B0%83%E8%89%B2-1080x1920.jpg" title="云缨 X 峨眉枪技能 KV" class="gallery-item"><img src="/projects/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-A%E7%89%886.17%E8%B0%83%E8%89%B2-1080x1920.jpg" alt="云缨 X 峨眉枪技能 KV"></a></p><p><a href="/projects/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-C%E7%89%88-6.17%E8%B0%83%E8%89%B2-1080x1920.jpg" title="云缨 X 峨眉枪技能 KV" class="gallery-item"><img src="/projects/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-C%E7%89%88-6.17%E8%B0%83%E8%89%B2-1080x1920.jpg" alt="云缨 X 峨眉枪技能 KV"></a></p><p><a href="/projects/hornor-of-kings-new-hero-yunying/%E4%BA%91%E6%A8%B1X%E8%B5%B5%E8%81%AA%E7%AB%96%E7%89%88-1280x1920.jpg" title="云缨 X 赵聪合作 KV" class="gallery-item"><img src="/projects/hornor-of-kings-new-hero-yunying/%E4%BA%91%E6%A8%B1X%E8%B5%B5%E8%81%AA%E7%AB%96%E7%89%88-1280x1920.jpg" alt="云缨 X 赵聪合作 KV"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p><a href="/cases/hornor-of-kings-new-hero-yunying/yunying-poster-main-2560-1920x850.png" title="云缨 X 峨眉枪合作概念海报" class="gallery-item"><img src="/cases/hornor-of-kings-new-hero-yunying/yunying-poster-main-2560-1920x850.png" alt="云缨 X 峨眉枪合作概念海报"></a></p><span id="more"></span><p><a href="/cases/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-B%E7%89%886.17%E8%B0%83%E8%89%B2-1080x1920.jpg" title="云缨 X 峨眉枪技能 KV" class="gallery-item"><img src="/cases/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-B%E7%89%886.17%E8%B0%83%E8%89%B2-1080x1920.jpg" alt="云缨 X 峨眉枪技能 KV"></a></p><p><a href="/cases/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-A%E7%89%886.17%E8%B0%83%E8%89%B2-1080x1920.jpg" title="云缨 X 峨眉枪技能 KV" class="gallery-item"><img src="/cases/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-A%E7%89%886.17%E8%B0%83%E8%89%B2-1080x1920.jpg" alt="云缨 X 峨眉枪技能 KV"></a></p><p><a href="/cases/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-C%E7%89%88-6.17%E8%B0%83%E8%89%B2-1080x1920.jpg" title="云缨 X 峨眉枪技能 KV" class="gallery-item"><img src="/cases/hornor-of-kings-new-hero-yunying/%E6%8A%80%E8%83%BD%E5%90%91KV-C%E7%89%88-6.17%E8%B0%83%E8%89%B2-1080x1920.jpg" alt="云缨 X 峨眉枪技能 KV"></a></p><p><a href="/cases/hornor-of-kings-new-hero-yunying/%E4%BA%91%E6%A8%B1X%E8%B5%B5%E8%81%AA%E7%AB%96%E7%89%88-1280x1920.jpg" title="云缨 X 赵聪合作 KV" class="gallery-item"><img src="/cases/hornor-of-kings-new-hero-yunying/%E4%BA%91%E6%A8%B1X%E8%B5%B5%E8%81%AA%E7%AB%96%E7%89%88-1280x1920.jpg" alt="云缨 X 赵聪合作 KV"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
       
       
       <categories>
@@ -1602,10 +1633,10 @@
     
     <entry>
       <title>Arena of Valor 全球品牌刷新</title>
-      <link href="/projects/arena-of-valor-new-branding-2019/"/>
-      <url>/projects/arena-of-valor-new-branding-2019/</url>
+      <link href="/cases/arena-of-valor-new-branding-2019/"/>
+      <url>/cases/arena-of-valor-new-branding-2019/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>2019 年夏天，Arena of Valor 上线了三年来改动最大的全新版本。在这个版本中，我们全方位地刷新了游戏的品牌形象和界面设计，力图以同样的设计逻辑覆盖游戏内和游戏外，形成独特而完整的视觉体验。</p><span id="more"></span><p>以台湾地区 logo 为例：</p><p><a href="/projects/arena-of-valor-new-branding-2019/comparison.png" class="gallery-item"><img src="/projects/arena-of-valor-new-branding-2019/comparison.png"></a></p><p>我们这次改版的目的主要包括以下三点：</p><ol><li><strong>刷新品牌形象</strong>。现有的品牌形象已经用了三年，逐渐进入疲劳期；</li><li><strong>统一全球各地区的品牌视觉</strong>。过去因为各种各样的原因，Arena of Valor 在全球各地区未能体现出品牌的一致性，我们希望通过这次刷新大幅改善这一点；</li><li><strong>基于世界观的整体更新</strong>。从 2017 年开始，我们就在不断尝试把纷乱、孤立的英雄背景故事串联起来，形成一个架构庞大、引人入胜的独特世界观。在这个世界观上线的时候，我们希望它和品牌形象、游戏体验都能自然而深度地结合起来。</li></ol><p><a href="/projects/arena-of-valor-new-branding-2019/logo-collections.png" class="gallery-item"><img src="/projects/arena-of-valor-new-branding-2019/logo-collections.png"></a></p><p>品牌的分裂是我们需要迫切解决的问题之一。</p><hr><h2 id="核心符号"><a href="#核心符号" class="headerlink" title="核心符号"></a>核心符号</h2><p>在我们着手准备这次品牌刷新的时候，首先考虑到的是品牌分裂的现状。Arena of Valor 在各地区运营已久，这些品牌形象对于当地玩家来说早已耳熟能详，对于我们设计师来说，既是宝贵的财富，也是沉重的负担。我们不想简单粗暴地将一切推倒重来，那有没有一种办法，既可以统一品牌形象，又不改动这些本土特色的游戏名称呢？</p><p>我们的解决方案是<strong>提炼出一个独特的视觉符号，作为 Arena of Valor 的核心识别元素</strong>。无论在哪个地区，配合哪种语言，只要看到这个符号就能认出来，这就是 Arena of Valor。</p><p>在我们综合考虑过各方面因素，包括玩家的品牌认知度、世界观设定以及玩法特性之后，我们得到了下面的结果。</p><p><a href="/projects/arena-of-valor-new-branding-2019/aov-core-icon-1-1380x776.png" class="gallery-item"><img src="/projects/arena-of-valor-new-branding-2019/aov-core-icon-1-1380x776.png"></a></p><p>首先，我们统一各地区品牌的基点是 Arena of Valor 这个全球通用的游戏品牌，和与之配套的全球版 logo。</p><p>Arena of Valor 是一款强调团队对抗的 MOBA 游戏，在这个定位的指导下，我们已经连续举办了好几届成功的国际电竞赛事。 无论是每年暑期的 AWC，还是年底的 AIC，我们都以 Arena of Valor 这个全球通用品牌来主导宣传，在各地区都已经具备不错的认知度和接受度。</p><p><a href="/projects/arena-of-valor-new-branding-2019/kv-20180402-light2.png" class="gallery-item"><img src="/projects/arena-of-valor-new-branding-2019/kv-20180402-light2.png"></a></p><p>Arena of Valor World Cup 2018，在美国洛杉矶举办</p><p><a href="/projects/arena-of-valor-new-branding-2019/%E4%B8%BBKVslogan.png" class="gallery-item"><img src="/projects/arena-of-valor-new-branding-2019/%E4%B8%BBKVslogan.png"></a></p><p>Arena of Valor International Championship 2018，在泰国曼谷举办</p><p>这个 logo 的最大特征便是其倾斜的姿态，以及其中所有斜线都严格遵守的 25° 角。</p><p><a href="/projects/arena-of-valor-new-branding-2019/lines-1.png" class="gallery-item"><img src="/projects/arena-of-valor-new-branding-2019/lines-1.png"></a></p><p>当我们把其中的三个首字母 AOV 快速组合在一起，就差不多得到了符号的基本雏形：</p><p><a href="/projects/arena-of-valor-new-branding-2019/aov-icon-preview-1-1380x776.png" class="gallery-item"><img src="/projects/arena-of-valor-new-branding-2019/aov-icon-preview-1-1380x776.png"></a></p><p>其次，在我们的世界观中，埃森诺世界的所有能量都源于一种神奇的宝石：<strong>安度拉魔石</strong>，它也是所有英雄为之争斗不休的一个重要原因，具备非常强大的影响力和象征性。根据概念设定，它的形态会随着利用者的意志而改变，其中一种典型形态是这样的，与我们的符号保持一致：</p><p><a href="/projects/arena-of-valor-new-branding-2019/andura-stone-1380x776.png" class="gallery-item"><img src="/projects/arena-of-valor-new-branding-2019/andura-stone-1380x776.png"></a></p><p>第三，作为一款 MOBA 游戏，为团队胜利而互相对抗是游戏的核心玩法，我们也自然希望能在符号当中有所体现。如果换个角度来看，便可以发现这个符号也正是游戏地图的抽象提炼。</p><p><a href="/projects/arena-of-valor-new-branding-2019/map2-1380x776.png" class="gallery-item"><img src="/projects/arena-of-valor-new-branding-2019/map2-1380x776.png"></a></p><p>最后，可以看看不同语言搭配同一个符号之后的整体效果。品牌是不是焕然一新，而分裂现象是不是也得到了妥善的解决呢？</p><p><a href="/projects/arena-of-valor-new-branding-2019/new-logo-collections.png" class="gallery-item"><img src="/projects/arena-of-valor-new-branding-2019/new-logo-collections.png"></a></p><hr><h2 id="25°"><a href="#25°" class="headerlink" title="25°"></a>25°</h2><p>Logo 是品牌的核心组成部分，但并不等于品牌的全部，所以在完成 logo 的统一改版之后，我们并没有就此罢手。对于 Arena of Valor 的整体设计，我们有更深入的计划，其中的一点就是改善游戏外品牌形象与游戏内界面设计之间的落差。</p><p>因为工作流程上的种种原因，前期的 UI 团队和后期的品牌团队没有形成足够紧密的合作模式。在我们现在的流程当中，品牌团队往往是中后期才介入，不管是因为市场环境变化，还是出于运营策略的考量，营销阶段与开发阶段的定位很容易产生错位和脱节，这就导致游戏内与游戏外的调性难以统一，往往表现为游戏内的视觉印象要滞后一些。</p><p>所以当我们决定重新塑造品牌形象时，就确定了未来的方向，那就是：<strong>打通各个环节，树立统一的品牌调性，建立一套完善的设计语言，足以覆盖到大多数的应用场景和地区。</strong></p><p>而这一套设计语言的核心，就是我们之前提到过的 25° 角。</p><p><a href="/projects/arena-of-valor-new-branding-2019/25-3-1380x776.png" class="gallery-item"><img src="/projects/arena-of-valor-new-branding-2019/25-3-1380x776.png"></a></p><p>根据 Arena of Valor 的游戏玩法，以及具体的使用场景，我们衍生出一系列不同的图形，以代表不同的意义：</p><p><a href="/projects/arena-of-valor-new-branding-2019/graphic-1-1380x446.png" class="gallery-item"><img src="/projects/arena-of-valor-new-branding-2019/graphic-1-1380x446.png"></a></p><p>比如我们以菱形来表现个体英雄，可以这样：</p><p><a href="/projects/arena-of-valor-new-branding-2019/airi2.png" class="gallery-item"><img src="/projects/arena-of-valor-new-branding-2019/airi2.png"></a></p><p><a href="/projects/arena-of-valor-new-branding-2019/kriknak-1.png" class="gallery-item"><img src="/projects/arena-of-valor-new-branding-2019/kriknak-1.png"></a></p><p>以交叉线来表现对抗，则可以这样：</p><p><a href="/projects/arena-of-valor-new-branding-2019/magesbattle2.png" class="gallery-item"><img src="/projects/arena-of-valor-new-branding-2019/magesbattle2.png"></a></p><p><a href="/projects/arena-of-valor-new-branding-2019/superherovote.png" class="gallery-item"><img src="/projects/arena-of-valor-new-branding-2019/superherovote.png"></a></p><p>这种风格可以很简洁，也可以变形为相对复杂的组合。比如一度很流行的 Art Deco 风格，我们也可以通过堆叠线条来实现，但又能牢牢保持住 25° 斜线的特征：</p><p><a href="/projects/arena-of-valor-new-branding-2019/aleister.png" class="gallery-item"><img src="/projects/arena-of-valor-new-branding-2019/aleister.png"></a></p><p>我们也尝试着把这种 25° 斜线应用到 AIC 这样的电竞比赛里面去：</p><p><a href="/projects/arena-of-valor-new-branding-2019/Match-splash-0928-1380x776.png" class="gallery-item"><img src="/projects/arena-of-valor-new-branding-2019/Match-splash-0928-1380x776.png"></a></p><p>当然，游戏内界面的设计也同样可以覆盖：</p><p><a href="/projects/arena-of-valor-new-branding-2019/ui.png" class="gallery-item"><img src="/projects/arena-of-valor-new-branding-2019/ui.png"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>2019 年夏天，Arena of Valor 上线了三年来改动最大的全新版本。在这个版本中，我们全方位地刷新了游戏的品牌形象和界面设计，力图以同样的设计逻辑覆盖游戏内和游戏外，形成独特而完整的视觉体验。</p><span id="more"></span><p>以台湾地区 logo 为例：</p><p><a href="/cases/arena-of-valor-new-branding-2019/comparison.png" class="gallery-item"><img src="/cases/arena-of-valor-new-branding-2019/comparison.png"></a></p><p>我们这次改版的目的主要包括以下三点：</p><ol><li><strong>刷新品牌形象</strong>。现有的品牌形象已经用了三年，逐渐进入疲劳期；</li><li><strong>统一全球各地区的品牌视觉</strong>。过去因为各种各样的原因，Arena of Valor 在全球各地区未能体现出品牌的一致性，我们希望通过这次刷新大幅改善这一点；</li><li><strong>基于世界观的整体更新</strong>。从 2017 年开始，我们就在不断尝试把纷乱、孤立的英雄背景故事串联起来，形成一个架构庞大、引人入胜的独特世界观。在这个世界观上线的时候，我们希望它和品牌形象、游戏体验都能自然而深度地结合起来。</li></ol><p><a href="/cases/arena-of-valor-new-branding-2019/logo-collections.png" class="gallery-item"><img src="/cases/arena-of-valor-new-branding-2019/logo-collections.png"></a></p><p>品牌的分裂是我们需要迫切解决的问题之一。</p><hr><h2 id="核心符号"><a href="#核心符号" class="headerlink" title="核心符号"></a>核心符号</h2><p>在我们着手准备这次品牌刷新的时候，首先考虑到的是品牌分裂的现状。Arena of Valor 在各地区运营已久，这些品牌形象对于当地玩家来说早已耳熟能详，对于我们设计师来说，既是宝贵的财富，也是沉重的负担。我们不想简单粗暴地将一切推倒重来，那有没有一种办法，既可以统一品牌形象，又不改动这些本土特色的游戏名称呢？</p><p>我们的解决方案是<strong>提炼出一个独特的视觉符号，作为 Arena of Valor 的核心识别元素</strong>。无论在哪个地区，配合哪种语言，只要看到这个符号就能认出来，这就是 Arena of Valor。</p><p>在我们综合考虑过各方面因素，包括玩家的品牌认知度、世界观设定以及玩法特性之后，我们得到了下面的结果。</p><p><a href="/cases/arena-of-valor-new-branding-2019/aov-core-icon-1-1380x776.png" class="gallery-item"><img src="/cases/arena-of-valor-new-branding-2019/aov-core-icon-1-1380x776.png"></a></p><p>首先，我们统一各地区品牌的基点是 Arena of Valor 这个全球通用的游戏品牌，和与之配套的全球版 logo。</p><p>Arena of Valor 是一款强调团队对抗的 MOBA 游戏，在这个定位的指导下，我们已经连续举办了好几届成功的国际电竞赛事。 无论是每年暑期的 AWC，还是年底的 AIC，我们都以 Arena of Valor 这个全球通用品牌来主导宣传，在各地区都已经具备不错的认知度和接受度。</p><p><a href="/cases/arena-of-valor-new-branding-2019/kv-20180402-light2.png" class="gallery-item"><img src="/cases/arena-of-valor-new-branding-2019/kv-20180402-light2.png"></a></p><p>Arena of Valor World Cup 2018，在美国洛杉矶举办</p><p><a href="/cases/arena-of-valor-new-branding-2019/%E4%B8%BBKVslogan.png" class="gallery-item"><img src="/cases/arena-of-valor-new-branding-2019/%E4%B8%BBKVslogan.png"></a></p><p>Arena of Valor International Championship 2018，在泰国曼谷举办</p><p>这个 logo 的最大特征便是其倾斜的姿态，以及其中所有斜线都严格遵守的 25° 角。</p><p><a href="/cases/arena-of-valor-new-branding-2019/lines-1.png" class="gallery-item"><img src="/cases/arena-of-valor-new-branding-2019/lines-1.png"></a></p><p>当我们把其中的三个首字母 AOV 快速组合在一起，就差不多得到了符号的基本雏形：</p><p><a href="/cases/arena-of-valor-new-branding-2019/aov-icon-preview-1-1380x776.png" class="gallery-item"><img src="/cases/arena-of-valor-new-branding-2019/aov-icon-preview-1-1380x776.png"></a></p><p>其次，在我们的世界观中，埃森诺世界的所有能量都源于一种神奇的宝石：<strong>安度拉魔石</strong>，它也是所有英雄为之争斗不休的一个重要原因，具备非常强大的影响力和象征性。根据概念设定，它的形态会随着利用者的意志而改变，其中一种典型形态是这样的，与我们的符号保持一致：</p><p><a href="/cases/arena-of-valor-new-branding-2019/andura-stone-1380x776.png" class="gallery-item"><img src="/cases/arena-of-valor-new-branding-2019/andura-stone-1380x776.png"></a></p><p>第三，作为一款 MOBA 游戏，为团队胜利而互相对抗是游戏的核心玩法，我们也自然希望能在符号当中有所体现。如果换个角度来看，便可以发现这个符号也正是游戏地图的抽象提炼。</p><p><a href="/cases/arena-of-valor-new-branding-2019/map2-1380x776.png" class="gallery-item"><img src="/cases/arena-of-valor-new-branding-2019/map2-1380x776.png"></a></p><p>最后，可以看看不同语言搭配同一个符号之后的整体效果。品牌是不是焕然一新，而分裂现象是不是也得到了妥善的解决呢？</p><p><a href="/cases/arena-of-valor-new-branding-2019/new-logo-collections.png" class="gallery-item"><img src="/cases/arena-of-valor-new-branding-2019/new-logo-collections.png"></a></p><hr><h2 id="25°"><a href="#25°" class="headerlink" title="25°"></a>25°</h2><p>Logo 是品牌的核心组成部分，但并不等于品牌的全部，所以在完成 logo 的统一改版之后，我们并没有就此罢手。对于 Arena of Valor 的整体设计，我们有更深入的计划，其中的一点就是改善游戏外品牌形象与游戏内界面设计之间的落差。</p><p>因为工作流程上的种种原因，前期的 UI 团队和后期的品牌团队没有形成足够紧密的合作模式。在我们现在的流程当中，品牌团队往往是中后期才介入，不管是因为市场环境变化，还是出于运营策略的考量，营销阶段与开发阶段的定位很容易产生错位和脱节，这就导致游戏内与游戏外的调性难以统一，往往表现为游戏内的视觉印象要滞后一些。</p><p>所以当我们决定重新塑造品牌形象时，就确定了未来的方向，那就是：<strong>打通各个环节，树立统一的品牌调性，建立一套完善的设计语言，足以覆盖到大多数的应用场景和地区。</strong></p><p>而这一套设计语言的核心，就是我们之前提到过的 25° 角。</p><p><a href="/cases/arena-of-valor-new-branding-2019/25-3-1380x776.png" class="gallery-item"><img src="/cases/arena-of-valor-new-branding-2019/25-3-1380x776.png"></a></p><p>根据 Arena of Valor 的游戏玩法，以及具体的使用场景，我们衍生出一系列不同的图形，以代表不同的意义：</p><p><a href="/cases/arena-of-valor-new-branding-2019/graphic-1-1380x446.png" class="gallery-item"><img src="/cases/arena-of-valor-new-branding-2019/graphic-1-1380x446.png"></a></p><p>比如我们以菱形来表现个体英雄，可以这样：</p><p><a href="/cases/arena-of-valor-new-branding-2019/airi2.png" class="gallery-item"><img src="/cases/arena-of-valor-new-branding-2019/airi2.png"></a></p><p><a href="/cases/arena-of-valor-new-branding-2019/kriknak-1.png" class="gallery-item"><img src="/cases/arena-of-valor-new-branding-2019/kriknak-1.png"></a></p><p>以交叉线来表现对抗，则可以这样：</p><p><a href="/cases/arena-of-valor-new-branding-2019/magesbattle2.png" class="gallery-item"><img src="/cases/arena-of-valor-new-branding-2019/magesbattle2.png"></a></p><p><a href="/cases/arena-of-valor-new-branding-2019/superherovote.png" class="gallery-item"><img src="/cases/arena-of-valor-new-branding-2019/superherovote.png"></a></p><p>这种风格可以很简洁，也可以变形为相对复杂的组合。比如一度很流行的 Art Deco 风格，我们也可以通过堆叠线条来实现，但又能牢牢保持住 25° 斜线的特征：</p><p><a href="/cases/arena-of-valor-new-branding-2019/aleister.png" class="gallery-item"><img src="/cases/arena-of-valor-new-branding-2019/aleister.png"></a></p><p>我们也尝试着把这种 25° 斜线应用到 AIC 这样的电竞比赛里面去：</p><p><a href="/cases/arena-of-valor-new-branding-2019/Match-splash-0928-1380x776.png" class="gallery-item"><img src="/cases/arena-of-valor-new-branding-2019/Match-splash-0928-1380x776.png"></a></p><p>当然，游戏内界面的设计也同样可以覆盖：</p><p><a href="/cases/arena-of-valor-new-branding-2019/ui.png" class="gallery-item"><img src="/cases/arena-of-valor-new-branding-2019/ui.png"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
       
       
       <categories>
@@ -2998,37 +3029,6 @@
     
     
     <entry>
-      <title>果然是落后了啊</title>
-      <link href="/blog/daishiyan-is-married/"/>
-      <url>/blog/daishiyan-is-married/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>前两天还在排练年会节目的时候，忽然接到个电话，一瞅名字好熟悉：付廷威。其实也没什么要紧事，随便扯了扯——扣，想不到戴世宴居然在本月5日结婚了啊，之前还真是一点风声也没听说，我还真是个消息闭塞反应迟钝的家伙。说起来品品家的小艺都快满周岁了，王刚老婆肚子里的娃娃也有八个月大，过年回家就办酒席做爸爸了。晚自习逃课泡网吧吃小饭馆喝酒到处流窜似乎还就是前不久的事情呢，一转眼，扣，这些家伙就都一个个结婚生孩子了。</p><p>不过这两年以来，那种18岁的感觉倒真的越来越不可追踪回溯了。在我工作以后的很长一段时期里，尤其是住在师大日常品王刚隔三差五就一起出来鬼混的时候，没心没肺地，什么都不想，那还真的没有一个在社会上讨生活的成年人该有的觉悟呢。前两天翻了张19岁刚工作时的照片出来给同事们看，大家惊叹不已，纷纷赞美俺以前的清纯美好，嘲笑俺现在的沧桑大叔造型。其实听他们那么说的时候，我还是挺开心的，虽然老了，不过长大了也是一件高兴的事情嘛。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 死党 </tag>
-            
-            <tag> 王刚 </tag>
-            
-            <tag> 程品品 </tag>
-            
-            <tag> 结婚 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>年会</title>
       <link href="/blog/christmas-party/"/>
       <url>/blog/christmas-party/</url>
@@ -3054,6 +3054,37 @@
             <tag> 01media </tag>
             
             <tag> party </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>果然是落后了啊</title>
+      <link href="/blog/daishiyan-is-married/"/>
+      <url>/blog/daishiyan-is-married/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>前两天还在排练年会节目的时候，忽然接到个电话，一瞅名字好熟悉：付廷威。其实也没什么要紧事，随便扯了扯——扣，想不到戴世宴居然在本月5日结婚了啊，之前还真是一点风声也没听说，我还真是个消息闭塞反应迟钝的家伙。说起来品品家的小艺都快满周岁了，王刚老婆肚子里的娃娃也有八个月大，过年回家就办酒席做爸爸了。晚自习逃课泡网吧吃小饭馆喝酒到处流窜似乎还就是前不久的事情呢，一转眼，扣，这些家伙就都一个个结婚生孩子了。</p><p>不过这两年以来，那种18岁的感觉倒真的越来越不可追踪回溯了。在我工作以后的很长一段时期里，尤其是住在师大日常品王刚隔三差五就一起出来鬼混的时候，没心没肺地，什么都不想，那还真的没有一个在社会上讨生活的成年人该有的觉悟呢。前两天翻了张19岁刚工作时的照片出来给同事们看，大家惊叹不已，纷纷赞美俺以前的清纯美好，嘲笑俺现在的沧桑大叔造型。其实听他们那么说的时候，我还是挺开心的，虽然老了，不过长大了也是一件高兴的事情嘛。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 死党 </tag>
+            
+            <tag> 王刚 </tag>
+            
+            <tag> 程品品 </tag>
+            
+            <tag> 结婚 </tag>
             
         </tags>
       
@@ -5495,8 +5526,8 @@
     
     <entry>
       <title>iNewS Tags Manager V4.8 for Dreamweaver</title>
-      <link href="/projects/inews-tags-manager-4.8-update/"/>
-      <url>/projects/inews-tags-manager-4.8-update/</url>
+      <link href="/cases/inews-tags-manager-4.8-update/"/>
+      <url>/cases/inews-tags-manager-4.8-update/</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>其实只做了一点小修改，但成果还不是没有：错误少了，功能多了，嘿嘿，而且比阿桂的 iNewS 4.8 要发布得早那么一点点。为了和 iNews 版本同步，所以插件的版本号之后就保持一致了，这样下载插件的时候就不用为版本号烦恼。</p><p>点此下载：<a href="http://www.kaero.org/downloads/iNewS.mxp">http://www.kaero.org/downloads/iNewS.mxp</a></p><p>仍然提供了一小段升级说明：</p><blockquote><p><strong>新增与改进功能：</strong><br>1、新增：在属性检查器面板直接打开相关联的模板文件，点击模板 ID 后面的小按钮即可；<br>2、修正：JS 标签滚动效果的输出；<br>3、对多个参数的读取进行了调整和优化；<br>4、加入了被遗漏的 len 参数，并为此重新设计了属性检查器的布局；<br>5、其它丁点儿大以至本人都记不起来的小修正。</p></blockquote><p>希望能对 iNewS 的维护人员有所帮助。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
       
@@ -5739,8 +5770,8 @@
     
     <entry>
       <title>iNewS Tags Manager 发布</title>
-      <link href="/projects/inews-tags-manager-released/"/>
-      <url>/projects/inews-tags-manager-released/</url>
+      <link href="/cases/inews-tags-manager-released/"/>
+      <url>/cases/inews-tags-manager-released/</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>哈哈，现在向您介绍我的新产品：iNewS Tags Manager，该产品用蜂蜜、川贝、桔梗，再加上天山雪莲配制而成，无须冷藏，也没有防腐剂，除了毒性猛烈之外，味道还很好吃！</p><p>嘿嘿，其实这只是一个 Dreamweaver 的插件，用于在 iNewS 企业内容管理系统中插入各种标签。点击下面的地址下载试用：</p><ul><li><a href="/downloads/iNews.mxp">插件下载地址</a> </li><li><a href="/downloads/iNews.rar">未封装的源文件</a></li></ul><p>如果想了解 iNewS 企业内容管理系统及 iNewS 标签，请查看 iNewS 的在线帮助文件：<a href="http://inews.com.cn/doc/">http://inews.com.cn/doc/</a></p><span id="more"></span><p>安装本插件以后，可以像普通的 HTML 标签那样，在 Dreamweaver 中直观地插入和编辑 iNewS 标签。开发过程涉及到以下 Dreamweaver 扩展 API：</p><ol><li>插入面板对象（Insert Bar Objects）； </li><li>命令（Commands）； </li><li>属性检查器（Property Inspectors）； </li><li>翻译器（Data Translators）；</li></ol><p>技术并不复杂，只要有一定的 JavaScript 基础，对 HTML、DOM 和正则有了解，做出一个这样的插件难度并不大。 </p><p>下面是已经测试过的 Dreamweaver 版本兼容性记录，其中大部分的问题都已经解决。以下如未特别说明，测试所用的 Dreamweaver 默认为中文版：</p><h2 id="Dreamweaver-4："><a href="#Dreamweaver-4：" class="headerlink" title="Dreamweaver 4："></a>Dreamweaver 4：</h2><ol><li><p><strong>Dreamweaver 4 的插件不会安装到用户的 Application data 文件夹。</strong> 实际上，Dreamweaver 4 并不会在用户的 Application Data 文件夹里创建任何文件，而是会直接安装到 Dreamweaver 的程序文件夹。这可能和 Extension Manager 版本有关，与 Dreamweaver 4 一起安装的是 Extension Manager  1.3.002，它甚至不能识别 Dreamweaver 8 和 Flash 8。插件第一次安装时报错，第二次安装则成功，因为没有反复地尝试，所以也不能确定第一次的报错是不是偶然。 </p></li><li><p><strong>插入面板上的图标不显示，但显示顺序正确</strong>。因为没有搜索到 <code>insertBar.xml</code> 或名称类似的文件，所以错误的原因也无从判断，但标签能够按照预定的顺序而不是按照文件名称的顺序来显示，证明还是有相关的配置文件。插入菜单则正常显示，并且也找到了 <code>menus.xml</code>。 </p></li><li><p><strong>插入对话框完全正常，</strong> 返回的代码目前尚未发现错误，替换代码的图标也可以显示，但看样子 Dreamweaver 4 不支持带 alpha 通道的透明 PNG，图片中的阴影都变成了丑陋的黑色。选中该段代码时，属性检查器不会启动，不过所有的属性检查器文件都可以在 <code>Inspectors</code> 文件夹里面找到。检视 Dreamweaver 4 的相关帮助，属性检查器的 API 似乎和最新版本并无不同之处，看来只要继续深入研究，实现 Dreamweaver 4 的兼容还是有可能的，就算不能完全兼容，在现在的基础再修改出一个能在 Dreamweaver 4 中使用的插件，应该也比较容易。 </p></li><li><p><strong>2 月 17 日更新，决定放弃对 Dreamweaver 4 的兼容性支持。</strong> 刚刚发现最新的 Extension Manager 也没有提供对 Dreamweaver 4 的支持，既然官方都放弃了，我们自然也不必继续耗费精力研究啦。</p></li></ol><h2 id="Dreamweaver-MX："><a href="#Dreamweaver-MX：" class="headerlink" title="Dreamweaver MX："></a>Dreamweaver MX：</h2><ol><li><p>感谢小荷的帮助，因为我没有安装此版本，所以只知道<strong>插入面板上的图片不能正确显示</strong>。猜测这可能是图标格式导致的，Dreamweaver 图标支持 <code>.gif</code> 格式，但不确定是否支持包括 <code>.png</code> 在内的其他格式。看来想在低版本中实现华丽的投影效果困难重重。Update：已证实更换 .gif 格式后可以正常显示。 </p></li><li><p><strong>属性检查器能正常启动，但是文本框的高度太高了。</strong> 这是因为 Dreamweaver 8 的默认高度有些过窄，看上去很小气，所以我擅自将其定义为 18px。</p></li></ol><h2 id="Dreamweaver-MX-2004："><a href="#Dreamweaver-MX-2004：" class="headerlink" title="Dreamweaver MX 2004："></a>Dreamweaver MX 2004：</h2><ol><li><p>尚未经过测试，但是对该版本的兼容性持乐观态度。 </p></li><li><p>该版本开始支持 .png 图像的透明效果，但是属性检查器的文本框过高的问题仍然存在。 </p></li><li><p>该版本开始将插件安装在用户的 <code>Application data</code> 文件夹内。</p></li></ol><h2 id="Dreamweaver-8："><a href="#Dreamweaver-8：" class="headerlink" title="Dreamweaver 8："></a>Dreamweaver 8：</h2><p>这是我用来开发插件的平台，最少在我和我同事的系统上面没有发现兼容问题。但要说明的是，属性检查器的反应会比较慢，使用时可能会遇到一些延迟现象。Macromedia 官方推荐用 C 或者 C++ 来开发属性检查器，因为 JavaScript 的效率……你懂的，但遗憾的是，我完全不懂 C 或者 C++，所以只能做到这个程度啦。</p><hr><p>欢迎大家帮我测试！虽然我没有强调英文版 Dreamweaver 及英文操作系统上面的兼容性，但是非常欢迎英文版 Dreamweaver 的用户朋友们把问题反馈给我——因为没有使用 UTF-8 的编码，我怀疑可能会出现乱码——并一起探讨 Dreamweaver 插件开发的相关问题，我会慢慢地把我的经验和心得写出来，谢谢大家^_^</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
       
