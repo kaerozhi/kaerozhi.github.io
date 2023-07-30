@@ -10,7 +10,7 @@
     <meta name="description" content="Kaero，自由设计师。喜好摄影、游历及文学，素来不务正业，以研究各种杂七杂八为能事。江西人，曾居上海、深圳，现定居苏州，承接各种与设计相关的事务与需求。">
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-  <title>Hexo Stylus 渲染的奇怪问题 |  waxa.design</title>
+  <title>标签: Windows Live Writer |  waxa.design</title>
   
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/webclip/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/webclip/apple-touch-icon-72x72.png">
@@ -42,7 +42,7 @@
 </head>
 
 
-<body class=" post layout-post category-玩艺 category-网站 tag-hexo tag-stylus tag-css">
+<body class=" tag tag-Windows Live Writer">
   <main class="main">
     <header id="header" class="header header-absolute">
 	<div class="container">
@@ -90,118 +90,103 @@
 
     <section>
       <div class="container">
-  <article id="post-hexo-renderer-stylus-issue" class="article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="page-heading">
+  <!-- page-type-title -->
   
-  
-  <div class="article-inner">
     
-    <header class="article-header">
+<h1 class="page-type-title"></h1>
+  
+</div>
+  
+  
+  
+  
+  
+  
+
+<section class="archives-wrap">
+  <div class="archive-year-wrap">
+    <a href="/archives/2007" class="archive-year">2007</a>
+  </div>
+  <div class="archives">
+    <div class="row flex-wrap">
       
-        <div class="article-meta">
-          <time class="text-gray" datetime="2023-07-21T10:40:00.000Z" itemprop="datePublished">
-  2023-07-21
-</time>
-          
+      
+  
+<div class="col-12">
+  
+
+  <article class="archive-article archive-type-post">
+    <div class="card rounded">
+            
+        <a class="card-img-link" href="/playground/apps/windows-live-writer-review/" rel="gallery_clknnywew00ja4ntu1q0fd39t">
+          <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
+        </a>
+      
+      <div class="card-body bg-light">
+        
   <div class="article-category">
-    <a class="article-category-link" href="/categories/playground/">玩艺</a> / <a class="article-category-link" href="/categories/playground/web/">网站</a>
+    <a class="article-category-link" href="/categories/playground/">玩艺</a> / <a class="article-category-link" href="/categories/playground/apps/">软件</a>
   </div>
 
-        </div>
         
   
-    <h1 class="article-title" itemprop="name">
-      Hexo Stylus 渲染的奇怪问题
-    </h1>
+    <h5 class="article-title mb-1 line-clamp line-clamp-3" itemprop="name">
+      <a href="/playground/apps/windows-live-writer-review/">Windows Live Writer 初上手体验</a>
+    </h5>
   
 
-        
-      
-    </header>
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-    
-      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>给网站首页加了一个满屏图文，不料遇上一个奇怪的问题。原本想根据屏幕宽度自动调整标题大小，<code>hero.styl</code> 是这样写的：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> <span class="selector-tag">h2</span></span><br><span class="line"><span class="attribute">font-size</span>: <span class="built_in">clamp</span>(<span class="number">5em</span>, <span class="number">5em</span> + <span class="number">2.5vw</span>, <span class="number">10em</span>)</span><br><span class="line"><span class="attribute">line-height</span>: <span class="number">1em</span></span><br><span class="line"><span class="attribute">letter-spacing</span>: -<span class="number">0.05rem</span></span><br></pre></td></tr></table></figure>
-
-<p>但渲染出来的 styles.css 却是这样：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h2</span> &#123;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="built_in">clamp</span>(<span class="number">5em</span>, <span class="number">7.5em</span>, <span class="number">10em</span>);</span><br><span class="line">	<span class="attribute">line-height</span>: <span class="number">1em</span>;</span><br><span class="line">	<span class="attribute">letter-spacing</span>: -.<span class="number">05rem</span></span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-
-<p>不知为何，两个不同的单位直接相加了，原本的变量变成了固定的 <code>7.5em</code>，这转换得也太过耿直了吧。去看了一下 <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-renderer-stylus">hexo-renderer-stylus</a> 的源代码，但搜了一下 <code>em</code>、<code>vw</code>，没有结果，所以也摸不着头绪，总之此时的效果是这样的：</p>
-<p><a href="/playground/web/hexo-renderer-stylus-issue/image-20230721185609916.png" title="错误的呈现结果" class="gallery-item"><img src="/playground/web/hexo-renderer-stylus-issue/image-20230721185609916.png" alt="错误的呈现结果"><span class="image-caption">错误的呈现结果</span></a></p>
-<p>而预想的结果，它应该是这样的：</p>
-<p><a href="/playground/web/hexo-renderer-stylus-issue/image-20230721185825969.png" title="预想的呈现结果" class="gallery-item"><img src="/playground/web/hexo-renderer-stylus-issue/image-20230721185825969.png" alt="预想的呈现结果"><span class="image-caption">预想的呈现结果</span></a></p>
-<span id="more"></span>
-
-<p>换到另一个以 <a target="_blank" rel="noopener" href="https://getbootstrap.com/">Bootstrap</a> 为框架的主题，CSS 正常渲染。为了确认原因，将主题换成同样采用 Stylus 的 <a target="_blank" rel="noopener" href="https://theme-next.js.org/">Next</a>，果然出现了同样的问题，那应该没有疑问了，大概率就是 hexo-renderer-stylus 的锅。</p>
-<p>不过试了一下，<code>font-size: clamp(5em, 5vw, 10em)</code> 倒是 OK，姑且先这么用着，从长计议，看看能不能解决这个奇怪的计算问题。</p>
-<p>另一种办法是把变量存储在 <code>.yml</code> 或者 <code>.json</code> 里面，再通过 CSS 读取，Wordpress 主题已经很流行这么做了，也可以尝试。</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>
-    </div>
-    <footer class="article-footer">
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Stylus/" rel="tag">Stylus</a></li></ul>
-
-    </footer>
-  </div>
-  
-  <div class="artile-comments">
-    <section class="article-inner gitalk">
-      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script type="text/javascript">
-    var gitalk = new Gitalk({
-        clientID: '08c3d073d058ef04a656',
-        clientSecret: '020374f48336a5e66aa53517997994ee6ea40665',
-        repo: 'kaerozhi.github.io',
-        owner: 'kaerozhi',
-        admin: ['kaerozhi'],
-        id:'gitalk_20230721184000',
-        labels: 'gitalk'.split(',').filter(l => l),
-        perPage: 10,
-        pagerDirection: 'last',
-        createIssueManually: true,
-        distractionFreeMode: false
-    })
-
-    gitalk.render('gitalk-container')           
-</script>
-    </section>
-  </div>
-  
-  
-  
-    
-<nav class="article-nav pt-4 mt-3" id="article-nav">
-  
-    <a href="/tours/walk-around-the-ancient-gusu/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">前一篇</strong>
-      <div class="article-nav-title">
-        
-          姑苏漫步
-        
+        <time class="text-gray" datetime="2007-08-04T00:00:00.000Z" itemprop="datePublished">
+  2007-08-04
+</time>
       </div>
-    </a>
+    </div>
+  </article>
+</div>
+      
   
   
-    <a href="/photography/huqiu-wetland-park/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">后一篇</strong>
-      <div class="article-nav-title">虎丘湿地公园</div>
-    </a>
+      
   
-</nav>
+<div class="col-6">
+  
+
+  <article class="archive-article archive-type-post">
+    <div class="card rounded">
+            
+        <a class="card-img-link" href="/playground/apps/windows-live-writer-update/" rel="gallery_clknnywex00jd4ntu8w0e1zqz">
+          <img class="card-img lazyload" data-src="/images/post-preview.png" itemprop="image" alt="gallery">
+        </a>
+      
+      <div class="card-body bg-light">
+        
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/playground/">玩艺</a> / <a class="article-category-link" href="/categories/playground/apps/">软件</a>
+  </div>
+
+        
+  
+    <h5 class="article-title mb-1 line-clamp line-clamp-3" itemprop="name">
+      <a href="/playground/apps/windows-live-writer-update/">Windows Live Writer 更新</a>
+    </h5>
+  
+
+        <time class="text-gray" datetime="2007-08-04T00:00:00.000Z" itemprop="datePublished">
+  2007-08-04
+</time>
+      </div>
+    </div>
+  </article>
+</div>
+      
+      
+    </div>
+  </div>
+</section>
 
 
-  
-</article>
+
+
 </div>
     </section>
     <footer class="footer pt-4 mt-5">
