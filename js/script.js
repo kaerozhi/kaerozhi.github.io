@@ -1,4 +1,13 @@
 // Brand replace
 brand = $('.navbar-brand').text();
-brand = brand.replace(/(['&.e])/g,"<span class=\"text-primary\">$1</span>");
+regex = /\b(\w)/g;
+const matches = [];
+let match;
+
+while ((match = regex.exec(brand)) !== null) {
+    matches.push(match[1]);
+}
+
+brand = matches;
 $('.navbar-brand').html(brand);
+$('.modal-brand').html(brand);

@@ -6,7 +6,7 @@
   <link href="https://kaerozhi.com/atom.xml" rel="self"/>
   
   <link href="https://kaerozhi.com/"/>
-  <updated>2024-06-14T12:54:23.360Z</updated>
+  <updated>2024-07-21T09:33:49.446Z</updated>
   <id>https://kaerozhi.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>工业园赠肥困</title>
+    <link href="https://kaerozhi.com/writings/shici/industrial-park/"/>
+    <id>https://kaerozhi.com/writings/shici/industrial-park/</id>
+    <published>2024-07-21T09:27:00.000Z</published>
+    <updated>2024-07-21T09:33:49.446Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>工业园池塘，老柳不成行。新枝垂郁绿，雏鸭团嫩黄。呱呱时一鸣，回音触四墙。灰水泥墙体，方盒子楼房。风扇吹棉丝，女工列机床。混乱办公室，铁釜烟悠飏。碎金燃素壁，五点半阳光。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article</summary>
+      
+    
+    
+    
+    <category term="文字" scheme="https://kaerozhi.com/categories/writings/"/>
+    
+    <category term="诗词" scheme="https://kaerozhi.com/categories/writings/shici/"/>
+    
+    
+    <category term="五言古诗" scheme="https://kaerozhi.com/tags/%E4%BA%94%E8%A8%80%E5%8F%A4%E8%AF%97/"/>
+    
+  </entry>
   
   <entry>
     <title>花山的支道林</title>
@@ -552,35 +578,6 @@
     <category term="Justified Gallery" scheme="https://kaerozhi.com/tags/Justified-Gallery/"/>
     
     <category term="中文字体" scheme="https://kaerozhi.com/tags/%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo 后续补充</title>
-    <link href="https://kaerozhi.com/playground/web/hexo-updates/"/>
-    <id>https://kaerozhi.com/playground/web/hexo-updates/</id>
-    <published>2023-05-28T13:36:07.000Z</published>
-    <updated>2023-07-13T10:29:41.160Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><div class="foreword">Hexo 用了两天，基本功能差不多弄清楚了。不过也发现一些问题，逐个记录，分享出来，没准能对 Hexo 的其他用户提供一些帮助。</div><span id="more"></span><h2 id="markdown-支持">Markdown 支持</h2><p>Hexo 对 Markdown 语法的支持尚不完备，比如将内容标记为高亮： <code>==highlight==</code>， Obsidian 已经支持，但 Hexo 尚未跟进。类似的还有 footnote，目前只能通过插件搞定。</p><h3 id="footnote-脚注">footnote 脚注</h3><p>对一个业余文字爱好者来说，注释是免不了要加的。<a href="https://github.com/LouisBarranqueiro/hexo-footnotes">hexo-footnotes</a>  可以为 Hexo 用户提供额外的 footnote 语法支持，直接命令行安装：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-footnotes --save</span><br></pre></td></tr></table></figure><p>安装之后 Hexo 一般可以自动识别，此时在 Markdown 文件中添加注释即可。如果不能识别，则需要在 <code>_config.yml</code> 内手动配置：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">plugins:</span><br><span class="line">  - hexo-footnotes</span><br></pre></td></tr></table></figure><p>footnote 的语法请自行搜索。个人体验下来，目前还有两个问题尚待解决：</p><ol><li><s>如果一条注释包含多个段落，则只有第一个段落会被识别，不知如何指定脚注的起讫范围？</s> 后续段落可以通过缩进来声明脚注的起讫，但仍然有个问题。第一段是纯文本，而后续段落都是 <code>&lt;p&gt;...&lt;/p&gt;</code> 标签，导致第一段与第二段之间缺少段间距。</li><li>~~不知是否与主题 css 存在冲突，脚注序号、内容与返回按钮分成了三行。~~此问题已经解决，办法是修改 <code>/Hexo/node_modules/hexo-footnotes/src/footnotes.js</code>，搜索 <code>display: inline-block;</code>，删除第二个结果。</li><li>脚注的标记不支持中文，<code>&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;</code> 正常，<code>[^注一]</code> 则不正常。</li></ol><p>最终效果可以参考这篇文章：<a href="/writings/research/photos-of-luxun">鲁迅照片集</a></p><h3 id="markdown-与 html 标签混用">Markdown 与 HTML 标签混用</h3><h2 id="内容嵌入">内容嵌入</h2><h3 id="youtube-视频">Youtube 视频</h3><p>Wordpress 里面插入 Youtube 视频很简单，网址粘贴进去，自动转换成视频播放界面。与之相比，Obsidian 还能找到 <a href="https://github.com/samwarnick/obsidian-simple-embeds">Simple Embeds</a> 这样的插件，Hexo 简直太不方便了，反正我不怎么想在 Markdown 里面写这样的标签：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% youtube video_id [type] [cookie] %&#125;</span><br></pre></td></tr></table></figure><p>作为互联网的老用户，平台或者软件搞私有标准的危害，我们可是太有体会了。还是希望 Hexo 能在 Markdown 通行标准的基础上发展，不要强推这种换个软件就无法识别的标签。</p><h2 id="子页面">子页面</h2><p>发现一个奇怪现象：<a href="/about/">关于</a> 页面本来正常，但我想在这个页面下面再挂一份简历，计划的路径是 <code>/about/resume</code>。Hexo 官方没有子页面的信息，所以我就直接在 source 文件夹建了一个 <code>about</code> 子文件夹，然后在里面新增了一个 <code>resume.md</code>。没想到生成之后，这个简历倒是没有问题，主菜单点击关于页面报 403 错误了，令人一头雾水。</p><p>当然解决办法还是有的，将 <code>about.md</code> 移到 <code>about</code> 文件夹，并重命名为 <code>index.md</code>，虽然生成网页之后实际路径其实从 <code>/about.html</code> 变成了 <code>/about/index.html</code>，但这样一来，按照之前的路径访问就没有问题了。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-    
-    
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&gt;&lt;div class=&quot;foreword&quot;&gt;
-Hexo 用了两天，基本功能差不多弄清楚了。不过也发现一些问题，逐个记录，分享出来，没准能对 Hexo 的其他用户提供一些帮助。
-&lt;/div&gt;</summary>
-    
-    
-    
-    <category term="玩艺" scheme="https://kaerozhi.com/categories/playground/"/>
-    
-    <category term="网站" scheme="https://kaerozhi.com/categories/playground/web/"/>
-    
-    
-    <category term="Hexo" scheme="https://kaerozhi.com/tags/Hexo/"/>
-    
-    <category term="Hexo Plugins" scheme="https://kaerozhi.com/tags/Hexo-Plugins/"/>
-    
-    <category term="Markdown" scheme="https://kaerozhi.com/tags/Markdown/"/>
     
   </entry>
   
