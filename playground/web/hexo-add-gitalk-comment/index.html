@@ -7,10 +7,10 @@
     <meta name="keywords" content="Waxa Design, 蛙夏, kaero, kaero zhi, designer, 自由设计师, blog, design, photography, photographer, chinese, suzhou, 旧体诗, 诗词">
   
   
-    <meta name="description" content="Kaero，自由设计师。喜好摄影、游历及文学，素来不务正业，以研究各种杂七杂八为能事。江西人，曾居上海、深圳，现定居苏州，承接各种与设计相关的事务与需求。">
+    <meta name="description" content="载山妻游吴市，思古人散步，吾骑小电驴以代之，自署吴散骑常侍，不亦可乎？">
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-  <title>给 Hexo 增加 Gitalk 评论系统 |  waxa.design</title>
+  <title>给 Hexo 增加 Gitalk 评论系统 |  Kaero Zhi</title>
   
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/webclip/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/webclip/apple-touch-icon-72x72.png">
@@ -32,63 +32,147 @@
   
     <link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css"/>
   
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   
 <link rel="stylesheet" href="/css/style.css">
 
   <script src="/libs/jquery/jquery-3.7.0.min.js"></script>
   <script src="/libs/locomotive-scroll/locomotive-scroll.min.js"></script>
+  <script>
+    (function () {
+        var scroll = new LocomotiveScroll();
+    })();
+  </script>
   <link rel="stylesheet" href="/libs/locomotive-scroll/locomotive-scroll.css"/>
-<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="waxa.design" type="application/atom+xml">
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Kaero Zhi" type="application/atom+xml">
 </head>
 
 
 <body class=" post layout-post category-玩艺 category-网站 tag-hexo tag-gitalk tag-github">
-  <main class="main">
-    <header id="header" class="header header-absolute">
-	<div class="container">
-		<nav class="navbar d-flex align-items-center">
-			<a class="brand" href="/">
-				<img class="logo lazyload" data-src="/assets/images/brand-waxacn.svg" alt="waxa.design" role="img">
+  <div class="main">
+    <header id="header" class="m-5">
+	<nav class="navbar navbar-expand-md">
+		<div class="row container">
+			<a class="navbar-brand col-6 col-sm-2 m-0" href="/">
+			
+				<h1>Kaero Zhi</h1>
+			
 			</a>
-			<ul class="main-nav">
+			<div class="navbar-sm col-sm-8 col-0 d-flex justify-content-center m-0">
+				<ul class="navbar-nav">
   
     
   <li class="nav-item ">
-    <a class="nav-item-link" href="/gallery">影像</a>
-  </li>
-  
-    
-  <li class="nav-item ">
-    <a class="nav-item-link" href="/stories">案例</a>
+    <a class="nav-link" href="/categories/photography">影像</a>
   </li>
   
     
   <li class="nav-item ">
-    <a class="nav-item-link" href="/archives">更新</a>
+    <a class="nav-link" href="/categories/writings">文字</a>
   </li>
   
     
   <li class="nav-item ">
-    <a class="nav-item-link" href="/about">关于</a>
+    <a class="nav-link" href="/categories/cases">案例</a>
   </li>
   
+    
   <li class="nav-item ">
-    <span class="local-search local-search-google local-search-plugin" style="">
-    <input type="search" placeholder="站内搜索" id="local-search-input" class="local-search-input-cls" style="">
-    <div id="local-search-result" class="local-search-result-cls"></div>
-</span>
+    <a class="nav-link" href="/library">校书</a>
   </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/archives">更新</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/about">关于</a>
+  </li>
+  
 </ul>
-		</nav>
-		<a id="mobile-nav-toggle">
-			<span class="mobile-nav-toggle-bar"></span>
-			<span class="mobile-nav-toggle-bar"></span>
-			<span class="mobile-nav-toggle-bar"></span>
-		</a>
-	</div>
+			</div>
+			<div class="col-6 col-sm-2 d-flex justify-content-end m-0">
+				<button type="button" class="nav-btn" data-bs-toggle="modal" data-bs-target="#modalNavi">
+					<span>目次</span>
+				</button>
+			</div>
+			<div class="modal fade m-0 p-0" id="modalNavi">
+				<div class="modal-dialog modal-fullscreen">
+				  <div class="modal-content bg-dark text-white">
+					<div class="modal-header border-0">
+						<a class="modal-brand col-2" href="/">
+						
+							Kaero Zhi
+						
+						</a>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<ul class="modal-nav">
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/categories/photography">影像</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/categories/writings">文字</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/categories/cases">案例</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/library">校书</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/archives">更新</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/about">关于</a>
+  </li>
+  
+</ul>
+					</div>
+					<div class="modal-footer justify-content-center mb-5 border-0">					  
+						<ul class="social-nav">
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-twitter" target="_blank" rel="noopener" href="https://twitter.com/kaero"><span>twitter</span></a>
+    </li>
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-github" target="_blank" rel="noopener" href="https://github.com/kaerozhi"><span>github</span></a>
+    </li>
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-instagram" target="_blank" rel="noopener" href="https://www.instagram.com/kaero/"><span>instagram</span></a>
+    </li>
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-pinterest" target="_blank" rel="noopener" href="https://www.pinterest.com/kaero/"><span>pinterest</span></a>
+    </li>
+    
+  </ul>
+					</div>			  
+				  </div>
+				</div>
+			  </div>
+		</div>
+	</nav>
 </header>
-
-    <section>
+    <main>
       <div class="container">
   <article id="post-hexo-add-gitalk-comment" class="article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   
@@ -133,30 +217,29 @@
     
       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>原来的 Minos 主题自带 Disqus 评论系统，换到 Acorn 以后，默认不带评论功能，所以打算研究一下如何自行配置。考虑到已经同步到 GitPage 了，不如就用 Gitment 或者 Gitalk，兼容性应该可以做到最好。</p>
 <span id="more"></span>
-
 <p>按照 <a target="_blank" rel="noopener" href="https://www.itfanr.cc/2019/04/30/hexo-add-gitalk-comment/">Hexo 博客添加 Gitalk 评论系统 </a> 的引导，流程非常顺利，细节满满。但因为大佬用的是 Swig 渲染器，而 Acorn 的渲染器是 EJS，所以细节略有不同，在此把过程分享出来，希望能对 EJS 用户有所启发。</p>
-<h2 id="创建-Github-OAuth-Apps"><a href="#创建-Github-OAuth-Apps" class="headerlink" title="创建 Github OAuth Apps"></a>创建 Github OAuth Apps</h2><p>打开 Github 上的 <a target="_blank" rel="noopener" href="https://github.com/settings/developers">OAuth Apps</a>，点击右上角 <code>New OAuth App</code> ，逐项填写相应内容即可。</p>
-<p><a href="/playground/web/hexo-add-gitalk-comment/image-20230716191104781.png" title="注册界面" class="gallery-item"><img src="/playground/web/hexo-add-gitalk-comment/image-20230716191104781.png" alt="注册界面"><span class="image-caption">注册界面</span></a></p>
+<h2 id="创建-github oauth apps">创建 Github OAuth Apps</h2>
+<p>打开 Github 上的 <a target="_blank" rel="noopener" href="https://github.com/settings/developers">OAuth Apps</a>，点击右上角 <code>New OAuth App</code> ，逐项填写相应内容即可。</p>
+<p><a href="image-20230716191104781.png" title="注册界面" class="gallery-item"><img src="image-20230716191104781.png" alt="注册界面"></a></p>
 <p><code>Homepage URL</code> 即 Hexo 的主页地址，<code>Authorization callback URL</code> 为站点的回调地址，一般和主页相同即可。</p>
 <p>提交之后，得到 <code>Client ID</code> 和 <code>Client Secret</code> 备用。</p>
-<h2 id="自定义主题配置"><a href="#自定义主题配置" class="headerlink" title="自定义主题配置"></a>自定义主题配置</h2><p>打开主题的配置文件，Acorn 的路径是 <code>/themes/acorn/_config.yml</code>，添加 Gitalk 相关参数：</p>
+<h2 id="自定义主题配置">自定义主题配置</h2>
+<p>打开主题的配置文件，Acorn 的路径是 <code>/themes/acorn/_config.yml</code>，添加 Gitalk 相关参数：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">gitalk:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">ClientID:</span> <span class="string">xxxxxx</span> <span class="string">//</span> <span class="string">上一步得到的</span> <span class="string">Client</span> <span class="string">ID</span></span><br><span class="line">  <span class="attr">ClientSecret:</span> <span class="string">xxxxxxxxxxxx</span> <span class="string">//</span> <span class="string">上一步得到的</span> <span class="string">Client</span> <span class="string">Secret</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">kaerozhi.github.io</span> <span class="string">//</span> <span class="string">仓库可以和</span> <span class="string">Hexo</span> <span class="string">一样</span></span><br><span class="line">  <span class="attr">owner:</span> <span class="string">kaerozhi</span></span><br><span class="line">  <span class="attr">adminUser:</span> <span class="string">kaerozhi</span></span><br><span class="line">  <span class="attr">IdPrefix:</span> <span class="string">gitalk</span></span><br><span class="line">  <span class="attr">labels:</span> <span class="string">gitalk</span></span><br><span class="line">  <span class="attr">perPage:</span> <span class="number">10</span></span><br><span class="line">  <span class="attr">pagerDirection:</span> <span class="string">last</span></span><br><span class="line">  <span class="attr">createIssueManually:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">distractionFreeMode:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-
-
-<h2 id="Gitalk-模板"><a href="#Gitalk-模板" class="headerlink" title="Gitalk 模板"></a>Gitalk 模板</h2><p>按照 Acorn 的文件结构，在 <code>/themes/acorn/layout/_partial/post/</code> 文件夹内添加 <code>gitalk.ejs</code>，代码如下：</p>
+<h2 id="gitalk-模板">Gitalk 模板</h2>
+<p>按照 Acorn 的文件结构，在 <code>/themes/acorn/layout/_partial/post/</code> 文件夹内添加 <code>gitalk.ejs</code>，代码如下：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=<span class="string">&quot;stylesheet&quot;</span> href=<span class="string">&quot;https://unpkg.com/gitalk/dist/gitalk.css&quot;</span>&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://unpkg.com/gitalk/dist/gitalk.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;gitalk-container&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">var</span> gitalk = <span class="keyword">new</span> <span class="title class_">Gitalk</span>(&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="attr">clientID</span>: <span class="string">&#x27;&lt;%- theme.gitalk.ClientID %&gt;&#x27;</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="attr">clientSecret</span>: <span class="string">&#x27;&lt;%- theme.gitalk.ClientSecret %&gt;&#x27;</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="attr">repo</span>: <span class="string">&#x27;&lt;%- theme.gitalk.repo %&gt;&#x27;</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="attr">owner</span>: <span class="string">&#x27;&lt;%- theme.gitalk.owner %&gt;&#x27;</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="attr">admin</span>: [<span class="string">&#x27;&lt;%- theme.gitalk.adminUser %&gt;&#x27;</span>],</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="attr">id</span>:<span class="string">&#x27;&lt;%- theme.gitalk.IdPrefix || gitalk %&gt;_&lt;%- date(page.date, &quot;YYYYMMDDHHmmss&quot;) %&gt;&#x27;</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="attr">labels</span>: <span class="string">&#x27;&lt;%- theme.gitalk.labels %&gt;&#x27;</span>.<span class="title function_">split</span>(<span class="string">&#x27;,&#x27;</span>).<span class="title function_">filter</span>(<span class="function"><span class="params">l</span> =&gt;</span> l),</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="attr">perPage</span>: &lt;%- theme.<span class="property">gitalk</span>.<span class="property">perPage</span> %&gt;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="attr">pagerDirection</span>: <span class="string">&#x27;&lt;%- theme.gitalk.pagerDirection %&gt;&#x27;</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="attr">createIssueManually</span>: &lt;%- theme.<span class="property">gitalk</span>.<span class="property">createIssueManually</span> %&gt;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="attr">distractionFreeMode</span>: &lt;%- theme.<span class="property">gitalk</span>.<span class="property">distractionFreeMode</span> %&gt;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    &#125;)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    gitalk.<span class="title function_">render</span>(<span class="string">&#x27;gitalk-container&#x27;</span>)           </span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-
 <p>因为所有参数都在主题配置文件里添加好了，这里直接调用，所以应该无需作任何改动。</p>
-<p>按照我们的想法，只有文章页开启评论，其他页面不开启，所以打开 <code>/themes/acorn/layout/_partial/article.ejs</code>，找到 <code>&lt;%- partial(&#39;post/tag&#39;) %&gt;</code>，换行，添加以下代码：</p>
+<p>按照我们的想法，只有文章页开启评论，其他页面不开启，所以打开 <code>/themes/acorn/layout/_partial/article.ejs</code>，找到 <code>&lt;%- partial('post/tag') %&gt;</code>，换行，添加以下代码：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> &lt;% <span class="keyword">if</span> (theme.<span class="property">gitalk</span>.<span class="property">enable</span> &amp;&amp; <span class="title function_">is_post</span>() &amp;&amp; page.<span class="property">comments</span> != <span class="literal">false</span>) &#123; %&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">section</span> <span class="attr">class</span>=<span class="string">&quot;artile-comments gitalk&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  &lt;%- partial(&#x27;post/gitalk&#x27;) %&gt;</span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">section</span>&gt;</span></span></span><br><span class="line"> &lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
-
 <p>这里为开启评论加了三个前置判断，分别是：</p>
 <ol>
 <li><code>theme.gitalk.enable</code>，主题配置中启用了 Gitalk 评论；</li>
 <li><code>is_post()</code>，仅文章页启用评论；</li>
 <li><code>page.comments != false</code> 只要在指定文章的 Front Matter 内加入 <code>comments: false</code>，则可以手动关闭评论。</li>
 </ol>
-<h2 id="初始化创建"><a href="#初始化创建" class="headerlink" title="初始化创建"></a>初始化创建</h2><p>至此前期的准备工作就完成了，重新生成并 Deploy 至 Github，就可以在文章底部初始化创建评论了。</p>
+<h2 id="初始化创建">初始化创建</h2>
+<p>至此前期的准备工作就完成了，重新生成并 Deploy 至 Github，就可以在文章底部初始化创建评论了。</p>
 <p>如果你跟我一样，历史数据比较多，一篇一篇手动启用未免太累了，那也可以参考这篇文章：<a target="_blank" rel="noopener" href="https://blog.jijian.link/2020-01-10/hexo-gitalk-auto-init/">Hexo Gitalk 评论自动初始化</a>。</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
@@ -225,35 +308,33 @@
   
 </article>
 </div>
-    </section>
+    </main>
     <footer class="footer pt-4 mt-5">
   <div class="container">
     <div class="py-3">
       <div class="row justify-content-between">
         <div class="col-6">
-          <img class="mb-3 lazyload" height="60" data-src="/assets/images/brand-waxacn.svg" alt="waxa.design" role="img">
-          <p class="mb-4">Kaero，自由设计师。喜好摄影、游历及文学，素来不务正业，以研究各种杂七杂八为能事。江西人，曾居上海、深圳，现定居苏州，承接各种与设计相关的事务与需求。</p>
-          <ul class="list-inline">
-            
-              <li class="list-inline-item">
-                <a target="_blank" rel="noopener" href="https://twitter.com/kaero">
-                  <img 0="Twitter" src="/images/icons/contact-twitter.svg">
-                </a>
-              </li>
-            
-              <li class="list-inline-item">
-                <a href="javascript:;">
-                  <img 0="微信" src="/images/icons/contact-wechat.svg">
-                </a>
-              </li>
-            
-              <li class="list-inline-item">
-                <a href="mailto:kaero.zhi@gmail.com">
-                  <img 0="邮箱" src="/images/icons/contact-mail.svg">
-                </a>
-              </li>
-            
-          </ul>
+          <img class="mb-3 lazyload" height="60" data-src="/" alt="Kaero Zhi" role="img">
+          <p class="mb-4">载山妻游吴市，思古人散步，吾骑小电驴以代之，自署吴散骑常侍，不亦可乎？</p>
+          <ul class="social-nav list-inline">
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-twitter" target="_blank" rel="noopener" href="https://twitter.com/kaero"><span>twitter</span></a>
+    </li>
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-github" target="_blank" rel="noopener" href="https://github.com/kaerozhi"><span>github</span></a>
+    </li>
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-instagram" target="_blank" rel="noopener" href="https://www.instagram.com/kaero/"><span>instagram</span></a>
+    </li>
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-pinterest" target="_blank" rel="noopener" href="https://www.pinterest.com/kaero/"><span>pinterest</span></a>
+    </li>
+    
+  </ul>
         </div>
         <div class="col-4">
           <h5>友情链接</h5>
@@ -290,53 +371,18 @@
     <hr class="hr" style="opacity: .25;">
     <div class="pt-3 pb-5">
       <ul class="list-inline mb-0 text-center">
-        <li class="list-inline-item">&copy; 2023 waxa.design</li>
+        <li class="list-inline-item">&copy; 2024 Kaero Zhi</li>
         
         <li class="list-inline-item">Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
-        <li class="list-inline-item">Designer <a href="https://waxa.design" target="_blank">Kaero</a></li>
+        <li class="list-inline-item">Designer <a href="https://kaerozhi.com" target="_blank">Kaero Zhi</a></li>
       </ul>
     </div>
   </div>
 </footer>
-  </main>
-  <div id="mobile-nav-dimmer"></div>
-<div id="mobile-nav">
-	<div id="mobile-nav-inner">
-		<ul class="mobile-nav">
-  
-    
-  <li class="nav-item ">
-    <a class="nav-item-link" href="/gallery">影像</a>
-  </li>
-  
-    
-  <li class="nav-item ">
-    <a class="nav-item-link" href="/stories">案例</a>
-  </li>
-  
-    
-  <li class="nav-item ">
-    <a class="nav-item-link" href="/archives">更新</a>
-  </li>
-  
-    
-  <li class="nav-item ">
-    <a class="nav-item-link" href="/about">关于</a>
-  </li>
-  
-  <li class="nav-item ">
-    <span class="local-search local-search-google local-search-plugin" style="">
-    <input type="search" placeholder="站内搜索" id="local-search-input" class="local-search-input-cls" style="">
-    <div id="local-search-result" class="local-search-result-cls"></div>
-</span>
-  </li>
-</ul>
-		
-	</div>
-</div>
-
+  </div>
   <script src="/libs/feather/feather.min.js"></script>
 <script src="/libs/lazysizes/lazysizes.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 
 
@@ -377,39 +423,6 @@
       })(jQuery);
   </script>
 
-
-<script>
-// 移动设备侦测
-var isMobile = {
-  Android: function () {
-    return navigator.userAgent.match(/Android/i);
-  },
-  BlackBerry: function () {
-    return navigator.userAgent.match(/BlackBerry/i);
-  },
-  iOS: function () {
-    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-  },
-  Opera: function () {
-    return navigator.userAgent.match(/Opera Mini/i);
-  },
-  Windows: function () {
-    return navigator.userAgent.match(/IEMobile/i);
-  },
-  any: function () {
-    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-  }
-};
-
-if ($('.local-search').resize() && !isMobile.any()) {
-	$.getScript('/js/search.js', function() {
-	  searchFunc("/search.xml", 'local-search-input', 'local-search-result');
-	});
-}
-</script>
-
-
-<script src="/js/mobile-nav.js"></script>
 
 
 <script src="/js/script.js"></script>

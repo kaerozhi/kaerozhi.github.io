@@ -7,10 +7,10 @@
     <meta name="keywords" content="Waxa Design, 蛙夏, kaero, kaero zhi, designer, 自由设计师, blog, design, photography, photographer, chinese, suzhou, 旧体诗, 诗词">
   
   
-    <meta name="description" content="Kaero，自由设计师。喜好摄影、游历及文学，素来不务正业，以研究各种杂七杂八为能事。江西人，曾居上海、深圳，现定居苏州，承接各种与设计相关的事务与需求。">
+    <meta name="description" content="载山妻游吴市，思古人散步，吾骑小电驴以代之，自署吴散骑常侍，不亦可乎？">
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-  <title>游戏排位系统的设计思路 |  waxa.design</title>
+  <title>游戏排位系统的设计思路 |  Kaero Zhi</title>
   
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/webclip/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/webclip/apple-touch-icon-72x72.png">
@@ -32,63 +32,147 @@
   
     <link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css"/>
   
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   
 <link rel="stylesheet" href="/css/style.css">
 
   <script src="/libs/jquery/jquery-3.7.0.min.js"></script>
   <script src="/libs/locomotive-scroll/locomotive-scroll.min.js"></script>
+  <script>
+    (function () {
+        var scroll = new LocomotiveScroll();
+    })();
+  </script>
   <link rel="stylesheet" href="/libs/locomotive-scroll/locomotive-scroll.css"/>
-<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="waxa.design" type="application/atom+xml">
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Kaero Zhi" type="application/atom+xml">
 </head>
 
 
 <body class=" post layout-post category-观点 tag-game tag-排位赛系统 tag-段位图标">
-  <main class="main">
-    <header id="header" class="header header-absolute">
-	<div class="container">
-		<nav class="navbar d-flex align-items-center">
-			<a class="brand" href="/">
-				<img class="logo lazyload" data-src="/assets/images/brand-waxacn.svg" alt="waxa.design" role="img">
+  <div class="main">
+    <header id="header" class="m-5">
+	<nav class="navbar navbar-expand-md">
+		<div class="row container">
+			<a class="navbar-brand col-6 col-sm-2 m-0" href="/">
+			
+				<h1>Kaero Zhi</h1>
+			
 			</a>
-			<ul class="main-nav">
+			<div class="navbar-sm col-sm-8 col-0 d-flex justify-content-center m-0">
+				<ul class="navbar-nav">
   
     
   <li class="nav-item ">
-    <a class="nav-item-link" href="/gallery">影像</a>
-  </li>
-  
-    
-  <li class="nav-item ">
-    <a class="nav-item-link" href="/stories">案例</a>
+    <a class="nav-link" href="/categories/photography">影像</a>
   </li>
   
     
   <li class="nav-item ">
-    <a class="nav-item-link" href="/archives">更新</a>
+    <a class="nav-link" href="/categories/writings">文字</a>
   </li>
   
     
   <li class="nav-item ">
-    <a class="nav-item-link" href="/about">关于</a>
+    <a class="nav-link" href="/categories/cases">案例</a>
   </li>
   
+    
   <li class="nav-item ">
-    <span class="local-search local-search-google local-search-plugin" style="">
-    <input type="search" placeholder="站内搜索" id="local-search-input" class="local-search-input-cls" style="">
-    <div id="local-search-result" class="local-search-result-cls"></div>
-</span>
+    <a class="nav-link" href="/library">校书</a>
   </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/archives">更新</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/about">关于</a>
+  </li>
+  
 </ul>
-		</nav>
-		<a id="mobile-nav-toggle">
-			<span class="mobile-nav-toggle-bar"></span>
-			<span class="mobile-nav-toggle-bar"></span>
-			<span class="mobile-nav-toggle-bar"></span>
-		</a>
-	</div>
+			</div>
+			<div class="col-6 col-sm-2 d-flex justify-content-end m-0">
+				<button type="button" class="nav-btn" data-bs-toggle="modal" data-bs-target="#modalNavi">
+					<span>目次</span>
+				</button>
+			</div>
+			<div class="modal fade m-0 p-0" id="modalNavi">
+				<div class="modal-dialog modal-fullscreen">
+				  <div class="modal-content bg-dark text-white">
+					<div class="modal-header border-0">
+						<a class="modal-brand col-2" href="/">
+						
+							Kaero Zhi
+						
+						</a>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<ul class="modal-nav">
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/categories/photography">影像</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/categories/writings">文字</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/categories/cases">案例</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/library">校书</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/archives">更新</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/about">关于</a>
+  </li>
+  
+</ul>
+					</div>
+					<div class="modal-footer justify-content-center mb-5 border-0">					  
+						<ul class="social-nav">
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-twitter" target="_blank" rel="noopener" href="https://twitter.com/kaero"><span>twitter</span></a>
+    </li>
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-github" target="_blank" rel="noopener" href="https://github.com/kaerozhi"><span>github</span></a>
+    </li>
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-instagram" target="_blank" rel="noopener" href="https://www.instagram.com/kaero/"><span>instagram</span></a>
+    </li>
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-pinterest" target="_blank" rel="noopener" href="https://www.pinterest.com/kaero/"><span>pinterest</span></a>
+    </li>
+    
+  </ul>
+					</div>			  
+				  </div>
+				</div>
+			  </div>
+		</div>
+	</nav>
 </header>
-
-    <section>
+    <main>
       <div class="container">
   <article id="post-visual-design-of-ranking-system" class="article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   
@@ -122,9 +206,8 @@
     <div class="article-entry" itemprop="articleBody">
     
       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><div class="foreword">
-
 <p>排位系统基本上是现代游戏的标配，只要在游戏里玩家与玩家可以直接对抗（即 PvP），排位系统就必不可少。甚至一些玩家不用直接对抗的休闲游戏，也都会加上好友排行榜之类的系统，以期激发玩家的竞争本能，互相攀比、追赶，从而提高游戏的活跃度和营收。</p>
-<p>为了鞭笞玩家，避免他们偷懒懈怠，现代游戏还设计出了赛季的概念。<strong>什么是赛季呢？</strong>赛季系统就相当于一个滴答作响的闹钟，在你的脑子里拧紧了发条，提醒你赶紧去玩游戏，否则本赛季的荣誉、成就以及丰厚的奖励就通通和你无缘了。</p>
+<p>为了鞭笞玩家，避免他们偷懒懈怠，现代游戏还设计出了赛季的概念。**什么是赛季呢？**赛季系统就相当于一个滴答作响的闹钟，在你的脑子里拧紧了发条，提醒你赶紧去玩游戏，否则本赛季的荣誉、成就以及丰厚的奖励就通通和你无缘了。</p>
 <p>赛季通常以月为单位，比如 Clash Royale 每个月就是一个赛季；王者荣耀的则是三个月，一个季度就是一个赛季，很符合现实里「季」的定义；而 League of Legends 的赛季与传统体育赛事是一样的，一个赛季长达一年。</p>
 <p>在每个新的赛季，厂商都会打包推出一系列的游戏内容，除了常规玩法的更迭、平衡性的调整，还会有全新的地图、游戏机制、英雄、皮肤，以及特别的荣誉、成就以及奖励。</p>
 <p>在赛季系统出现以前，玩家弃游很简单，不想玩就不玩了，我的排位积分可能会慢慢降下来，但只要想打，还是能随时把它打上去，完全不用考虑会有什么损失。但赛季限定内容的出现，尤其是赛季奖励，一般都具有最顶级的品质，一旦错过，就没办法再通过其他渠道获得。如果你不想因为错过了什么而追悔莫及，那么你就必须……很遗憾，他们就希望你这么想。</p>
@@ -132,79 +215,89 @@
 <p>所以你问我怎么说？<strong>当然是去玩买断制游戏啦</strong>。</p>
 </div>
 <span id="more"></span>
-
 <hr>
 <p>吐槽完了，研究正事。</p>
 <p>这篇文章还有姐妹篇：<a href="/categories/thoughts/design-comparison-of-games-ranking-system/">游戏排位系统的设计横向考察</a>，可以两篇同看，相信会更明白。</p>
 <p>按照现在最流行的排位系统 + Season Pass 驱动的游戏运营模式，排位系统与其关联的其他应用场景，基本上可以像下图一样，划分为两条横轴和一条纵轴：</p>
-<p><a href="/thoughts/visual-design-of-ranking-system/ranking-system.png" class="gallery-item"><img src="/thoughts/visual-design-of-ranking-system/ranking-system.png"></a></p>
+<p><a href="ranking-system.png" class="gallery-item"><img src="ranking-system.png" alt=""></a></p>
 <p>排位系统将游戏的核心玩法纳入一个稳定可循环的框架，而 Season Pass 则以赛季为周期，源源不断地将新的游戏内容打包推送给玩家，为玩家提供游戏动力。玩家消耗时间或金钱，从 Season Pass 中获取相应的奖励内容，而厂商则从中获得营收。</p>
 <p>作为游戏的核心系统，段位集中体现了玩家在排位系统中获得的成就，自然需要不厌其烦地反复展示。这既是一种激励，在段位比较低的时候，也可以变成一种无形的鞭策。总之，我们会在很多需要展示玩家信息的界面里看到段位图标或它的变体，比如头像框。所以在设计段位图标的时候，也需要将这些衍生的应用场景纳入考量范围。</p>
 <p>段位图标在这个系统里面当然重要，但单独提升段位图标的视觉酷炫度是否可行？有没有更好的方式来提升整个排位系统的流程体验？在横向考察、对比过众多游戏之后，我的建议是这样的：</p>
-<h2 id="一、提取设计概念"><a href="#一、提取设计概念" class="headerlink" title="一、提取设计概念"></a>一、提取设计概念</h2><p><a href="/thoughts/visual-design-of-ranking-system/fad4a41ad5ddfd1cbe62d1b954b9dd2c_detail.jpg" class="gallery-item"><img src="/thoughts/visual-design-of-ranking-system/fad4a41ad5ddfd1cbe62d1b954b9dd2c_detail.jpg"></a></p>
-<p><a href="/thoughts/visual-design-of-ranking-system/Dota-Underlords-Seasonal-Rank-System-October-2019-Esports-Tales.jpg" class="gallery-item"><img src="/thoughts/visual-design-of-ranking-system/Dota-Underlords-Seasonal-Rank-System-October-2019-Esports-Tales.jpg"></a></p>
+<h2 id="一、提取设计概念">一、提取设计概念</h2>
+<p><a href="fad4a41ad5ddfd1cbe62d1b954b9dd2c_detail.jpg" class="gallery-item"><img src="fad4a41ad5ddfd1cbe62d1b954b9dd2c_detail.jpg" alt=""></a></p>
+<p><a href="Dota-Underlords-Seasonal-Rank-System-October-2019-Esports-Tales.jpg" class="gallery-item"><img src="Dota-Underlords-Seasonal-Rank-System-October-2019-Esports-Tales.jpg" alt=""></a></p>
 <hr>
-<h2 id="二、视觉风格的塑造与强化"><a href="#二、视觉风格的塑造与强化" class="headerlink" title="二、视觉风格的塑造与强化"></a>二、视觉风格的塑造与强化</h2><p>我们必须实现提前声明：<strong>游戏当然可以、也必须追求视觉风格的独特性，但风格必须保持主题稳定，整体协调</strong>。</p>
+<h2 id="二、视觉风格的塑造与强化">二、视觉风格的塑造与强化</h2>
+<p>我们必须实现提前声明：<strong>游戏当然可以、也必须追求视觉风格的独特性，但风格必须保持主题稳定，整体协调</strong>。</p>
 <p>游戏的外围系统，比如常见的皮肤售卖、营销节点，设计风格可以更有弹性，但游戏的核心系统必须契合游戏的整体调性，保持一致的视觉体验，才行给玩家留下稳定强烈的品牌印象。</p>
 <p>排位赛作为竞技游戏的核心模块，它的视觉体验当然也很难和游戏的其他模块割裂开来。如果我们打算全方位地翻新整个排位赛系统的视觉设计，那可能要跟英雄联盟推出 Hextech 一样，提前做好全局规划，逐步迭代整体视觉。然而即使是 Hextech，虽然视觉的提升非常巨大，但前后的风格传承也非常明显，并不是将游戏的既有风格置之不理，而是在既有风格的基础上加入 Art Deco，再以皮尔特沃夫的科技为支点，从而与世界观完美融合。</p>
 <p>Arena of Valor 经过几年的迭代，视觉风格已经比较稳定，就是以光明圣殿的风格为代表，充满几何线条的秩序感，同时又有很多幻想的反重力装置，兼具未来感。</p>
-<p><a href="/thoughts/visual-design-of-ranking-system/1ab72cc528d0560a45c38fcf7cf685b4_detail.jpg" class="gallery-item"><img src="/thoughts/visual-design-of-ranking-system/1ab72cc528d0560a45c38fcf7cf685b4_detail.jpg"></a></p>
+<p><a href="1ab72cc528d0560a45c38fcf7cf685b4_detail.jpg" class="gallery-item"><img src="1ab72cc528d0560a45c38fcf7cf685b4_detail.jpg" alt=""></a></p>
 <p>光明圣殿可以代表 Arena of Valor 的特殊美学</p>
-<p><a href="/thoughts/visual-design-of-ranking-system/shadow-fight-arena-chests.png" class="gallery-item"><img src="/thoughts/visual-design-of-ranking-system/shadow-fight-arena-chests.png"></a></p>
+<p><a href="shadow-fight-arena-chests.png" class="gallery-item"><img src="shadow-fight-arena-chests.png" alt=""></a></p>
 <p>Shadow Fight Arena 的一些宝箱设计</p>
-<p><a href="/thoughts/visual-design-of-ranking-system/APEX-LEGENDS-UI-Seasons-3-5.jpg" class="gallery-item"><img src="/thoughts/visual-design-of-ranking-system/APEX-LEGENDS-UI-Seasons-3-5.jpg"></a></p>
-<p><a href="/thoughts/visual-design-of-ranking-system/Marvin-Washington-Destiny-2-Skins-and-Livery-1.jpg" class="gallery-item"><img src="/thoughts/visual-design-of-ranking-system/Marvin-Washington-Destiny-2-Skins-and-Livery-1.jpg"></a></p>
-<p><a href="/thoughts/visual-design-of-ranking-system/Destiny-UI-The-Taken-King.jpg" class="gallery-item"><img src="/thoughts/visual-design-of-ranking-system/Destiny-UI-The-Taken-King.jpg"></a></p>
-<p><a href="/thoughts/visual-design-of-ranking-system/Destiny-2-Ranked-Icons-on-Behance.png" class="gallery-item"><img src="/thoughts/visual-design-of-ranking-system/Destiny-2-Ranked-Icons-on-Behance.png"></a></p>
-<h2 id="三、场景化与代入感"><a href="#三、场景化与代入感" class="headerlink" title="三、场景化与代入感"></a>三、场景化与代入感</h2><p>玩 Devil May Cry 5 _（以下简称 DMC5）_的时候，它的装备系统给我留下了非常深的印象。如果你还没有玩过这个游戏，也不打算去试一下，那我建议你看一下它的 Trailer：</p>
+<p><a href="APEX-LEGENDS-UI-Seasons-3-5.jpg" class="gallery-item"><img src="APEX-LEGENDS-UI-Seasons-3-5.jpg" alt=""></a></p>
+<p><a href="Marvin-Washington-Destiny-2-Skins-and-Livery-1.jpg" class="gallery-item"><img src="Marvin-Washington-Destiny-2-Skins-and-Livery-1.jpg" alt=""></a></p>
+<p><a href="Destiny-UI-The-Taken-King.jpg" class="gallery-item"><img src="Destiny-UI-The-Taken-King.jpg" alt=""></a></p>
+<p><a href="Destiny-2-Ranked-Icons-on-Behance.png" class="gallery-item"><img src="Destiny-2-Ranked-Icons-on-Behance.png" alt=""></a></p>
+<h2 id="三、场景化与代入感">三、场景化与代入感</h2>
+<p>玩 Devil May Cry 5 _（以下简称 DMC5）_的时候，它的装备系统给我留下了非常深的印象。如果你还没有玩过这个游戏，也不打算去试一下，那我建议你看一下它的 Trailer：</p>
 <p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=k2ltzFooKSs">https://www.youtube.com/watch?v=k2ltzFooKSs</a></p>
 <p>注意 Nero 出场时的那辆挂着「Devil May Cry」灯带的厢式货车，后面我们就会发现那完全就是 Nico 这姑娘的后勤基地，Nero 的武器、义肢还有其他装备都在这个货厢内部更换。这个装备系统设定合理，场景切换流畅，代入感十足，与大部分游戏的常规装备系统相比，可谓鹤立鸡群了。</p>
-<p><a href="/thoughts/visual-design-of-ranking-system/dd31def0d98f0634ade4d80c738464d9_detail.jpg" class="gallery-item"><img src="/thoughts/visual-design-of-ranking-system/dd31def0d98f0634ade4d80c738464d9_detail.jpg"></a></p>
+<p><a href="dd31def0d98f0634ade4d80c738464d9_detail.jpg" class="gallery-item"><img src="dd31def0d98f0634ade4d80c738464d9_detail.jpg" alt=""></a></p>
 <p>装备列表</p>
-<p><a href="/thoughts/visual-design-of-ranking-system/d91e9d293870af13eb15b3df358e71b7_detail.jpg" class="gallery-item"><img src="/thoughts/visual-design-of-ranking-system/d91e9d293870af13eb15b3df358e71b7_detail.jpg"></a></p>
+<p><a href="d91e9d293870af13eb15b3df358e71b7_detail.jpg" class="gallery-item"><img src="d91e9d293870af13eb15b3df358e71b7_detail.jpg" alt=""></a></p>
 <p>Nico 的报告：Nico 除了担当研发和维护装备的技师，还负责收集和调查各种数据。</p>
 <p>2019 年发行的 Call of Duty: Modern Warfare，里面的装备系统也采用了近似的设计，但因为少了一个 Nico 这样身材火爆性格可人的妹子，所以仍然稍逊一筹。</p>
 <p>Call of Duty: Modern Warfare 装备系统</p>
 <p>所以王者荣耀排位界面从赛季皮肤换成了世界观插画，尽管叙事性只是从无到有，但给人的想象空间却大了很多。</p>
-<p><a href="/thoughts/visual-design-of-ranking-system/c646a13ddee2c6d5150401a690dbf4bf_detail.jpg" class="gallery-item"><img src="/thoughts/visual-design-of-ranking-system/c646a13ddee2c6d5150401a690dbf4bf_detail.jpg"></a></p>
+<p><a href="c646a13ddee2c6d5150401a690dbf4bf_detail.jpg" class="gallery-item"><img src="c646a13ddee2c6d5150401a690dbf4bf_detail.jpg" alt=""></a></p>
 <p>王者荣耀 S27 赛季的排位入口界面</p>
-<h3 id="可以场景化的排位流程"><a href="#可以场景化的排位流程" class="headerlink" title="可以场景化的排位流程"></a>可以场景化的排位流程</h3><p>PUBG 一百名玩家齐聚在机场的大场面，是场景化设计的极佳范例。很少有人意识到，这个流程对应到英雄联盟这样的 MOBA 游戏里，就只能在按下 PLAY 按钮后开始无聊地等待计时。</p>
+<h3 id="可以场景化的排位流程">可以场景化的排位流程</h3>
+<p>PUBG 一百名玩家齐聚在机场的大场面，是场景化设计的极佳范例。很少有人意识到，这个流程对应到英雄联盟这样的 MOBA 游戏里，就只能在按下 PLAY 按钮后开始无聊地等待计时。</p>
 <p>MOBA 游戏注重英雄的刻画，但需要指出的是，玩家的形象实际上从未存在过。在 PUBG 和 Fortnite 里，参与游戏的是玩家本人的虚拟形象，所以玩家可以任意地装扮自己。而在 MOBA 游戏里，玩家就是现实里的玩家本人，虽然英雄也可以更换皮肤，但它只是玩家操作的机体，皮肤差不多就相当于机体换个涂装。</p>
 <p>在 FPS 游戏里，也存在像守望先锋、Apex、Valorant 这样走技能路线的，在这些游戏里，玩家的角色逻辑倒是与 MOBA 游戏比较像。</p>
 <p>如果考虑走场景化的路线，以下这些环节都存在场景化的可能：</p>
-<h4 id="1-组队界面"><a href="#1-组队界面" class="headerlink" title="1. 组队界面"></a>1. 组队界面</h4><p><a href="/thoughts/visual-design-of-ranking-system/image.jpg" class="gallery-item"><img src="/thoughts/visual-design-of-ranking-system/image.jpg"></a></p>
+<h4 id="1\-组队界面">1. 组队界面</h4>
+<p><a href="image.jpg" class="gallery-item"><img src="image.jpg" alt=""></a></p>
 <p>英雄联盟的组队界面</p>
-<p><a href="/thoughts/visual-design-of-ranking-system/valorant-lobby.png" title="Lobby screenshot of Valorant video game interface." class="gallery-item"><img src="/thoughts/visual-design-of-ranking-system/valorant-lobby.png" alt="Lobby screenshot of Valorant video game interface."><span class="image-caption">Lobby screenshot of Valorant video game interface.</span></a></p>
+<p><a href="valorant-lobby.png" title="Lobby screenshot of Valorant video game interface." class="gallery-item"><img src="valorant-lobby.png" alt="Lobby screenshot of Valorant video game interface."></a></p>
 <p>Valorant 的组队界面</p>
-<p><a href="/thoughts/visual-design-of-ranking-system/apex-legends-matchmaking-1920x1080.jpg" title="Matchmaking screenshot of Apex Legends video game interface." class="gallery-item"><img src="/thoughts/visual-design-of-ranking-system/apex-legends-matchmaking-1920x1080.jpg" alt="Matchmaking screenshot of Apex Legends video game interface."><span class="image-caption">Matchmaking screenshot of Apex Legends video game interface.</span></a></p>
+<p><a href="apex-legends-matchmaking-1920x1080.jpg" title="Matchmaking screenshot of Apex Legends video game interface." class="gallery-item"><img src="apex-legends-matchmaking-1920x1080.jpg" alt="Matchmaking screenshot of Apex Legends video game interface."></a></p>
 <p>Apex Legends 的组队界面</p>
-<h4 id="2-段位提升"><a href="#2-段位提升" class="headerlink" title="2. 段位提升"></a>2. 段位提升</h4><p>像阴阳师那样，每个称号就是一个大段，导致段位太多，最后图标不得堕入妖艳浮夸的尴尬境地，这样的游戏毕竟不多。大多数的游戏，每个段位都分为若干个星级，提升星级比较简单，可以频繁地激励玩家，大段位之间的晋级赛则充满挑战。这样的升级路径张弛有度，节奏感更好。</p>
-<h4 id="3-比赛奖励"><a href="#3-比赛奖励" class="headerlink" title="3. 比赛奖励"></a>3. 比赛奖励</h4><p>守望先锋奖励结算的动态效果非常精彩，引来了很多效仿者。比如 Apex Legends 的这个小机器人，笨头笨脑，有点呆萌，给人的印象也非常深刻。</p>
+<h4 id="2\-段位提升">2. 段位提升</h4>
+<p>像阴阳师那样，每个称号就是一个大段，导致段位太多，最后图标不得堕入妖艳浮夸的尴尬境地，这样的游戏毕竟不多。大多数的游戏，每个段位都分为若干个星级，提升星级比较简单，可以频繁地激励玩家，大段位之间的晋级赛则充满挑战。这样的升级路径张弛有度，节奏感更好。</p>
+<h4 id="3\-比赛奖励">3. 比赛奖励</h4>
+<p>守望先锋奖励结算的动态效果非常精彩，引来了很多效仿者。比如 Apex Legends 的这个小机器人，笨头笨脑，有点呆萌，给人的印象也非常深刻。</p>
 <p>Apex 广泛地运用三角形元素，连赛后奖励都是三个，正好对应小机器人掉落的三片装甲。</p>
 <p>如果我们的排位流程以光明圣殿为主题，用圣殿的某个角色或者元素作为颁奖的引子，想必也能制造精彩的局部细节。</p>
 <p>当然也有节省资源的做法，比如风暴英雄，用六边形元素形成一个抽屉，从中推出奖励，也非常贴合它的设计主题。</p>
-<p><a href="/thoughts/visual-design-of-ranking-system/b7698a66b1cba7b3d9d02f6329db8b69_detail.jpg" class="gallery-item"><img src="/thoughts/visual-design-of-ranking-system/b7698a66b1cba7b3d9d02f6329db8b69_detail.jpg"></a></p>
+<p><a href="b7698a66b1cba7b3d9d02f6329db8b69_detail.jpg" class="gallery-item"><img src="b7698a66b1cba7b3d9d02f6329db8b69_detail.jpg" alt=""></a></p>
 <p>风暴英雄的奖励结算界面</p>
-<h4 id="4-赛季结算"><a href="#4-赛季结算" class="headerlink" title="4. 赛季结算"></a>4. 赛季结算</h4><h2 id="四、流程的叙事性"><a href="#四、流程的叙事性" class="headerlink" title="四、流程的叙事性"></a>四、流程的叙事性</h2><p>以英雄联盟为代表的 MOBA 游戏，游戏流程都非常简单直接，点击 PLAY 按钮，等待玩家匹配，然后就进入 BP 界面，双方确定阵容，Welcome to the rift~</p>
+<h4 id="4\-赛季结算">4. 赛季结算</h4>
+<h2 id="四、流程的叙事性">四、流程的叙事性</h2>
+<p>以英雄联盟为代表的 MOBA 游戏，游戏流程都非常简单直接，点击 PLAY 按钮，等待玩家匹配，然后就进入 BP 界面，双方确定阵容，Welcome to the rift~</p>
 <p>这个流程沿袭自最早的 Dota，因为 Dota 只是一张 Warcraft 3 的自定义地图，完全是基于玩法的，脱离 Warcraft 3 世界观以后，玩法之外的设定约等于没有。</p>
-<p><a href="/thoughts/visual-design-of-ranking-system/dota-allstars-version-v6-78b.jpeg" class="gallery-item"><img src="/thoughts/visual-design-of-ranking-system/dota-allstars-version-v6-78b.jpeg"></a></p>
+<p><a href="dota-allstars-version-v6-78b.jpeg" class="gallery-item"><img src="dota-allstars-version-v6-78b.jpeg" alt=""></a></p>
 <p>Dota Allstars</p>
 <p>但这个游戏模式非常成功，早已深入人心，导致后来的类型开拓者只能基于约定俗成的流程修修补补：Dota 2 的世界观建设似乎早就躺平了，而英雄联盟宇宙经过十几年的经营，尽管现在已经非常宏大，也成功地塑造过很多个性鲜明的英雄形象，但召唤师_（也就是玩家）_是什么角色？与他们所操作的英雄是什么关系？在删除战争学院这个尴尬的设定以后，这里面的逻辑都有些语焉不详了。</p>
 <p>所以 MOBA 游戏的流程设定有些先天不良，虽然玩家早已习惯，但只要跟 PUBG 那种充满戏剧性的流程对照一下，就只能用朴实无华、枯燥乏味来形容。</p>
-<h3 id="PUBG-的游戏流程"><a href="#PUBG-的游戏流程" class="headerlink" title="PUBG 的游戏流程"></a>PUBG 的游戏流程</h3><p>我们都知道 PUBG 的游戏背景是从大逃杀衍化而来，一百名玩家被空投到一个孤岛上各自为战，最后活下来的玩家或小队才是唯一的赢家。这些设定并没有停留在背景设定的层面，每一步都被游戏画面呈现出来，可以被玩家体验到，足以帮助玩家快速进入情境。</p>
+<h3 id="pubg-的游戏流程">PUBG 的游戏流程</h3>
+<p>我们都知道 PUBG 的游戏背景是从大逃杀衍化而来，一百名玩家被空投到一个孤岛上各自为战，最后活下来的玩家或小队才是唯一的赢家。这些设定并没有停留在背景设定的层面，每一步都被游戏画面呈现出来，可以被玩家体验到，足以帮助玩家快速进入情境。</p>
 <p>因为一下子找不到完整的 PUBG 流程截图，所以姑且以一脉相承的《和平精英》为例：</p>
-<p><a href="/thoughts/visual-design-of-ranking-system/fa2a7bd70bf08a77c53ca7733b1836b3_detail.jpg" class="gallery-item"><img src="/thoughts/visual-design-of-ranking-system/fa2a7bd70bf08a77c53ca7733b1836b3_detail.jpg"></a></p>
+<p><a href="fa2a7bd70bf08a77c53ca7733b1836b3_detail.jpg" class="gallery-item"><img src="fa2a7bd70bf08a77c53ca7733b1836b3_detail.jpg" alt=""></a></p>
 <p>第一步：玩家在机场集结</p>
-<p><a href="/thoughts/visual-design-of-ranking-system/3dd0f4fa7936fbca6d0948e0de399b68_detail.jpg" class="gallery-item"><img src="/thoughts/visual-design-of-ranking-system/3dd0f4fa7936fbca6d0948e0de399b68_detail.jpg"></a></p>
+<p><a href="3dd0f4fa7936fbca6d0948e0de399b68_detail.jpg" class="gallery-item"><img src="3dd0f4fa7936fbca6d0948e0de399b68_detail.jpg" alt=""></a></p>
 <p>第二步：飞机将玩家送往岛上</p>
-<p><a href="/thoughts/visual-design-of-ranking-system/cbd044783cc730791ce5782a8357ecbd_detail.jpg" class="gallery-item"><img src="/thoughts/visual-design-of-ranking-system/cbd044783cc730791ce5782a8357ecbd_detail.jpg"></a></p>
+<p><a href="cbd044783cc730791ce5782a8357ecbd_detail.jpg" class="gallery-item"><img src="cbd044783cc730791ce5782a8357ecbd_detail.jpg" alt=""></a></p>
 <p>第三步：玩家选择一个地方空投，开始为生存而战</p>
-<p><a href="/thoughts/visual-design-of-ranking-system/85365389b35659831bf0ab46a313cad0_detail.jpg" class="gallery-item"><img src="/thoughts/visual-design-of-ranking-system/85365389b35659831bf0ab46a313cad0_detail.jpg"></a></p>
+<p><a href="85365389b35659831bf0ab46a313cad0_detail.jpg" class="gallery-item"><img src="85365389b35659831bf0ab46a313cad0_detail.jpg" alt=""></a></p>
 <p>游戏结算：玩家在出口集合</p>
 <p>虽然并不是 PUBG 开创了大逃杀类型，DayZ 和 H1Z1 推出的时间更早，但不妨碍 PUBG 最终脱颖而出。与常规的匹配、开打相比，这个独特的游戏流程，以及「大吉大利，今晚吃鸡」这样的梗所带来的品牌效应无疑是洗脑级别的。所以我们看到后来的追随者，比如 Fortnite，也袭用了差不多的设定：</p>
-<p><a href="/thoughts/visual-design-of-ranking-system/28ba649fdea23359fc6457e3d48eda52_detail.jpg" class="gallery-item"><img src="/thoughts/visual-design-of-ranking-system/28ba649fdea23359fc6457e3d48eda52_detail.jpg"></a></p>
+<p><a href="28ba649fdea23359fc6457e3d48eda52_detail.jpg" class="gallery-item"><img src="28ba649fdea23359fc6457e3d48eda52_detail.jpg" alt=""></a></p>
 <p>Fortnite 把飞机换成了热气球大巴车</p>
-<h3 id="搭建叙事性流程"><a href="#搭建叙事性流程" class="headerlink" title="搭建叙事性流程"></a>搭建叙事性流程</h3><p>所以我们能否抛开约定俗成的观念，切实地考虑以下这些问题：</p>
+<h3 id="搭建叙事性流程">搭建叙事性流程</h3>
+<p>所以我们能否抛开约定俗成的观念，切实地考虑以下这些问题：</p>
 <ol>
 <li>玩家为什么要参加排位赛？</li>
 <li>谁举办了这些比赛？</li>
@@ -221,7 +314,7 @@
 <ol>
 <li><a target="_blank" rel="noopener" href="https://interfaceingame.com/">Interface In Game | Collection of video games UI | Screenshots and videos</a></li>
 <li><a target="_blank" rel="noopener" href="https://www.gameuidatabase.com/index.php">Game UI Database</a></li>
-<li><a target="_blank" rel="noopener" href="https://gameui.net/">GAMEUI - 游戏UI&#x2F;UX学习、交流、分享平台</a></li>
+<li><a target="_blank" rel="noopener" href="https://gameui.net/">GAMEUI - 游戏UI/UX学习、交流、分享平台</a></li>
 </ol>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
@@ -290,35 +383,33 @@
   
 </article>
 </div>
-    </section>
+    </main>
     <footer class="footer pt-4 mt-5">
   <div class="container">
     <div class="py-3">
       <div class="row justify-content-between">
         <div class="col-6">
-          <img class="mb-3 lazyload" height="60" data-src="/assets/images/brand-waxacn.svg" alt="waxa.design" role="img">
-          <p class="mb-4">Kaero，自由设计师。喜好摄影、游历及文学，素来不务正业，以研究各种杂七杂八为能事。江西人，曾居上海、深圳，现定居苏州，承接各种与设计相关的事务与需求。</p>
-          <ul class="list-inline">
-            
-              <li class="list-inline-item">
-                <a target="_blank" rel="noopener" href="https://twitter.com/kaero">
-                  <img 0="Twitter" src="/images/icons/contact-twitter.svg">
-                </a>
-              </li>
-            
-              <li class="list-inline-item">
-                <a href="javascript:;">
-                  <img 0="微信" src="/images/icons/contact-wechat.svg">
-                </a>
-              </li>
-            
-              <li class="list-inline-item">
-                <a href="mailto:kaero.zhi@gmail.com">
-                  <img 0="邮箱" src="/images/icons/contact-mail.svg">
-                </a>
-              </li>
-            
-          </ul>
+          <img class="mb-3 lazyload" height="60" data-src="/" alt="Kaero Zhi" role="img">
+          <p class="mb-4">载山妻游吴市，思古人散步，吾骑小电驴以代之，自署吴散骑常侍，不亦可乎？</p>
+          <ul class="social-nav list-inline">
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-twitter" target="_blank" rel="noopener" href="https://twitter.com/kaero"><span>twitter</span></a>
+    </li>
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-github" target="_blank" rel="noopener" href="https://github.com/kaerozhi"><span>github</span></a>
+    </li>
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-instagram" target="_blank" rel="noopener" href="https://www.instagram.com/kaero/"><span>instagram</span></a>
+    </li>
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-pinterest" target="_blank" rel="noopener" href="https://www.pinterest.com/kaero/"><span>pinterest</span></a>
+    </li>
+    
+  </ul>
         </div>
         <div class="col-4">
           <h5>友情链接</h5>
@@ -355,53 +446,18 @@
     <hr class="hr" style="opacity: .25;">
     <div class="pt-3 pb-5">
       <ul class="list-inline mb-0 text-center">
-        <li class="list-inline-item">&copy; 2023 waxa.design</li>
+        <li class="list-inline-item">&copy; 2024 Kaero Zhi</li>
         
         <li class="list-inline-item">Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
-        <li class="list-inline-item">Designer <a href="https://waxa.design" target="_blank">Kaero</a></li>
+        <li class="list-inline-item">Designer <a href="https://kaerozhi.com" target="_blank">Kaero Zhi</a></li>
       </ul>
     </div>
   </div>
 </footer>
-  </main>
-  <div id="mobile-nav-dimmer"></div>
-<div id="mobile-nav">
-	<div id="mobile-nav-inner">
-		<ul class="mobile-nav">
-  
-    
-  <li class="nav-item ">
-    <a class="nav-item-link" href="/gallery">影像</a>
-  </li>
-  
-    
-  <li class="nav-item ">
-    <a class="nav-item-link" href="/stories">案例</a>
-  </li>
-  
-    
-  <li class="nav-item ">
-    <a class="nav-item-link" href="/archives">更新</a>
-  </li>
-  
-    
-  <li class="nav-item ">
-    <a class="nav-item-link" href="/about">关于</a>
-  </li>
-  
-  <li class="nav-item ">
-    <span class="local-search local-search-google local-search-plugin" style="">
-    <input type="search" placeholder="站内搜索" id="local-search-input" class="local-search-input-cls" style="">
-    <div id="local-search-result" class="local-search-result-cls"></div>
-</span>
-  </li>
-</ul>
-		
-	</div>
-</div>
-
+  </div>
   <script src="/libs/feather/feather.min.js"></script>
 <script src="/libs/lazysizes/lazysizes.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 
 
@@ -442,39 +498,6 @@
       })(jQuery);
   </script>
 
-
-<script>
-// 移动设备侦测
-var isMobile = {
-  Android: function () {
-    return navigator.userAgent.match(/Android/i);
-  },
-  BlackBerry: function () {
-    return navigator.userAgent.match(/BlackBerry/i);
-  },
-  iOS: function () {
-    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-  },
-  Opera: function () {
-    return navigator.userAgent.match(/Opera Mini/i);
-  },
-  Windows: function () {
-    return navigator.userAgent.match(/IEMobile/i);
-  },
-  any: function () {
-    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-  }
-};
-
-if ($('.local-search').resize() && !isMobile.any()) {
-	$.getScript('/js/search.js', function() {
-	  searchFunc("/search.xml", 'local-search-input', 'local-search-result');
-	});
-}
-</script>
-
-
-<script src="/js/mobile-nav.js"></script>
 
 
 <script src="/js/script.js"></script>
