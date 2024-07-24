@@ -218,12 +218,12 @@
     <div class="article-entry" itemprop="articleBody">
     
       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>最简单也最通用的办法是利用 Google 官方提供的功能，就在“您的共享项目”页面顶部就有这么一个链接：<br>
-<a href="images/image23.png" title="image" class="gallery-item"><img src="images/image23.png" alt="image"></a><span class="image-caption">image</span> <br>
+<a href="images/image23.png" title="image" class="gallery-item"><img src="images/image23.png" alt="image"><span class="image-caption">image</span></a> <br>
 点击这个链接转到定制界面：<br>
-<a target="_blank" rel="noopener" href="http://kaero.files.wordpress.com/2008/04/image251.pngwp-content/uploads/2008/04/image24.png"><a href="images/image-thumb5.png" title="定制界面" class="gallery-item"><img src="images/image-thumb5.png" alt="定制界面"></a><span class="image-caption">定制界面</span></a><br>
+<a target="_blank" rel="noopener" href="http://kaero.files.wordpress.com/2008/04/image251.pngwp-content/uploads/2008/04/image24.png"><a href="images/image-thumb5.png" title="定制界面" class="gallery-item"><img src="images/image-thumb5.png" alt="定制界面"><span class="image-caption">定制界面</span></a></a><br>
 一目了然非常简单，还提供了各种配色方案可以选择，你也可以将颜色方案设为“None”，它就会使用主题自带的CSS样式了。你只需在 Wordpress 后台为它新建一个文本 Widget，然后把这段代码粘贴到里面即可。</p>
 <p>不过这样在某些主题里面可能不是非常协调，比如我现在使用的 <a target="_blank" rel="noopener" href="http://oriol.f2o.org">Qwilm!</a> 主题，直接丢上去就是这样子的：<br>
-<a href="images/image25.png" title="image" class="gallery-item"><img src="images/image25.png" alt="image"></a><span class="image-caption">image</span> <br>
+<a href="images/image25.png" title="image" class="gallery-item"><img src="images/image25.png" alt="image"><span class="image-caption">image</span></a> <br>
 不但有两个标题，而且“了解详情”链接跟搜索的标题粘在一起了，看起来不是很舒服。如果你不懂 CSS，处理起来就比较麻烦，所以有必要寻找一些其他的办法。我这里提供两个参考链接：</p>
 <p>首先是这个 Google Reader Widget fore Wordpress：<a target="_blank" rel="noopener" href="http://nothingoutoftheordinary.com/2007/05/26/wordpress-google-reader-widget/" title="http://nothingoutoftheordinary.com/2007/05/26/wordpress-google-reader-widget/">http://nothingoutoftheordinary.com/2007/05/26/wordpress-google-reader-widget/</a>，标准的 Wordpress Widget，可以设置Cache时间。</p>
 <p>然后是这个：<a target="_blank" rel="noopener" href="http://www.chimp-simple.com/2007/06/29/wordpress-on-autopilot-automatic-posting-google-reader-to-wordpress/" title="http://www.chimp-simple.com/2007/06/29/wordpress-on-autopilot-automatic-posting-google-reader-to-wordpress/">http://www.chimp-simple.com/2007/06/29/wordpress-on-autopilot-automatic-posting-google-reader-to-wordpress/</a>，貌似更强大，未测试-_-</p>
@@ -247,7 +247,7 @@
             data-category-id="DIC_kwDOJ8B_Jc4ChHzF"
             data-mapping="pathname"
             data-strict="0"
-            data-reactions-enabled="1"
+            data-reactions-enabled="0"
             data-emit-metadata="0"
             data-input-position="top"
             data-theme="noborder_light"
@@ -414,6 +414,17 @@
 
 <script src="/js/script.js"></script>
 
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MC9D4W0FB6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-MC9D4W0FB6');
+    </script>
+    <!-- End Google Analytics -->
 
 </body>
 </html>

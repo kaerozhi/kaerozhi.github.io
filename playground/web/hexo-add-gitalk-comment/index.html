@@ -232,7 +232,7 @@
 <p>按照 <a target="_blank" rel="noopener" href="https://www.itfanr.cc/2019/04/30/hexo-add-gitalk-comment/">Hexo 博客添加 Gitalk 评论系统 </a> 的引导，流程非常顺利，细节满满。但因为大佬用的是 Swig 渲染器，而 Acorn 的渲染器是 EJS，所以细节略有不同，在此把过程分享出来，希望能对 EJS 用户有所启发。</p>
 <h2 id="创建-github oauth apps">创建 Github OAuth Apps</h2>
 <p>打开 Github 上的 <a target="_blank" rel="noopener" href="https://github.com/settings/developers">OAuth Apps</a>，点击右上角 <code>New OAuth App</code> ，逐项填写相应内容即可。</p>
-<p><a href="image-20230716191104781.png" title="注册界面" class="gallery-item"><img src="image-20230716191104781.png" alt="注册界面"></a><span class="image-caption">注册界面</span></p>
+<p><a href="image-20230716191104781.png" title="注册界面" class="gallery-item"><img src="image-20230716191104781.png" alt="注册界面"><span class="image-caption">注册界面</span></a></p>
 <p><code>Homepage URL</code> 即 Hexo 的主页地址，<code>Authorization callback URL</code> 为站点的回调地址，一般和主页相同即可。</p>
 <p>提交之后，得到 <code>Client ID</code> 和 <code>Client Secret</code> 备用。</p>
 <h2 id="自定义主题配置">自定义主题配置</h2>
@@ -273,7 +273,7 @@
             data-category-id="DIC_kwDOJ8B_Jc4ChHzF"
             data-mapping="pathname"
             data-strict="0"
-            data-reactions-enabled="1"
+            data-reactions-enabled="0"
             data-emit-metadata="0"
             data-input-position="top"
             data-theme="noborder_light"
@@ -440,6 +440,17 @@
 
 <script src="/js/script.js"></script>
 
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MC9D4W0FB6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-MC9D4W0FB6');
+    </script>
+    <!-- End Google Analytics -->
 
 </body>
 </html>

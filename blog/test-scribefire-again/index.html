@@ -219,7 +219,7 @@
     
       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>其实这个 Firefox 扩展，具体来说是它的前身，Performancing，那时候用过，功能觉得大致跟 Zoundry 差不多，也要设置一个 FTP 媒体库，而且发布的速度较慢无比，跟 Zoundry 那种按下发布马上就可以到网页上看到的效果是天壤之别呀。不过今天大概头脑发热，决意把所有的工具都尝试一篇——大概是被 Contribute 的龟速折磨出来的。Flock 相当差，不支持原生 API 上传也就罢了，好歹也弄个媒体库这样的笨方法，满足设计达人对图片的偏执狂呀。Windows Live Writer 的印象就更糟糕了，俺的 Live Space 它居然死活连接不上，这还是一家公司的产品呢……</p>
 <p>好，再次考察一下发布速度……顺便附带了一张图片：</p>
-<p><a href="images/8200782234847.png" title="Contribute toolbar" class="gallery-item"><img src="images/8200782234847.png" alt="Contribute toolbar"></a><span class="image-caption">Contribute toolbar</span></p>
+<p><a href="images/8200782234847.png" title="Contribute toolbar" class="gallery-item"><img src="images/8200782234847.png" alt="Contribute toolbar"><span class="image-caption">Contribute toolbar</span></a></p>
 <p>哇，大喜过望呀，<a target="_blank" rel="noopener" href="http://www.dreamhost.com/">Dreamhost</a> 的 <a target="_blank" rel="noopener" href="http://aeroom.net">aeroom.net</a> 貌似挂了……用国内主机的 <a target="_blank" rel="noopener" href="http://aeroom.org">aeroom.org</a> 测试（基于<a target="_blank" rel="noopener" href="http://www.pjhome.net/">PJBlog</a>），居然用 Blog 本身的 API 成功上传了呢。赞一个。不过 MSN 貌似不支持这样子上传。</p>
 <p>Publish 之。</p>
 <p>明白了一个问题，并非 ScribeFire 发布速度太慢，而是因为它默认存为了草稿，只要把 Settings 里面的 <code>Enable draft as default</code> 的选项去掉，就能在发布后马上在网页上面显示了。OK，再次 Publish 之。</p>
@@ -243,7 +243,7 @@
             data-category-id="DIC_kwDOJ8B_Jc4ChHzF"
             data-mapping="pathname"
             data-strict="0"
-            data-reactions-enabled="1"
+            data-reactions-enabled="0"
             data-emit-metadata="0"
             data-input-position="top"
             data-theme="noborder_light"
@@ -410,6 +410,17 @@
 
 <script src="/js/script.js"></script>
 
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MC9D4W0FB6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-MC9D4W0FB6');
+    </script>
+    <!-- End Google Analytics -->
 
 </body>
 </html>
