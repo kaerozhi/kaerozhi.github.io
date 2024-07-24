@@ -217,7 +217,7 @@
     
     <div class="article-entry" itemprop="articleBody">
     
-      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p><a href="images/google-chrome.jpg" title="google-chrome" class="gallery-item"><img src="images/google-chrome.jpg" alt="google-chrome"></a><br>
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p><a href="images/google-chrome.jpg" title="google-chrome" class="gallery-item"><img src="images/google-chrome.jpg" alt="google-chrome"></a><span class="image-caption">google-chrome</span><br>
 Google Chrome 正式发布了。第一时间试了试，页面的加载速度真快啊，绝对比 Firefox 快1倍以上。WebKit 核心，印象中自称最快的 Apple Safari 也是基于这个开发的吧，也难怪这么快了。不过功能真是相当地少简洁，普通浏览之外的特色功能，只有一个快捷方式值得一提吧。Javascript 调试器还是挺不错的，源代码查看就简陋多了：不分行，代码上色也相当糟糕。</p>
 <p>不管怎样，对于我来说 Firefox 仍然是默认浏览器，20多个扩展不能轻易就取代了。Google Chrome 还需要时间来观察，不知道会不会推出类似的扩展机制呢？</p>
 <p><strong>Update</strong>：所谓的“崩溃控制”，Google 官方是这样描述的：</p>
@@ -225,7 +225,7 @@ Google Chrome 正式发布了。第一时间试了试，页面的加载速度真
 <p>您所使用的各个标签页都在浏览器中独立运行，因此，即使某一个应用程序崩溃，也不会影响到其他任何进程。<a target="_blank" rel="noopener" href="http://www.google.com/support/chrome/bin/answer.py?answer=95672&amp;hl=zh_CN">了解详情</a>。</p>
 </blockquote>
 <p>其实奥妙就在这里：<br>
-<a href="image.png" title="image" class="gallery-item"><img src="image.png" alt="image"></a> <br>
+<a href="image.png" title="image" class="gallery-item"><img src="image.png" alt="image"></a><span class="image-caption">image</span> <br>
 每个标签都单独开了一个进程-_-</p>
 <p><strong>Update II</strong>：在 Chrome 文件夹下面发现了名为 Plugins 的文件夹，不过暂时只有一个 gears.dll。这么看来，应该早晚会推出 Chrome 的扩展吧。Chrome 安装时不能选择安装位置（这也是 Google 的一贯作风了，一想到 Google Desktop 曾经塞了 N 个 G 的索引文件在俺的 C 盘里面，俺就恨恨不平），而且安装的位置非常隐蔽，你可以在这样的路径下找到它：</p>
 <blockquote>
@@ -243,36 +243,27 @@ Google Chrome 正式发布了。第一时间试了试，页面的加载速度真
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/browser/" rel="tag">browser</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/google/" rel="tag">google</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/google-chrome/" rel="tag">google-chrome</a></li></ul>
 
+      
+      <div class="artile-comments">
+        <script src="https://giscus.app/client.js"
+            data-repo="kaerozhi/waxamedia"
+            data-repo-id="R_kgDOJ8B_JQ"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOJ8B_Jc4ChHzF"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="noborder_light"
+            data-lang="zh-CN"
+            crossorigin="anonymous"
+            async>
+        </script>
+      </div>
+      
     </footer>
   </div>
-  
-  <div class="artile-comments">
-    <section class="article-inner gitalk">
-      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script type="text/javascript">
-    var gitalk = new Gitalk({
-        clientID: '08c3d073d058ef04a656',
-        clientSecret: '020374f48336a5e66aa53517997994ee6ea40665',
-        repo: 'kaerozhi.github.io',
-        owner: 'kaerozhi',
-        admin: ['kaerozhi'],
-        id:'gitalk_20080903080000',
-        labels: 'gitalk'.split(',').filter(l => l),
-        perPage: 10,
-        pagerDirection: 'last',
-        createIssueManually: true,
-        distractionFreeMode: false
-    })
-
-    gitalk.render('gitalk-container')           
-</script>
-    </section>
-  </div>
-  
   
   
     
@@ -427,6 +418,7 @@ Google Chrome 正式发布了。第一时间试了试，页面的加载速度真
 
 
 <script src="/js/script.js"></script>
+
 
 </body>
 </html>

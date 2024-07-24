@@ -222,7 +222,7 @@
 <p>其实 Blog 能老老实实定期更新就很不错了，何必对架构和形式这么在意？折腾了三四年，从 ASP 的 PJBlog，到 PHP 的 Lifetype，再到 Wordpress，还有各种试用即弃的平台，最后还是觉得 Lifetype 比较理想。因为我涉猎的东西过于庞杂，放在一个博客，观众老爷们难免消化不良，必须开几个分支才行，而 Lifetype 是这里面开分支最方便的。</p>
 <p>可能你会觉得，这么一顿瞎折腾之后，应该不用再为这种事情伤脑筋了？毕竟 Blog 的主要目的应该是写作和分享，而不是测试不同的 Blog 平台。</p>
 <p>然而上手 Zoundry、Windows Live Writer（后文简称为 WLW）这样的本地软件之后，新问题又意外出现了：WLW 不能读取 Lifetype 的分类，Zoundry 略好，能读取分类但不能创建新分类，而这两个软件配合 Wordpress 便没有这些恼人的兼容性问题。虽说分类可以提前规划，但既然用了本地软件，就再也不想打开后台了 ，如果每次都得开网页进后台添加新分类，然后再回到 Zoundry 上面刷新，有时候还刷不出来，WTF……这也太麻烦了。</p>
-<p><a href="introducing-zoundry-raven.png" title="Zoundry Raven Beta" class="gallery-item"><img src="introducing-zoundry-raven.png" alt="Zoundry Raven Beta"></a></p>
+<p><a href="introducing-zoundry-raven.png" title="Zoundry Raven Beta" class="gallery-item"><img src="introducing-zoundry-raven.png" alt="Zoundry Raven Beta"></a><span class="image-caption">Zoundry Raven Beta</span></p>
 <p>Zoundry 最近更新了大版本，改名 Zoundry Raven，但分类的读取问题依然如故。实在忍无可忍，所以今天我决定励精图治，深入研究 Lifetype 的源代码，看看能不能暴力魔改，彻底搞定兼容性问题。但最后却发现，原来 Lifetype 根本没有提供相关的接口……我倒是想一晚上把 PHP 学到精通，然后自己补上这部分，奈何大脑并没有那么发达，PHP 也不是一晚上就能学好的……</p>
 <p>所以，要不要再次跳船，换到 Wordpress 呢？</p>
 <p>算了算了，别整天瞎操心这些事情了，形式都是次要的，每天写点东西，保持内容更新才是王道。</p>
@@ -237,36 +237,27 @@
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Blog-Tools/" rel="tag">Blog Tools</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Zoundry/" rel="tag">Zoundry</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/lifetype/" rel="tag">lifetype</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wordpress/" rel="tag">wordpress</a></li></ul>
 
+      
+      <div class="artile-comments">
+        <script src="https://giscus.app/client.js"
+            data-repo="kaerozhi/waxamedia"
+            data-repo-id="R_kgDOJ8B_JQ"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOJ8B_Jc4ChHzF"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="noborder_light"
+            data-lang="zh-CN"
+            crossorigin="anonymous"
+            async>
+        </script>
+      </div>
+      
     </footer>
   </div>
-  
-  <div class="artile-comments">
-    <section class="article-inner gitalk">
-      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script type="text/javascript">
-    var gitalk = new Gitalk({
-        clientID: '08c3d073d058ef04a656',
-        clientSecret: '020374f48336a5e66aa53517997994ee6ea40665',
-        repo: 'kaerozhi.github.io',
-        owner: 'kaerozhi',
-        admin: ['kaerozhi'],
-        id:'gitalk_20080404080000',
-        labels: 'gitalk'.split(',').filter(l => l),
-        perPage: 10,
-        pagerDirection: 'last',
-        createIssueManually: true,
-        distractionFreeMode: false
-    })
-
-    gitalk.render('gitalk-container')           
-</script>
-    </section>
-  </div>
-  
   
   
     
@@ -421,6 +412,7 @@
 
 
 <script src="/js/script.js"></script>
+
 
 </body>
 </html>

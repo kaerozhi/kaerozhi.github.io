@@ -239,7 +239,7 @@
 <span id="more"></span>
 <h2 id="inpaint-体验">Inpaint 体验</h2>
 <p>我们先在 Photoshop 里面生成一张图，模型还是 DreamShaper 7，<code>a beautiful young girl</code>常规起手。注意这个插件不兼容画板，新建文档的时候记得取消画板选项，分辨率依旧是 512x768。走起：</p>
-<p><a href="output_image.png" title="A beautiful young girl" class="gallery-item"><img src="output_image.png" alt="A beautiful young girl"></a></p>
+<p><a href="output_image.png" title="A beautiful young girl" class="gallery-item"><img src="output_image.png" alt="A beautiful young girl"></a><span class="image-caption">A beautiful young girl</span></p>
 <p>我们从生成的结果中选了一张比较满意的，但希望把眼睛换成绿色。试着用白色画笔涂抹眼睛，作为 Inpaint 蒙版：</p>
 <p><a href="eyes-white-mask.png" class="gallery-item"><img src="eyes-white-mask.png" alt=""></a></p>
 <p>此时维持原 Prompts 不变，选中整张图片，在原来的 Prompts 基础上增加眼睛的描述：<code>green eyes, light green pupils, high detailed eyes</code>，绘图模式切换至 Inpaint，点击 Generate Inpaint，五选一之后得到：</p>
@@ -320,36 +320,27 @@
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/photoshop/" rel="tag">photoshop</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/plugins/" rel="tag">plugins</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/stable-diffusion/" rel="tag">stable diffusion</a></li></ul>
 
+      
+      <div class="artile-comments">
+        <script src="https://giscus.app/client.js"
+            data-repo="kaerozhi/waxamedia"
+            data-repo-id="R_kgDOJ8B_JQ"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOJ8B_Jc4ChHzF"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="noborder_light"
+            data-lang="zh-CN"
+            crossorigin="anonymous"
+            async>
+        </script>
+      </div>
+      
     </footer>
   </div>
-  
-  <div class="artile-comments">
-    <section class="article-inner gitalk">
-      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script type="text/javascript">
-    var gitalk = new Gitalk({
-        clientID: '08c3d073d058ef04a656',
-        clientSecret: '020374f48336a5e66aa53517997994ee6ea40665',
-        repo: 'kaerozhi.github.io',
-        owner: 'kaerozhi',
-        admin: ['kaerozhi'],
-        id:'gitalk_20230709105500',
-        labels: 'gitalk'.split(',').filter(l => l),
-        perPage: 10,
-        pagerDirection: 'last',
-        createIssueManually: true,
-        distractionFreeMode: false
-    })
-
-    gitalk.render('gitalk-container')           
-</script>
-    </section>
-  </div>
-  
   
   
     
@@ -504,6 +495,7 @@
 
 
 <script src="/js/script.js"></script>
+
 
 </body>
 </html>

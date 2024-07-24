@@ -218,7 +218,7 @@
     <div class="article-entry" itemprop="articleBody">
     
       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>在使用过程中，又发现 Windows Live Writer 的更多新功能。</p>
-<p><a href="windows-live-writer.jpg" title="Windows Live Writer" class="gallery-item"><img src="windows-live-writer.jpg" alt="Windows Live Writer"></a></p>
+<p><a href="windows-live-writer.jpg" title="Windows Live Writer" class="gallery-item"><img src="windows-live-writer.jpg" alt="Windows Live Writer"></a><span class="image-caption">Windows Live Writer</span></p>
 <p><a target="_blank" rel="noopener" href="http://www.blogger.com" title="Blogger">Blogger</a>不支持图片上传，Live Writer 会提醒你是否要配置一个FTP服务器，与<a target="_blank" rel="noopener" href="http://cn.zoundry.com/" title="非常不错的Blog离线发布工具">Zoundry</a>、<a target="_blank" rel="noopener" href="http://www.scribefire.com/" title="Firefox的Blog发布扩展，前身是PerFormancing">ScribeFire</a>多个 Blog 共用一个 FTP 账号不同，Live Writer 允许你为每个 Blog 配置不同的FTP，自由度大了很多。</p>
 <p>虽然大多数人可能都只有一个FTP账号，但凡事总有例外。之前在数据引擎买了一个 ASP 空间，装上了 <a target="_blank" rel="noopener" href="http://www.pjhome.net" title="国内比较流行的ASP Blog程序">PJBlog</a>；然后又眼馋 Dreamhost 的巨大空间，去年也下手一份，安装了 Lifetype。所以我既不想把PJBlog 的图传到 Dreamhost 服务器，也不想把 Lifetype 的图传到数据引擎的服务器。况且共用一个 FTP 的话，如果一个服务器出问题，两个 Blog 的图片都得变大红叉。</p>
 <p>Live Writer 会自行判断 Blog 是否支持 API 上传，不过 PJBlog 上传失败，不知道 Lifetype 如何。对 Live Space 的支持自然是最完善的，Zoundry、ScribeFire 都没办法向 Live Space 上传图片，Live Writer 表示毫无压力。但因为 Live Space 本身的限制，大图会自动压缩到 600px 以内。</p>
@@ -237,36 +237,27 @@
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Blog-Tools/" rel="tag">Blog Tools</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Software/" rel="tag">Software</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Windows-Live-Writer/" rel="tag">Windows Live Writer</a></li></ul>
 
+      
+      <div class="artile-comments">
+        <script src="https://giscus.app/client.js"
+            data-repo="kaerozhi/waxamedia"
+            data-repo-id="R_kgDOJ8B_JQ"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOJ8B_Jc4ChHzF"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="noborder_light"
+            data-lang="zh-CN"
+            crossorigin="anonymous"
+            async>
+        </script>
+      </div>
+      
     </footer>
   </div>
-  
-  <div class="artile-comments">
-    <section class="article-inner gitalk">
-      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script type="text/javascript">
-    var gitalk = new Gitalk({
-        clientID: '08c3d073d058ef04a656',
-        clientSecret: '020374f48336a5e66aa53517997994ee6ea40665',
-        repo: 'kaerozhi.github.io',
-        owner: 'kaerozhi',
-        admin: ['kaerozhi'],
-        id:'gitalk_20070804080000',
-        labels: 'gitalk'.split(',').filter(l => l),
-        perPage: 10,
-        pagerDirection: 'last',
-        createIssueManually: true,
-        distractionFreeMode: false
-    })
-
-    gitalk.render('gitalk-container')           
-</script>
-    </section>
-  </div>
-  
   
   
     
@@ -421,6 +412,7 @@
 
 
 <script src="/js/script.js"></script>
+
 
 </body>
 </html>
