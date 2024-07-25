@@ -10,7 +10,7 @@
     <meta name="description" content="傍晚游吴市，因思古人散步，予载山妻，骑小电驴，自署吴散骑常侍，不亦可乎？">
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-  <title>标签: Firefox |  Kaero Zhi</title>
+  <title>Hexo 里面的 category_map |  Kaero Zhi</title>
   
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/webclip/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/webclip/apple-touch-icon-72x72.png">
@@ -25,8 +25,8 @@
   
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
-    
-    
+  
+  
     <link rel="shortcut icon" href="/assets/images/favicon.png">
   
   
@@ -49,7 +49,7 @@
 </head>
 
 
-<body class=" tag tag-Firefox">
+<body class=" post layout-post category-playground category-web tag-hexo">
   <div class="main">
     <header id="header" class="my-5">
 	<nav class="navbar navbar-expand-md">
@@ -186,102 +186,99 @@
 </header>
     <main>
       <div class="container">
-  <div class="page-heading py-5 mt-5">
-  <!-- page-type-title -->
+  <article id="post-category-map-in-hexo" class="article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+        <div class="article-meta">
+          <time class="text-gray" datetime="2024-07-24T13:36:00.000Z" itemprop="datePublished">
+  2024-07-24
+</time>
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/playground/">玩艺</a> / <a class="article-category-link" href="/categories/playground/web/">网站</a>
+  </div>
+
+        </div>
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hexo 里面的 category_map
+    </h1>
+  
+
+        
+      
+    </header>
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+    
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>如诸君所见，本站的分类名，比如文字、游历、案例，都是中文。但我又有个需求，希望每个分类能有一些特别的小设计，最简单的当然是设置单独的 CSS class。代码如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">class</span>=<span class="string">&quot;category-&lt;%= page.category %&gt;&quot;</span>&gt;</span></span><br><span class="line">...</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>按照以上代码，再进入本站的「文字」分类页，对应的 body class 将会是 <code>category-文字</code>，在 CSS 中并不能用。所以我们需要在 <code>config.yml</code> 中指定 category_map，给中文的分类设置一个对应的英文名。这个英文名默认用来生成每篇文章的链接地址，毕竟中文并不通行于国际互联网，我们把这个英文利用起来，岂不美哉？</p>
+<p>如何取得此值呢？尝试之后，在列表页中比较简单，改进代码如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">class</span>=<span class="string">&quot;category-&lt;%= config.category_map[page.category] %&gt;&quot;</span>&gt;</span></span><br><span class="line">...</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>刷新文字列表页面，如愿得到 <code>category-writings</code> 的类名，Nice！</p>
+<p>但对应到具体的文章，则远比列表页复杂，用 <code>config.category_map[post.categories]</code> 是无法获取文章分类的，因为一篇文章可能对应好几个分类。而官方提供的 <code>list_categories()</code> 函数局限性太强，完全没法达到我们的预期。</p>
+<p>用 console.log() 查看 <code>site.categories.data</code>，其中一个分类的内容如下：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">_Document <span class="punctuation">&#123;</span></span><br><span class="line">  name<span class="punctuation">:</span> &#x27;文字&#x27;<span class="punctuation">,</span></span><br><span class="line">  id<span class="punctuation">:</span> &#x27;cknidonz40000q816bzz340ez&#x27;<span class="punctuation">,</span></span><br><span class="line">  slug<span class="punctuation">:</span> <span class="punctuation">[</span>Getter<span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  path<span class="punctuation">:</span> <span class="punctuation">[</span>Getter<span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  permalink<span class="punctuation">:</span> <span class="punctuation">[</span>Getter<span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  posts<span class="punctuation">:</span> <span class="punctuation">[</span>Getter<span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  length<span class="punctuation">:</span> <span class="punctuation">[</span>Getter<span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br></pre></td></tr></table></figure>
+<p>可见其类型是 object。</p>
+<p>了解其结构之后就比较简单了，在 <code>archive-post.ejs</code> 中增加以下代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;% post.<span class="property">categories</span>.<span class="title function_">forEach</span>(<span class="keyword">function</span>(<span class="params">data</span>) &#123; %&gt;</span><br><span class="line">  cate-&lt;%= config.<span class="property">category_map</span>[data.<span class="property">name</span>] %&gt;</span><br><span class="line">&lt;% &#125;) %&gt;</span><br></pre></td></tr></table></figure>
+<p>以本文为例，其得到的结果是 <code>cate-playground</code> / <code>cate-web</code> 两个分类名，问题解决。</p>
+<p>如果不嫌麻烦，tag_map 也可以通过同样的思路解决来处理。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>
+    </div>
+    <footer class="article-footer">
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li></ul>
+
+      
+      <div class="artile-comments">
+        <script src="https://giscus.app/client.js"
+            data-repo="kaerozhi/waxamedia"
+            data-repo-id="R_kgDOJ8B_JQ"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOJ8B_Jc4ChHzF"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="0"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="noborder_light"
+            data-lang="zh-CN"
+            crossorigin="anonymous"
+            async>
+        </script>
+      </div>
+      
+    </footer>
+  </div>
+  
   
     
-<h1 class="page-type-title"></h1>
-  
-</div>
+<nav class="article-nav pt-4 mt-3" id="article-nav">
   
   
+    <a href="/writings/shici/industrial-park/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">工业园赠肥困</div>
+    </a>
   
-  
-  
-  
-
-<section class="archives-wrap">
-  <div class="archive-year-wrap my-5 serif">
-    <a href="/archives/2008" class="archive-year">2008</a>
-  </div>
-  <div class="archives">
-    <div class="row flex-wrap">
-      
-      <div class="col-lg-4 my-3">
-  <article class="archive-article archive-type-post">
-    <div class="card rounded">
-      
-        <a class="card-img-link" href="/blog/twitter/"><img class="card-img lazyload" src="/images/post-preview.png" /></a>
-      
-      <div class="card-body bg-white">
-        
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/blog/">日常</a>
-  </div>
-
-        
-  
-    <h5 class="article-title my-2" itemprop="name">
-      <a href="/blog/twitter/">Twitter</a>
-    </h5>
-  
-
-        <time class="text-gray" datetime="2008-08-01T00:00:00.000Z" itemprop="datePublished">
-  2008-08-01
-</time>
-      </div>
-    </div>
-  </article>
-</div>
-      
-  
-  
-  
-  </div>
+</nav>
 
 
-<section class="archives-wrap">
-  <div class="archive-year-wrap my-5 serif">
-    <a href="/archives/2007" class="archive-year">2007</a>
-  </div>
-  <div class="archives">
-    <div class="row flex-wrap">
-      
-      <div class="col-lg-4 my-3">
-  <article class="archive-article archive-type-post">
-    <div class="card rounded">
-      
-        <a class="card-img-link" href="/blog/test-scribefire-again/"><img class="card-img lazyload" src="/images/post-preview.png" /></a>
-      
-      <div class="card-body bg-white">
-        
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/blog/">日常</a>
-  </div>
-
-        
   
-    <h5 class="article-title my-2" itemprop="name">
-      <a href="/blog/test-scribefire-again/">再测试一下ScribeFire</a>
-    </h5>
-  
-
-        <time class="text-gray" datetime="2007-08-02T00:00:00.000Z" itemprop="datePublished">
-  2007-08-02
-</time>
-      </div>
-    </div>
-  </article>
-</div>
-      
-      
-    </div>
-  </div>
-</section>
-
-
-
-
+</article>
 </div>
     </main>
     <footer class="footer pt-4 mt-5">
