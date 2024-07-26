@@ -193,8 +193,10 @@
     
   
     
-      <img class="artcle-cover-img lazyload" data-src="/playground/web/hexo-new-theme-based-on-acorn/hexo-and-acorn.png" itemprop="image" alt="">
-       
+      
+        <img class="artcle-cover-img lazyload" data-src="/playground/web/hexo-new-theme-based-on-acorn/hexo-and-acorn.png" itemprop="image" alt="">
+         
+    
   
 
   </div>
@@ -483,10 +485,10 @@
 
 
 	<!-- Swiper JS -->
-	<script src="/libs/swiper/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<!-- Initialize Swiper -->
 	<script>
-		var swiper = new Swiper(".oneSwiper", {
+		var swiper1 = new Swiper(".oneSwiper", {
 			slidesPerView: "auto",
 			centeredSlides: true,
 			spaceBetween: 30,
@@ -496,6 +498,22 @@
 			},
     });
 	</script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper2 = new Swiper(".article-photos-swiper", {
+			slidesPerView: "auto",
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
 
 
 

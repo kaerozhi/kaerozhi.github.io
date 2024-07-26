@@ -262,10 +262,12 @@
         
   
     
-        <a class="card-img-link" href="/tours/from-dongchong-to-xichong/" rel="gallery_clz1bp9us009hjrtu6t3w71ch">
-          <img class="card-img lazyload" data-src="/tours/from-dongchong-to-xichong/DSC6045-1024x684.jpg" itemprop="image" alt="gallery">
-        </a>
-       
+      
+          <a class="card-img-link" href="/tours/from-dongchong-to-xichong/" rel="gallery_clz1xw3tb009hi9tublgd2dse">
+            <img class="card-img lazyload" data-src="/tours/from-dongchong-to-xichong/DSC6045-1024x684.jpg" itemprop="image" alt="gallery">
+          </a>
+         
+    
   
 
       
@@ -388,10 +390,10 @@
 
 
 	<!-- Swiper JS -->
-	<script src="/libs/swiper/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<!-- Initialize Swiper -->
 	<script>
-		var swiper = new Swiper(".oneSwiper", {
+		var swiper1 = new Swiper(".oneSwiper", {
 			slidesPerView: "auto",
 			centeredSlides: true,
 			spaceBetween: 30,
@@ -401,6 +403,22 @@
 			},
     });
 	</script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper2 = new Swiper(".article-photos-swiper", {
+			slidesPerView: "auto",
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
 
 
 

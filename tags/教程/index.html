@@ -218,10 +218,12 @@
         
   
     
-        <a class="card-img-link" href="/playground/fontlab-studio-tips/" rel="gallery_clz1bp9uo0094jrtubi4rh7ur">
-          <img class="card-img lazyload" data-src="/playground/fontlab-studio-tips/fontlab-studio-banner.png" itemprop="image" alt="gallery">
-        </a>
-       
+      
+          <a class="card-img-link" href="/playground/fontlab-studio-tips/" rel="gallery_clz1xw3t70096i9tuby04gc9t">
+            <img class="card-img lazyload" data-src="/playground/fontlab-studio-tips/fontlab-studio-banner.png" itemprop="image" alt="gallery">
+          </a>
+         
+    
   
 
       
@@ -388,10 +390,10 @@
 
 
 	<!-- Swiper JS -->
-	<script src="/libs/swiper/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<!-- Initialize Swiper -->
 	<script>
-		var swiper = new Swiper(".oneSwiper", {
+		var swiper1 = new Swiper(".oneSwiper", {
 			slidesPerView: "auto",
 			centeredSlides: true,
 			spaceBetween: 30,
@@ -401,6 +403,22 @@
 			},
     });
 	</script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper2 = new Swiper(".article-photos-swiper", {
+			slidesPerView: "auto",
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
 
 
 

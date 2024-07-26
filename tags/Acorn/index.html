@@ -220,10 +220,12 @@
         
   
     
-        <a class="card-img-link" href="/playground/web/hexo-new-theme-based-on-acorn/" rel="gallery_clz1bp9v500atjrtubj57hgz5">
-          <img class="card-img lazyload" data-src="/playground/web/hexo-new-theme-based-on-acorn/hexo-and-acorn.png" itemprop="image" alt="gallery">
-        </a>
-       
+      
+          <a class="card-img-link" href="/playground/web/hexo-new-theme-based-on-acorn/" rel="gallery_clz1xw3tl00ati9tuaue87qga">
+            <img class="card-img lazyload" data-src="/playground/web/hexo-new-theme-based-on-acorn/hexo-and-acorn.png" itemprop="image" alt="gallery">
+          </a>
+         
+    
   
 
       
@@ -346,10 +348,10 @@
 
 
 	<!-- Swiper JS -->
-	<script src="/libs/swiper/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<!-- Initialize Swiper -->
 	<script>
-		var swiper = new Swiper(".oneSwiper", {
+		var swiper1 = new Swiper(".oneSwiper", {
 			slidesPerView: "auto",
 			centeredSlides: true,
 			spaceBetween: 30,
@@ -359,6 +361,22 @@
 			},
     });
 	</script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper2 = new Swiper(".article-photos-swiper", {
+			slidesPerView: "auto",
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
 
 
 

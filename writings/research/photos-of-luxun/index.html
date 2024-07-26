@@ -193,8 +193,10 @@
     
   
     
-      <img class="artcle-cover-img lazyload" data-src="/writings/research/photos-of-luxun/photos-of-luxun.png" itemprop="image" alt="">
-       
+      
+        <img class="artcle-cover-img lazyload" data-src="/writings/research/photos-of-luxun/photos-of-luxun.png" itemprop="image" alt="">
+         
+    
   
 
   </div>
@@ -225,7 +227,8 @@
     </header>
     
     
-    <div class="article-entry" itemprop="articleBody">
+    <nav class="js-toc"></nav>
+    <div class="article-entry js-toc-content" itemprop="articleBody">
     
       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><div class="foreword">
 <p>查鲁迅照片，得搜狐映像志所辑<a target="_blank" rel="noopener" href="https://www.sohu.com/a/393391875_120009217">鲁迅肖像全集</a>，文末附注，其图文悉摘自黃喬生編著《俯首橫眉——魯迅先生身影錄》。因以此文为纲，补以遗漏者若干，并注明出处，兼顾鲁迅日记、书信之记录。顾予识浅而力微，未敢违迅翁以爱以诚之旨，妄称全集，惟冀查阅方便，后或随时补证。 名之曰鲁迅照相集，而非照片相片者，盖袭翁之旧称也。</p>
@@ -256,7 +259,7 @@
 <p>何炳棣娶明之女邵景洛，据何著《读史阅世六十年》载：</p>
 <blockquote>
 <p>十月间得悉邵景洛全家已搬回绍兴陶堰老家，我更感忐忑不安，因为东南战局如何扩展很难预料。十二月初我搭轮船去宁波，经慈溪、余姚、上虞，渡曹娥，至陶堰，劝她父亲邵文镕（铭之，1877-1942，早岁在北海道札幌工专习铁路工程，曾任沪杭甬铁路工程师，后在苏北东台经营棉业，与鲁迅为生死不渝之交）先生最好全家先搬到上海租界，然后再做长期打算。果然此行不虚，开年景洛全家都迁到上海，住霞飞坊，成为鲁迅夫人许广平和周建人先生的近邻。1938年春季景洛在暨南大学借读，1939年初完成了清华文学士的学位，比我学位的完成仅迟了一学期。</p>
-<p>何炳棣：读史阅世六十年，第127页，第八章。</p>
+<p><cite>何炳棣：读史阅世六十年，第127页，第八章。</cite></p>
 </blockquote>
 <p><a href="shaojingluo-n-hebingdi.png" class="gallery-item"><img src="shaojingluo-n-hebingdi.png" alt=""></a></p>
 <p>前书插图，左为邵景洛，1938年春摄于上海；右为何炳棣，1937年秋摄于上海。明之今无他照传于世。</p>
@@ -624,7 +627,7 @@
 <p>10月18日记：<em>十八日 星期。</em></p>
 <p>次日，鲁迅死。</p>
 <hr>
-<h2 id="后记：">后记：</h2>
+<h2 id="后记">后记</h2>
 <p>本文照片，多取自<a target="_blank" rel="noopener" href="http://www.sxlxmuseum.com/">绍兴鲁迅故里</a>的照片专栏，原本要在此致谢的。不过这些照片都尺幅窄小，质量粗糙，实在难以满足观览的需求。以后若有更好的版本，随时替换，才算是真正的功德圆满。</p>
 <p>我忽然就想到一件不相干的事。清朝康熙年间，有一个叫聂璜的民间画家，画了一套叫《海错图》的画册，极为生动。后来便辗转流落到宫里，颇为历代皇帝所喜爱，因之装裱成四册。抗战时期，故宫文物南迁，经历各种颠沛流离阴差阳错，这整套的海错图就分开了，三册回到了北京故宫，另一册则被带到了台北。</p>
 <p>台北故宫的那一册，官方早就扫描好了高精度的版本，共享在网络上，pdf 格式，人人可以下载欣赏。而北京这三册却没有这样的福利，只有纸本印行。我实在是很喜欢这本画册，因此掏银子买了一套，接近三百块。</p>
@@ -781,13 +784,27 @@
 <script src="/libs/lazysizes/lazysizes.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
+	<script src="/libs/tocbot/tocbot.min.js"></script>
+	<script>
+    tocbot.init({
+      // Where to render the table of contents.
+      tocSelector: '.js-toc',
+      // Where to grab the headings to build the table of contents.
+      contentSelector: '.js-toc-content',
+      // Which headings to grab inside of the contentSelector element.
+      headingSelector: 'h2, h3',
+      // For headings inside relative or absolute positioned containers within content.
+      hasInnerContainers: true,
+    });
+	</script>
+
 
 
 	<!-- Swiper JS -->
-	<script src="/libs/swiper/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<!-- Initialize Swiper -->
 	<script>
-		var swiper = new Swiper(".oneSwiper", {
+		var swiper1 = new Swiper(".oneSwiper", {
 			slidesPerView: "auto",
 			centeredSlides: true,
 			spaceBetween: 30,
@@ -797,6 +814,22 @@
 			},
     });
 	</script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper2 = new Swiper(".article-photos-swiper", {
+			slidesPerView: "auto",
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
 
 
 

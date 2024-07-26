@@ -193,8 +193,10 @@
     
   
     
-      <img class="artcle-cover-img lazyload" data-src="/tours/2019-japan/20190910_113015-%E5%9C%86%E5%BE%B7%E9%99%A2%E7%BB%9D%E4%BD%B3%E5%A2%83.jpg" itemprop="image" alt="">
-       
+      
+        <img class="artcle-cover-img lazyload" data-src="/tours/2019-japan/20190910_113015-%E5%9C%86%E5%BE%B7%E9%99%A2%E7%BB%9D%E4%BD%B3%E5%A2%83.jpg" itemprop="image" alt="">
+         
+    
   
 
   </div>
@@ -628,10 +630,10 @@
 
 
 	<!-- Swiper JS -->
-	<script src="/libs/swiper/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<!-- Initialize Swiper -->
 	<script>
-		var swiper = new Swiper(".oneSwiper", {
+		var swiper1 = new Swiper(".oneSwiper", {
 			slidesPerView: "auto",
 			centeredSlides: true,
 			spaceBetween: 30,
@@ -641,6 +643,22 @@
 			},
     });
 	</script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper2 = new Swiper(".article-photos-swiper", {
+			slidesPerView: "auto",
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
 
 
 

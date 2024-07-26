@@ -216,12 +216,30 @@
     <div class="card rounded">
       
         
-  
-    
-        <a class="card-img-link" href="/tours/night-walking-in-panmen/" rel="gallery_clz1bp9wh00esjrtu6kl3c84s">
+      
+  <!-- Swiper -->
+  <div class="swiper article-photos-swiper">
+    <div class="swiper-wrapper">
+      
+      <div class="swiper-slide">
+        
+        <a class="card-img-link" href="/tours/night-walking-in-panmen/" rel="gallery_clz1xw3ur00eni9tu7eu97fw4">
           <img class="card-img lazyload" data-src="/tours/night-walking-in-panmen/image-20240725211353085.jpeg" itemprop="image" alt="gallery">
         </a>
-       
+         
+      </div>    
+      
+      <div class="swiper-slide">
+        
+        <a class="card-img-link" href="/tours/night-walking-in-panmen/" rel="gallery_clz1xw3ur00eni9tu7eu97fw4">
+          <img class="card-img lazyload" data-src="/tours/night-walking-in-panmen/image-20240725210538323.jpeg" itemprop="image" alt="gallery">
+        </a>
+         
+      </div>    
+        
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
   
 
       
@@ -270,10 +288,12 @@
         
   
     
-        <a class="card-img-link" href="/tours/2018-suzhou/" rel="gallery_clz1bp9sh0026jrtu5yp84unx">
-          <img class="card-img lazyload" data-src="/tours/2018-suzhou/ZJG2095.jpg" itemprop="image" alt="gallery">
-        </a>
-       
+      
+          <a class="card-img-link" href="/tours/2018-suzhou/" rel="gallery_clz1xw3qu0024i9tu9gat662k">
+            <img class="card-img lazyload" data-src="/tours/2018-suzhou/ZJG2095.jpg" itemprop="image" alt="gallery">
+          </a>
+         
+    
   
 
       
@@ -396,10 +416,10 @@
 
 
 	<!-- Swiper JS -->
-	<script src="/libs/swiper/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<!-- Initialize Swiper -->
 	<script>
-		var swiper = new Swiper(".oneSwiper", {
+		var swiper1 = new Swiper(".oneSwiper", {
 			slidesPerView: "auto",
 			centeredSlides: true,
 			spaceBetween: 30,
@@ -409,6 +429,22 @@
 			},
     });
 	</script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper2 = new Swiper(".article-photos-swiper", {
+			slidesPerView: "auto",
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
 
 
 
