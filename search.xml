@@ -1458,9 +1458,9 @@
       
         <tags>
             
-            <tag> 陶小婧 </tag>
-            
             <tag> 游记 </tag>
+            
+            <tag> 陶小婧 </tag>
             
             <tag> 日本 </tag>
             
@@ -5179,35 +5179,6 @@
     
     
     <entry>
-      <title>Windows Live Writer 初上手体验</title>
-      <link href="/playground/apps/windows-live-writer-review/"/>
-      <url>/playground/apps/windows-live-writer-review/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p><a href="image-20230602095530186.png" title="Windows Live Writer" class="gallery-item"><img src="image-20230602095530186.png" alt="Windows Live Writer"><span class="image-caption">Windows Live Writer</span></a></p><h2 id="自动解析-blog 配置">自动解析 Blog 配置</h2><p>主流的 <a href="http://www.blogger.com/" title="Blogger">Blogger</a> 只要粘贴地址即可成功解析，非常方便。国内流行的 <a href="http://www.pjhome.net/" title="国内比较流行的ASP Blog程序">PJBlog</a> 则需要手动指定 XMLRPC 接口地址，配置完成后成功连接，也不怎么麻烦。</p><p>LifeType 方面，据 <a href="http://blog.markplace.net/" title="Lifetype达人Mark，来自台湾">Mark Wu</a>的文章，应该需要手动改写源代码，所以暂时没有尝试。</p><h2 id="主题预览功能">主题预览功能</h2><p>正如传闻中的那样，Windows Live Writer 的预览功能很强大，虽然 PJBlog 又一次不兼容（<em>虽然国内很流行，但在世界范围依然小众</em>），但 Live Space 与 Blogger 的表现则相当完美。这点无疑比 Zoundry 胜过一筹。</p><h2 id="图片预处理">图片预处理</h2><p>一般情况下，不会自作主张压缩图片（<em>Zoundry 的怨念</em>），但图片尺寸太大的话，还是会被缩小尺寸——什么尺寸才会触发缩小目前还不清楚，我测试用的尺寸是 1600x1200。当然，手动改回原图尺寸也不是很麻烦。</p><p>如果设置菜单里可以调整需要压缩的大图尺寸就更好了，目前还没有提供类似的选项。</p><h2 id="链接词汇表">链接词汇表</h2><p>设置内发现链接词汇表的选项，配置之后，在文章内输入预设好的词或短语，Windows Live Writer 会自动给它加上链接，很贴心。PJBlog 也有类似的功能，免去手动之累。</p><h2 id="插件">插件</h2><p>Windows Live Writer 才上线不久，但微软这次的态度相当开放，可供下载的插件数量已颇为可观。我暂时下载了两个插件，分别用来插入视频和代码。</p><h2 id="缺点">缺点</h2><p>分类选项在编辑窗口底部，非常隐蔽，我找了半天才看到。界面位置好像可以自定义，在我看来，指定分类几乎是每篇文章都要用到的功能，不至于刻意放在不起眼的位置。难道欧美用户都喜欢默认分类，仅靠 Tag 来区分？</p><p>还有一个用词的问题，Tag 通用的中文翻译是标签，但在 Writer 里只有标记，导致我一时没有反应过来，哪里加标签呢？</p><hr><p>目前用下来就是这些体会，至于撰写界面，微软的产品都是相似的操作逻辑，上手极快，也没有任何卡顿。暂且先发布吧，顺便看看发布过程中会不会遇到什么问题。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-      
-      
-      <categories>
-          
-          <category> 玩艺 </category>
-          
-          <category> 软件 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Blog Tools </tag>
-            
-            <tag> Windows Live Writer </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Windows Live Writer 更新</title>
       <link href="/playground/apps/windows-live-writer-update/"/>
       <url>/playground/apps/windows-live-writer-update/</url>
@@ -5231,6 +5202,35 @@
             <tag> Windows Live Writer </tag>
             
             <tag> Software </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Windows Live Writer 初上手体验</title>
+      <link href="/playground/apps/windows-live-writer-review/"/>
+      <url>/playground/apps/windows-live-writer-review/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p><a href="image-20230602095530186.png" title="Windows Live Writer" class="gallery-item"><img src="image-20230602095530186.png" alt="Windows Live Writer"><span class="image-caption">Windows Live Writer</span></a></p><h2 id="自动解析-blog 配置">自动解析 Blog 配置</h2><p>主流的 <a href="http://www.blogger.com/" title="Blogger">Blogger</a> 只要粘贴地址即可成功解析，非常方便。国内流行的 <a href="http://www.pjhome.net/" title="国内比较流行的ASP Blog程序">PJBlog</a> 则需要手动指定 XMLRPC 接口地址，配置完成后成功连接，也不怎么麻烦。</p><p>LifeType 方面，据 <a href="http://blog.markplace.net/" title="Lifetype达人Mark，来自台湾">Mark Wu</a>的文章，应该需要手动改写源代码，所以暂时没有尝试。</p><h2 id="主题预览功能">主题预览功能</h2><p>正如传闻中的那样，Windows Live Writer 的预览功能很强大，虽然 PJBlog 又一次不兼容（<em>虽然国内很流行，但在世界范围依然小众</em>），但 Live Space 与 Blogger 的表现则相当完美。这点无疑比 Zoundry 胜过一筹。</p><h2 id="图片预处理">图片预处理</h2><p>一般情况下，不会自作主张压缩图片（<em>Zoundry 的怨念</em>），但图片尺寸太大的话，还是会被缩小尺寸——什么尺寸才会触发缩小目前还不清楚，我测试用的尺寸是 1600x1200。当然，手动改回原图尺寸也不是很麻烦。</p><p>如果设置菜单里可以调整需要压缩的大图尺寸就更好了，目前还没有提供类似的选项。</p><h2 id="链接词汇表">链接词汇表</h2><p>设置内发现链接词汇表的选项，配置之后，在文章内输入预设好的词或短语，Windows Live Writer 会自动给它加上链接，很贴心。PJBlog 也有类似的功能，免去手动之累。</p><h2 id="插件">插件</h2><p>Windows Live Writer 才上线不久，但微软这次的态度相当开放，可供下载的插件数量已颇为可观。我暂时下载了两个插件，分别用来插入视频和代码。</p><h2 id="缺点">缺点</h2><p>分类选项在编辑窗口底部，非常隐蔽，我找了半天才看到。界面位置好像可以自定义，在我看来，指定分类几乎是每篇文章都要用到的功能，不至于刻意放在不起眼的位置。难道欧美用户都喜欢默认分类，仅靠 Tag 来区分？</p><p>还有一个用词的问题，Tag 通用的中文翻译是标签，但在 Writer 里只有标记，导致我一时没有反应过来，哪里加标签呢？</p><hr><p>目前用下来就是这些体会，至于撰写界面，微软的产品都是相似的操作逻辑，上手极快，也没有任何卡顿。暂且先发布吧，顺便看看发布过程中会不会遇到什么问题。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 玩艺 </category>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Blog Tools </tag>
+            
+            <tag> Windows Live Writer </tag>
             
         </tags>
       
@@ -5576,31 +5576,6 @@
     
     
     <entry>
-      <title>今日</title>
-      <link href="/blog/today/"/>
-      <url>/blog/today/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>其一：终于收到 <a href="http://www.01media.cn">01Media</a> 的面试通知，非常令人激动而振奋的一天。爆发吧，你这个混蛋！</p><p>其二：网站从昨天下午开始忽然被 ISP 停掉，理由是我的网站居然占用 91% 的CPU……空间里面只放了 PJBlog 一个带有数据库的程序，另外有几个 PDF 提供下载——所以这真是令人无法理解。一直持续到今天上午，我联系到对方的客服，才答应开通网站“观察”一下。无言。</p><p>其三：某人对她 256M 内存的电脑终于忍无可忍了，在没有资金买入新的内存的情况下，我只好在自己的机器上忍痛拆了一根 512M 的内存给她。当然不可能让情势逆转，所以我把她机器上原有的 256M 装到我这边来了（某人抗议中：为什么我一定要比你的配置差！）。现在内存分别是 768M 和512M，勉强达到了一个平衡，不过这也仅是权宜之计，无论如何，将来一定要装备 1G x 2 的内存。</p><p>其四：鼠标坏了，单击和双击不能区分——试想一下，关闭当前窗口，结果连下面一个窗口也给关闭了；打开一个文件夹，结果变成了重命名……我现在已经尽量用键盘操作了，不过鼠标还是不可避免要用到，真想一把摔了它。</p><p>其五：没有了，嘿嘿。</p><p>－－－－－－－－忽然想起来的分割线－－－－－－－－－－－－</p><p>增补一：PJBlog 对垃圾留言和垃圾引用的无能为力实在让我觉得很无奈——似乎舜子本人也很无奈，<a href="http://PJHome.net">PJHome.net</a> 上面的垃圾留言似乎也不少。因为网站被停，所以根据 ISP 的提示把数据库压缩了一下，顺便把里面的垃圾广告全清理掉了。刚才忽然又看到还有一条幸存的，苦笑。</p><p>增补二：本机的 IIS 忽然又宣告“Service Unavailable”了，好吧，我承认自己很菜，不过这样放弃 .Net 会心安理得一点。那么宣布，我从此转投 PHP 的阵营了。</p><p>不过仍然很失败，光是一个 MySQL，就捣鼓了半天没有结果……我还想用 WordPress 代替 PJBlog 呢。寒～</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 01media </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>明日</title>
       <link href="/blog/tomorrow/"/>
       <url>/blog/tomorrow/</url>
@@ -5618,6 +5593,31 @@
         <tags>
             
             <tag> 感情 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>今日</title>
+      <link href="/blog/today/"/>
+      <url>/blog/today/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>其一：终于收到 <a href="http://www.01media.cn">01Media</a> 的面试通知，非常令人激动而振奋的一天。爆发吧，你这个混蛋！</p><p>其二：网站从昨天下午开始忽然被 ISP 停掉，理由是我的网站居然占用 91% 的CPU……空间里面只放了 PJBlog 一个带有数据库的程序，另外有几个 PDF 提供下载——所以这真是令人无法理解。一直持续到今天上午，我联系到对方的客服，才答应开通网站“观察”一下。无言。</p><p>其三：某人对她 256M 内存的电脑终于忍无可忍了，在没有资金买入新的内存的情况下，我只好在自己的机器上忍痛拆了一根 512M 的内存给她。当然不可能让情势逆转，所以我把她机器上原有的 256M 装到我这边来了（某人抗议中：为什么我一定要比你的配置差！）。现在内存分别是 768M 和512M，勉强达到了一个平衡，不过这也仅是权宜之计，无论如何，将来一定要装备 1G x 2 的内存。</p><p>其四：鼠标坏了，单击和双击不能区分——试想一下，关闭当前窗口，结果连下面一个窗口也给关闭了；打开一个文件夹，结果变成了重命名……我现在已经尽量用键盘操作了，不过鼠标还是不可避免要用到，真想一把摔了它。</p><p>其五：没有了，嘿嘿。</p><p>－－－－－－－－忽然想起来的分割线－－－－－－－－－－－－</p><p>增补一：PJBlog 对垃圾留言和垃圾引用的无能为力实在让我觉得很无奈——似乎舜子本人也很无奈，<a href="http://PJHome.net">PJHome.net</a> 上面的垃圾留言似乎也不少。因为网站被停，所以根据 ISP 的提示把数据库压缩了一下，顺便把里面的垃圾广告全清理掉了。刚才忽然又看到还有一条幸存的，苦笑。</p><p>增补二：本机的 IIS 忽然又宣告“Service Unavailable”了，好吧，我承认自己很菜，不过这样放弃 .Net 会心安理得一点。那么宣布，我从此转投 PHP 的阵营了。</p><p>不过仍然很失败，光是一个 MySQL，就捣鼓了半天没有结果……我还想用 WordPress 代替 PJBlog 呢。寒～</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 01media </tag>
             
         </tags>
       
