@@ -1,3 +1,5 @@
+https://kaerozhi.com/gears/repairing-a-manual-lens/
+https://kaerozhi.com/playground/synology-decode-problem/
 https://kaerozhi.com/tours/zhenze/
 https://kaerozhi.com/photography/lotus-of-huqiu-wetland/
 https://kaerozhi.com/tours/huqiu-in-nightu/
@@ -647,6 +649,8 @@ https://kaerozhi.com/tags/Blog-tools/
 https://kaerozhi.com/tags/zoundry/
 https://kaerozhi.com/tags/%E5%8F%A4%E9%95%87/
 https://kaerozhi.com/tags/%E9%9C%87%E6%B3%BD/
+https://kaerozhi.com/tags/%E9%BB%91%E7%BE%A4%E6%99%96/
+https://kaerozhi.com/tags/%E9%95%9C%E5%A4%B4/
 https://kaerozhi.com/categories/blog/
 https://kaerozhi.com/categories/writings/
 https://kaerozhi.com/categories/thoughts/
@@ -663,3 +667,4 @@ https://kaerozhi.com/categories/photography/
 https://kaerozhi.com/categories/playground/gears/
 https://kaerozhi.com/categories/writings/%E8%BE%91%E5%BD%95/
 https://kaerozhi.com/categories/playground/stable-diffusion/
+https://kaerozhi.com/categories/gears/
