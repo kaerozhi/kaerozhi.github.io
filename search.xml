@@ -4,11 +4,38 @@
   
     
     <entry>
+      <title>贝斯表演：我的悲伤是水做的</title>
+      <link href="/blog/bass-play-of-jingxi/"/>
+      <url>/blog/bass-play-of-jingxi/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>小朋友学贝斯已经半年，还在南昌度暑假，听老师说学校组织了表演，居然打起精神要求提前回苏州，实属难得。到现场虽然指法生涩，但一点儿不怯场，这点可比我强多了。</p><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=112977336403920&bvid=BV11HpZeWE9y&cid=500001652752861" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe><p>B站的分享默认只有 360p，画质一塌糊涂，不登录账号就解锁不了更高的画质，吃相太难看了，你好歹给个 720p 啊。不过有一说一，抖音的画质更差，国内的平台实在是糟糕，这要是开放全球竞争一个个都得倒闭……</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> video </tag>
+            
+            <tag> 景曦 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo 升级问题</title>
       <link href="/playground/web/hexo-update-issue/"/>
       <url>/playground/web/hexo-update-issue/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>最近一直在持续微调 Hexo 的主题外观，免不了经常上官网查阅文档。今天偶然发现官方的最新版本号已经是 7.3，而我黑群晖上的 Hexo 还停留在 6.3。</p><h2 id="enospc-问题">ENOSPC 问题</h2><p>版本落后其实并不影响使用，反正 deploy 到服务器上都只是静态文件而已，若是折木奉太郎那样的节能主义者，以下各种奇怪问题都将不会发生。奈何自己有强迫症，不升级到最新版本尝尝鲜就手痒头麻浑身躁动。SSH 连上黑群晖，<code>npm update</code> 给他来个全面升级，岂不美哉？然而结果并不顺利……</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">root@MiniServer:~# npm update</span><br><span class="line">npm error code ENOSPC</span><br><span class="line">npm error syscall write</span><br><span class="line">npm error errno -28</span><br><span class="line">npm error nospc ENOSPC: no space left on device, write</span><br><span class="line">npm error nospc There appears to be insufficient space on your system to finish.</span><br><span class="line">npm error nospc Clear up some disk space and try again.</span><br><span class="line">npm error A complete log of this run can be found in: /root/.npm/_logs/2024-08-04T18_51_14_670Z-debug-0.log</span><br></pre></td></tr></table></figure><p>报错貌似是说设备没空间了。查了一下，其中一个办法提到可以用 <code>df -h ~/.npm</code> 看看磁盘占用状况：</p><p><a href="image-20240805040841885.png" title="执行命令后的结果" class="gallery-item"><img src="image-20240805040841885.png" alt="执行命令后的结果"></a><span class="image-caption">执行命令后的结果</span></p><p>看起来使用率确实已经 100% 了。然而我给黑群晖配置的 12T 硬盘（<em>实际容量也有 10.5T 左右</em>）目前用量尚未过半，这个 2.3 G 又是怎么回事？莫非 node.js 这样的套件也像 docker 一样，是有硬盘容量使用限制的？</p><p><a href="image-20240805041314709.png" title="黑群晖的存储管理器截图" class="gallery-item"><img src="image-20240805041314709.png" alt="黑群晖的存储管理器截图"></a><span class="image-caption">黑群晖的存储管理器截图</span></p><p>看了一下日志中心，并无任何异常。怪哉。</p><p>找了一圈并没有找到有效的解决方案，只能尝试删掉几个不用的包，看看能否清理出可用的空间。结果就更奇怪了，删包也报同样的错误，ENOSPC！！！</p><p>求大佬指点。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>最近一直在持续微调 Hexo 的主题外观，免不了经常上官网查阅文档。今天偶然发现官方的最新版本号已经是 7.3，而我黑群晖上的 Hexo 还停留在 6.3。</p><h2 id="enospc-问题">ENOSPC 问题</h2><p>版本落后其实并不影响使用，反正 deploy 到服务器上都只是静态文件而已，若是折木奉太郎那样的节能主义者，以下各种奇怪问题都将不会发生。奈何自己有强迫症，不升级到最新版本尝尝鲜就手痒头麻浑身躁动。SSH 连上黑群晖，<code>npm update</code> 给他来个全面升级，岂不美哉？然而结果并不顺利……</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">root@MiniServer:~# npm update</span><br><span class="line">npm error code ENOSPC</span><br><span class="line">npm error syscall write</span><br><span class="line">npm error errno -28</span><br><span class="line">npm error nospc ENOSPC: no space left on device, write</span><br><span class="line">npm error nospc There appears to be insufficient space on your system to finish.</span><br><span class="line">npm error nospc Clear up some disk space and try again.</span><br><span class="line">npm error A complete log of this run can be found in: /root/.npm/_logs/2024-08-04T18_51_14_670Z-debug-0.log</span><br></pre></td></tr></table></figure><p>报错貌似是说设备没空间了。查了一下，其中一个办法提到可以用 <code>df -h ~/.npm</code> 看看磁盘占用状况：</p><p><a href="image-20240805040841885.png" title="执行命令后的结果" class="gallery-item"><img src="image-20240805040841885.png" alt="执行命令后的结果"><span class="image-caption">执行命令后的结果</span></a></p><p>看起来使用率确实已经 100% 了。然而我给黑群晖配置的 12T 硬盘（<em>实际容量也有 10.5T 左右</em>）目前用量尚未过半，这个 2.3 G 又是怎么回事？莫非 node.js 这样的套件也像 docker 一样，是有硬盘容量使用限制的？</p><p><a href="image-20240805041314709.png" title="黑群晖的存储管理器截图" class="gallery-item"><img src="image-20240805041314709.png" alt="黑群晖的存储管理器截图"><span class="image-caption">黑群晖的存储管理器截图</span></a></p><p>看了一下日志中心，并无任何异常。怪哉。</p><p>找了一圈并没有找到有效的解决方案，只能尝试删掉几个不用的包，看看能否清理出可用的空间。结果就更奇怪了，删包也报同样的错误，ENOSPC！！！</p><p>求大佬指点。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
       
       
       <categories>
@@ -1537,9 +1564,9 @@
       
         <tags>
             
-            <tag> 游记 </tag>
-            
             <tag> 陶小婧 </tag>
+            
+            <tag> 游记 </tag>
             
             <tag> 日本 </tag>
             
@@ -5258,6 +5285,35 @@
     
     
     <entry>
+      <title>Windows Live Writer 初上手体验</title>
+      <link href="/playground/apps/windows-live-writer-review/"/>
+      <url>/playground/apps/windows-live-writer-review/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p><a href="image-20230602095530186.png" title="Windows Live Writer" class="gallery-item"><img src="image-20230602095530186.png" alt="Windows Live Writer"><span class="image-caption">Windows Live Writer</span></a></p><h2 id="自动解析-blog 配置">自动解析 Blog 配置</h2><p>主流的 <a href="http://www.blogger.com/" title="Blogger">Blogger</a> 只要粘贴地址即可成功解析，非常方便。国内流行的 <a href="http://www.pjhome.net/" title="国内比较流行的ASP Blog程序">PJBlog</a> 则需要手动指定 XMLRPC 接口地址，配置完成后成功连接，也不怎么麻烦。</p><p>LifeType 方面，据 <a href="http://blog.markplace.net/" title="Lifetype达人Mark，来自台湾">Mark Wu</a>的文章，应该需要手动改写源代码，所以暂时没有尝试。</p><h2 id="主题预览功能">主题预览功能</h2><p>正如传闻中的那样，Windows Live Writer 的预览功能很强大，虽然 PJBlog 又一次不兼容（<em>虽然国内很流行，但在世界范围依然小众</em>），但 Live Space 与 Blogger 的表现则相当完美。这点无疑比 Zoundry 胜过一筹。</p><h2 id="图片预处理">图片预处理</h2><p>一般情况下，不会自作主张压缩图片（<em>Zoundry 的怨念</em>），但图片尺寸太大的话，还是会被缩小尺寸——什么尺寸才会触发缩小目前还不清楚，我测试用的尺寸是 1600x1200。当然，手动改回原图尺寸也不是很麻烦。</p><p>如果设置菜单里可以调整需要压缩的大图尺寸就更好了，目前还没有提供类似的选项。</p><h2 id="链接词汇表">链接词汇表</h2><p>设置内发现链接词汇表的选项，配置之后，在文章内输入预设好的词或短语，Windows Live Writer 会自动给它加上链接，很贴心。PJBlog 也有类似的功能，免去手动之累。</p><h2 id="插件">插件</h2><p>Windows Live Writer 才上线不久，但微软这次的态度相当开放，可供下载的插件数量已颇为可观。我暂时下载了两个插件，分别用来插入视频和代码。</p><h2 id="缺点">缺点</h2><p>分类选项在编辑窗口底部，非常隐蔽，我找了半天才看到。界面位置好像可以自定义，在我看来，指定分类几乎是每篇文章都要用到的功能，不至于刻意放在不起眼的位置。难道欧美用户都喜欢默认分类，仅靠 Tag 来区分？</p><p>还有一个用词的问题，Tag 通用的中文翻译是标签，但在 Writer 里只有标记，导致我一时没有反应过来，哪里加标签呢？</p><hr><p>目前用下来就是这些体会，至于撰写界面，微软的产品都是相似的操作逻辑，上手极快，也没有任何卡顿。暂且先发布吧，顺便看看发布过程中会不会遇到什么问题。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 玩艺 </category>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Blog Tools </tag>
+            
+            <tag> Windows Live Writer </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Windows Live Writer 更新</title>
       <link href="/playground/apps/windows-live-writer-update/"/>
       <url>/playground/apps/windows-live-writer-update/</url>
@@ -5281,35 +5337,6 @@
             <tag> Windows Live Writer </tag>
             
             <tag> Software </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Windows Live Writer 初上手体验</title>
-      <link href="/playground/apps/windows-live-writer-review/"/>
-      <url>/playground/apps/windows-live-writer-review/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p><a href="image-20230602095530186.png" title="Windows Live Writer" class="gallery-item"><img src="image-20230602095530186.png" alt="Windows Live Writer"><span class="image-caption">Windows Live Writer</span></a></p><h2 id="自动解析-blog 配置">自动解析 Blog 配置</h2><p>主流的 <a href="http://www.blogger.com/" title="Blogger">Blogger</a> 只要粘贴地址即可成功解析，非常方便。国内流行的 <a href="http://www.pjhome.net/" title="国内比较流行的ASP Blog程序">PJBlog</a> 则需要手动指定 XMLRPC 接口地址，配置完成后成功连接，也不怎么麻烦。</p><p>LifeType 方面，据 <a href="http://blog.markplace.net/" title="Lifetype达人Mark，来自台湾">Mark Wu</a>的文章，应该需要手动改写源代码，所以暂时没有尝试。</p><h2 id="主题预览功能">主题预览功能</h2><p>正如传闻中的那样，Windows Live Writer 的预览功能很强大，虽然 PJBlog 又一次不兼容（<em>虽然国内很流行，但在世界范围依然小众</em>），但 Live Space 与 Blogger 的表现则相当完美。这点无疑比 Zoundry 胜过一筹。</p><h2 id="图片预处理">图片预处理</h2><p>一般情况下，不会自作主张压缩图片（<em>Zoundry 的怨念</em>），但图片尺寸太大的话，还是会被缩小尺寸——什么尺寸才会触发缩小目前还不清楚，我测试用的尺寸是 1600x1200。当然，手动改回原图尺寸也不是很麻烦。</p><p>如果设置菜单里可以调整需要压缩的大图尺寸就更好了，目前还没有提供类似的选项。</p><h2 id="链接词汇表">链接词汇表</h2><p>设置内发现链接词汇表的选项，配置之后，在文章内输入预设好的词或短语，Windows Live Writer 会自动给它加上链接，很贴心。PJBlog 也有类似的功能，免去手动之累。</p><h2 id="插件">插件</h2><p>Windows Live Writer 才上线不久，但微软这次的态度相当开放，可供下载的插件数量已颇为可观。我暂时下载了两个插件，分别用来插入视频和代码。</p><h2 id="缺点">缺点</h2><p>分类选项在编辑窗口底部，非常隐蔽，我找了半天才看到。界面位置好像可以自定义，在我看来，指定分类几乎是每篇文章都要用到的功能，不至于刻意放在不起眼的位置。难道欧美用户都喜欢默认分类，仅靠 Tag 来区分？</p><p>还有一个用词的问题，Tag 通用的中文翻译是标签，但在 Writer 里只有标记，导致我一时没有反应过来，哪里加标签呢？</p><hr><p>目前用下来就是这些体会，至于撰写界面，微软的产品都是相似的操作逻辑，上手极快，也没有任何卡顿。暂且先发布吧，顺便看看发布过程中会不会遇到什么问题。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-      
-      
-      <categories>
-          
-          <category> 玩艺 </category>
-          
-          <category> 软件 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Blog Tools </tag>
-            
-            <tag> Windows Live Writer </tag>
             
         </tags>
       
@@ -5655,31 +5682,6 @@
     
     
     <entry>
-      <title>明日</title>
-      <link href="/blog/tomorrow/"/>
-      <url>/blog/tomorrow/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>在经典的水区，有人问到，“单恋到底算不算初恋？”</p><p>以我之见，初次体验便得到甜蜜的恋爱，那大概并不多见。对于单纯笨拙的少男少女来说，挺身告白已需要莫大的勇气，两情相悦更是可遇不可求。但任谁都会在少年时经历一次美好的遇见，然后体验到一种不可遏止的蠢动和思恋，时时怀着冲动，就又害怕拒绝和失败，所以少年大多焦虑，迷惘，感伤。至于最后有没有行动，有没有结果，那只跟当事人的个性和勇气有关，或许还要加上一些些的幸运，总之不是每个人都能把握的，就算是成年人也不能做到百发百中，更何况是懵懂无知的少年呢？所以我说，不管是单恋，相恋甚至是暗恋，都应该算作初恋。</p><p>之所以这样讲，大概也只跟自己的经验有关吧。少年轻薄的我，当时又何曾把跟某女人的结合当作爱情来追求呢？亦或是深陷于那段记忆不能自拔的我，又怎么愿意把现在置于彼时之上呢？</p><p>越来越觉得自己是个薄情寡义之徒，对任何人，任何事，在别人觉得非常重大的时候，仍然会抱着无所谓的态度，甚至冷漠到让自己也不免惊讶。或者这仅是我的软弱，那么就心安理得地解释为，躲在那样一段与他人无关仅属于自己的记忆里，也只是我的软弱逃避吧。这样的我，或者已经没有资格提到感情这个词。</p><p>抱歉呢，对于千辛万苦地追随我却又不被珍惜的某女人来说。 ——祝生日快乐。</p><p>——祝生日快乐。 致那个难以忘怀、远在天边的她。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 感情 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>今日</title>
       <link href="/blog/today/"/>
       <url>/blog/today/</url>
@@ -5697,6 +5699,31 @@
         <tags>
             
             <tag> 01media </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>明日</title>
+      <link href="/blog/tomorrow/"/>
+      <url>/blog/tomorrow/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>在经典的水区，有人问到，“单恋到底算不算初恋？”</p><p>以我之见，初次体验便得到甜蜜的恋爱，那大概并不多见。对于单纯笨拙的少男少女来说，挺身告白已需要莫大的勇气，两情相悦更是可遇不可求。但任谁都会在少年时经历一次美好的遇见，然后体验到一种不可遏止的蠢动和思恋，时时怀着冲动，就又害怕拒绝和失败，所以少年大多焦虑，迷惘，感伤。至于最后有没有行动，有没有结果，那只跟当事人的个性和勇气有关，或许还要加上一些些的幸运，总之不是每个人都能把握的，就算是成年人也不能做到百发百中，更何况是懵懂无知的少年呢？所以我说，不管是单恋，相恋甚至是暗恋，都应该算作初恋。</p><p>之所以这样讲，大概也只跟自己的经验有关吧。少年轻薄的我，当时又何曾把跟某女人的结合当作爱情来追求呢？亦或是深陷于那段记忆不能自拔的我，又怎么愿意把现在置于彼时之上呢？</p><p>越来越觉得自己是个薄情寡义之徒，对任何人，任何事，在别人觉得非常重大的时候，仍然会抱着无所谓的态度，甚至冷漠到让自己也不免惊讶。或者这仅是我的软弱，那么就心安理得地解释为，躲在那样一段与他人无关仅属于自己的记忆里，也只是我的软弱逃避吧。这样的我，或者已经没有资格提到感情这个词。</p><p>抱歉呢，对于千辛万苦地追随我却又不被珍惜的某女人来说。 ——祝生日快乐。</p><p>——祝生日快乐。 致那个难以忘怀、远在天边的她。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 感情 </tag>
             
         </tags>
       
