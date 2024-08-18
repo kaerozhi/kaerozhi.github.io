@@ -1,4 +1,5 @@
 https://kaerozhi.com/blog/bass-play-of-jingxi/
+https://kaerozhi.com/playground/web/share-bilibili-video-in-hexo/
 https://kaerozhi.com/playground/web/hexo-update-issue/
 https://kaerozhi.com/gears/repairing-a-manual-lens/
 https://kaerozhi.com/playground/synology-decode-problem/
@@ -653,6 +654,8 @@ https://kaerozhi.com/tags/Blog-tools/
 https://kaerozhi.com/tags/zoundry/
 https://kaerozhi.com/tags/%E5%8F%A4%E9%95%87/
 https://kaerozhi.com/tags/%E9%9C%87%E6%B3%BD/
+https://kaerozhi.com/tags/hexo/
+https://kaerozhi.com/tags/bilibili/
 https://kaerozhi.com/categories/blog/
 https://kaerozhi.com/categories/writings/
 https://kaerozhi.com/categories/thoughts/
