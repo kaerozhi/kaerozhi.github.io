@@ -2856,20 +2856,6 @@
   </url>
   
   <url>
-    <loc>https://kaerozhi.com/tags/%E4%B8%83%E5%BE%8B/</loc>
-    <lastmod>2024-08-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://kaerozhi.com/tags/%E7%BB%84%E8%AF%97/</loc>
-    <lastmod>2024-08-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://kaerozhi.com/tags/Web-Design/</loc>
     <lastmod>2024-08-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -2892,6 +2878,20 @@
   
   <url>
     <loc>https://kaerozhi.com/tags/Adobe/</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kaerozhi.com/tags/%E4%B8%83%E5%BE%8B/</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kaerozhi.com/tags/%E7%BB%84%E8%AF%97/</loc>
     <lastmod>2024-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4088,13 +4088,6 @@
   </url>
   
   <url>
-    <loc>https://kaerozhi.com/tags/%E5%9B%A2%E9%98%9F/</loc>
-    <lastmod>2024-08-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://kaerozhi.com/tags/poster/</loc>
     <lastmod>2024-08-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -4103,6 +4096,13 @@
   
   <url>
     <loc>https://kaerozhi.com/tags/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80/</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kaerozhi.com/tags/%E5%9B%A2%E9%98%9F/</loc>
     <lastmod>2024-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4487,6 +4487,13 @@
   </url>
   
   <url>
+    <loc>https://kaerozhi.com/tags/%E7%AB%A5%E5%B9%B4/</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://kaerozhi.com/tags/%E7%85%A7%E7%89%87%E9%9B%86/</loc>
     <lastmod>2024-08-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -4495,13 +4502,6 @@
   
   <url>
     <loc>https://kaerozhi.com/tags/%E8%80%83%E8%AF%81/</loc>
-    <lastmod>2024-08-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://kaerozhi.com/tags/%E7%AB%A5%E5%B9%B4/</loc>
     <lastmod>2024-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4697,6 +4697,13 @@
   </url>
   
   <url>
+    <loc>https://kaerozhi.com/tags/sleepless/</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://kaerozhi.com/tags/music/</loc>
     <lastmod>2024-08-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -4705,13 +4712,6 @@
   
   <url>
     <loc>https://kaerozhi.com/tags/rock/</loc>
-    <lastmod>2024-08-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://kaerozhi.com/tags/sleepless/</loc>
     <lastmod>2024-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4949,27 +4949,6 @@
   </url>
   
   <url>
-    <loc>https://kaerozhi.com/tags/%E9%BB%91%E8%8E%93/</loc>
-    <lastmod>2024-08-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://kaerozhi.com/tags/%E6%A8%A1%E6%8B%9F%E5%99%A8/</loc>
-    <lastmod>2024-08-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://kaerozhi.com/tags/%E6%89%8B%E6%9C%BA%E7%B3%BB%E7%BB%9F/</loc>
-    <lastmod>2024-08-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://kaerozhi.com/tags/twitter/</loc>
     <lastmod>2024-08-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -4985,6 +4964,27 @@
   
   <url>
     <loc>https://kaerozhi.com/tags/SNS/</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kaerozhi.com/tags/%E9%BB%91%E8%8E%93/</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kaerozhi.com/tags/%E6%A8%A1%E6%8B%9F%E5%99%A8/</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kaerozhi.com/tags/%E6%89%8B%E6%9C%BA%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2024-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -5259,14 +5259,14 @@
   </url>
   
   <url>
-    <loc>https://kaerozhi.com/categories/writings/shici/</loc>
+    <loc>https://kaerozhi.com/categories/writings/research/</loc>
     <lastmod>2024-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://kaerozhi.com/categories/writings/research/</loc>
+    <loc>https://kaerozhi.com/categories/writings/shici/</loc>
     <lastmod>2024-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
