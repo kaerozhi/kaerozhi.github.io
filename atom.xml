@@ -46,7 +46,7 @@
     <link href="https://kaerozhi.com/blog/bass-play-of-jingxi/"/>
     <id>https://kaerozhi.com/blog/bass-play-of-jingxi/</id>
     <published>2024-08-18T02:56:00.000Z</published>
-    <updated>2024-08-18T05:11:43.748Z</updated>
+    <updated>2024-08-18T05:28:54.142Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>小朋友学贝斯已经半年，还在南昌度暑假，听老师说学校组织了表演，居然打起精神要求提前回苏州，实属难得。到现场虽然指法生涩，但一点儿不怯场，这点可比我强多了。</p><p>B站的分享默认只有 360p，画质一塌糊涂，不登录账号就解锁不了更高的画质，吃相太难看了，你好歹给个 720p 啊。不过有一说一，抖音的画质更差，国内的平台实在是糟糕，这要是开放全球竞争一个个都得倒闭……</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
@@ -1557,12 +1557,15 @@ Hexo 用了两天，基本功能差不多弄清楚了。不过也发现一些问
     <link href="https://kaerozhi.com/blog/handmade-cookies-by-jingxi/"/>
     <id>https://kaerozhi.com/blog/handmade-cookies-by-jingxi/</id>
     <published>2019-03-23T13:00:05.000Z</published>
-    <updated>2023-07-17T16:08:59.901Z</updated>
+    <updated>2024-08-18T05:34:30.717Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><span id="more"></span></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
     
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&gt;</summary>
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article</summary>
+      
     
     
     
