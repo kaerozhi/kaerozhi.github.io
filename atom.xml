@@ -1241,9 +1241,9 @@ Hexo 用了两天，基本功能差不多弄清楚了。不过也发现一些问
     <category term="游历" scheme="https://kaerozhi.com/categories/tours/"/>
     
     
-    <category term="游记" scheme="https://kaerozhi.com/tags/%E6%B8%B8%E8%AE%B0/"/>
-    
     <category term="苏州" scheme="https://kaerozhi.com/tags/%E8%8B%8F%E5%B7%9E/"/>
+    
+    <category term="游记" scheme="https://kaerozhi.com/tags/%E6%B8%B8%E8%AE%B0/"/>
     
     <category term="拙政园" scheme="https://kaerozhi.com/tags/%E6%8B%99%E6%94%BF%E5%9B%AD/"/>
     
@@ -1625,9 +1625,9 @@ Hexo 用了两天，基本功能差不多弄清楚了。不过也发现一些问
     <category term="游历" scheme="https://kaerozhi.com/categories/tours/"/>
     
     
-    <category term="游记" scheme="https://kaerozhi.com/tags/%E6%B8%B8%E8%AE%B0/"/>
-    
     <category term="苏州" scheme="https://kaerozhi.com/tags/%E8%8B%8F%E5%B7%9E/"/>
+    
+    <category term="游记" scheme="https://kaerozhi.com/tags/%E6%B8%B8%E8%AE%B0/"/>
     
     <category term="吴门人家" scheme="https://kaerozhi.com/tags/%E5%90%B4%E9%97%A8%E4%BA%BA%E5%AE%B6/"/>
     
@@ -2122,11 +2122,11 @@ Hexo 用了两天，基本功能差不多弄清楚了。不过也发现一些问
     <category term="游历" scheme="https://kaerozhi.com/categories/tours/"/>
     
     
+    <category term="游记" scheme="https://kaerozhi.com/tags/%E6%B8%B8%E8%AE%B0/"/>
+    
     <category term="厦门" scheme="https://kaerozhi.com/tags/%E5%8E%A6%E9%97%A8/"/>
     
     <category term="鼓浪屿" scheme="https://kaerozhi.com/tags/%E9%BC%93%E6%B5%AA%E5%B1%BF/"/>
-    
-    <category term="游记" scheme="https://kaerozhi.com/tags/%E6%B8%B8%E8%AE%B0/"/>
     
   </entry>
   
@@ -5536,30 +5536,6 @@ Hexo 用了两天，基本功能差不多弄清楚了。不过也发现一些问
   </entry>
   
   <entry>
-    <title>今日</title>
-    <link href="https://kaerozhi.com/blog/today/"/>
-    <id>https://kaerozhi.com/blog/today/</id>
-    <published>2006-11-21T00:00:00.000Z</published>
-    <updated>2023-05-28T15:16:57.703Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>其一：终于收到 <a href="http://www.01media.cn">01Media</a> 的面试通知，非常令人激动而振奋的一天。爆发吧，你这个混蛋！</p><p>其二：网站从昨天下午开始忽然被 ISP 停掉，理由是我的网站居然占用 91% 的CPU……空间里面只放了 PJBlog 一个带有数据库的程序，另外有几个 PDF 提供下载——所以这真是令人无法理解。一直持续到今天上午，我联系到对方的客服，才答应开通网站“观察”一下。无言。</p><p>其三：某人对她 256M 内存的电脑终于忍无可忍了，在没有资金买入新的内存的情况下，我只好在自己的机器上忍痛拆了一根 512M 的内存给她。当然不可能让情势逆转，所以我把她机器上原有的 256M 装到我这边来了（某人抗议中：为什么我一定要比你的配置差！）。现在内存分别是 768M 和512M，勉强达到了一个平衡，不过这也仅是权宜之计，无论如何，将来一定要装备 1G x 2 的内存。</p><p>其四：鼠标坏了，单击和双击不能区分——试想一下，关闭当前窗口，结果连下面一个窗口也给关闭了；打开一个文件夹，结果变成了重命名……我现在已经尽量用键盘操作了，不过鼠标还是不可避免要用到，真想一把摔了它。</p><p>其五：没有了，嘿嘿。</p><p>－－－－－－－－忽然想起来的分割线－－－－－－－－－－－－</p><p>增补一：PJBlog 对垃圾留言和垃圾引用的无能为力实在让我觉得很无奈——似乎舜子本人也很无奈，<a href="http://PJHome.net">PJHome.net</a> 上面的垃圾留言似乎也不少。因为网站被停，所以根据 ISP 的提示把数据库压缩了一下，顺便把里面的垃圾广告全清理掉了。刚才忽然又看到还有一条幸存的，苦笑。</p><p>增补二：本机的 IIS 忽然又宣告“Service Unavailable”了，好吧，我承认自己很菜，不过这样放弃 .Net 会心安理得一点。那么宣布，我从此转投 PHP 的阵营了。</p><p>不过仍然很失败，光是一个 MySQL，就捣鼓了半天没有结果……我还想用 WordPress 代替 PJBlog 呢。寒～</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article</summary>
-      
-    
-    
-    
-    <category term="日常" scheme="https://kaerozhi.com/categories/blog/"/>
-    
-    
-    <category term="01media" scheme="https://kaerozhi.com/tags/01media/"/>
-    
-  </entry>
-  
-  <entry>
     <title>明日</title>
     <link href="https://kaerozhi.com/blog/tomorrow/"/>
     <id>https://kaerozhi.com/blog/tomorrow/</id>
@@ -5580,6 +5556,30 @@ Hexo 用了两天，基本功能差不多弄清楚了。不过也发现一些问
     
     
     <category term="感情" scheme="https://kaerozhi.com/tags/%E6%84%9F%E6%83%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>今日</title>
+    <link href="https://kaerozhi.com/blog/today/"/>
+    <id>https://kaerozhi.com/blog/today/</id>
+    <published>2006-11-21T00:00:00.000Z</published>
+    <updated>2023-05-28T15:16:57.703Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>其一：终于收到 <a href="http://www.01media.cn">01Media</a> 的面试通知，非常令人激动而振奋的一天。爆发吧，你这个混蛋！</p><p>其二：网站从昨天下午开始忽然被 ISP 停掉，理由是我的网站居然占用 91% 的CPU……空间里面只放了 PJBlog 一个带有数据库的程序，另外有几个 PDF 提供下载——所以这真是令人无法理解。一直持续到今天上午，我联系到对方的客服，才答应开通网站“观察”一下。无言。</p><p>其三：某人对她 256M 内存的电脑终于忍无可忍了，在没有资金买入新的内存的情况下，我只好在自己的机器上忍痛拆了一根 512M 的内存给她。当然不可能让情势逆转，所以我把她机器上原有的 256M 装到我这边来了（某人抗议中：为什么我一定要比你的配置差！）。现在内存分别是 768M 和512M，勉强达到了一个平衡，不过这也仅是权宜之计，无论如何，将来一定要装备 1G x 2 的内存。</p><p>其四：鼠标坏了，单击和双击不能区分——试想一下，关闭当前窗口，结果连下面一个窗口也给关闭了；打开一个文件夹，结果变成了重命名……我现在已经尽量用键盘操作了，不过鼠标还是不可避免要用到，真想一把摔了它。</p><p>其五：没有了，嘿嘿。</p><p>－－－－－－－－忽然想起来的分割线－－－－－－－－－－－－</p><p>增补一：PJBlog 对垃圾留言和垃圾引用的无能为力实在让我觉得很无奈——似乎舜子本人也很无奈，<a href="http://PJHome.net">PJHome.net</a> 上面的垃圾留言似乎也不少。因为网站被停，所以根据 ISP 的提示把数据库压缩了一下，顺便把里面的垃圾广告全清理掉了。刚才忽然又看到还有一条幸存的，苦笑。</p><p>增补二：本机的 IIS 忽然又宣告“Service Unavailable”了，好吧，我承认自己很菜，不过这样放弃 .Net 会心安理得一点。那么宣布，我从此转投 PHP 的阵营了。</p><p>不过仍然很失败，光是一个 MySQL，就捣鼓了半天没有结果……我还想用 WordPress 代替 PJBlog 呢。寒～</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article</summary>
+      
+    
+    
+    
+    <category term="日常" scheme="https://kaerozhi.com/categories/blog/"/>
+    
+    
+    <category term="01media" scheme="https://kaerozhi.com/tags/01media/"/>
     
   </entry>
   
