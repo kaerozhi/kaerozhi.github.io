@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  
+    <meta name="keywords" content="Waxa Design, 蛙夏, kaero, kaero zhi, designer, 自由设计师, blog, design, photography, photographer, chinese, suzhou, 旧体诗, 诗词">
+  
+  
+    <meta name="description" content="No space left on device...">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <title>群晖 ENOSPC 问题 |  Kaero Zhi</title>
+  
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/webclip/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/webclip/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/webclip/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/webclip/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/webclip/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/webclip/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/webclip/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/webclip/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/webclip/apple-touch-icon-167x167.png">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+  
+  
+    <link rel="shortcut icon" href="/assets/images/favicon.png">
+  
+  
+    <link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css"/>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <script src="/libs/jquery/jquery-3.7.0.min.js"></script>
+  <script src="/libs/locomotive-scroll/locomotive-scroll.min.js"></script>
+  <script>
+    (function () {
+        var scroll = new LocomotiveScroll();
+    })();
+  </script>
+  <link rel="stylesheet" href="/libs/locomotive-scroll/locomotive-scroll.css"/>
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Kaero Zhi" type="application/atom+xml">
+</head>
+
+
+<body class=" post layout-post category-playground category-web tag-hexo tag-群晖">
+  <div class="main">
+    <header id="header" class="my-5">
+	<nav class="navbar navbar-expand-md">
+		<div class="row container">
+			<a class="navbar-brand col-6 col-sm-2 m-0" href="/">
+			
+				<h1>Kaero Zhi</h1>
+			
+			</a>
+			<div class="navbar-sm col-sm-8 col-0 d-flex justify-content-center m-0">
+				<ul class="navbar-nav">
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/categories/photography">影像</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/categories/writings">文字</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/categories/cases">案例</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/library">校书</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/archives">更新</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/about">关于</a>
+  </li>
+  
+</ul>
+			</div>
+			<div class="col-6 col-sm-2 d-flex justify-content-end m-0">
+				<button type="button" class="nav-btn" data-bs-toggle="modal" data-bs-target="#modalNavi">
+					<span>目次</span>
+				</button>
+			</div>
+			<div class="modal fade m-0 p-0" id="modalNavi">
+				<div class="modal-dialog modal-fullscreen">
+				  <div class="modal-content bg-dark text-white">
+					<header class="modal-header border-0 row container my-5">
+						<a class="modal-brand col-2" href="/">
+						
+							Kaero Zhi
+						
+						</a>
+						<div class="col-6 col-sm-2 d-flex justify-content-end m-0">
+							<button type="button" class="btn-close" data-bs-dismiss="modal">
+								<span>目次</span>
+							</button>
+						</div>
+					</header>
+					<div class="modal-body row container">
+						<ul class="modal-nav">
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/categories/photography">影像</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/categories/writings">文字</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/categories/cases">案例</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/library">校书</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/archives">更新</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-link" href="/about">关于</a>
+  </li>
+  
+</ul>
+					</div>
+					<footer class="modal-footer justify-content-center mb-5 border-0 row container">					  
+						<ul class="social-nav">
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-twitter" target="_blank" rel="noopener" href="https://twitter.com/kaero"><span>twitter</span></a>
+    </li>
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-douban" target="_blank" rel="noopener" href="https://douban.com/people/kaero/"><span>douban</span></a>
+    </li>
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-instagram" target="_blank" rel="noopener" href="https://www.instagram.com/kaero/"><span>instagram</span></a>
+    </li>
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-flickr" target="_blank" rel="noopener" href="https://flickr.com/kaero/"><span>flickr</span></a>
+    </li>
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-tumblr" target="_blank" rel="noopener" href="https://superkaero.tumblr.com/"><span>tumblr</span></a>
+    </li>
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-pinterest" target="_blank" rel="noopener" href="https://www.pinterest.com/kaero/"><span>pinterest</span></a>
+    </li>
+    
+  </ul>
+					</footer>			  
+				  </div>
+				</div>
+			  </div>
+		</div>
+	</nav>
+</header>
+    <main>
+      <div class="container">
+  <article id="post-synology-enospc-error" class="article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+        <div class="article-meta">
+          <time class="text-gray" datetime="2024-08-04T19:57:00.000Z" itemprop="datePublished">
+  2024-08-05
+</time>
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/playground/">玩艺</a> / <a class="article-category-link" href="/categories/playground/web/">网站</a>
+  </div>
+
+        </div>
+        
+  
+    <h1 class="article-title" itemprop="name">
+      群晖 ENOSPC 问题
+    </h1>
+  
+
+        
+  <div class="article-description article-description">
+    <p>No space left on device…</p>
+
+  </div>
+
+      
+    </header>
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+    
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>最近一直在持续微调 Hexo 的主题外观，免不了经常上官网查阅文档。今天偶然发现官方的最新版本号已经是 7.3，而我黑群晖上的 Hexo 还停留在 6.3。</p>
+<h2 id="enospc-问题">ENOSPC 问题</h2>
+<p>版本落后其实并不影响使用，反正 deploy 到服务器上都只是静态文件而已，若是折木奉太郎那样的节能主义者，以下各种奇怪问题都将不会发生。奈何自己有强迫症，不升级到最新版本尝尝鲜就手痒头麻浑身躁动。SSH 连上黑群晖，<code>npm update</code> 给他来个全面升级，岂不美哉？然而结果并不顺利……</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">root@MiniServer:~# npm update</span><br><span class="line">npm error code ENOSPC</span><br><span class="line">npm error syscall write</span><br><span class="line">npm error errno -28</span><br><span class="line">npm error nospc ENOSPC: no space left on device, write</span><br><span class="line">npm error nospc There appears to be insufficient space on your system to finish.</span><br><span class="line">npm error nospc Clear up some disk space and try again.</span><br><span class="line">npm error A complete log of this run can be found in: /root/.npm/_logs/2024-08-04T18_51_14_670Z-debug-0.log</span><br></pre></td></tr></table></figure>
+<p>貌似是说设备没空间了，用 <code>df -h</code> 看看磁盘占用状况：</p>
+<p><a href="image-20240805040841885.png" title="执行命令后的结果" class="gallery-item"><img src="image-20240805040841885.png" alt="执行命令后的结果"><span class="image-caption">执行命令后的结果</span></a></p>
+<p><code>/dev/md0</code> 就是群晖的系统分区，该分区储存了群晖系统基础数据，它满了就相当于 Windows 系统盘满了，难怪什么命令都歇菜。</p>
+<h2 id="解决办法">解决办法</h2>
+<p>这里参考了以下两处：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://zqh2333.github.io/2021/10/28/jie-jue-hei-qun-hui-xi-tong-ke-yong-kong-jian-bu-zu-wen-ti/">Qihong：解决黑群晖系统可用空间不足问题</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/synology/comments/10j7x9h/devmd0_full/">Reddit 帖子：/dev/md0 full</a></li>
+</ul>
+<p>使用 <code>du -sh /*</code> 指令查看根目录（<em>根目录就是系统目录</em>）下的各个一级文件夹大小：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">395M    /root</span><br><span class="line">23M     /run</span><br><span class="line">0       /sbin</span><br><span class="line">0       /syno_etcd_client:2379</span><br><span class="line">0       /sys</span><br><span class="line">760K    /tmp</span><br><span class="line">1.6G    /usr</span><br><span class="line">186M    /var</span><br><span class="line">5.9M    /var.defaults</span><br></pre></td></tr></table></figure>
+<p>发现最大的文件夹是 <code>/usr</code>，顺藤摸瓜下去，里面最大的单个文件是 <code>/usr/syno/synoinstall/space-preserve</code>，479M。如果是一般文件，可以使用 <code>rm -rf</code> 命令将其删除，但这里感觉是系统文件，不敢造次。</p>
+<p>继续尝试，使用命令 <code>sudo du -ch --exclude=./dev --exclude=./run --exclude=./sys --exclude=./tmp --exclude=./volume1 --exclude=./volume2 --exclude=./proc | sort -h | tail -50</code>，把系统文件夹和挂载的硬盘排除在外，按照文件夹大小列出其他文件夹：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">35M     ./usr/local/packages/@appstore/Python2/usr</span><br><span class="line">35M     ./usr/local/packages/@appstore/Python2/usr/local</span><br><span class="line">35M     ./usr/local/packages/@appstore/Python2/usr/local/lib</span><br><span class="line">35M     ./usr/local/packages/@appstore/SynoFinder</span><br><span class="line">40M     ./usr/local/packages/@appstore/SMBService/usr</span><br><span class="line">40M     ./usr/syno/synoman/webman/texts</span><br><span class="line">42M     ./usr/share/geoip</span><br><span class="line">42M     ./var/log</span><br><span class="line">43M     ./usr/syno/synoman/webman/modules</span><br><span class="line">44M     ./usr/local/packages/@appstore/SMBService</span><br><span class="line">52M     ./root/.cache/node-gyp/18.12.0/include/node/openssl/archs</span><br><span class="line">52M     ./root/.node-gyp/18.12.0/include/node/openssl/archs</span><br><span class="line">53M     ./root/.cache/node-gyp/18.12.0/include/node/openssl</span><br><span class="line">53M     ./root/.node-gyp/18.12.0/include/node/openssl</span><br><span class="line">53M     ./root/.node-gyp/18.18.2/include/node/openssl/archs</span><br><span class="line">54M     ./root/.cache/node-gyp</span><br><span class="line">54M     ./root/.cache/node-gyp/18.12.0</span><br><span class="line">54M     ./root/.cache/node-gyp/18.12.0/include</span><br><span class="line">54M     ./root/.cache/node-gyp/18.12.0/include/node</span><br><span class="line">54M     ./root/.node-gyp/18.12.0</span><br><span class="line">54M     ./root/.node-gyp/18.12.0/include</span><br><span class="line">54M     ./root/.node-gyp/18.12.0/include/node</span><br><span class="line">54M     ./root/.node-gyp/18.18.2/include/node/openssl</span><br><span class="line">56M     ./root/.node-gyp/18.18.2</span><br><span class="line">56M     ./root/.node-gyp/18.18.2/include</span><br><span class="line">56M     ./root/.node-gyp/18.18.2/include/node</span><br><span class="line">57M     ./root/.cache</span><br><span class="line">61M     ./usr/lib/python3.8</span><br><span class="line">80M     ./var/db/geoip-database</span><br><span class="line">83M     ./var/db</span><br><span class="line">105M    ./usr/bin</span><br><span class="line">109M    ./root/.node-gyp</span><br><span class="line">128M    ./usr/syno/synoman/webman</span><br><span class="line">129M    ./usr/share</span><br><span class="line">170M    ./usr/syno/synoman</span><br><span class="line">186M    ./var</span><br><span class="line">205M    ./usr/local/packages/@appstore</span><br><span class="line">206M    ./usr/local/packages</span><br><span class="line">208M    ./root/.npm/_cacache/content-v2</span><br><span class="line">208M    ./root/.npm/_cacache/content-v2/sha512</span><br><span class="line">227M    ./root/.npm</span><br><span class="line">227M    ./root/.npm/_cacache</span><br><span class="line">256M    ./usr/local</span><br><span class="line">308M    ./usr/lib</span><br><span class="line">395M    ./root</span><br><span class="line">497M    ./usr/syno/synoinstall</span><br><span class="line">719M    ./usr/syno</span><br><span class="line">1.6G    ./usr</span><br><span class="line">2.2G    .</span><br><span class="line">2.2G    total</span><br></pre></td></tr></table></figure>
+<p>发现套件、Python 以及 node.js 都装在系统盘里，难怪不妙。但这些也不敢轻动，不如先把带 cache 的删除了再说：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rm -rf ./root/.cache/</span><br><span class="line">rm -rf ./root/.npm/_cacache</span><br><span class="line">rm -rf ./var/.tmp/</span><br></pre></td></tr></table></figure>
+<p>之后再用 <code>df -h</code> 查看系统分区占用，已经成功降到 1.9G，占用率 87%，虽然依然不太健康，但好歹可以正常运行了。</p>
+<h2 id="预防措施：hexo-转移至 docker">预防措施：Hexo 转移至 Docker</h2>
+<p>Hexo 原来是直接安装的，在这次清理空间时，我发现林林总总的 npm 下载的模块占用了不少空间——不要觉得模块文件不大就没关系，群晖的系统分区就区区 2.3G，npm 的模块数量又多，轻轻松松占据上百M。为了长治久安，决定装个 Docker 把 Hexo 圈养在内。</p>
+<p>怎么用 Docker 装 Hexo 的教程很多，可以自行搜索。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>
+    </div>
+    <footer class="article-footer">
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BE%A4%E6%99%96/" rel="tag">群晖</a></li></ul>
+
+      
+      <div class="artile-comments">
+        <script src="https://giscus.app/client.js"
+            data-repo="kaerozhi/waxamedia"
+            data-repo-id="R_kgDOJ8B_JQ"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOJ8B_Jc4ChHzF"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="0"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="noborder_light"
+            data-lang="zh-CN"
+            crossorigin="anonymous"
+            async>
+        </script>
+      </div>
+      
+    </footer>
+  </div>
+  
+  
+    
+<nav class="article-nav pt-4 mt-3" id="article-nav">
+  
+    <a href="/tours/anji-shenxi-canyoning/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          安吉深溪峡谷漂流记
+        
+      </div>
+    </a>
+  
+  
+    <a href="/playground/gears/repairing-a-manual-lens/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">拆装一支手动镜头</div>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+</div>
+    </main>
+    <footer class="footer pt-4 mt-5">
+  <div class="container">
+    <div class="py-3">
+      <div class="row justify-content-between">
+        <div class="footer-brand col-lg-6 mb-5">
+          
+          <h1>Kaero Zhi</h1>
+          
+          <p class="mb-4">傍晚游吴市，因思古人散步，予载山妻，骑小电驴，自署吴散骑常侍，不亦可乎？</p>
+          <ul class="social-nav list-inline">
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-twitter" target="_blank" rel="noopener" href="https://twitter.com/kaero"><span>twitter</span></a>
+    </li>
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-douban" target="_blank" rel="noopener" href="https://douban.com/people/kaero/"><span>douban</span></a>
+    </li>
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-instagram" target="_blank" rel="noopener" href="https://www.instagram.com/kaero/"><span>instagram</span></a>
+    </li>
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-flickr" target="_blank" rel="noopener" href="https://flickr.com/kaero/"><span>flickr</span></a>
+    </li>
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-tumblr" target="_blank" rel="noopener" href="https://superkaero.tumblr.com/"><span>tumblr</span></a>
+    </li>
+    
+    <li class="list-inline-item">
+      <a class="nav-link bi-pinterest" target="_blank" rel="noopener" href="https://www.pinterest.com/kaero/"><span>pinterest</span></a>
+    </li>
+    
+  </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5>友情链接</h5>
+          <ul class="list-inline">
+            
+              <li class="list-inline-item">
+                <a href="https://zesen.net/" title="泽森" target="_blank" rel="noopener">泽森</a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="https://andersnoren.se/" title="Anders Norén" target="_blank" rel="noopener">Anders Norén</a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="https://dlanham.com/" title="David Lanham" target="_blank" rel="noopener">David Lanham</a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="https://acorn.imaging.xin/" title="Acorn" target="_blank" rel="noopener">Acorn</a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="https://duoyu.wang/" title="To Base64" target="_blank" rel="noopener">To Base64</a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="hr" style="opacity: .25;">
+    <div class="pt-3 pb-5">
+      <ul class="list-inline mb-0 text-center">
+        <li class="list-inline-item">&copy; 2024 Kaero Zhi</li>
+        
+        <li class="list-inline-item">Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+        <li class="list-inline-item">Designer <a href="https://kaerozhi.com" target="_blank">Kaero Zhi</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+  </div>
+  <script src="/libs/feather/feather.min.js"></script>
+<script src="/libs/lazysizes/lazysizes.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper1 = new Swiper(".oneSwiper", {
+			slidesPerView: "auto",
+			centeredSlides: true,
+			spaceBetween: 30,
+            effect: 'fade',
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+    });
+	</script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper2 = new Swiper(".article-photos-swiper", {
+			slidesPerView: "auto",
+            spaceBetween: 30,
+            centeredSlides: true,
+            effect: 'fade',
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
+
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+  <script>
+      (function ($) {
+          $(document).ready(function () {
+              if (typeof($.fn.lightGallery) === 'function') {
+                  $('.article').lightGallery({ selector: '.gallery-item' });
+              }
+              if (typeof($.fn.justifiedGallery) === 'function') {
+                  $('.justified-gallery > p > .gallery-item').unwrap();
+                  $('.justified-gallery').justifiedGallery({
+                      rowHeight : 320,
+                      lastRow : 'justify',
+                      margins : 5
+                  });
+              }
+          });
+      })(jQuery);
+  </script>
+
+
+
+<script src="/js/script.js"></script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MC9D4W0FB6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-MC9D4W0FB6');
+    </script>
+    <!-- End Google Analytics -->
+
+</body>
+</html>

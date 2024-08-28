@@ -1,8 +1,10 @@
+https://kaerozhi.com/tours/anji-shenxi-canyoning/
+https://kaerozhi.com/library/%E9%99%88%E5%AF%85%E6%81%AA/%E6%9F%B3%E5%A6%82%E6%98%AF%E5%88%AB%E4%BC%A0/%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E7%BC%98%E8%B5%B7.html
+https://kaerozhi.com/playground/web/synology-enospc-error/
+https://kaerozhi.com/playground/gears/repairing-a-manual-lens/
 https://kaerozhi.com/blog/handmade-cookies-by-jingxi/
 https://kaerozhi.com/blog/bass-play-of-jingxi/
 https://kaerozhi.com/playground/web/share-bilibili-video-in-hexo/
-https://kaerozhi.com/playground/web/hexo-update-issue/
-https://kaerozhi.com/gears/repairing-a-manual-lens/
 https://kaerozhi.com/playground/synology-decode-problem/
 https://kaerozhi.com/tours/zhenze/
 https://kaerozhi.com/photography/lotus-of-huqiu-wetland/
@@ -656,6 +658,8 @@ https://kaerozhi.com/tags/Blog-tools/
 https://kaerozhi.com/tags/zoundry/
 https://kaerozhi.com/tags/%E5%8E%A6%E9%97%A8/
 https://kaerozhi.com/tags/%E9%BC%93%E6%B5%AA%E5%B1%BF/
+https://kaerozhi.com/tags/%E7%BE%A4%E6%99%96/
+https://kaerozhi.com/tags/%E6%BC%82%E6%B5%81/
 https://kaerozhi.com/categories/blog/
 https://kaerozhi.com/categories/writings/
 https://kaerozhi.com/categories/thoughts/
@@ -671,5 +675,4 @@ https://kaerozhi.com/categories/playground/drawing/
 https://kaerozhi.com/categories/photography/
 https://kaerozhi.com/categories/playground/gears/
 https://kaerozhi.com/categories/writings/%E8%BE%91%E5%BD%95/
-https://kaerozhi.com/categories/gears/
 https://kaerozhi.com/categories/playground/stable-diffusion/
