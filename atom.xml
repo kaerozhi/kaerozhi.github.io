@@ -6,7 +6,7 @@
   <link href="https://kaerozhi.com/atom.xml" rel="self"/>
   
   <link href="https://kaerozhi.com/"/>
-  <updated>2024-08-28T07:28:46.458Z</updated>
+  <updated>2024-08-31T03:19:59.738Z</updated>
   <id>https://kaerozhi.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>夜游虎丘</title>
+    <link href="https://kaerozhi.com/photography/family-night-tour-at-huqiu/"/>
+    <id>https://kaerozhi.com/photography/family-night-tour-at-huqiu/</id>
+    <published>2024-08-31T03:12:00.000Z</published>
+    <updated>2024-08-31T03:19:59.738Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><div class="justified-gallery"><p><a href="image-20240831111447404.jpeg" class="gallery-item"><img src="image-20240831111447404.jpeg" alt=""></a></p><p><a href="image-20240831111536021.jpeg" class="gallery-item"><img src="image-20240831111536021.jpeg" alt=""></a></p><p><a href="image-20240831111547169.jpeg" class="gallery-item"><img src="image-20240831111547169.jpeg" alt=""></a></p><p><a href="image-20240831111559388.jpeg" class="gallery-item"><img src="image-20240831111559388.jpeg" alt=""></a></p><p><a href="image-20240831111606439.jpeg" class="gallery-item"><img src="image-20240831111606439.jpeg" alt=""></a></p><p><a href="image-20240831111614754.jpeg" class="gallery-item"><img src="image-20240831111614754.jpeg" alt=""></a></p><p><a href="image-20240831111621864.jpeg" class="gallery-item"><img src="image-20240831111621864.jpeg" alt=""></a></p><p><a href="image-20240831111629208.jpeg" class="gallery-item"><img src="image-20240831111629208.jpeg" alt=""></a></p><p><a href="image-20240831111650577.jpeg" class="gallery-item"><img src="image-20240831111650577.jpeg" alt=""></a></p><p><a href="image-20240831111657840.jpeg" class="gallery-item"><img src="image-20240831111657840.jpeg" alt=""></a></p><p><a href="image-20240831111706422.jpeg" class="gallery-item"><img src="image-20240831111706422.jpeg" alt=""></a></p><p><a href="image-20240831111730648.jpeg" class="gallery-item"><img src="image-20240831111730648.jpeg" alt=""></a></p><p><a href="image-20240831111743702.jpeg" class="gallery-item"><img src="image-20240831111743702.jpeg" alt=""></a></p><p><a href="image-20240831111756452.jpeg" class="gallery-item"><img src="image-20240831111756452.jpeg" alt=""></a></p><p><a href="image-20240831111809556.jpeg" class="gallery-item"><img src="image-20240831111809556.jpeg" alt=""></a></p><p><a href="image-20240831111822178.jpeg" class="gallery-item"><img src="image-20240831111822178.jpeg" alt=""></a></p><p><a href="image-20240831111832359.jpeg" class="gallery-item"><img src="image-20240831111832359.jpeg" alt=""></a></p><p><a href="image-20240831111841174.jpeg" class="gallery-item"><img src="image-20240831111841174.jpeg" alt=""></a></p><p><a href="image-20240831111716928.jpeg" class="gallery-item"><img src="image-20240831111716928.jpeg" alt=""></a></p></div></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article</summary>
+      
+    
+    
+    
+    <category term="影像" scheme="https://kaerozhi.com/categories/photography/"/>
+    
+    
+    <category term="虎丘" scheme="https://kaerozhi.com/tags/%E8%99%8E%E4%B8%98/"/>
+    
+    <category term="家人" scheme="https://kaerozhi.com/tags/%E5%AE%B6%E4%BA%BA/"/>
+    
+    <category term="散步" scheme="https://kaerozhi.com/tags/%E6%95%A3%E6%AD%A5/"/>
+    
+  </entry>
   
   <entry>
     <title>安吉深溪峡谷漂流记</title>
@@ -273,8 +301,8 @@
   
   <entry>
     <title>夜游虎丘</title>
-    <link href="https://kaerozhi.com/tours/huqiu-in-nightu/"/>
-    <id>https://kaerozhi.com/tours/huqiu-in-nightu/</id>
+    <link href="https://kaerozhi.com/tours/huqiu-in-night/"/>
+    <id>https://kaerozhi.com/tours/huqiu-in-night/</id>
     <published>2024-07-15T16:00:00.000Z</published>
     <updated>2024-07-26T06:23:40.924Z</updated>
     
@@ -1037,6 +1065,34 @@ Hexo 用了两天，基本功能差不多弄清楚了。不过也发现一些问
     <category term="Synology" scheme="https://kaerozhi.com/tags/Synology/"/>
     
     <category term="Obsidian" scheme="https://kaerozhi.com/tags/Obsidian/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>校园运动会</title>
+    <link href="https://kaerozhi.com/photography/school-sports-day/"/>
+    <id>https://kaerozhi.com/photography/school-sports-day/</id>
+    <published>2023-04-30T09:16:00.000Z</published>
+    <updated>2024-08-31T03:45:54.604Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><div class="justified-gallery"><p><a href="image-20240830171854445.jpeg" class="gallery-item"><img src="image-20240830171854445.jpeg" alt=""></a></p><p><a href="image-20240830171859179.jpeg" class="gallery-item"><img src="image-20240830171859179.jpeg" alt=""></a></p><p><a href="image-20240830171948113.jpeg" class="gallery-item"><img src="image-20240830171948113.jpeg" alt=""></a></p><p><a href="image-20240830171956457.jpeg" class="gallery-item"><img src="image-20240830171956457.jpeg" alt=""></a></p><p><a href="image-20240830172007644.jpeg" class="gallery-item"><img src="image-20240830172007644.jpeg" alt=""></a></p><p><a href="image-20240830172011646.jpeg" class="gallery-item"><img src="image-20240830172011646.jpeg" alt=""></a></p><p><a href="image-20240830172049646.jpeg" class="gallery-item"><img src="image-20240830172049646.jpeg" alt=""></a></p><p><a href="image-20240830172103707.jpeg" class="gallery-item"><img src="image-20240830172103707.jpeg" alt=""></a></p><p><a href="image-20240830172056304.jpeg" class="gallery-item"><img src="image-20240830172056304.jpeg" alt=""></a></p><p><a href="image-20240830172111958.jpeg" class="gallery-item"><img src="image-20240830172111958.jpeg" alt=""></a></p><p><a href="image-20240830172117061.jpeg" class="gallery-item"><img src="image-20240830172117061.jpeg" alt=""></a></p><p><a href="image-20240830172122107.jpeg" class="gallery-item"><img src="image-20240830172122107.jpeg" alt=""></a></p><p><a href="image-20240830172136612.jpeg" class="gallery-item"><img src="image-20240830172136612.jpeg" alt=""></a></p><p><a href="image-20240830172143876.jpeg" class="gallery-item"><img src="image-20240830172143876.jpeg" alt=""></a></p><p><a href="image-20240830172153233.jpeg" class="gallery-item"><img src="image-20240830172153233.jpeg" alt=""></a></p><p><a href="image-20240830180027526.jpeg" class="gallery-item"><img src="image-20240830180027526.jpeg" alt=""></a></p><p><a href="image-20240830172212646.jpeg" class="gallery-item"><img src="image-20240830172212646.jpeg" alt=""></a></p><p><a href="image-20240830172230027.jpeg" class="gallery-item"><img src="image-20240830172230027.jpeg" alt=""></a></p><p><a href="image-20240830172237565.jpeg" class="gallery-item"><img src="image-20240830172237565.jpeg" alt=""></a></p><p><a href="image-20240830172243458.jpeg" class="gallery-item"><img src="image-20240830172243458.jpeg" alt=""></a></p><p><a href="image-20240830172255854.jpeg" class="gallery-item"><img src="image-20240830172255854.jpeg" alt=""></a></p><p><a href="image-20240830172259669.jpeg" class="gallery-item"><img src="image-20240830172259669.jpeg" alt=""></a></p><p><a href="image-20240830172304999.jpeg" class="gallery-item"><img src="image-20240830172304999.jpeg" alt=""></a></p><p><a href="image-20240830172308295.jpeg" class="gallery-item"><img src="image-20240830172308295.jpeg" alt=""></a></p><p><a href="image-20240830172317854.jpeg" class="gallery-item"><img src="image-20240830172317854.jpeg" alt=""></a></p><p><a href="image-20240830172321076.jpeg" class="gallery-item"><img src="image-20240830172321076.jpeg" alt=""></a></p><p><a href="image-20240830172324856.jpeg" class="gallery-item"><img src="image-20240830172324856.jpeg" alt=""></a></p><p><a href="image-20240830172328409.jpeg" class="gallery-item"><img src="image-20240830172328409.jpeg" alt=""></a></p><p><a href="image-20240830172331829.jpeg" class="gallery-item"><img src="image-20240830172331829.jpeg" alt=""></a></p><p><a href="image-20240830172339759.jpeg" class="gallery-item"><img src="image-20240830172339759.jpeg" alt=""></a></p><p><a href="image-20240830172343487.jpeg" class="gallery-item"><img src="image-20240830172343487.jpeg" alt=""></a></p><p><a href="image-20240830172352214.jpeg" class="gallery-item"><img src="image-20240830172352214.jpeg" alt=""></a></p><p><a href="image-20240830172356421.jpeg" class="gallery-item"><img src="image-20240830172356421.jpeg" alt=""></a></p><p><a href="image-20240830172348794.jpeg" class="gallery-item"><img src="image-20240830172348794.jpeg" alt=""></a></p><p><a href="image-20240830172400340.jpeg" class="gallery-item"><img src="image-20240830172400340.jpeg" alt=""></a></p><p><a href="image-20240830171844454.jpeg" class="gallery-item"><img src="image-20240830171844454.jpeg" alt=""></a></p></div></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article</summary>
+      
+    
+    
+    
+    <category term="影像" scheme="https://kaerozhi.com/categories/photography/"/>
+    
+    
+    <category term="活动" scheme="https://kaerozhi.com/tags/%E6%B4%BB%E5%8A%A8/"/>
+    
+    <category term="校园" scheme="https://kaerozhi.com/tags/%E6%A0%A1%E5%9B%AD/"/>
+    
+    <category term="kids" scheme="https://kaerozhi.com/tags/kids/"/>
     
   </entry>
   
