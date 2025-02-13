@@ -8,7 +8,7 @@
       <link href="/writings/shici/at-2025-new-year/"/>
       <url>/writings/shici/at-2025-new-year/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>新正佳日泥黄网，旧梦良宵斩白蛇。谁分生平甘作悔，尔来滋味涩于茶。潜身攘攘熙熙里，过眼林林总总瓜。偶抱狸奴庭角立，一天流火落烟花。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>新正佳日迷蓝调，旧梦良宵斩白蛇。谁分生平甘作悔，尔来滋味涩于茶。潜身攘攘熙熙里，过眼林林总总瓜。偶抱狸奴庭角立，一天流火落烟花。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
       
       
       <categories>
@@ -54,97 +54,6 @@
             <tag> Flux </tag>
             
             <tag> ComfyUI </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>用 ComfyUI 修复一张褪色的婚纱照</title>
-      <link href="/playground/repaired-an-old-wedding-photo-in-comfyui/"/>
-      <url>/playground/repaired-an-old-wedding-photo-in-comfyui/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>陶小婧年轻的时候脾气爆炸，而且她发脾气的方式很奇怪，当面倒也不怎样，而是偷偷开我的电脑删照片。我们结婚时拍的婚纱照就这样被她销毁了，硬盘上的存档消失不见，实体的相框相册也不知道扔到了哪个垃圾堆。过年回家的时候我特地去了一趟南昌的胜利路步行街，盼着能找到当初拍婚纱的摄影机构，哪怕付费也好，只要能找回存档就足够了，可惜时过境迁，胜利路大变样，那家婚纱摄影公司也不见了。</p><p>好在仍有一幅照片保存在我母亲那里，总算不至于让这些意义特殊的照片全数湮灭。2015年买房，母亲夏天过来探视，不远千里从南昌把这幅照片带到了深圳。</p><p><a href="image-20241030183144775.png" title="婚纱翻拍，使用 Sony A7M4" class="gallery-item"><img src="image-20241030183144775.png" alt="婚纱翻拍，使用 Sony A7M4"><span class="image-caption">婚纱翻拍，使用 Sony A7M4</span></a></p><p>如今又过了快十年，只是经过南昌到深圳、再从深圳到苏州的一路风霜，这幅照片也已经严重褪色，相框也摇摇欲坠，想挂在墙上都有些担心它是不是哪天忽然就散架了。尝试了一下手工修复，总觉得自己技术太差，难以达到满意的程度，于是就想试试 AI 行不行。</p><h2 id="comfyui-内嵌 python 版本差异导致的一个常见问题">ComfyUI 内嵌 Python 版本差异导致的一个常见问题</h2><p>这里面藏着一个很容易被忽略的坑，即 Python 版本的问题。</p><p>我的 Windows 11 已经安装过 Python 3.12，但 ComfyUI 内嵌了一个 Python 在文件夹 <code>ComfyUI/python_embeded</code> 里面，它的版本是 3.11，这就导致安装前置组件的时候，我们打开对应的 Github 链接，会显示对应 Python 不同版本的下载，比如 <a href="https://github.com/z-mahmud22/Dlib_Windows_Python3.x">DLib</a>：</p><p><a href="image-20241026160553215.png" class="gallery-item"><img src="image-20241026160553215.png" alt=""></a></p><p>我们下载 <code>dlib-19.24.1-cp311-cp311-win_amd64.whl</code>，会提示无法安装。如果你此时和我一样，下载了 3.12 的对应版本，安装倒是顺利的，但当你开开心心重启 ComfyUI，一打开界面傻眼了，Import Failed！</p><p>我不知道有没有其他朋友遇到这样的情况，总之我在这里卡了很久，因为你安装的版本对应的是系统 Python，而不是 ComfyUI 内嵌的 Python。直到偶然注意<a href="https://www.bilibili.com/read/cv34981174/">有人提示</a>要把这个内嵌 Python 的路径也加入系统变量，才可以安装正确的版本，才终于搞定。</p><p>比如我的 ComfyUI 路径是 <code>D:\ComfyUI\</code>，那就要在系统变量里面加入 <code>D:\ComfyUI\python_embeded\Scripts</code>。具体的操作步骤如下：</p><ol><li>在电脑图标上右键，在弹出菜单中点击「属性」；</li><li>在弹出的「系统信息」页点击「高级系统设置」；<br><a href="image-20241026161712497.png" title="系统信息页" class="gallery-item"><img src="image-20241026161712497.png" alt="系统信息页"><span class="image-caption">系统信息页</span></a></li><li>在打开的「系统属性」页，点击右下角的「环境变量」；<br><a href="image-20241026161817692.png" title="系统属性页" class="gallery-item"><img src="image-20241026161817692.png" alt="系统属性页"><span class="image-caption">系统属性页</span></a><br>4. 在打开的「环境变量」页，双击 Path：<br><a href="image-20241026161949171.png" title="环境变量" class="gallery-item"><img src="image-20241026161949171.png" alt="环境变量"><span class="image-caption">环境变量</span></a></li><li>点击「新建」，把 ComfyUI 内嵌的 Python，比如我就是上面的 <code>D:\ComfyUI\python_embeded\Scripts</code>，复制进去，点击确定，就 OK 了。<br><a href="image-20241026162209617.png" title="编辑环境变量" class="gallery-item"><img src="image-20241026162209617.png" alt="编辑环境变量"><span class="image-caption">编辑环境变量</span></a></li></ol><p>如此一来，就可以安装正确的 3.11 版本的 Dlib，InsightFace 同理，这样就可以解决节点缺失的问题了。</p><h2 id="工作流拆解">工作流拆解</h2><p>这幅婚纱照的主要问题是褪色，洋红色保留得很好，但蓝色黄色几乎掉光了。画板也泛黄，而且在相机翻拍之后纹理很明显，放大之后布满粗粝的细节，些许污点问题倒不大。</p><h3 id="1-尝试放大，并增加细节">1. 尝试放大，并增加细节</h3></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-      
-      
-      <categories>
-          
-          <category> 玩艺 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> AI </tag>
-            
-            <tag> ComfyUI </tag>
-            
-            <tag> 婚纱照 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>林屋洞与明月湾</title>
-      <link href="/tours/linwudong-and-mingyuewan/"/>
-      <url>/tours/linwudong-and-mingyuewan/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>按照小爱同学提供的天气预报，十三日当天苏州最高气温 33°，比起大姨妈刚来那几天动辄 35、36 的高温，怎么讲都有所改善了，于是建言去太湖转一转。老几位表示我们刚从无锡回来，已经看过太湖了呀。我说不一样不一样，无锡太湖不过是靠近市区，实则太湖之一隅，不足道也。要领略太湖之美，自然要深入太湖，去西山东山了。不过一天跑两边太累，不如就去西山岛环岛一日游。众人称善，攻略自然是由我去做了。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-      
-      
-      <categories>
-          
-          <category> 游历 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 苏州 </tag>
-            
-            <tag> 太湖 </tag>
-            
-            <tag> 西山岛 </tag>
-            
-            <tag> 林屋洞 </tag>
-            
-            <tag> 明月湾 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>同游同里</title>
-      <link href="/tours/tongli-in-late-summer/"/>
-      <url>/tours/tongli-in-late-summer/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-      
-      
-      <categories>
-          
-          <category> 游历 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 苏州 </tag>
-            
-            <tag> 同里 </tag>
-            
-            <tag> 古镇 </tag>
             
         </tags>
       
@@ -244,33 +153,6 @@
     
     
     <entry>
-      <title>贝斯表演：我的悲伤是水做的</title>
-      <link href="/blog/bass-play-of-jingxi/"/>
-      <url>/blog/bass-play-of-jingxi/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>小朋友学贝斯已经半年，还在南昌度暑假，听老师说学校组织了表演，居然打起精神要求提前回苏州，实属难得。到现场虽然指法生涩，但一点儿不怯场，这点可比我强多了。</p><p>B站的分享默认只有 360p，画质一塌糊涂，不登录账号就解锁不了更高的画质，吃相太难看了，你好歹给个 720p 啊。不过有一说一，抖音的画质更差，国内的平台实在是糟糕，这要是开放全球竞争一个个都得倒闭……</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> video </tag>
-            
-            <tag> 景曦 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>晚风中</title>
       <link href="/photography/in-the-evening-breeze/"/>
       <url>/photography/in-the-evening-breeze/</url>
@@ -287,9 +169,9 @@
       
         <tags>
             
-            <tag> 散步 </tag>
-            
             <tag> 虎丘湿地公园 </tag>
+            
+            <tag> 散步 </tag>
             
         </tags>
       
@@ -3069,19 +2951,6 @@
     
     
     <entry>
-      <title>通往春节的加班列车</title>
-      <link href="/blog/a-slow-train-to-spring-festival/"/>
-      <url>/blog/a-slow-train-to-spring-festival/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><div class="justified-gallery"><p><a href="image-20241102010712319.jpeg" class="gallery-item"><img src="image-20241102010712319.jpeg" alt=""></a></p><p><a href="image-20241102010727715.jpeg" class="gallery-item"><img src="image-20241102010727715.jpeg" alt=""></a></p><p><a href="image-20241102010823295.jpeg" class="gallery-item"><img src="image-20241102010823295.jpeg" alt=""></a></p><p><a href="image-20241102010922896.jpeg" class="gallery-item"><img src="image-20241102010922896.jpeg" alt=""></a></p><p><a href="image-20241102011011464.jpeg" class="gallery-item"><img src="image-20241102011011464.jpeg" alt=""></a></p><p><a href="image-20241102011029657.jpeg" class="gallery-item"><img src="image-20241102011029657.jpeg" alt=""></a></p><p><a href="image-20241102011035422.jpeg" class="gallery-item"><img src="image-20241102011035422.jpeg" alt=""></a></p><p><a href="image-20241102011045509.jpeg" class="gallery-item"><img src="image-20241102011045509.jpeg" alt=""></a></p><p><a href="image-20241102010735610.jpeg" class="gallery-item"><img src="image-20241102010735610.jpeg" alt=""></a></p><p><a href="image-20241102011051030.jpeg" class="gallery-item"><img src="image-20241102011051030.jpeg" alt=""></a></p><p><a href="image-20241102011058445.jpeg" class="gallery-item"><img src="image-20241102011058445.jpeg" alt=""></a></p><p><a href="image-20241102011108949.jpeg" class="gallery-item"><img src="image-20241102011108949.jpeg" alt=""></a></p><p><a href="image-20241102011115580.jpeg" class="gallery-item"><img src="image-20241102011115580.jpeg" alt=""></a></p><p><a href="image-20241102011305544.jpeg" class="gallery-item"><img src="image-20241102011305544.jpeg" alt=""></a></p><p><a href="image-20241102011346988.jpeg" class="gallery-item"><img src="image-20241102011346988.jpeg" alt=""></a></p><p><a href="image-20241102012652365.jpeg" class="gallery-item"><img src="image-20241102012652365.jpeg" alt=""></a></p><p><a href="image-20241102011234438.jpeg" class="gallery-item"><img src="image-20241102011234438.jpeg" alt=""></a></p><p><a href="image-20241102011122599.jpeg" class="gallery-item"><img src="image-20241102011122599.jpeg" alt=""></a></p></div></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>FontLab Studio 个人经验</title>
       <link href="/playground/fontlab-studio-tips/"/>
       <url>/playground/fontlab-studio-tips/</url>
@@ -3251,9 +3120,9 @@
       
         <tags>
             
-            <tag> problem </tag>
-            
             <tag> nod32 </tag>
+            
+            <tag> problem </tag>
             
             <tag> windows-7 </tag>
             

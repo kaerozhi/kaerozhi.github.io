@@ -6,7 +6,7 @@
   <link href="https://kaerozhi.com/atom.xml" rel="self"/>
   
   <link href="https://kaerozhi.com/"/>
-  <updated>2025-01-01T10:17:47.848Z</updated>
+  <updated>2025-02-13T11:21:54.231Z</updated>
   <id>https://kaerozhi.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://kaerozhi.com/writings/shici/at-2025-new-year/"/>
     <id>https://kaerozhi.com/writings/shici/at-2025-new-year/</id>
     <published>2025-01-01T10:15:00.000Z</published>
-    <updated>2025-01-01T10:17:47.848Z</updated>
+    <updated>2025-02-13T11:21:54.231Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>新正佳日泥黄网，旧梦良宵斩白蛇。谁分生平甘作悔，尔来滋味涩于茶。潜身攘攘熙熙里，过眼林林总总瓜。偶抱狸奴庭角立，一天流火落烟花。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>新正佳日迷蓝调，旧梦良宵斩白蛇。谁分生平甘作悔，尔来滋味涩于茶。潜身攘攘熙熙里，过眼林林总总瓜。偶抱狸奴庭角立，一天流火落烟花。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
     
       
@@ -73,91 +73,6 @@
   </entry>
   
   <entry>
-    <title>用 ComfyUI 修复一张褪色的婚纱照</title>
-    <link href="https://kaerozhi.com/playground/repaired-an-old-wedding-photo-in-comfyui/"/>
-    <id>https://kaerozhi.com/playground/repaired-an-old-wedding-photo-in-comfyui/</id>
-    <published>2024-10-26T04:47:00.000Z</published>
-    <updated>2024-10-31T00:18:09.274Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>陶小婧年轻的时候脾气爆炸，而且她发脾气的方式很奇怪，当面倒也不怎样，而是偷偷开我的电脑删照片。我们结婚时拍的婚纱照就这样被她销毁了，硬盘上的存档消失不见，实体的相框相册也不知道扔到了哪个垃圾堆。过年回家的时候我特地去了一趟南昌的胜利路步行街，盼着能找到当初拍婚纱的摄影机构，哪怕付费也好，只要能找回存档就足够了，可惜时过境迁，胜利路大变样，那家婚纱摄影公司也不见了。</p><p>好在仍有一幅照片保存在我母亲那里，总算不至于让这些意义特殊的照片全数湮灭。2015年买房，母亲夏天过来探视，不远千里从南昌把这幅照片带到了深圳。</p><p><a href="image-20241030183144775.png" title="婚纱翻拍，使用 Sony A7M4" class="gallery-item"><img src="image-20241030183144775.png" alt="婚纱翻拍，使用 Sony A7M4"><span class="image-caption">婚纱翻拍，使用 Sony A7M4</span></a></p><p>如今又过了快十年，只是经过南昌到深圳、再从深圳到苏州的一路风霜，这幅照片也已经严重褪色，相框也摇摇欲坠，想挂在墙上都有些担心它是不是哪天忽然就散架了。尝试了一下手工修复，总觉得自己技术太差，难以达到满意的程度，于是就想试试 AI 行不行。</p><h2 id="comfyui-内嵌 python 版本差异导致的一个常见问题">ComfyUI 内嵌 Python 版本差异导致的一个常见问题</h2><p>这里面藏着一个很容易被忽略的坑，即 Python 版本的问题。</p><p>我的 Windows 11 已经安装过 Python 3.12，但 ComfyUI 内嵌了一个 Python 在文件夹 <code>ComfyUI/python_embeded</code> 里面，它的版本是 3.11，这就导致安装前置组件的时候，我们打开对应的 Github 链接，会显示对应 Python 不同版本的下载，比如 <a href="https://github.com/z-mahmud22/Dlib_Windows_Python3.x">DLib</a>：</p><p><a href="image-20241026160553215.png" class="gallery-item"><img src="image-20241026160553215.png" alt=""></a></p><p>我们下载 <code>dlib-19.24.1-cp311-cp311-win_amd64.whl</code>，会提示无法安装。如果你此时和我一样，下载了 3.12 的对应版本，安装倒是顺利的，但当你开开心心重启 ComfyUI，一打开界面傻眼了，Import Failed！</p><p>我不知道有没有其他朋友遇到这样的情况，总之我在这里卡了很久，因为你安装的版本对应的是系统 Python，而不是 ComfyUI 内嵌的 Python。直到偶然注意<a href="https://www.bilibili.com/read/cv34981174/">有人提示</a>要把这个内嵌 Python 的路径也加入系统变量，才可以安装正确的版本，才终于搞定。</p><p>比如我的 ComfyUI 路径是 <code>D:\ComfyUI\</code>，那就要在系统变量里面加入 <code>D:\ComfyUI\python_embeded\Scripts</code>。具体的操作步骤如下：</p><ol><li>在电脑图标上右键，在弹出菜单中点击「属性」；</li><li>在弹出的「系统信息」页点击「高级系统设置」；<br><a href="image-20241026161712497.png" title="系统信息页" class="gallery-item"><img src="image-20241026161712497.png" alt="系统信息页"><span class="image-caption">系统信息页</span></a></li><li>在打开的「系统属性」页，点击右下角的「环境变量」；<br><a href="image-20241026161817692.png" title="系统属性页" class="gallery-item"><img src="image-20241026161817692.png" alt="系统属性页"><span class="image-caption">系统属性页</span></a><br>4. 在打开的「环境变量」页，双击 Path：<br><a href="image-20241026161949171.png" title="环境变量" class="gallery-item"><img src="image-20241026161949171.png" alt="环境变量"><span class="image-caption">环境变量</span></a></li><li>点击「新建」，把 ComfyUI 内嵌的 Python，比如我就是上面的 <code>D:\ComfyUI\python_embeded\Scripts</code>，复制进去，点击确定，就 OK 了。<br><a href="image-20241026162209617.png" title="编辑环境变量" class="gallery-item"><img src="image-20241026162209617.png" alt="编辑环境变量"><span class="image-caption">编辑环境变量</span></a></li></ol><p>如此一来，就可以安装正确的 3.11 版本的 Dlib，InsightFace 同理，这样就可以解决节点缺失的问题了。</p><h2 id="工作流拆解">工作流拆解</h2><p>这幅婚纱照的主要问题是褪色，洋红色保留得很好，但蓝色黄色几乎掉光了。画板也泛黄，而且在相机翻拍之后纹理很明显，放大之后布满粗粝的细节，些许污点问题倒不大。</p><h3 id="1-尝试放大，并增加细节">1. 尝试放大，并增加细节</h3></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article</summary>
-      
-    
-    
-    
-    <category term="玩艺" scheme="https://kaerozhi.com/categories/playground/"/>
-    
-    
-    <category term="AI" scheme="https://kaerozhi.com/tags/AI/"/>
-    
-    <category term="ComfyUI" scheme="https://kaerozhi.com/tags/ComfyUI/"/>
-    
-    <category term="婚纱照" scheme="https://kaerozhi.com/tags/%E5%A9%9A%E7%BA%B1%E7%85%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>林屋洞与明月湾</title>
-    <link href="https://kaerozhi.com/tours/linwudong-and-mingyuewan/"/>
-    <id>https://kaerozhi.com/tours/linwudong-and-mingyuewan/</id>
-    <published>2024-09-17T01:23:00.000Z</published>
-    <updated>2024-10-06T10:20:44.313Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>按照小爱同学提供的天气预报，十三日当天苏州最高气温 33°，比起大姨妈刚来那几天动辄 35、36 的高温，怎么讲都有所改善了，于是建言去太湖转一转。老几位表示我们刚从无锡回来，已经看过太湖了呀。我说不一样不一样，无锡太湖不过是靠近市区，实则太湖之一隅，不足道也。要领略太湖之美，自然要深入太湖，去西山东山了。不过一天跑两边太累，不如就去西山岛环岛一日游。众人称善，攻略自然是由我去做了。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-    
-    
-    <summary type="html">本想环岛游，奈何天气太热了，走完两个景点便作罢。</summary>
-    
-    
-    
-    <category term="游历" scheme="https://kaerozhi.com/categories/tours/"/>
-    
-    
-    <category term="苏州" scheme="https://kaerozhi.com/tags/%E8%8B%8F%E5%B7%9E/"/>
-    
-    <category term="太湖" scheme="https://kaerozhi.com/tags/%E5%A4%AA%E6%B9%96/"/>
-    
-    <category term="西山岛" scheme="https://kaerozhi.com/tags/%E8%A5%BF%E5%B1%B1%E5%B2%9B/"/>
-    
-    <category term="林屋洞" scheme="https://kaerozhi.com/tags/%E6%9E%97%E5%B1%8B%E6%B4%9E/"/>
-    
-    <category term="明月湾" scheme="https://kaerozhi.com/tags/%E6%98%8E%E6%9C%88%E6%B9%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>同游同里</title>
-    <link href="https://kaerozhi.com/tours/tongli-in-late-summer/"/>
-    <id>https://kaerozhi.com/tours/tongli-in-late-summer/</id>
-    <published>2024-09-11T07:05:00.000Z</published>
-    <updated>2024-09-11T07:08:33.460Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article</summary>
-      
-    
-    
-    
-    <category term="游历" scheme="https://kaerozhi.com/categories/tours/"/>
-    
-    
-    <category term="苏州" scheme="https://kaerozhi.com/tags/%E8%8B%8F%E5%B7%9E/"/>
-    
-    <category term="同里" scheme="https://kaerozhi.com/tags/%E5%90%8C%E9%87%8C/"/>
-    
-    <category term="古镇" scheme="https://kaerozhi.com/tags/%E5%8F%A4%E9%95%87/"/>
-    
-  </entry>
-  
-  <entry>
     <title>在 Hexo 中启用真正的高清视频</title>
     <link href="https://kaerozhi.com/playground/web/video-in-hexo/"/>
     <id>https://kaerozhi.com/playground/web/video-in-hexo/</id>
@@ -191,7 +106,7 @@
     <link href="https://kaerozhi.com/tours/anji-shenxi-canyoning/"/>
     <id>https://kaerozhi.com/tours/anji-shenxi-canyoning/</id>
     <published>2024-08-22T13:56:00.000Z</published>
-    <updated>2024-09-01T09:22:12.960Z</updated>
+    <updated>2025-02-13T11:24:06.609Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>去年去溧阳竹海漂流，带着三个小朋友，大失所望，盖因地势平缓，水质浑浊。苏省的自然禀赋全在平原鱼米之利，毕竟最高峰都只有625米，要想赏玩山水就指望不上了。今年换了思路，直取浙江，比较了几个漂流胜地，最后选的是安吉深溪峡谷，无他，路程近而已。在网上看了不少视频，将军关或许更刺激，但要多走40分钟的山路，留着明年再去。</p><p>十点半下了高速，时间点有些尴尬，玩水嫌晚，吃饭嫌早，只好先去预订的民宿落脚。经报福镇入山，漂流点就在路边，但民宿还在大山深处，公路顺着溪水在山谷中蜿蜒而上，开了一刻钟才到导航终点。第二天离店时，本来想着开上山顶赏景，结果开了一小时仍在谷中盘桓，遂颓然而返。</p><p>此地山高水深，崖壁陡峭，不时露出大块黝黑的岩石。崖上多翠竹，连山覆岭，山风穿过峡谷，竹叶一时间瑟瑟摇乱，一眼望去又何止千竿万竿。民宿建在公路转角处，在山脚下围起一小块地，用土石垫平了，有四五米高。平台上是个院子，杂草丛生，空中飞舞着无数蜻蜓，但蚊虫稀少。几条瀑布从对面的山崖上轰隆直下，汇入谷底的溪流，奔涌在乱石之中，声势浩大，卧室之内都能感觉到。</p><p>停车时暴雨突降，我们从停车场拎着行李一路小跑，颇有些狼狈。略作休整之后，在山下的镇里用过午餐，饭后又在店里等了十几分钟，雨仍不见止，只能重新回到民宿休息。</p><p>等雨势转小已经快两点。和支景曦一起开车到漂流点，本来以为人应该不多，结果排队者还是塞满了一辆接驳巴士，在上游的起点又等了半小时才终于检票入内。</p><p>谷底溪水澄澈，怪石嶙峋。漂流只是其中的一小段，全程直漂的话估计也就二十来分钟，实际上排队过闸加上打水仗，花了一个半小时，可惜这届漂流群众太拉跨了，让我这个坚定的和平主义不得不下场搞事，Love &amp; Peace！</p><p>服役多年的 GoPro 7 老当益壮，画质仍比 Vivo X100 更顶，可惜续航不太行，在雨后降温的前提下仍旧拍不到一小时，最后几段是手机拍的，宽容度明显下滑。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
@@ -237,32 +152,6 @@
   </entry>
   
   <entry>
-    <title>贝斯表演：我的悲伤是水做的</title>
-    <link href="https://kaerozhi.com/blog/bass-play-of-jingxi/"/>
-    <id>https://kaerozhi.com/blog/bass-play-of-jingxi/</id>
-    <published>2024-08-18T02:56:00.000Z</published>
-    <updated>2024-09-01T09:07:22.752Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>小朋友学贝斯已经半年，还在南昌度暑假，听老师说学校组织了表演，居然打起精神要求提前回苏州，实属难得。到现场虽然指法生涩，但一点儿不怯场，这点可比我强多了。</p><p>B站的分享默认只有 360p，画质一塌糊涂，不登录账号就解锁不了更高的画质，吃相太难看了，你好歹给个 720p 啊。不过有一说一，抖音的画质更差，国内的平台实在是糟糕，这要是开放全球竞争一个个都得倒闭……</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article</summary>
-      
-    
-    
-    
-    <category term="日常" scheme="https://kaerozhi.com/categories/blog/"/>
-    
-    
-    <category term="video" scheme="https://kaerozhi.com/tags/video/"/>
-    
-    <category term="景曦" scheme="https://kaerozhi.com/tags/%E6%99%AF%E6%9B%A6/"/>
-    
-  </entry>
-  
-  <entry>
     <title>晚风中</title>
     <link href="https://kaerozhi.com/photography/in-the-evening-breeze/"/>
     <id>https://kaerozhi.com/photography/in-the-evening-breeze/</id>
@@ -282,9 +171,9 @@
     <category term="影像" scheme="https://kaerozhi.com/categories/photography/"/>
     
     
-    <category term="散步" scheme="https://kaerozhi.com/tags/%E6%95%A3%E6%AD%A5/"/>
-    
     <category term="虎丘湿地公园" scheme="https://kaerozhi.com/tags/%E8%99%8E%E4%B8%98%E6%B9%BF%E5%9C%B0%E5%85%AC%E5%9B%AD/"/>
+    
+    <category term="散步" scheme="https://kaerozhi.com/tags/%E6%95%A3%E6%AD%A5/"/>
     
   </entry>
   
@@ -2954,23 +2843,6 @@ Hexo 用了两天，基本功能差不多弄清楚了。不过也发现一些问
   </entry>
   
   <entry>
-    <title>通往春节的加班列车</title>
-    <link href="https://kaerozhi.com/blog/a-slow-train-to-spring-festival/"/>
-    <id>https://kaerozhi.com/blog/a-slow-train-to-spring-festival/</id>
-    <published>2013-02-08T16:58:00.000Z</published>
-    <updated>2024-11-01T17:27:00.369Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><div class="justified-gallery"><p><a href="image-20241102010712319.jpeg" class="gallery-item"><img src="image-20241102010712319.jpeg" alt=""></a></p><p><a href="image-20241102010727715.jpeg" class="gallery-item"><img src="image-20241102010727715.jpeg" alt=""></a></p><p><a href="image-20241102010823295.jpeg" class="gallery-item"><img src="image-20241102010823295.jpeg" alt=""></a></p><p><a href="image-20241102010922896.jpeg" class="gallery-item"><img src="image-20241102010922896.jpeg" alt=""></a></p><p><a href="image-20241102011011464.jpeg" class="gallery-item"><img src="image-20241102011011464.jpeg" alt=""></a></p><p><a href="image-20241102011029657.jpeg" class="gallery-item"><img src="image-20241102011029657.jpeg" alt=""></a></p><p><a href="image-20241102011035422.jpeg" class="gallery-item"><img src="image-20241102011035422.jpeg" alt=""></a></p><p><a href="image-20241102011045509.jpeg" class="gallery-item"><img src="image-20241102011045509.jpeg" alt=""></a></p><p><a href="image-20241102010735610.jpeg" class="gallery-item"><img src="image-20241102010735610.jpeg" alt=""></a></p><p><a href="image-20241102011051030.jpeg" class="gallery-item"><img src="image-20241102011051030.jpeg" alt=""></a></p><p><a href="image-20241102011058445.jpeg" class="gallery-item"><img src="image-20241102011058445.jpeg" alt=""></a></p><p><a href="image-20241102011108949.jpeg" class="gallery-item"><img src="image-20241102011108949.jpeg" alt=""></a></p><p><a href="image-20241102011115580.jpeg" class="gallery-item"><img src="image-20241102011115580.jpeg" alt=""></a></p><p><a href="image-20241102011305544.jpeg" class="gallery-item"><img src="image-20241102011305544.jpeg" alt=""></a></p><p><a href="image-20241102011346988.jpeg" class="gallery-item"><img src="image-20241102011346988.jpeg" alt=""></a></p><p><a href="image-20241102012652365.jpeg" class="gallery-item"><img src="image-20241102012652365.jpeg" alt=""></a></p><p><a href="image-20241102011234438.jpeg" class="gallery-item"><img src="image-20241102011234438.jpeg" alt=""></a></p><p><a href="image-20241102011122599.jpeg" class="gallery-item"><img src="image-20241102011122599.jpeg" alt=""></a></p></div></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-    
-    
-    <summary type="html">它装得很满，开得很慢，但仍然会抵达终点。</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>FontLab Studio 个人经验</title>
     <link href="https://kaerozhi.com/playground/fontlab-studio-tips/"/>
     <id>https://kaerozhi.com/playground/fontlab-studio-tips/</id>
@@ -3134,9 +3006,9 @@ Hexo 用了两天，基本功能差不多弄清楚了。不过也发现一些问
     <category term="日常" scheme="https://kaerozhi.com/categories/blog/"/>
     
     
-    <category term="problem" scheme="https://kaerozhi.com/tags/problem/"/>
-    
     <category term="nod32" scheme="https://kaerozhi.com/tags/nod32/"/>
+    
+    <category term="problem" scheme="https://kaerozhi.com/tags/problem/"/>
     
     <category term="windows-7" scheme="https://kaerozhi.com/tags/windows-7/"/>
     
