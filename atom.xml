@@ -40,28 +40,6 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://kaerozhi.com/blog/unraid-gpu-not-working/"/>
-    <id>https://kaerozhi.com/blog/unraid-gpu-not-working/</id>
-    <published>2025-04-16T01:07:29.032Z</published>
-    <updated>2025-04-16T01:07:05.068Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>前段时间家里服务器坏了一块硬盘，重启之后就一直启动不了阵列，折腾了好几天，还买了块新硬盘，终于搞定了。但自己修为不够，留下了严重的后遗症，就是核显不工作了。具体表现为：</p><ol><li><strong>群晖虚拟机无法解码</strong>，Synology Photos 的人脸检测和苹果 HEIC/HEVC 解码都罢工了；</li><li><strong>Jellyfin 无法硬解</strong>，导致库内的一大半视频都无法正常播放，最后换 <a href="https://hub.docker.com/r/nyanmisaka/jellyfin">nyanmisaka</a> 的源解决了；</li><li>Synology Photos 罢工以后，尝试了 <a href="https://immich.app/">Immich</a> 作为替代品，平心而论还挺满意的，但 GPU 不工作导致 CPU 压力骤增。这些年拍过十几万张照片，初次导入的时候系统直接崩溃了好几次，即便任务并发数改到最低都不行，最后给 Immich Dokcer 加了限制，只使用四个 CPU 核心才解决。</li></ol><p><a href="image-20250414091101644.png" title="GPU Statics 毫无波动" class="gallery-item"><img src="image-20250414091101644.png" alt="GPU Statics 毫无波动"><span class="image-caption">GPU Statics 毫无波动</span></a></p><p>查看 Unraid 的工具 &gt; 系统驱动页里，其中 i915 显示为 disabled：</p><p><a href="image-20250414092508997.png" title="i915 显示为 disabled" class="gallery-item"><img src="image-20250414092508997.png" alt="i915 显示为 disabled"><span class="image-caption">i915 显示为 disabled</span></a></p><p>但 disabled 的原因是安装了 Intel-GPU-TOP，要不我卸载试试？</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article</summary>
-      
-    
-    
-    
-    <category term="日常" scheme="https://kaerozhi.com/categories/blog/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>元旦戏笔</title>
     <link href="https://kaerozhi.com/writings/shici/at-2025-new-year/"/>
     <id>https://kaerozhi.com/writings/shici/at-2025-new-year/</id>
