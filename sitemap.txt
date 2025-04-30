@@ -1,3 +1,5 @@
+https://kaerozhi.com/playground/gears/adding-gps-location-to-photos/
+https://kaerozhi.com/blog/unraid-gpu-not-working/
 https://kaerozhi.com/tours/anji-shenxi-canyoning/
 https://kaerozhi.com/writings/shici/at-2025-new-year/
 https://kaerozhi.com/writings/%E7%8C%AB/%E7%AC%AC%E4%B8%80%E5%8D%B7.html
@@ -632,6 +634,7 @@ https://kaerozhi.com/tags/%E5%8F%A4%E9%95%87/
 https://kaerozhi.com/tags/%E9%9C%87%E6%B3%BD/
 https://kaerozhi.com/tags/Blog-tools/
 https://kaerozhi.com/tags/zoundry/
+https://kaerozhi.com/tags/%E6%91%84%E5%BD%B1/
 https://kaerozhi.com/categories/thoughts/
 https://kaerozhi.com/categories/writings/
 https://kaerozhi.com/categories/blog/

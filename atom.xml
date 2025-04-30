@@ -6,7 +6,7 @@
   <link href="https://kaerozhi.com/atom.xml" rel="self"/>
   
   <link href="https://kaerozhi.com/"/>
-  <updated>2025-02-13T11:21:54.231Z</updated>
+  <updated>2025-04-30T04:13:19.787Z</updated>
   <id>https://kaerozhi.com/</id>
   
   <author>
@@ -15,6 +15,51 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>给照片添加 GPS 信息</title>
+    <link href="https://kaerozhi.com/playground/gears/adding-gps-location-to-photos/"/>
+    <id>https://kaerozhi.com/playground/gears/adding-gps-location-to-photos/</id>
+    <published>2025-04-30T04:13:19.786Z</published>
+    <updated>2025-04-30T04:13:19.787Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>现在大多数的照片管理 App，都有根据位置自动归类的功能。最近启用的 Immich 就是如此，简单直观，尤其是出门旅游的照片，去过哪里拍过哪些，打开地图一目了然。</p><p><a href="image-20250430093551746.png" title="Immich 的地图功能" class="gallery-item"><img src="image-20250430093551746.png" alt="Immich 的地图功能"><span class="image-caption">Immich 的地图功能</span></a></p><p>然而奇怪的是，在手机拍照如此便捷的当下，相机的 GPS 功能仍然被各种限制，有 GPS 记录功能的机型寥寥无几。上面地图里的数据，绝大部分来自手机，小部分出于 GoPro 和无人机，这些年用相机拍过的照片大概有十万张上下，只是很遗憾，没一张出现在这里。</p><p>对于咱们这样的收纳强迫症来说，每次打开这个功能都会觉得很难接受，难道就没有办法可以解决？</p><p>做完功课之后，发现基本上有这么几种玩法：</p><h2 id="一、外接-gps 设备">一、外接 GPS 设备</h2><p>尼康在单反时代推出过外接的 GPS 模块，型号有 GP-1、GP-1a 等等，基本上都停产了，淘宝或者闲鱼上仍然可以搜索到相关的二手信息，售价300至600不等。按照我搜索到的资料，尼康无反 Z 系列是可以兼容这些老设备的。</p><p><a href="image-20250430095838988.png" title="来自 DPReview 论坛的帖子" class="gallery-item"><img src="image-20250430095838988.png" alt="来自 DPReview 论坛的帖子"><span class="image-caption">来自 DPReview 论坛的帖子</span></a></p><p>然而遗憾的是，因为国内相关法规的限制，尼康单反全系列都屏蔽了 GPS 功能，即使外接 GPS 模块仍然无法使用，需要刷机才能解锁。至于 Z 系列无反相机，还不能确定是否采用了相同的屏蔽策略。如果你买的是港行或者日行，没准可以收一个来试试，但外接模块需要占用冷靴接口也是要考虑的一个因素。</p><h2 id="二、app-同步 gps 信息">二、App 同步 GPS 信息</h2><p>现在主流的玩法是 App 同步 GPS 信息，各家的操作大同小异，此处以尼康 Z63 配合尼康官方的 Snapbridge 为例。尼康官方有相关的<a href="https://nikonimglib.com/snbr/onlinehelp/cn/bluetooth_pairing_4.html">帮助文档</a>，但 Snapbridge 版本有点老，跟新版长得有点不一样，还是得自己走一遍操作流程。</p><p>首先手机上安装 SnapBridge，打开 App，默认界面长这样：</p><p><a href="image-20250430103813244.png" title="SnapBridge 默认界面" class="gallery-item"><img src="image-20250430103813244.png" alt="SnapBridge 默认界面"><span class="image-caption">SnapBridge 默认界面</span></a></p><p>然后点击中间的「连接至照相机」，选择自己的相机型号：</p><p><a href="image-20250430103921322.png" title="选择对应机型" class="gallery-item"><img src="image-20250430103921322.png" alt="选择对应机型"><span class="image-caption">选择对应机型</span></a></p><p>连接类型选蓝牙：</p><p><a href="image-20250430104021843.png" title="选择配对 (Bluetooth)" class="gallery-item"><img src="image-20250430104021843.png" alt="选择配对 (Bluetooth)"><span class="image-caption">选择配对 (Bluetooth)</span></a></p><p>同时打开相机，进入相机的蓝牙配对界面：</p><p><a href="image-20250430104124428.png" title="网络菜单 &gt; 连接至智能设备" class="gallery-item"><img src="image-20250430104124428.png" alt="网络菜单 &gt; 连接至智能设备"><span class="image-caption">网络菜单 &gt; 连接至智能设备</span></a></p><p><a href="image-20250430104306146.jpeg" title="同样选择「配对 (Bluetooth)」" class="gallery-item"><img src="image-20250430104306146.jpeg" alt="同样选择「配对 (Bluetooth)」"><span class="image-caption">同样选择「配对 (Bluetooth)」</span></a></p><p>然后 Snapbridge 会搜索到你的相机：</p><p><a href="image-20250430104435863.png" title="我的相机是 Z63" class="gallery-item"><img src="image-20250430104435863.png" alt="我的相机是 Z63"><span class="image-caption">我的相机是 Z63</span></a></p><p>同时在相机和 Snapbridge 上确认，开始配对：</p><p><a href="image-20250430104524228.png" title="正在配对" class="gallery-item"><img src="image-20250430104524228.png" alt="正在配对"><span class="image-caption">正在配对</span></a><br>配对完成之后，界面是这样的：</p><p><a href="image-20250430104633129.png" title="默认界面出现相机" class="gallery-item"><img src="image-20250430104633129.png" alt="默认界面出现相机"><span class="image-caption">默认界面出现相机</span></a></p><p>点击右上角的小齿轮，出现弹出界面：</p><p><a href="image-20250430104723750.png" class="gallery-item"><img src="image-20250430104723750.png" alt=""></a></p><p>选择「下载位置数据」，搞定。尝试拍一张照片，地图位置信息就出现了！</p><p>需要注意的是，如果你的手机开了 VPN，蓝牙大概率会连不上，关掉 VPN 即可。</p><p>另外，此处的「下载位置数据」大概是一次性的，也就是说如果你拍完还要去下一个地方——旅游几乎都是这种移动的状况，记得在新地点重新下载位置数据。但没有养成习惯的话很容易忘记，所以我们还有更方便的第三种办法。</p><h2 id="三、导出-gpx 数据后用 lightroom 插件同步">三、导出 GPX 数据后用 Lightroom 插件同步</h2><p>这里介绍一个 Lightroom 插件：<a href="https://regex.info/blog/lightroom-goodies/gps">Jeffrey’s “Geoencoding Support” Plugin for Lightroom</a>，虽然这个插件不提供中文，但操作很简单，基本不需要汉化包，千万不要产生任何畏难心理。</p><h3 id="安装插件">安装插件</h3><p>首先点击插件页面右侧的 「Quick Links」，选择 Latest Download 下面的 zip 压缩包：</p><p><a href="image-20250430110609676.png" title="点击「gps-20250122.361.zip」开始下载" class="gallery-item"><img src="image-20250430110609676.png" alt="点击「gps-20250122.361.zip」开始下载"><span class="image-caption">点击「gps-20250122.361.zip」开始下载</span></a></p><p>下载完成之后解压缩，得到名为「gps-jfriedl.lrplugin」的文件夹。打开 Lightroom，选择主菜单「文件 &gt; 增效工具管理器」：</p><p><a href="image-20250430110941383.png" title="Lightroom 增效工具管理器" class="gallery-item"><img src="image-20250430110941383.png" alt="Lightroom 增效工具管理器"><span class="image-caption">Lightroom 增效工具管理器</span></a></p><p>点击左下角的「添加」，找到之前下载的「gps-jfriedl.lrplugin」文件夹：</p><p><a href="image-20250430112614315.png" class="gallery-item"><img src="image-20250430112614315.png" alt=""></a></p><p>点击「选择文件夹」，插件就安装好了。</p><h3 id="通过插件给照片写入-gps 信息">通过插件给照片写入 GPS 信息</h3><p>通过主菜单的「文件」，然后选择「增效工具额外信息」，点击「Geoencode」：</p><p><a href="image-20250430113150705.png" title="打开 Geoencode" class="gallery-item"><img src="image-20250430113150705.png" alt="打开 Geoencode"><span class="image-caption">打开 Geoencode</span></a></p><p>打开插件主界面，点击界面中的「Browse」，找到对应的数据文件（通常是 .GPX 格式），然后点击界面下方的「Geoencode Image」，即可完成 GPS 信息的写入。</p><p><a href="image-20250430113800164.png" title="插件主界面" class="gallery-item"><img src="image-20250430113800164.png" alt="插件主界面"><span class="image-caption">插件主界面</span></a></p><h3 id="获取-gpx 数据">获取 GPX 数据</h3><p>关键的来了，此处插件所需的 GPX 文件是什么？查网络可知：</p><blockquote><p>GPX（英语：GPS eXchange Format，GPS交换格式）<strong>是一个XML格式，为应用软件设计的通用GPS数据格式</strong>。 它可以用来描述路点、轨迹、路程。 这个格式是免费的，可以在不需要付任何许可费用的前提下使用。 它的标签保存位置，海拔和时间，可以用来在不同的GPS设备和软件之间交换数据。</p></blockquote><p>那么该如何获取呢？</p><h4 id="手机上安装-gps 记录软件">手机上安装 GPS 记录软件</h4><p>在手机上安装相关软件是最简单的，比如我用的是安卓手机，安装了「Geo Tracker」：</p><p><a href="image-20250430114449605.png" title="Google Play 上的 Geo Tracker" class="gallery-item"><img src="image-20250430114449605.png" alt="Google Play 上的 Geo Tracker"><span class="image-caption">Google Play 上的 Geo Tracker</span></a></p><p>早上出门，打开界面，点击右下角的红色按钮，开始记录行走轨迹：</p><p><a href="image-20250430114647433.png" title="点击右下方的红色按钮" class="gallery-item"><img src="image-20250430114647433.png" alt="点击右下方的红色按钮"><span class="image-caption">点击右下方的红色按钮</span></a></p><p>回家后再点一下，就停止记录，GPX 数据文件也准备好了，把 GPX 文件分享到电脑上，就能在插件里面使用了。</p><p>此 App 在苹果的 App Store 里面也有提供，直接搜索即可，反而是我的 Vivo 应用商店里找不到，需要大家自行获取，或者找同类软件平替。</p><p>另外记得给此类 App 开通后台权限，否则进程被系统误杀就尴尬了。</p><h4 id="智能手表">智能手表</h4><p>手机给 App 开后台，首先有电池焦虑，其次可能会被系统误杀，如果你有智能手表的话，那还有另外一种方式。</p><p>以我的 Amazfit GTR 4 为例，出门选择「健走」，然后开始记录，到家打开 Zepp，选择「运动」，即可找到之前的记录：</p><p><a href="image-20250430120449023.png" title="Zepp 的运动记录页面" class="gallery-item"><img src="image-20250430120449023.png" alt="Zepp 的运动记录页面"><span class="image-caption">Zepp 的运动记录页面</span></a></p><p>点击进入运动记录：</p><p><a href="image-20250430120535856.png" title="运动记录内页" class="gallery-item"><img src="image-20250430120535856.png" alt="运动记录内页"><span class="image-caption">运动记录内页</span></a></p><p>点击右上角的三个点，选择「导出数据」：</p><p><a href="image-20250430120619721.png" title="选择「导出数据」" class="gallery-item"><img src="image-20250430120619721.png" alt="选择「导出数据」"><span class="image-caption">选择「导出数据」</span></a></p><p>选择「GPX格式」，就能得到对应的 GPX 文件。</p><p><a href="image-20250430120639099.png" title="选择 GPX 格式" class="gallery-item"><img src="image-20250430120639099.png" alt="选择 GPX 格式"><span class="image-caption">选择 GPX 格式</span></a></p><p>最后导入 Lightroom 通过插件写入到照片中就搞定了。</p><p>大部分的智能手表应该都具备类似的导出数据功能，大家研究一下应该都能搞定，只不过 Vivo Watch 除外。这种方式应该比手机更方便，稳定可靠还省电，甚至在手机没电的情况下仍可记录，相对来说比较完美了。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+    
+    
+    <summary type="html">让阉割的 GPS 信息重回相机！</summary>
+    
+    
+    
+    <category term="玩艺" scheme="https://kaerozhi.com/categories/playground/"/>
+    
+    <category term="器用" scheme="https://kaerozhi.com/categories/playground/gears/"/>
+    
+    
+    <category term="摄影" scheme="https://kaerozhi.com/tags/%E6%91%84%E5%BD%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://kaerozhi.com/blog/unraid-gpu-not-working/"/>
+    <id>https://kaerozhi.com/blog/unraid-gpu-not-working/</id>
+    <published>2025-04-16T01:07:29.032Z</published>
+    <updated>2025-04-16T01:07:05.068Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>前段时间家里服务器坏了一块硬盘，重启之后就一直启动不了阵列，折腾了好几天，还买了块新硬盘，终于搞定了。但自己修为不够，留下了严重的后遗症，就是核显不工作了。具体表现为：</p><ol><li><strong>群晖虚拟机无法解码</strong>，Synology Photos 的人脸检测和苹果 HEIC/HEVC 解码都罢工了；</li><li><strong>Jellyfin 无法硬解</strong>，导致库内的一大半视频都无法正常播放，最后换 <a href="https://hub.docker.com/r/nyanmisaka/jellyfin">nyanmisaka</a> 的源解决了；</li><li>Synology Photos 罢工以后，尝试了 <a href="https://immich.app/">Immich</a> 作为替代品，平心而论还挺满意的，但 GPU 不工作导致 CPU 压力骤增。这些年拍过十几万张照片，初次导入的时候系统直接崩溃了好几次，即便任务并发数改到最低都不行，最后给 Immich Dokcer 加了限制，只使用四个 CPU 核心才解决。</li></ol><p><a href="image-20250414091101644.png" title="GPU Statics 毫无波动" class="gallery-item"><img src="image-20250414091101644.png" alt="GPU Statics 毫无波动"><span class="image-caption">GPU Statics 毫无波动</span></a></p><p>查看 Unraid 的工具 &gt; 系统驱动页里，其中 i915 显示为 disabled：</p><p><a href="image-20250414092508997.png" title="i915 显示为 disabled" class="gallery-item"><img src="image-20250414092508997.png" alt="i915 显示为 disabled"><span class="image-caption">i915 显示为 disabled</span></a></p><p>但 disabled 的原因是安装了 Intel-GPU-TOP，要不我卸载试试？</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article</summary>
+      
+    
+    
+    
+    <category term="日常" scheme="https://kaerozhi.com/categories/blog/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>元旦戏笔</title>
