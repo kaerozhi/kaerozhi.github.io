@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kaerozhi.com/blog/xuefuchengs-former-residence/</loc>
+    
+    <lastmod>2025-05-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://kaerozhi.com/tours/nanchansi/</loc>
     
     <lastmod>2025-05-08</lastmod>
@@ -5032,6 +5041,20 @@
   
   <url>
     <loc>https://kaerozhi.com/tags/%E5%91%A8%E8%BE%B9%E6%B8%B8/</loc>
+    <lastmod>2025-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kaerozhi.com/tags/%E5%90%8D%E4%BA%BA%E6%95%85%E5%B1%85/</loc>
+    <lastmod>2025-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kaerozhi.com/tags/%E8%96%9B%E7%A6%8F%E6%88%90%E6%95%85%E5%B1%85/</loc>
     <lastmod>2025-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
