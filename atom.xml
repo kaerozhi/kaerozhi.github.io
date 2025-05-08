@@ -6,7 +6,7 @@
   <link href="https://kaerozhi.com/atom.xml" rel="self"/>
   
   <link href="https://kaerozhi.com/"/>
-  <updated>2025-04-30T04:13:19.787Z</updated>
+  <updated>2025-05-08T06:43:59.883Z</updated>
   <id>https://kaerozhi.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>无锡南禅寺</title>
+    <link href="https://kaerozhi.com/tours/nanchansi/"/>
+    <id>https://kaerozhi.com/tours/nanchansi/</id>
+    <published>2025-05-08T02:48:00.000Z</published>
+    <updated>2025-05-08T06:43:59.883Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>昨天去无锡玩了一天。</p><p>早上八点半，先到了南禅寺。岳母信佛，一贯主张过午不入寺拜佛，所以先去。南禅寺在闹市中，从停车场出来，就从大牌坊后面遥遥望见妙光塔的塔尖。</p><p>山门正在修葺，都是水泥钢筋框架，也不知最后看起来会怎样，想必还是会修饰成木构的样子。</p><p><a href="image-20250508134023614.png" title="水泥钢筋浇灌的框架" class="gallery-item"><img src="image-20250508134023614.png" alt="水泥钢筋浇灌的框架"><span class="image-caption">水泥钢筋浇灌的框架</span></a></p><p>从侧门入寺，正对着妙光塔，塔身看起来相当新。五色经幡，四面攒结，于风中轻轻扇动。匾额上一层贴着「佛光普照」四个大字，红底鎏金，是电脑打印的，可惜了。</p><p><a href="image-20250508134524237.png" title="妙光塔" class="gallery-item"><img src="image-20250508134524237.png" alt="妙光塔"><span class="image-caption">妙光塔</span></a></p><p><a href="image-20250508134423584.png" title="檐上的铜铃" class="gallery-item"><img src="image-20250508134423584.png" alt="檐上的铜铃"><span class="image-caption">檐上的铜铃</span></a></p><p>绕塔走了一圈，隔着西墙月洞门就是中庭。庭中适逢法会，诸僧前导，信众随后，缓缓步上侧面的楼梯，绕向高台之上的大雄宝殿去了。配合高悬的音箱，唱诵的经文弥漫空际，令人中心肃然。大殿正面的台阶堆满了改造工事的钢架之类，暂时不能通行。</p><p><a href="image-20250508143455229.png" title="大雄宝殿" class="gallery-item"><img src="image-20250508143455229.png" alt="大雄宝殿"><span class="image-caption">大雄宝殿</span></a></p><p><a href="image-20250508143540375.png" title="大殿飞檐" class="gallery-item"><img src="image-20250508143540375.png" alt="大殿飞檐"><span class="image-caption">大殿飞檐</span></a></p><p>山门内有韦陀天金身，甲光烂然，灼人眼目。进去转了一圈，四大天王的雕像却不太佳。</p><p>进入大雄宝殿时，法会已经结束，几个信徒围着僧人讨论经文，其他人逐渐散去。在门口窥探了一下，就出来了。</p><p><a href="image-20250508144035510.png" title="初夏的况味" class="gallery-item"><img src="image-20250508144035510.png" alt="初夏的况味"><span class="image-caption">初夏的况味</span></a></p><p>两厢也有观音殿地藏殿之类，后面藏经楼也闭锁了，但总体上亦止于此，不如苏州西园、报恩诸寺规模宏敞，且有园庭可赏。</p><p>寺外有步行者，上次岳母和大姨妈过来，说只到步行街，没找到南禅寺，也不知是怎么回事。可能步行街远比目所能见的要长。</p><p><a href="image-20250508144233232.png" title="寺外的街道" class="gallery-item"><img src="image-20250508144233232.png" alt="寺外的街道"><span class="image-caption">寺外的街道</span></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article</summary>
+      
+    
+    
+    
+    <category term="游历" scheme="https://kaerozhi.com/categories/tours/"/>
+    
+    
+    <category term="寺庙" scheme="https://kaerozhi.com/tags/%E5%AF%BA%E5%BA%99/"/>
+    
+    <category term="无锡" scheme="https://kaerozhi.com/tags/%E6%97%A0%E9%94%A1/"/>
+    
+    <category term="周边游" scheme="https://kaerozhi.com/tags/%E5%91%A8%E8%BE%B9%E6%B8%B8/"/>
+    
+  </entry>
   
   <entry>
     <title>给照片添加 GPS 信息</title>
