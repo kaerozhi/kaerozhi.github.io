@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kaerozhi.com/blog/tangyinyuan/</loc>
+    
+    <lastmod>2025-05-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kaerozhi.com/about/photography-gear.html</loc>
+    
+    <lastmod>2025-05-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://kaerozhi.com/blog/swallowtail-butterfly-larvae/</loc>
     
     <lastmod>2025-05-12</lastmod>
@@ -14,15 +32,6 @@
     <loc>https://kaerozhi.com/tours/gashenxian/</loc>
     
     <lastmod>2025-05-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://kaerozhi.com/about/photography-gear.html</loc>
-    
-    <lastmod>2025-05-11</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -5096,6 +5105,13 @@
   
   <url>
     <loc>https://kaerozhi.com/tags/%E5%BA%99%E4%BC%9A/</loc>
+    <lastmod>2025-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kaerozhi.com/tags/%E5%90%8D%E4%BA%BA%E5%A2%93%E5%9C%B0/</loc>
     <lastmod>2025-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
