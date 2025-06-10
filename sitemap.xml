@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kaerozhi.com/blog/north-shantang/</loc>
+    
+    <lastmod>2025-06-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://kaerozhi.com/photography/suxi@oct/</loc>
     
     <lastmod>2025-06-10</lastmod>
@@ -32,15 +41,6 @@
     <loc>https://kaerozhi.com/playground/gears/isco-gottingen-iscotar-50mm-f28.html</loc>
     
     <lastmod>2025-06-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://kaerozhi.com/blog/north-shantang/</loc>
-    
-    <lastmod>2025-06-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
